@@ -73,7 +73,7 @@ blocks:
     id: idee
     title:
       de: Ein Pixel ist ein Bildpunkt
-      en: A pixel is a dot of the picture
+      en: A pixel is one dot of a picture
     blocks:
       - type: definition
         term:
@@ -258,5 +258,5 @@ blocks:
           en: A bitmap image only stores the colour of each pixel. It is you who sees that it is a tent.
       - type: text
         text:
-          de: Jetzt kannst du ein Bild aus Pixeln codieren und decodieren. Selins Zelt soll auf ein großes Plakat. Was passiert, wenn man ein Pixelbild vergrößert? Das siehst du auf der nächsten Seite.
-          en: Now you can encode and decode a picture made of pixels. Selin's tent is going on a big poster. What happens when you make a bitmap image bigger? You will see on the next page.
+          de: Jetzt kannst du ein Bild aus Pixeln codieren und decodieren. Jona und Selin machen für die Klassenfahrt ein großes Plakat. Was passiert, wenn man ein Pixelbild vergrößert? Das siehst du auf der nächsten Seite.
+          en: Now you can encode and decode a picture made of pixels. Jona and Selin are making a big poster for the school trip. What happens when you make a bitmap image bigger? You will see on the next page.

@@ -73,8 +73,8 @@ blocks:
           en: A vector image stores a picture as shapes such as circles, lines and rectangles, each with its numbers, for example the centre, the radius and the colour.
       - type: text
         text:
-          de: "Sonne B ist eine Vektorgrafik. Gespeichert ist nur: ein Kreis, Mittelpunkt (50 | 50), Radius 40, Farbe rot. Beim Vergrößern rechnet der Computer den Kreis neu aus. Darum bleibt der Rand glatt."
-          en: "Sun B is a vector image. All that is stored is: a circle, centre (50 | 50), radius 40, colour red. When you make it bigger, the computer works out the circle again. That is why the edge stays smooth."
+          de: "Sonne B ist eine Vektorgrafik. Gespeichert ist nur: ein Kreis, Mittelpunkt (50 | 50), Radius 40, Farbe rot. (50 | 50) heißt: 50 nach rechts und 50 nach oben. Der Radius ist der Abstand vom Mittelpunkt zum Rand. Beim Vergrößern rechnet der Computer den Kreis neu aus. Darum bleibt der Rand glatt."
+          en: "Sun B is a vector image. All that is stored is: a circle, centre (50 | 50), radius 40, colour red. (50 | 50) means 50 across and 50 up. The radius is the distance from the centre to the edge. When you make it bigger, the computer works out the circle again. That is why the edge stays smooth."
       - type: table
         caption:
           de: Pixelgrafik und Vektorgrafik im Vergleich

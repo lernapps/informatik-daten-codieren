@@ -165,7 +165,7 @@ blocks:
           - de: gemischtes Alphabet
             en: mixed alphabet
         explanation:
-          de: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann. Ganz sicher ist aber auch es nicht.
+          de: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann. Ganz sicher ist aber auch das nicht.
           en: Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all. But even it is not completely secure.
       - type: true-false
         id: geheimes-verfahren

@@ -74,8 +74,8 @@ blocks:
           en: One byte is 8 bits, like a row of eight bit cards. In one byte you can store, for example, a number from 0 to 255.
       - type: text
         text:
-          de: Für große Datenmengen gibt es größere Einheiten. Jede ist **1000-mal** so groß wie die davor. Die Werte für Nachricht, Foto und Film sind ungefähr, es kommt auf das Gerät an.
-          en: There are bigger units for large amounts of data. Each one is **1000 times** as big as the one before. The sizes for the message, photo and film are only rough, they depend on the device.
+          de: Für große Datenmengen gibt es größere Einheiten. Jede ist **1000-mal** so groß wie die davor. Die Werte für Text, Foto und Film sind ungefähr, es kommt auf das Gerät an.
+          en: There are bigger units for large amounts of data. Each one is **1000 times** as big as the one before. The sizes for the text, photo and film are only rough, they depend on the device.
       - type: table
         caption:
           de: Einheiten für Datenmengen mit Beispielen

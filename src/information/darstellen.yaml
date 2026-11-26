@@ -10,20 +10,20 @@ blocks:
   - type: section
     id: einstieg
     title:
-      de: Wohin fährt die 6b?
-      en: Where is class 6b going?
+      de: Wie hat die 6b gewählt?
+      en: How did class 6b choose?
     blocks:
       - type: text
         text:
           de: |
-            Vor der Fahrt hat die 6b abgestimmt. Alle 26 Kinder hatten eine Stimme. Selin hat an der Tafel für jede
+            Wie kam die 6b auf den Seeberg? Vorher hat sie abgestimmt. Alle 26 Kinder hatten eine Stimme. Selin hat an der Tafel für jede
             Stimme einen Strich gemacht, immer fünf zusammen.
 
             Auf der Seite davor hast du Daten in einer Tabelle gedeutet. Auf dieser Seite zeigst du dieselben Daten
             auf verschiedene Arten und wählst die Form, die eine Frage am schnellsten beantwortet.
           en: |
-            Before the trip, class 6b had a vote. All 26 children had one vote each. Selin made a line on the board for
-            every vote, always five together.
+            How did class 6b pick Seeberg? They had a vote first. All 26 children had one vote each. Selin made a tally mark on the board for
+            every vote, in groups of five.
 
             On the page before you worked out what data in a table means. On this page you show the same data in
             different ways and choose the form that answers a question fastest.

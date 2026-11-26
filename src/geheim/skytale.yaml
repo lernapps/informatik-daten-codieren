@@ -16,14 +16,14 @@ blocks:
       - type: text
         text:
           de: |
-            Die 6b plant eine Überraschung für die Parallelklasse 6c. Jona will Selin schreiben, wo sie sich treffen.
+            Die 6b plant eine Überraschung für die Parallelklasse 6c, die auch in der Jugendherberge wohnt. Jona will Selin schreiben, wo sie sich treffen.
             Aber die 6c soll die Nachricht nicht lesen können, auch wenn sie den Zettel findet. Selin hat eine Idee
             aus dem Geschichtsbuch: eine **Skytale**, einen Holzstab mit einem Streifen.
 
             Im Kapitel „Alles ist 0 und 1“ waren Codes für alle lesbar. Auf dieser Seite lernst du, wie man eine
             Nachricht **verschlüsselt**, damit nur Eingeweihte sie lesen.
           en: |
-            Class 6b is planning a surprise for the other class, 6c. Jona wants to write to Selin where they will meet.
+            Class 6b is planning a surprise for the other class, 6c, who are staying at the youth hostel too. Jona wants to write to Selin where they will meet.
             But class 6c must not be able to read the message, even if they find the note. Selin has an idea from her
             history book: a **scytale**, a wooden stick with a strip.
 
@@ -47,8 +47,8 @@ blocks:
           de: "Ein Holzstab. Ein heller Streifen ist schräg um ihn gewickelt. Auf dem Streifen stehen Zeichen nebeneinander, Reihe für Reihe. Ein Ende des Streifens hängt lose herunter."
           en: "A wooden stick. A light strip is wound around it at a slant. On the strip there are signs next to each other, row by row. One end of the strip hangs loose."
         caption:
-          de: Eine Skytale. Um den Stab gewickelt, stehen die Buchstaben in Reihen. Abgewickelt sind sie durcheinander.
-          en: A scytale. Wound around the stick, the letters are in rows. Unwound, they are jumbled.
+          de: Eine Skytale. Um den Stab gewickelt, stehen die Buchstaben (hier als Kästchen gezeichnet) in Reihen. Abgewickelt sind sie durcheinander.
+          en: A scytale. Wound around the stick, the letters (drawn here as boxes) are in rows. Unwound, they are jumbled.
         source:
           de: eigene Zeichnung
           en: own drawing
@@ -97,6 +97,13 @@ blocks:
         explanation:
           de: Beim Verschlüsseln macht man aus dem lesbaren **Klartext** mit einem Verfahren und einem geheimen Schlüssel einen **Geheimtext**. Nur wer den Schlüssel kennt, soll ihn wieder lesen können.
           en: When you encrypt, you turn the readable **plaintext** into a **ciphertext** with a method and a secret key. Only someone who knows the key is meant to be able to read it again.
+      - type: definition
+        term:
+          de: Schlüssel
+          en: key
+        explanation:
+          de: Der Schlüssel ist das Geheimnis, das man zum Ver- und Entschlüsseln braucht, zum Beispiel eine Zahl. Das Verfahren dürfen alle kennen, den Schlüssel nicht.
+          en: The key is the secret you need to encrypt and decrypt, for example a number. Everyone may know the method, but not the key.
       - type: note
         title:
           de: Merke

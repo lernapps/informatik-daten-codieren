@@ -51,9 +51,16 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
 - Länge: höchstens 350 Wörter Lesetext, höchstens 4 Textblöcke hintereinander, etwas zum Ansehen oder Tun in den
   ersten 4 Blöcken. Mindestens 4 Übungen, höchstens die Hälfte Auswahlfragen.
 - Geschichte (fest, gemeinsam mit den anderen Explainern des Epics): Die Klasse 6b fährt am Montag, 11. Mai, um 8 Uhr
-  ab dem Bahnhof drei Tage zur Jugendherberge „Am Seeberg“ (erfunden). **Jona** (11) und **Selin** (11) verschicken
-  die Klassenfahrt-Nachricht, **Mia** (11) ist dabei. Ihr Aussehen legt #490 fest (bis dahin keine Figurenbilder).
-  Namen bleiben im Englischen gleich.
+  mit dem Zug ab dem Bahnhof drei Tage zur Jugendherberge „Am Seeberg“ (erfunden, an einem See). Klassenlehrerin ist
+  Frau Berg. **Jona** (11), **Selin** (11) und **Mia** (11), Aussehen aus #490 (`src/images/szene-*.svg`, defs aus
+  lernapps/informatik-computer `klasse-6b.svg`, nicht ändern). Namen bleiben im Englischen gleich.
+- Zeitfolge der Seiten: Kapitel 1 vor der Fahrt (Zettel, Plan, Abstimmung als Rückblick, Zimmerplan); Kapitel 2
+  Ankunft (Weg vom Bahnhof, Zimmertüren mit Bit-Karten), Dienstag Ausflug mit Bus 27, Fotos; Kapitel 3 Plakat;
+  Kapitel 4 Überraschung für die Parallelklasse 6c, die auch in der Jugendherberge wohnt.
+- Zimmer: 13 Jona und Tom, 22 Selin und Mia, 9 Ben und Ali (Baum, Bit-Karten-Türen). Jona und Selin schlafen in
+  verschiedenen Zimmern (Morsen mit der Taschenlampe). Abstimmung: Seeberg 11, Falkenburg 7, Bärenhöhle 5,
+  Lindenzoo 3 von 26 Kindern. Tagesplan Montag: Ankunft 11, Wanderung 14-17 (18 Kinder), Boot 15 (8), Nachtwanderung
+  21 (21).
 - Klassenfahrt-Nachricht: Klartext „TREFFEN MONTAG ACHT UHR AM BAHNHOF“ / „MEET ON MONDAY AT EIGHT AT THE STATION“;
   Zettel „6b · 11.5. · 8:00 · Bahnhof“ / „6b · 11 May · 8:00 · station“; Caesar, Schlüssel 3: „WUHIIHQ PRQWDJ DFKW
   XKU DP EDKQKRI“ / „PHHW RQ PRQGDB DW HLJKW DW WKH VWDWLRQ“.
@@ -131,4 +138,9 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
 
 ## Rules learned from mistakes
 
-None yet.
+- `image` ist eine Datei für alle Sprachen: keine Wörter in Bildern (Fund beim Baum).
+- Mehrheit nicht mit „die meisten“ verwechseln: 11 von 26 sind die meisten Stimmen, nicht die meisten Kinder.
+- Eine 3 × 3-Skytale ist ihre eigene Umkehrung: Entschlüssel-Aufgaben mit 12 Buchstaben (3 Spalten, 4 Zeilen).
+- Viele Schlüssel sind nötig, aber nicht genug: das gemischte Alphabet nie „sicher“ nennen.
+- Einheit kB mit kleinem k (SI).
+- Die Geschichte über alle Seiten prüfen (Zug, Zimmer, Zeitfolge): Funde der Prüfung als Lernende.

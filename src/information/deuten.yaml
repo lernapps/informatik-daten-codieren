@@ -73,7 +73,8 @@ blocks:
             **Einheit** wie Uhr, Grad oder Euro. Frau Berg hat den Plan für den ersten Tag am Seeberg geschickt.
           en: |
             In a table, the context is often in the **heading** of a column, or in a **unit** such as o'clock,
-            degrees or euros. Ms Berg has sent the plan for the first day at Seeberg.
+            degrees or euros. Ms Berg has sent the plan for the first day at Seeberg. The times use the 24-hour clock, as
+            in Germany: 14 means 2 pm.
       - type: table
         caption:
           de: Plan für Montag am Seeberg

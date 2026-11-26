@@ -16,14 +16,16 @@ blocks:
       - type: text
         text:
           de: |
-            Am letzten Tag fährt die 6b mit dem Bus Nummer 27 zurück. Jona will die Nummer mit den Bit-Karten an die
-            Zimmertür hängen, damit alle es wissen.
+            Am Dienstag macht die 6b einen Ausflug mit dem Bus Nummer 27. Jona will die Nummer mit den Bit-Karten an
+            die Zimmertür hängen, damit alle es wissen. Zuerst übt er mit anderen Zahlen: Lege die Zahl, die die
+            Aufgabe nennt. Die 27 kommt danach.
 
             Auf der Seite davor hast du Bit-Karten gelesen und daraus eine Zahl gemacht. Jetzt gehst du den Weg
             zurück: Aus einer Zahl werden Bits.
           en: |
-            On the last day, class 6b goes home on bus number 27. Jona wants to put the number on the room door with
-            bit cards, so that everyone knows.
+            On Tuesday, class 6b goes on an outing on bus number 27. Jona wants to put the number on the room door with
+            bit cards, so that everyone knows. First he practises with other numbers: make the number the task gives.
+            The 27 comes after that.
 
             On the page before you read bit cards and turned them into a number. Now you go the other way: a number
             becomes bits.
@@ -221,5 +223,5 @@ blocks:
           en: "12 = 8 + 4, so cards 8 and 4 are face up: 1100."
       - type: text
         text:
-          de: Jetzt kannst du jede Zahl in Bits umrechnen. Für 40 brauchst du sechs Stellen. Auf der nächsten Seite erfährst du, wie viele Bits ein Computer zusammenfasst und wie viele Bits ein Foto braucht.
-          en: Now you can turn any number into bits. For 40 you need six digits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.
+          de: Jetzt kannst du jede Zahl in Bits umrechnen. Auf der nächsten Seite erfährst du, wie viele Bits ein Computer zusammenfasst und wie viele Bits ein Foto braucht.
+          en: Now you can turn any number into bits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.

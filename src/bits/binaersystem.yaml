@@ -16,14 +16,14 @@ blocks:
       - type: text
         text:
           de: |
-            Die 6b ist in der Jugendherberge „Am Seeberg“ angekommen. Jona und Selin suchen ihr Zimmer. Aber an den
+            Die 6b ist in der Jugendherberge „Am Seeberg“ angekommen. Jona sucht sein Zimmer. Aber an den
             Türen steht keine Zimmernummer. An jeder Tür hängen fünf Karten. Eine offene Karte zeigt Punkte. Eine
             verdeckte Karte zeigt ihre Rückseite, und die hat keine Punkte. Über jeder Karte steht, wie viele Punkte
             sie offen hat. Diese Zahl ist der **Wert** der Karte.
 
             Hier lernst du, jede Zahl nur mit 0 und 1 zu schreiben: ein Code mit nur zwei Zeichen.
           en: |
-            Class 6b has arrived at the youth hostel “Am Seeberg”. Jona and Selin are looking for their room. But there
+            Class 6b has arrived at the youth hostel “Am Seeberg”. Jona is looking for his room. But there
             is no room number on the doors. On every door there are five cards. A card that is face up shows dots. A
             card that is face down shows its back, and the back has no dots. Above each card it says how many dots it
             has when it is face up. This number is the **value** of the card.
@@ -35,8 +35,8 @@ blocks:
           de: "Fünf Karten nebeneinander mit den Werten 16, 8, 4, 2 und 1. Die Karten 8, 4 und 1 liegen offen und zeigen 8, 4 und 1 Punkte. Die Karten 16 und 2 sind verdeckt."
           en: "Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down."
         caption:
-          de: Die Karten an der Tür von Jona und Selin. Zähle die Punkte auf den offenen Karten.
-          en: The cards on Jona and Selin's door. Count the dots on the cards that are face up.
+          de: Die Karten an Jonas Tür. Zähle die Punkte auf den offenen Karten.
+          en: The cards on Jona's door. Count the dots on the cards that are face up.
         source:
           de: eigene Zeichnung
           en: own drawing
@@ -61,8 +61,8 @@ blocks:
           de: Die Karte 8 hat 8 Punkte, die Karte 4 hat 4 Punkte.
           en: Card 8 has 8 dots, card 4 has 4 dots.
         explanation:
-          de: "8 + 4 + 1 = 13. Jona und Selin schlafen in Zimmer 13."
-          en: "8 + 4 + 1 = 13. Jona and Selin sleep in room 13."
+          de: "8 + 4 + 1 = 13. Jona schläft in Zimmer 13."
+          en: "8 + 4 + 1 = 13. Jona sleeps in room 13."
   - type: section
     id: idee
     title:
@@ -72,12 +72,12 @@ blocks:
       - type: text
         text:
           de: |
-            Jede Karte liegt entweder offen oder verdeckt. Für offen schreibst du **1**, für verdeckt **0**. Die Tür
-            von Jona und Selin zeigt dann: verdeckt, offen, offen, verdeckt, offen. Kurz: **01101**. Diese Ziffern
+            Jede Karte liegt entweder offen oder verdeckt. Für offen schreibst du **1**, für verdeckt **0**. Jonas Tür
+            zeigt dann: verdeckt, offen, offen, verdeckt, offen. Kurz: **01101**. Diese Ziffern
             hintereinander nennt man eine **Bitfolge**.
           en: |
-            Each card is either face up or face down. For face up you write **1**, for face down **0**. Then Jona and
-            Selin's door shows: face down, face up, face up, face down, face up. In short: **01101**. These digits in a
+            Each card is either face up or face down. For face up you write **1**, for face down **0**. Then Jona's
+            door shows: face down, face up, face up, face down, face up. In short: **01101**. These digits in a
             row are called a **bit string**.
       - type: definition
         term:
@@ -244,13 +244,13 @@ blocks:
                 2. Nimm nur die Werte, unter denen eine 1 steht: 16, 4 und 2.
                 3. Zähle sie zusammen: 16 + 4 + 2 = 22.
 
-                Die Binärzahl 10110 ist die Dezimalzahl 22. Mia schläft in Zimmer 22.
+                Die Binärzahl 10110 ist die Dezimalzahl 22. Mia schläft mit Selin in Zimmer 22.
               en: |
                 1. Look at the value above each digit: 16, 8, 4, 2, 1.
                 2. Take only the values that have a 1 below them: 16, 4 and 2.
                 3. Add them up: 16 + 4 + 2 = 22.
 
-                The binary number 10110 is the decimal number 22. Mia sleeps in room 22.
+                The binary number 10110 is the decimal number 22. Mia sleeps in room 22 with Selin.
   - type: section
     id: uebung
     title:

@@ -16,13 +16,13 @@ blocks:
       - type: text
         text:
           de: |
-            Am Seeberg teilt Frau Berg die Zimmer ein. Sie zeichnet einen Plan, damit alle schnell ihr Zimmer finden.
+            Schon vor der Fahrt teilt Frau Berg die Zimmer am Seeberg ein. Sie zeichnet einen Plan, damit alle schnell ihr Zimmer finden.
             Hier siehst du einen Ausschnitt: drei Zimmer, 13, 22 und 9, mit je zwei Kindern.
 
             Auf der Seite davor hast du Tabelle, Diagramm und Text kennengelernt. Auf dieser Seite lernst du eine
             Form für Daten, die ineinander stecken: die Klasse hat Zimmer, die Zimmer haben Kinder.
           en: |
-            At Seeberg, Ms Berg shares out the rooms. She draws a plan so that everyone can find their room quickly.
+            Even before the trip, Ms Berg shares out the rooms at Seeberg. She draws a plan so that everyone can find their room quickly.
             Here you can see part of it: three rooms, 13, 22 and 9, with two children each.
 
             On the page before you learnt about tables, charts and text. On this page you will learn a form for data
@@ -30,8 +30,8 @@ blocks:
       - type: labelled-figure
         image: images/baum-zimmer.svg
         alt:
-          de: "Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13, 22 und 9. Unter Zimmer 13 stehen Jona und Selin, unter 22 Mia und Lea, unter 9 Tom und Ali. Die Kästchen ganz unten haben einen gestrichelten Rand."
-          en: "A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below room 13 are Jona and Selin, below 22 Mia and Lea, below 9 Tom and Ali. The boxes at the very bottom have a dashed border."
+          de: "Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13, 22 und 9. Unter Zimmer 13 stehen Jona und Tom, unter 22 Selin und Mia, unter 9 Ben und Ali. Die Kästchen ganz unten haben einen gestrichelten Rand."
+          en: "A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below room 13 are Jona and Tom, below 22 Selin and Mia, below 9 Ben and Ali. The boxes at the very bottom have a dashed border."
         caption:
           de: Frau Bergs Zimmerplan als Baum. Die Zahlen 1 bis 4 zeigen die Teile des Baums.
           en: Ms Berg's room plan as a tree. The numbers 1 to 4 show the parts of the tree.
@@ -74,13 +74,13 @@ blocks:
           - text: { de: "22", en: "22" }
             correct: false
             info:
-              de: Unter Zimmer 22 stehen Mia und Lea.
-              en: Below room 22 are Mia and Lea.
+              de: Unter Zimmer 22 stehen Selin und Mia.
+              en: Below room 22 are Selin and Mia.
           - text: { de: "13", en: "13" }
             correct: false
             info:
-              de: Unter Zimmer 13 stehen Jona und Selin.
-              en: Below room 13 are Jona and Selin.
+              de: Unter Zimmer 13 stehen Jona und Tom.
+              en: Below room 13 are Jona and Tom.
         explanation:
           de: Folge der Kante von Ali nach oben. Sie führt zu genau einem Zimmer, der 9.
           en: Follow the edge from Ali upwards. It leads to exactly one room, 9.
@@ -165,8 +165,8 @@ blocks:
               de: Blatt
               en: leaf
             right:
-              de: der Knoten Lea
-              en: the node Lea
+              de: der Knoten Ben
+              en: the node Ben
           - left:
               de: Kante
               en: edge

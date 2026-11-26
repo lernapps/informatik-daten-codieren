@@ -68,13 +68,13 @@ blocks:
       - type: text
         text:
           de: |
-            Selin sieht den Zettel und lacht: „Das ist von Frau Berg, unserer Klassenlehrerin! Am Montag, 11. Mai, fahren wir auf
-            Klassenfahrt. Wir treffen uns um 8 Uhr am Bahnhof, da, wo der Zug fährt.“ Selin kennt den
+            Selin sieht den Zettel und lacht: „Das ist von Frau Berg, unserer Klassenlehrerin! Am Montag, 11. Mai, fahren wir zur
+            Jugendherberge am Seeberg. Wir treffen uns um 8 Uhr am Bahnhof, da, wo der Zug fährt.“ Selin kennt den
             **Zusammenhang**: Frau Berg plant die Klassenfahrt der 6b. Darum versteht sie den Zettel.
           en: |
-            Selin sees the note and laughs: “That's from Ms Berg, our class teacher! On Monday, 11 May, we are going on our school
-            trip. We meet at 8 o'clock at the station, where the train leaves.” Selin knows the **context**: Ms Berg
-            is planning class 6b's school trip. In Germany, 11.5. is how you write 11 May. That is why she understands
+            Selin sees the note and laughs: “That's from Ms Berg, our class teacher! On Monday, 11 May, we are going to the youth
+            hostel at Seeberg. We meet at 8 o'clock at the station, where the train leaves.” Selin knows the **context**: Ms Berg
+            is planning class 6b's school trip. In Germany, 11.5. means 11 May, and Seeberg is a place by a lake (See is German for lake). That is why she understands
             the note.
       - type: definition
         term:
