@@ -1,0 +1,11 @@
+{
+  "name": "informatik-daten-codieren",
+  "version": "0.0.0",
+  "private": true,
+  "lernapps": {
+    "init": true
+  },
+  "devDependencies": {
+    "@lernapps/tooling": "^0.19.0"
+  }
+}
