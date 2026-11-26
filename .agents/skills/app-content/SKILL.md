@@ -66,6 +66,7 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
 - Klassenfahrt-Nachricht: Klartext „TREFFEN MONTAG ACHT UHR AM BAHNHOF“ / „MEET ON MONDAY AT EIGHT AT THE STATION“;
   Zettel „6b · 11.5. · 8:00 · Bahnhof“ / „6b · 11 May · 8:00 · station“; Caesar, Schlüssel 3: „WUHIIHQ PRQWDJ DFKW
   XKU DP EDKQKRI“ / „PHHW RQ PRQGDB DW HLJKW DW WKH VWDWLRQ“.
+- `tasks: { start: first }` in `src/app.yaml`: jede Übung beginnt bei Aufgabe 1 (seit app-templates 0.24).
 - Sprachen `[de, en]`: jeder Text eine Karte `{ de: …, en: … }`; Deutsch ist die Ausgangssprache, Englisch eine
   vollständige Übersetzung.
 

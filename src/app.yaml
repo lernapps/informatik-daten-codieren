@@ -16,6 +16,7 @@ intro:
     later in class 7b as bytes and as a voice message. This is how you learn how a computer stores everything with 0
     and 1. Chapters 1 to 4 for ages 10 to 12, chapter 5 for ages 12 to 14.
 languages: [de, en]
+tasks: { start: first }
 chapters: [information, bits, bilder, geheim, texte]
 sources:
   - title:

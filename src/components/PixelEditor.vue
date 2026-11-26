@@ -119,7 +119,7 @@ function clear(): void {
 
 .pixel-editor-grid {
   display: grid;
-  grid-template-columns: repeat(6, 44px);
+  grid-template-columns: repeat(6, 40px);
   grid-auto-rows: 44px;
   gap: 0;
   border: 2px solid #333;
