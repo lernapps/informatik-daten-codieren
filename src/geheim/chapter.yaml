@@ -6,3 +6,13 @@ summary:
   de: Eine Nachricht mit Skytale und Caesar-Scheibe ver- und entschlüsseln und beurteilen, wie sicher ein Verfahren ist.
   en: Encrypting and decrypting a message with a scytale and a Caesar disc, and judging how secure a method is.
 pages: [skytale, caesar, sicherheit]
+selfAssessment:
+  pages:
+    - exercises:
+        - /geheim/skytale/#zeilen-zaehlen
+        - /geheim/skytale/#entschluesseln
+        - /geheim/caesar/#schluessel-finden
+    - exercises:
+        - /geheim/caesar/#caesar-verschluesseln
+        - /geheim/sicherheit/#caesar-schluessel-zahl
+        - /geheim/sicherheit/#geheimes-verfahren

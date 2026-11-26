@@ -6,3 +6,13 @@ summary:
   de: Ein Bild als Pixel codieren und decodieren, und Pixel- und Vektorgrafik vergleichen.
   en: Encoding and decoding a picture as pixels, and comparing bitmap and vector images.
 pages: [pixel, vektor]
+selfAssessment:
+  pages:
+    - exercises:
+        - /bilder/pixel/#bild-malen
+        - /bilder/pixel/#zeile-decodieren
+        - /bilder/pixel/#bits-farbbild
+    - exercises:
+        - /bilder/vektor/#was-speichert-wer
+        - /bilder/vektor/#foto-vektor
+        - /bilder/vektor/#logo-plakat

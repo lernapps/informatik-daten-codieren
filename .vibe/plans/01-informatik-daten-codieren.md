@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 1
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -38,6 +38,8 @@ dass ein Computer am Ende alles mit 0 und 1 codiert (Issue lernapps/apps#491, We
   und kommt als Inkrement auf `increment/7-8`.
 - Zwei Sprachen `[de, en]` (Nachtrag 1 zu #509): Deutsch Ausgangssprache in einfacher Sprache mit „du“, Englisch
   vollständige Übersetzung in Plain English mit „you“, Fachbegriffe wie im Computing curriculum (England).
+- Selbsteinschätzung in jedem Kapitel, 26 Aufgaben zusammen; nur Übungen, die ohne ihre Seite verständlich sind
+  (deshalb fehlen „Daten deuten“ und „Der Baum“ fast ganz).
 - Kein `scope`: kein `open-task`, kein Material des Creators; der Tutor arbeitet mit dem Seiteninhalt.
 - Keine Sammel-Wiederholung in Kapitel 1-4 nötig: Alle Voraussetzungen der 13 Bausteine liegen im Explainer selbst
   (`information-und-daten` hat keine Voraussetzung).
@@ -398,9 +400,9 @@ Content-Guide.
 <!-- tasks: pages (6 added): the other pages or screens, after the pattern -->
 - [x] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [x] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+- [x] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
-- [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
+- [x] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
       fixed.
 
 ## Commit
@@ -413,7 +415,7 @@ Content-Guide.
 
 ### Tasks
 
-- [ ] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
+- [x] Load skill `lernapps-explainer-self-assessment`. Add the self-assessment as it says, or write under "Key
       decisions" why the app has none. Commit.
 - [ ] Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.

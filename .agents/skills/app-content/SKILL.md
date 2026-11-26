@@ -132,8 +132,10 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
    eintragen.
 3. Je Baustein eine Seite nach „Content structure“, mit Szene der Klassenfahrt; Übungen nach „Exercise patterns“,
    jeder Text `{ de, en }`.
-4. `npx vp build`, `npx vp check --fix`, `npx --no -- lernapps check`, dann committen.
-5. Kapitel 5 (`texte`): „Zeichen werden Zahlen“ (`zeichencodierung`, BitKarten mit 8 Karten, ASCII A-Z, die
+4. 1 bis 3 ihrer Übungen in `selfAssessment` der `chapter.yaml` aufnehmen, wie Skill
+   `lernapps-explainer-self-assessment` sagt (nur Übungen, die ohne ihre Seite verständlich sind).
+5. `npx vp build`, `npx vp check --fix`, `npx --no -- lernapps check`, dann committen.
+6. Kapitel 5 (`texte`): „Zeichen werden Zahlen“ (`zeichencodierung`, BitKarten mit 8 Karten, ASCII A-Z, die
    Klassenfahrt-Nachricht als Bytes), „Analog und digital“ (`analog-und-digital`, Komponente Abtasten).
 
 ## Rules learned from mistakes
