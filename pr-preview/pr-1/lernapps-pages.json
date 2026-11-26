@@ -3,6 +3,46 @@
   "strand": "informatik/daten",
   "pages": [
     {
+      "path": "information/daten/",
+      "title": {
+        "de": "Information und Daten",
+        "en": "Information and data"
+      },
+      "competencies": [
+        "information-und-daten"
+      ]
+    },
+    {
+      "path": "information/deuten/",
+      "title": {
+        "de": "Daten deuten",
+        "en": "Interpreting data"
+      },
+      "competencies": [
+        "daten-interpretieren"
+      ]
+    },
+    {
+      "path": "information/darstellen/",
+      "title": {
+        "de": "Tabelle, Diagramm, Text",
+        "en": "Table, chart, text"
+      },
+      "competencies": [
+        "darstellungsformen-von-information"
+      ]
+    },
+    {
+      "path": "information/baum/",
+      "title": {
+        "de": "Der Baum",
+        "en": "The tree"
+      },
+      "competencies": [
+        "baum"
+      ]
+    },
+    {
       "path": "bits/binaersystem/",
       "title": {
         "de": "Die Bit-Karten",
