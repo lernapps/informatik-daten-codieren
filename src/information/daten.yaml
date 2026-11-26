@@ -1,0 +1,194 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Information und Daten
+  en: Information and data
+description:
+  de: "Information und Daten unterscheiden: Ein Zettel mit Daten wird erst durch den Zusammenhang zur Information."
+  en: "Telling information and data apart: a note with data only becomes information when you know the context."
+competencies: [information-und-daten]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Ein Zettel auf dem Boden
+      en: A note on the floor
+    blocks:
+      - type: text
+        text:
+          de: |
+            Jona findet im Klassenzimmer der 6b einen Zettel auf dem Boden. Darauf stehen nur ein paar Zeichen.
+            Jona dreht den Zettel hin und her. Was soll das bedeuten?
+
+            Auf dieser Seite lernst du, was **Daten** sind und wann aus ihnen eine **Information** wird.
+          en: |
+            Jona finds a note on the floor of class 6b's classroom. There are only a few symbols on it. Jona turns
+            the note this way and that. What is it supposed to mean?
+
+            On this page you will learn what **data** is and when it becomes **information**.
+      - type: figure
+        image: images/zettel.svg
+        alt:
+          de: "Ein gelber Zettel. Darauf steht: 6b · 11.5. · 8:00. Darunter ist ein Zug gemalt."
+          en: "A yellow note. It says: 6b · 11.5. · 8:00. Below that, a train is drawn."
+        caption:
+          de: Der Zettel, den Jona gefunden hat
+          en: The note that Jona found
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: true-false
+        id: zettel-klar
+        text:
+          de: Wer nur den Zettel hat, weiß sicher, worum es geht.
+          en: If you only have the note, you know for sure what it is about.
+        answer: false
+        explanation:
+          de: "Ohne Zusammenhang kann „8:00“ eine Uhrzeit oder ein Preis sein, und „6b“ eine Klasse oder ein Platz im Kino."
+          en: "Without context, “8:00” could be a time or a price, and “6b” could be a class or a seat in the cinema."
+  - type: section
+    id: idee
+    title:
+      de: Daten brauchen einen Zusammenhang
+      en: Data needs a context
+    blocks:
+      - type: text
+        text:
+          de: |
+            Selin sieht den Zettel und lacht: „Das ist von Frau Berg! Am Montag, 11. Mai, fahren wir auf
+            Klassenfahrt. Wir treffen uns um 8 Uhr am Bahnhof, da, wo der Zug fährt.“ Selin kennt den
+            **Zusammenhang**: Frau Berg plant die Klassenfahrt der 6b. Darum versteht sie den Zettel.
+          en: |
+            Selin sees the note and laughs: “That's from Ms Berg! On Monday, 11 May, we are going on our school
+            trip. We meet at 8 o'clock at the station, where the train leaves.” Selin knows the **context**: Ms Berg
+            is planning class 6b's school trip. In Germany, 11.5. is how you write 11 May. That is why she understands
+            the note.
+      - type: definition
+        term:
+          de: Daten
+          en: data
+        explanation:
+          de: Daten sind Zeichen, die nach festen Regeln aufgeschrieben sind, zum Beispiel Zahlen, Wörter oder ein Datum. So kann man sie speichern und weitergeben.
+          en: Data is symbols written down by fixed rules, for example numbers, words or a date. That way you can store it and pass it on.
+      - type: definition
+        term:
+          de: Information
+          en: information
+        explanation:
+          de: Eine Information ist die Bedeutung, die jemand aus Daten versteht, weil er den Zusammenhang kennt.
+          en: Information is the meaning that someone gets from data because they know the context.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: |
+                Frau Berg hatte eine Information im Kopf. Sie hat sie als Daten aufgeschrieben. Selin liest die Daten
+                und deutet sie. So wird aus den Daten wieder eine Information. Jona fehlte der Zusammenhang: Für ihn
+                waren es nur Daten.
+              en: |
+                Ms Berg had some information in her head. She wrote it down as data. Selin reads the data and works out
+                what it means. That way the data becomes information again. Jona did not have the context: for him it
+                was only data.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: ordering
+        id: weg-der-nachricht
+        text:
+          de: Bringe den Weg der Nachricht in die richtige Reihenfolge.
+          en: Put the path of the message in the right order.
+        items:
+          - de: Frau Berg weiß, wann und wo sich die 6b trifft.
+            en: Ms Berg knows when and where class 6b will meet.
+          - de: Frau Berg schreibt die Daten auf einen Zettel.
+            en: Ms Berg writes the data on a note.
+          - de: Selin liest den Zettel.
+            en: Selin reads the note.
+          - de: Selin versteht, dass sich die 6b am Montag um 8 Uhr am Bahnhof trifft.
+            en: Selin understands that class 6b meets on Monday at 8 o'clock at the station.
+        explanation:
+          de: Erst ist die Information in Frau Bergs Kopf, dann wird sie zu Daten auf dem Zettel. Beim Lesen und Deuten wird sie bei Selin wieder zur Information.
+          en: First the information is in Ms Berg's head, then it becomes data on the note. When Selin reads it and works out what it means, it becomes information again.
+      - type: number
+        id: daten-zaehlen
+        text:
+          de: Wie viele Angaben stehen auf dem Zettel? Der Zug zählt mit, die Punkte dazwischen nicht.
+          en: How many pieces of data are on the note? The train counts, the dots in between do not.
+        answer: 4
+        tolerance: 0
+        mistakes:
+          - answer: 3
+            message:
+              de: "Schau noch einmal: 6b, 11.5., 8:00 und der Zug. Auch die Klasse ist eine Angabe."
+              en: "Look again: 6b, 11.5., 8:00 and the train. The class is a piece of data too."
+          - answer: 1
+            message:
+              de: Der Zettel ist eins, aber auf ihm stehen mehrere Angaben. Zähle jede Angabe einzeln.
+              en: There is one note, but it has several pieces of data on it. Count each piece separately.
+        explanation:
+          de: "Auf dem Zettel stehen 4 Angaben: die Klasse, das Datum, die Uhrzeit und der Zug für den Ort."
+          en: "There are 4 pieces of data on the note: the class, the date, the time and the train for the place."
+      - type: single-choice
+        id: information-erkennen
+        text:
+          de: Welcher Satz ist die Information, die Selin aus dem Zettel versteht?
+          en: Which sentence is the information that Selin gets from the note?
+        options:
+          - text:
+              de: Die 6b trifft sich am 11. Mai um 8 Uhr am Bahnhof.
+              en: Class 6b meets on 11 May at 8 o'clock at the station.
+            correct: true
+            info:
+              de: So deutet Selin die Daten, weil sie weiß, dass Frau Berg die Klassenfahrt plant.
+              en: This is how Selin understands the data, because she knows that Ms Berg is planning the school trip.
+          - text:
+              de: 6b · 11.5. · 8:00 und ein Zug
+              en: 6b · 11.5. · 8:00 and a train
+            correct: false
+            info:
+              de: Das sind die Daten, so wie sie auf dem Zettel stehen. Die Information ist ihre Bedeutung.
+              en: That is the data, exactly as it is on the note. The information is what it means.
+          - text:
+              de: Ein Zug fährt um 8 Uhr ab.
+              en: A train leaves at 8 o'clock.
+            correct: false
+            info:
+              de: Davon steht nichts auf dem Zettel. Die 6b trifft sich nur am Bahnhof.
+              en: The note does not say that. Class 6b only meets at the station.
+        explanation:
+          de: Die Information ist das, was die Daten im Zusammenhang der Klassenfahrt bedeuten.
+          en: The information is what the data means in the context of the school trip.
+      - type: matching
+        id: daten-oder-information
+        text:
+          de: Ordne jedem Satz zu, ob er Daten oder eine Information beschreibt.
+          en: Match each sentence to what it describes, data or information.
+        pairs:
+          - left:
+              de: Auf dem Zettel steht „8:00“.
+              en: The note says “8:00”.
+            right:
+              de: Daten, noch ohne Bedeutung
+              en: data, without a meaning yet
+          - left:
+              de: Selin weiß, dass sie um 8 Uhr am Bahnhof sein muss.
+              en: Selin knows that she has to be at the station at 8 o'clock.
+            right:
+              de: Information, aus den Daten verstanden
+              en: information, understood from the data
+        distractors:
+          - de: weder Daten noch Information
+            en: neither data nor information
+        explanation:
+          de: Zeichen auf dem Zettel sind Daten. Was Selin daraus versteht, ist eine Information.
+          en: Symbols on the note are data. What Selin understands from them is information.
+      - type: text
+        text:
+          de: Jetzt kannst du Daten und Information unterscheiden. Auf der nächsten Seite siehst du, dass dieselbe Zahl je nach Zusammenhang ganz verschiedene Dinge bedeuten kann.
+          en: Now you can tell data and information apart. On the next page you will see that the same number can mean very different things, depending on the context.

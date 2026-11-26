@@ -1,0 +1,220 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Tabelle, Diagramm, Text
+  en: Table, chart, text
+description:
+  de: "Dieselbe Information als Strichliste, Tabelle, Säulendiagramm und Text darstellen und die passende Form wählen."
+  en: "Showing the same information as a tally, a table, a bar chart and a text, and choosing the form that fits."
+competencies: [darstellungsformen-von-information]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Wohin fährt die 6b?
+      en: Where is class 6b going?
+    blocks:
+      - type: text
+        text:
+          de: |
+            Vor der Fahrt hat die 6b abgestimmt. Alle 26 Kinder hatten eine Stimme. Selin hat an der Tafel für jede
+            Stimme einen Strich gemacht, immer fünf zusammen.
+
+            Auf der Seite davor hast du Daten in einer Tabelle gedeutet. Auf dieser Seite zeigst du dieselben Daten
+            auf verschiedene Arten und wählst die Form, die eine Frage am schnellsten beantwortet.
+          en: |
+            Before the trip, class 6b had a vote. All 26 children had one vote each. Selin made a line on the board for
+            every vote, always five together.
+
+            On the page before you worked out what data in a table means. On this page you show the same data in
+            different ways and choose the form that answers a question fastest.
+      - type: code
+        language: plaintext
+        code: |
+          Seeberg     ||||| ||||| |
+          Falkenburg  ||||| ||
+          Bärenhöhle  |||||
+          Lindenzoo   |||
+        caption:
+          de: Selins Strichliste an der Tafel
+          en: Selin's tally on the board
+      - type: number
+        id: strichliste-zaehlen
+        text:
+          de: Wie viele Stimmen hat die Falkenburg bekommen?
+          en: How many votes did Falkenburg get?
+        answer: 7
+        tolerance: 0
+        mistakes:
+          - answer: 2
+            message:
+              de: Du hast nur die einzelnen Striche gezählt. Der Block davor sind schon 5 Striche.
+              en: You only counted the single lines. The block in front is already 5 lines.
+          - answer: 6
+            message:
+              de: Zähle die Striche im Block noch einmal einzeln. Ein Block hat 5 Striche.
+              en: Count the lines in the block one by one again. A block has 5 lines.
+        explanation:
+          de: Ein voller Block hat 5 Striche, dazu kommen 2 einzelne. 5 + 2 = 7.
+          en: A full block has 5 lines, plus 2 single ones. 5 + 2 = 7.
+  - type: section
+    id: idee
+    title:
+      de: Dieselben Daten, drei Formen
+      en: The same data, three forms
+    blocks:
+      - type: text
+        text:
+          de: Jona schreibt die Stimmen in eine **Tabelle**. Mia malt ein **Säulendiagramm**. Selin schreibt einen Satz für die Eltern. Alle drei zeigen dieselben Daten.
+          en: Jona writes the votes in a **table**. Mia draws a **bar chart**. Selin writes a sentence for the parents. All three show the same data.
+      - type: table
+        caption:
+          de: Jonas Tabelle
+          en: Jona's table
+        header:
+          - de: Ziel
+            en: Place
+          - de: Stimmen
+            en: Votes
+        rows:
+          - - de: Seeberg
+              en: Seeberg
+            - de: "11"
+              en: "11"
+          - - de: Falkenburg
+              en: Falkenburg
+            - de: "7"
+              en: "7"
+          - - de: Bärenhöhle
+              en: Bärenhöhle
+            - de: "5"
+              en: "5"
+          - - de: Lindenzoo
+              en: Lindenzoo
+            - de: "3"
+              en: "3"
+        rowHeaders: true
+      - type: figure
+        image: images/abstimmung.svg
+        alt:
+          de: "Ein Säulendiagramm mit vier Säulen für Seeberg, Falkenburg, Bärenhöhle und Lindenzoo. Links steht eine Skala von 0 bis 12. Die Säule für Seeberg ist die höchste, die für Lindenzoo die niedrigste."
+          en: "A bar chart with four bars for Seeberg, Falkenburg, Bärenhöhle and Lindenzoo. On the left there is a scale from 0 to 12. The bar for Seeberg is the highest, the one for Lindenzoo the lowest."
+        caption:
+          de: Mias Säulendiagramm. Je höher die Säule, desto mehr Stimmen. Die Skala links zeigt die Zahl der Stimmen.
+          en: Mia's bar chart. The higher the bar, the more votes. The scale on the left shows the number of votes.
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: text
+        text:
+          de: "Selins Satz: „Die meisten Kinder, nämlich 11, wollen an den Seeberg. Darum fahren wir dorthin.“"
+          en: "Selin's sentence: “Most children, 11 of them, want to go to Seeberg. So that is where we are going.”"
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: |
+                Keine Form ist immer die beste. Die **Tabelle** zeigt genaue Zahlen. Das **Säulendiagramm** zeigt auf
+                einen Blick, was größer ist. Ein **Text** erklärt, was die Daten bedeuten. Wähle die Form, die deine
+                Frage am schnellsten beantwortet.
+              en: |
+                No form is always the best. A **table** shows exact numbers. A **bar chart** shows at a glance what is
+                bigger. A **text** explains what the data means. Choose the form that answers your question fastest.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: number
+        id: alle-stimmen
+        text:
+          de: Lies im Säulendiagramm ab. Wie viele Stimmen haben Bärenhöhle und Lindenzoo zusammen?
+          en: Read it off the bar chart. How many votes did Bärenhöhle and Lindenzoo get together?
+        material:
+          - type: figure
+            image: images/abstimmung.svg
+            alt:
+              de: "Ein Säulendiagramm mit vier Säulen für Seeberg, Falkenburg, Bärenhöhle und Lindenzoo und einer Skala von 0 bis 12."
+              en: "A bar chart with four bars for Seeberg, Falkenburg, Bärenhöhle and Lindenzoo and a scale from 0 to 12."
+            caption:
+              de: Lies die Höhe jeder Säule an der Skala links ab.
+              en: Read the height of each bar on the scale on the left.
+            source:
+              de: eigene Zeichnung
+              en: own drawing
+            licence: CC-BY-4.0
+        answer: 8
+        tolerance: 0
+        mistakes:
+          - answer: 2
+            message:
+              de: Du hast die Säulen gezählt. Lies an der Skala ab, wie hoch jede Säule ist.
+              en: You counted the bars. Read on the scale how high each bar is.
+          - answer: 12
+            message:
+              de: Das ist die Falkenburg und die Bärenhöhle. Gefragt sind Bärenhöhle und Lindenzoo.
+              en: That is Falkenburg and Bärenhöhle. The question is about Bärenhöhle and Lindenzoo.
+        explanation:
+          de: Die Säule der Bärenhöhle reicht bis 5, die des Lindenzoos bis 3. 5 + 3 = 8.
+          en: The Bärenhöhle bar goes up to 5, the Lindenzoo bar up to 3. 5 + 3 = 8.
+      - type: matching
+        id: frage-und-form
+        text:
+          de: Welche Form beantwortet die Frage am schnellsten? Ordne zu.
+          en: Which form answers the question fastest? Match them.
+        pairs:
+          - left:
+              de: Welches Ziel liegt vorn? Ich will es auf einen Blick sehen.
+              en: Which place is in the lead? I want to see it at a glance.
+            right:
+              de: Säulendiagramm
+              en: bar chart
+          - left:
+              de: Wie viele Stimmen hat die Bärenhöhle genau?
+              en: Exactly how many votes did Bärenhöhle get?
+            right:
+              de: Tabelle
+              en: table
+          - left:
+              de: Die Eltern wollen wissen, wohin die Fahrt geht und warum.
+              en: The parents want to know where the trip is going and why.
+            right:
+              de: Text
+              en: text
+        explanation:
+          de: Das Diagramm zeigt den Vergleich, die Tabelle die genaue Zahl, der Text die Bedeutung.
+          en: The chart shows the comparison, the table the exact number, the text the meaning.
+      - type: ordering
+        id: ziele-ordnen
+        text:
+          de: Ordne die Ziele nach der Zahl der Stimmen, das mit den meisten zuerst.
+          en: Put the places in order of votes, the one with the most first.
+        items:
+          - de: Seeberg
+            en: Seeberg
+          - de: Falkenburg
+            en: Falkenburg
+          - de: Bärenhöhle
+            en: Bärenhöhle
+          - de: Lindenzoo
+            en: Lindenzoo
+        explanation:
+          de: 11, 7, 5 und 3 Stimmen. Im Säulendiagramm siehst du die Reihenfolge an der Höhe der Säulen.
+          en: 11, 7, 5 and 3 votes. In the bar chart you can see the order from the height of the bars.
+      - type: true-false
+        id: diagramm-immer
+        text:
+          de: Ein Diagramm ist immer die beste Darstellung.
+          en: A chart is always the best way to show data.
+        answer: false
+        explanation:
+          de: Für genaue Zahlen ist eine Tabelle besser, für eine Erklärung ein Text. Es kommt auf die Frage an.
+          en: For exact numbers a table is better, for an explanation a text. It depends on the question.
+      - type: text
+        text:
+          de: Jetzt kannst du dieselben Daten als Tabelle, Diagramm und Text zeigen. Am Seeberg muss Frau Berg die Zimmer einteilen. Dafür lernst du auf der nächsten Seite noch eine Form kennen, den Baum.
+          en: Now you can show the same data as a table, a chart and a text. At Seeberg, Ms Berg has to share out the rooms. For that you will learn one more form on the next page, the tree.

@@ -371,11 +371,12 @@ Content-Guide.
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
 - [x] Musterseite bits/binaersystem 'Die Bit-Karten': Komponenten BitReihe und BitKarten mit Logik und Test, Bild Bit-Karten, Kinder-Bild (Jona, Selin), generated 5 Bits → Dezimal; zeigt die Bit-Kartenreihe
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
-- [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
+- [x] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-- [ ] Kapitel information: Seiten Information und Daten, Daten deuten (Zettel- und Tabellenbilder)
-- [ ] Kapitel information: Seiten Tabelle-Diagramm-Bild und Der Baum (Säulendiagramm, Baum-Bild, Turnierbaum)
+      Creator: Ja, die übrigen Seiten folgen diesem Muster. Als Nächstes Kapitel 1 mit dem Baum.
+- [x] Kapitel information: Seiten Information und Daten, Daten deuten (Zettel- und Tabellenbilder)
+- [x] Kapitel information: Seiten Tabelle-Diagramm-Bild und Der Baum (Säulendiagramm, Baum-Bild, Turnierbaum)
 - [ ] Kapitel bits: Seiten Codes im Alltag, Zahlen in Bits (Datei zahlen.yaml), Bit und Byte
 - [ ] Kapitel bilder: Komponente PixelEditor mit Logik und Test, Datei bilder.yaml, Seiten Bilder aus Pixeln und Pixel oder Vektor
 - [ ] Kapitel geheim: Komponente CaesarScheibe mit Logik und Test, Skytale-Bild, Seiten Geheimschrift, Caesar-Scheibe, Wie sicher ist das?
