@@ -5,59 +5,119 @@ description: Use for any content work in this app - researching, writing, extend
 
 # Content guide of this app
 
-<!--
-Skeleton. Delete this comment when you fill the guide.
-- When: after the plan is confirmed, before any content. Replace every placeholder comment below; none may remain
-  (`lernapps check`, rule app-content-guide, fails once the plan is in Commit).
-- Keep the headings.
-- Concrete, for an agent without your conversation: files, ids, data files, one example.
-  - No: "Use varied exercises with figures where they help."
-  - Yes: "Every page ends with section `uebung`: one `generated` exercise of pattern 'Ohmsches Gesetz' from
-    `src/data/widerstaende.yaml`, one `matching` of symbols and parts."
-- Content decision changes → update this file in the same commit.
-- Public: no personal data, no goals of one learner.
--->
+Explainer „Daten darstellen und codieren“, Informatik, Strang `informatik/daten` der Lernlandkarte. Bauauftrag:
+lernapps/apps#491, Epic lernapps/apps#509 (gemeinsame Regeln und Nachträge). Welle 1: Kapitel 1-4 (Stufe 5-6).
 
 ## Curriculum
 
-<!-- FILL IN: Land, Schulform, Jahrgang; orientation (Lehrplan: document, issuer, year, address, page and unit per
-part; welcome, not required); where the creator's material differs, and which one the app follows. -->
+- Richtstufe 5-6 (Kapitel 1-4), 7-8 (Kapitel 5, Inkrement auf `increment/7-8`).
+- Orientierung: GI-Bildungsstandards Informatik Sek I (2025), Inhaltsbereich „Informationen und Daten“, ID-1 bis
+  ID-3 (5-6), S. 16; ID-12 Kryptografie steht dort in 7-10, die Karte und das Issue setzen die Grundidee in 5-6.
+- Lehrpläne: keine (die Karte hat bewusst `curricula: []`).
+- `caesar-verschluesselung` steht auf der Karte in 9-10; laut Issue (Ausnahme) hier in Kapitel 4, weil die
+  Sicherheit sich nur an einem konkreten Verfahren beurteilen lässt.
 
 ## Competencies
 
-<!-- FILL IN: every competency as "Ich kann …", grouped by chapter; per competency: page or round (file, id),
-exercise ids. -->
+Ids und „Ich kann …“-Sätze aus `https://lernapps.net/apps/map/informatik.json`, nie umformulieren.
+
+| Kapitel | Datei | Baustein | Übungs-ids |
+|---|---|---|---|
+| information | `src/information/daten.yaml` | `information-und-daten` | siehe Seite |
+| information | `src/information/deuten.yaml` | `daten-interpretieren` | |
+| information | `src/information/darstellen.yaml` | `darstellungsformen-von-information` | |
+| information | `src/information/baum.yaml` | `baum` | |
+| bits | `src/bits/codes.yaml` | `codierung-im-alltag` | |
+| bits | `src/bits/binaersystem.yaml` | `binaersystem` | `karten-lesen`, `bits-lesen`, `bits-lesen-ueben`, `karte-legen`, `naechste-karte` |
+| bits | `src/bits/umrechnen.yaml` | `dezimal-in-binaer` | |
+| bits | `src/bits/bit-und-byte.yaml` | `bit-und-byte` | |
+| bilder | `src/bilder/pixel.yaml` | `pixelgrafik` | |
+| bilder | `src/bilder/vektor.yaml` | `pixel-und-vektorgrafik` | |
+| geheim | `src/geheim/skytale.yaml` | `verschluesselung-grundidee` | |
+| geheim | `src/geheim/caesar.yaml` | `caesar-verschluesselung` | |
+| geheim | `src/geheim/sicherheit.yaml` | `verschluesselung-bewerten` | |
+| texte (später) | `src/texte/zeichen.yaml` | `zeichencodierung` | |
+| texte (später) | `src/texte/analog.yaml` | `analog-und-digital` | |
+
+Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf einer früheren Seite geübt.
 
 ## Content structure
 
-<!-- FILL IN: how a chapter, page or round is built: sections or question groups in order, ids or titles, what
-each holds; length. -->
+- Kapitel: `information`, `bits`, `bilder`, `geheim` (später `texte`). Eine Seite je Baustein.
+- Abschnitte einer Seite, feste ids, Titel je Seite passend: `einstieg` (Szene der Klassenfahrt und eine erste,
+  leichte Aufgabe), `idee` (das Neue, mit Bild), `beispiel` (ein `example`-Kasten), `ausprobieren` (nur, wo eine
+  Komponente bedient wird), `uebung` (die Übungen von leicht zu schwer; am Ende ein kurzer Text: was du jetzt
+  kannst, was als Nächstes kommt).
+- Länge: höchstens 350 Wörter Lesetext, höchstens 4 Textblöcke hintereinander, etwas zum Ansehen oder Tun in den
+  ersten 4 Blöcken. Mindestens 4 Übungen, höchstens die Hälfte Auswahlfragen.
+- Geschichte (fest, gemeinsam mit den anderen Explainern des Epics): Die Klasse 6b fährt am Montag, 11. Mai, um 8 Uhr
+  ab dem Bahnhof drei Tage zur Jugendherberge „Am Seeberg“ (erfunden). **Jona** (11) und **Selin** (11) verschicken
+  die Klassenfahrt-Nachricht, **Mia** (11) ist dabei. Ihr Aussehen legt #490 fest (bis dahin keine Figurenbilder).
+  Namen bleiben im Englischen gleich.
+- Klassenfahrt-Nachricht: Klartext „TREFFEN MONTAG ACHT UHR AM BAHNHOF“ / „MEET ON MONDAY AT EIGHT AT THE STATION“;
+  Zettel „6b · 11.5. · 8:00 · Bahnhof“ / „6b · 11 May · 8:00 · station“; Caesar, Schlüssel 3: „WUHIIHQ PRQWDJ DFKW
+  XKU DP EDKQKRI“ / „PHHW RQ PRQGDB DW HLJKW DW WKH VWDWLRQ“.
+- Sprachen `[de, en]`: jeder Text eine Karte `{ de: …, en: … }`; Deutsch ist die Ausgangssprache, Englisch eine
+  vollständige Übersetzung.
 
 ## Terminology
 
-<!-- FILL IN: terms used and avoided (why); units, notation; how learners are addressed; glossary terms with
-wording. -->
+- Deutsch: einfache Sprache, „du“. Englisch: Plain English, „you“.
+- Begriffe (de / en): Information / information; Daten / data; Code, codieren, decodieren / code, encode, decode;
+  Bit / bit; Byte / byte; Binärzahl / binary number; Dezimalzahl / decimal number; Stellenwert / place value;
+  Bit-Karten / bit cards; Pixel / pixel; Pixelgrafik / bitmap image (raster image); Vektorgrafik / vector image;
+  Baum, Wurzel, Knoten, Kante, Blatt / tree, root, node, edge, leaf; Verschlüsselung, Schlüssel, Klartext,
+  Geheimtext / encryption, key, plaintext, ciphertext.
+- Einheiten: 1 Byte = 8 Bit; 1 Kilobyte (KB) = 1000 Byte, 1 MB = 1000 KB, 1 GB = 1000 MB. Kibibyte nicht.
+- Binärzahlen ohne Index, mit Wort: „die Binärzahl 01101“. Fünf Stellen in Kapitel 2 (Karten 16, 8, 4, 2, 1), acht
+  auf „Bit und Byte“.
+- Glossar (`definition`): Daten, Information, Code, Bit, Byte, Binärzahl, Pixel, Vektorgrafik, Baum, Schlüssel …
 
 ## Exercise patterns
 
-<!-- FILL IN: per pattern: name, competency, archetype form (block or question type, fixed parts, what varies),
-one example (file, id), data file. -->
+- **Bits lesen** (`binaersystem`): `generated`, gegeben `b4 … b0` je `int: [0, 1]`, Antwort `16*b4+8*b3+4*b2+2*b1+b0`;
+  Fehler: von der falschen Seite gelesen (`16*b0+…`), Einsen gezählt (`b4+…+b0`). Beispiel `bits-lesen-ueben` in
+  `src/bits/binaersystem.yaml`.
+- **Karte legen** (`binaersystem`, `dezimal-in-binaer`, `bit-und-byte`): Komponente `BitKarten`, Prop `cards` (5
+  oder 8), `min`, `max`, Aufgabentext mit `{n}`. Richtig: Summe der offenen Karten = n.
+- **Zahl → Binärzahl** (`dezimal-in-binaer`): `generated` aus `src/data/zahlen.yaml`.
+- **Einheiten umrechnen** (`bit-und-byte`): `generated`/`number` mit Fehlern ·10 und ·1024.
+- **Pixelbild malen** (`pixelgrafik`): Komponente `PixelEditor`, Bilder aus `src/data/bilder.yaml`.
+- **Caesar** (`caesar-verschluesselung`, `verschluesselung-bewerten`): Komponente `CaesarScheibe`.
+- Fragen: jede falsche Option mit `info`, das sagt, warum sie nicht passt; Zahlaufgaben mit 2-3 `mistakes`.
 
 ## Figures
 
-<!-- FILL IN: figure kinds and images, for what; conventions (colours, labels, units, orientation, sizes); alt
-texts and captions; image origin and licence. -->
+- Eigene SVG in `src/images/`, `source: { de: eigene Zeichnung, en: own drawing }`, `licence: CC-BY-4.0`. Text in
+  Bildern wird übersetzt: je Sprache eine Datei `<name>.svg` und `<name>-en.svg`, wo das Bild Wörter enthält.
+- **Bit-Karten** (wiederkehrendes Bild, auch für #492): Karten nebeneinander, die größte links; über jeder Karte ihr
+  Wert (16, 8, 4, 2, 1). Offen: weiße Karte mit so vielen schwarzen Punkten, darunter „1“. Verdeckt: graue Rückseite
+  mit Streifen, darunter „0“.
+- **Baum** (wiederkehrendes Bild, auch für #492, #496): Wurzel oben, Kanten als Linien nach unten, Knoten als
+  abgerundete Rechtecke, Blätter mit gestricheltem Rand; Beschriftung „Wurzel“, „Knoten“, „Kante“, „Blatt“.
+- Farben: Umrisse `#333`, Punkte `#222`, verdeckt `#9aa0a6` mit Streifen, Fläche weiß; Bilder haben einen eigenen
+  weißen Hintergrund, damit sie im Dark Mode lesbar bleiben.
+- `caption`: wohin schauen; `alt`: was das Bild zeigt, nie die Lösung einer Aufgabe.
 
 ## Sources
 
-<!-- FILL IN: sources linked or relied on (Lehrplan, second explanations, videos, articles), how verified, what
-is left out; the creator's material stays local, never committed. -->
+- Lernlandkarte Informatik: https://lernapps.net/apps/map/informatik.json (gelesen 2026-11-26).
+- GI: Bildungsstandards Informatik für die Sekundarstufe I (2025), doi:10.18420/rec2025_052, S. 16 (Begriffe
+  Information und Daten).
+- Binärsystem, Bit und Byte, Pixel- und Vektorgrafik, Caesar, Skytale: Fakten, die keine Quelle brauchen, außer
+  wo genannt; Einheiten nach den gemeinsamen Regeln des Epics (Kilobyte = 1000 Byte).
 
 ## Adding a chapter or round
 
-<!-- FILL IN: the steps for a new chapter (explainer) or round (quiz), in order, with the files: competencies,
-content, exercises from the patterns, entry topics, check, commit. -->
+1. Baustein-ids und „Ich kann …“ aus `informatik.json`, Strang `daten`, prüfen; `requires` sagt die Reihenfolge.
+2. Ordner `src/<kapitel>/` mit `chapter.yaml` (`title`, `summary`, `pages`), in `chapters` von `src/app.yaml`
+   eintragen.
+3. Je Baustein eine Seite nach „Content structure“, mit Szene der Klassenfahrt; Übungen nach „Exercise patterns“,
+   jeder Text `{ de, en }`.
+4. `npx vp build`, `npx vp check --fix`, `npx --no -- lernapps check`, dann committen.
+5. Kapitel 5 (`texte`): „Zeichen werden Zahlen“ (`zeichencodierung`, BitKarten mit 8 Karten, ASCII A-Z, die
+   Klassenfahrt-Nachricht als Bytes), „Analog und digital“ (`analog-und-digital`, Komponente Abtasten).
 
 ## Rules learned from mistakes
 
-<!-- FILL IN: one line per rule with the mistake it came from. "None yet." until the first. -->
+None yet.
