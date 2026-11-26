@@ -1,0 +1,308 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Zeichen werden Zahlen
+  en: Characters become numbers
+description:
+  de: "Wie Buchstaben mit einer Codetabelle wie ASCII oder Unicode als Binärzahlen gespeichert werden."
+  en: "How letters are stored as binary numbers with a character set such as ASCII or Unicode."
+competencies: [zeichencodierung]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Eine Nachricht im Klassenchat
+      en: A message in the class chat
+    blocks:
+      - type: text
+        text:
+          de: |
+            Ein Jahr später: Jona, Selin und Mia sind jetzt 12 und gehen in die 7b. Wieder geht es an den Seeberg.
+            Im Klassenchat schreibt Selin, wie letztes Jahr:
+
+            **Selin:** TREFFEN MONTAG ACHT UHR AM BAHNHOF
+
+            **Jona:** Wie speichert mein Handy eigentlich Buchstaben? Es kennt doch nur 0 und 1.
+
+            Auf dieser Seite findest du es heraus, mit den Bit-Karten aus Kapitel 2.
+          en: |
+            One year later: Jona, Selin and Mia are 12 now and in class 7b. They are going to Seeberg again. In the
+            class chat, Selin writes, just like last year:
+
+            **Selin:** MEET ON MONDAY AT EIGHT AT THE STATION
+
+            **Jona:** How does my phone actually store letters? It only knows 0 and 1.
+
+            On this page you will find out, with the bit cards from chapter 2.
+      - type: single-choice
+        id: wie-gespeichert
+        text:
+          de: Was meinst du, wie speichert das Handy den Buchstaben A?
+          en: What do you think, how does the phone store the letter A?
+        options:
+          - text:
+              de: Als Zahl, die in einer Tabelle für A steht
+              en: As a number that stands for A in a table
+            correct: true
+            info:
+              de: Jedes Zeichen hat eine feste Nummer. Die Nummer speichert das Handy als Bits.
+              en: Each character has a fixed number. The phone stores that number as bits.
+          - text:
+              de: Als kleines Bild des Buchstabens
+              en: As a small picture of the letter
+            correct: false
+            info:
+              de: Das Bild malt der Bildschirm erst beim Anzeigen, mit der Schrift. Gespeichert ist nur die Nummer.
+              en: The screen only draws the picture when it shows the letter, using the font. Only the number is stored.
+          - text:
+              de: Als ein einzelnes Bit
+              en: As a single bit
+            correct: false
+            info:
+              de: Ein Bit hat nur zwei Werte. Damit kann man nicht 26 Buchstaben unterscheiden.
+              en: A bit has only two values. That is not enough to tell 26 letters apart.
+        explanation:
+          de: Computer speichern Zeichen als Zahlen. Wie das genau geht, zeigt der nächste Abschnitt.
+          en: Computers store characters as numbers. The next section shows exactly how.
+  - type: section
+    id: idee
+    title:
+      de: Eine Codetabelle für Zeichen
+      en: A character set
+    blocks:
+      - type: text
+        text:
+          de: |
+            Dafür gibt es **Codetabellen**. Die bekannteste heißt
+            **ASCII**. Sie hat 128 Zeichen mit den Codes 0 bis 127: Großbuchstaben, Kleinbuchstaben, Ziffern,
+            Satzzeichen und Steuerzeichen wie „neue Zeile“, keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
+            bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Selin braucht A bis Z und das Leerzeichen.
+          en: |
+            So that all devices use the same numbers, there is a fixed **character set**, a code table. The best known one is called
+            **ASCII**. It has 128 characters with the codes 0 to 127: capital letters, small letters, digits,
+            punctuation marks and invisible control characters such as “new line”, but no letters like Ä, Ö, Ü. A has the number 65, B 66,
+            C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin's message, A to Z and the space are enough.
+      - type: table
+        caption:
+          de: Ein Teil der ASCII-Tabelle mit dem Byte zu jedem Code
+          en: Part of the ASCII table with the byte for each code
+        header:
+          - de: Zeichen
+            en: Character
+          - de: Code
+            en: Code
+          - de: Byte
+            en: Byte
+        rows:
+          - [{ de: Leerzeichen, en: space }, { de: "32", en: "32" }, { de: "00100000", en: "00100000" }]
+          - [{ de: A, en: A }, { de: "65", en: "65" }, { de: "01000001", en: "01000001" }]
+          - [{ de: B, en: B }, { de: "66", en: "66" }, { de: "01000010", en: "01000010" }]
+          - [{ de: C, en: C }, { de: "67", en: "67" }, { de: "01000011", en: "01000011" }]
+          - [{ de: Z, en: Z }, { de: "90", en: "90" }, { de: "01011010", en: "01011010" }]
+      - type: definition
+        term:
+          de: Codetabelle
+          en: character set
+        explanation:
+          de: Eine Codetabelle legt fest, welche Zahl zu welchem Zeichen gehört. Die Zahl speichert der Computer als Binärzahl.
+          en: A character set (code table) fixes which number belongs to which character. The computer stores the number as a binary number.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Bei ASCII passt jedes Zeichen in **ein Byte**, also auf acht Bit-Karten. Die Codes gehen nur bis 127, die Karte 128 bleibt darum immer verdeckt. Ein Wort mit 5 Buchstaben braucht 5 Byte, das sind 40 Bit.
+              en: With ASCII, each character fits into **one byte**, that is, on eight bit cards. The codes only go up to 127, so card 128 always stays face down. A word with 5 letters needs 5 bytes, which is 40 bits.
+  - type: section
+    id: beispiel
+    title:
+      de: Beispiel
+      en: Example
+    blocks:
+      - type: example
+        title:
+          de: Das Wort JA als Bytes
+          en: The word HI as bytes
+        blocks:
+          - type: text
+            text:
+              de: |
+                1. Code von J: A = 65, B = 66 … J ist der 10. Buchstabe, also 65 + 9 = 74.
+                2. 74 = 64 + 8 + 2, als Byte 01001010.
+                3. Code von A: 65 = 64 + 1, als Byte 01000001.
+
+                JA wird gespeichert als 01001010 01000001, zwei Byte oder 16 Bit.
+              en: |
+                1. Code of H: A = 65, B = 66 … H is the 8th letter, so 65 + 7 = 72.
+                2. 72 = 64 + 8, as a byte 01001000.
+                3. Code of I: 65 + 8 = 73 = 64 + 8 + 1, as a byte 01001001.
+
+                HI is stored as 01001000 01001001, two bytes or 16 bits.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Ausprobieren
+      en: Try it out
+    blocks:
+      - type: text
+        text:
+          de: Rechne zuerst den Code des Buchstabens aus, wie im Beispiel. Dann drehe die Karten um, bis sie den Code zeigen, und drücke „Prüfen“.
+          en: First work out the code of the letter, as in the example. Then turn over the cards until they show the code, and press “Check”.
+      - type: vue-component
+        id: buchstabe-legen
+        component: BitKarten
+        props:
+          task:
+            de: "Lege den Buchstaben {c} als Byte."
+            en: "Lay out the letter {c} as a byte."
+          cards: 8
+          min: 66
+          max: 90
+          card:
+            de: "Karte {v}"
+            en: "Card {v}"
+          open:
+            de: offen
+            en: face up
+          closed:
+            de: verdeckt
+            en: face down
+          line:
+            de: "Byte: {b}"
+            en: "Byte: {b}"
+          mistakes:
+            - de: "Deine Karten zeigen {s}. Du hast von der falschen Seite gelegt: Die Karte 128 liegt links."
+              en: "Your cards show {s}. You laid them out from the wrong end: card 128 is on the left."
+            - de: "Deine Karten zeigen {s}, das ist weniger als der Code von {c}. Prüfe den Code (A = 65) und zähle deine Karten zusammen."
+              en: "Your cards show {s}, which is less than the code of {c}. Check the code (A = 65) and add up your cards."
+            - de: "Deine Karten zeigen {s}, das ist mehr als der Code von {c}. Prüfe den Code (A = 65) und zähle deine Karten zusammen."
+              en: "Your cards show {s}, which is more than the code of {c}. Check the code (A = 65) and add up your cards."
+        examples:
+          accepted:
+            - { answer: [0, 1, 0, 1, 0, 0, 0, 1], seed: 1 }
+          rejected:
+            - { answer: [1, 0, 0, 0, 1, 0, 1, 0], seed: 1 }
+            - { answer: [0, 0, 0, 0, 0, 0, 0, 0] }
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: code-ueben
+        given:
+          e: { pick: 1, from: { data: buchstaben } }
+        where:
+          - "e.code != 65"
+        task:
+          text:
+            de: "Welchen Code hat der Buchstabe {{e.z}} in der ASCII-Tabelle?"
+            en: "What is the code of the letter {{e.z}} in the ASCII table?"
+        answer:
+          value: "e.code"
+          compare: { number: { format: integer } }
+        mistakes:
+          - value: "e.code - 64"
+            message:
+              de: "Das ist die Stelle im Alphabet. In der Tabelle beginnt A aber mit 65."
+              en: "That is the place in the alphabet. But in the table, A starts at 65."
+          - value: "e.code - 65"
+            message:
+              de: "Du hast bei A mit 0 angefangen. A hat den Code 65."
+              en: "You started at 0 for A. A has the code 65."
+          - value: "e.code + 1"
+            message:
+              de: "A ist schon der 1. Buchstabe. Rechne 65 + Stelle − 1."
+              en: "A is already the 1st letter. Work out 65 + place − 1."
+        hint:
+          de: "Welcher Buchstabe im Alphabet ist es? Der 1. hat 65."
+          en: "Which letter of the alphabet is it? The 1st has 65."
+        steps:
+          - de: "{{e.z}} ist der {{e.stelle}}. Buchstabe. A = 65, also hat {{e.z}} den Code 65 + {{e.stelle}} − 1 = {{answer}}."
+            en: "{{e.z}} is letter number {{e.stelle}}. A = 65, so {{e.z}} has the code 65 + {{e.stelle}} − 1 = {{answer}}."
+          - de: "Als Byte: {{e.bin}}."
+            en: "As a byte: {{e.bin}}."
+      - type: matching
+        id: bytes-decodieren
+        text:
+          de: Mia schickt einen Namen als Bytes. Rechne jedes Byte in eine Zahl um. Welcher Buchstabe ist es?
+          en: Mia sends a name as bytes. Turn each byte into a number. Which letter is it?
+        pairs:
+          - left: { de: "01001010", en: "01001010" }
+            right: { de: J, en: J }
+          - left: { de: "01001111", en: "01001111" }
+            right: { de: O, en: O }
+          - left: { de: "01001110", en: "01001110" }
+            right: { de: N, en: N }
+          - left: { de: "01000001", en: "01000001" }
+            right: { de: A, en: A }
+        distractors:
+          - { de: Ä, en: Ä }
+        explanation:
+          de: "74 ist J, 79 ist O, 78 ist N und 65 ist A. Mia hat JONA geschickt. Ä hat keinen Code in ASCII."
+          en: "74 is J, 79 is O, 78 is N and 65 is A. Mia sent JONA. Ä has no code in ASCII."
+      - type: number
+        id: bits-eines-worts
+        text:
+          de: Wie viele Bit braucht das Wort SEEBERG, wenn jedes Zeichen als ein Byte gespeichert wird?
+          en: How many bits does the word SEEBERG need if each character is stored as one byte?
+        answer: 56
+        tolerance: 0
+        unit:
+          de: Bit
+          en: bits
+        mistakes:
+          - answer: 7
+            message:
+              de: 7 ist die Zahl der Buchstaben, also der Byte. Jedes Byte hat 8 Bit.
+              en: 7 is the number of letters, so of bytes. Each byte has 8 bits.
+          - answer: 70
+            message:
+              de: Ein Byte hat 8 Bit, nicht 10.
+              en: A byte has 8 bits, not 10.
+          - answer: 49
+            message:
+              de: ASCII-Codes passen zwar in 7 Bit, gespeichert wird aber immer ein ganzes Byte mit 8 Bit.
+              en: ASCII codes do fit into 7 bits, but a whole byte with 8 bits is always stored.
+          - answer: 8
+            message:
+              de: Das ist ein Byte, also nur ein Buchstabe. SEEBERG hat 7.
+              en: That is one byte, so only one letter. SEEBERG has 7.
+        explanation:
+          de: "7 Buchstaben sind 7 Byte. 7 · 8 = 56 Bit."
+          en: "7 letters are 7 bytes. 7 × 8 = 56 bits."
+      - type: true-false
+        id: umlaut-ascii
+        text:
+          de: Der Buchstabe Ä hat einen Code in der ASCII-Tabelle.
+          en: The letter Ä has a code in the ASCII table.
+        answer: false
+        explanation:
+          de: ASCII kennt nur die Buchstaben ohne Umlaute. Für Ä, € und Emojis gibt es Unicode, mit mehr als 170 000 Zeichen.
+          en: ASCII only knows letters without accents. For Ä, € and emojis there is Unicode, with more than 170,000 characters.
+  - type: section
+    id: weiter
+    title:
+      de: Und Ä, € oder 😀?
+      en: And Ä, € or 😀?
+    blocks:
+      - type: text
+        text:
+          de: |
+            Für fast alle Schriften der Welt gibt es die Codetabelle **Unicode**. Sie hat heute mehr als 170 000 Zeichen.
+            Die ersten 128 sind genau die ASCII-Zeichen. Mit einem Byte gibt es aber nur 256 verschiedene Zahlen. Für
+            die anderen Zeichen braucht das Handy darum mehr Bits. Nach einer Regel namens **UTF-8** speichert es ein
+            Zeichen in 1 bis 4 Byte: A in 1 Byte, Ä in 2, € in 3 und 😀 in 4 Byte.
+
+            Jetzt kannst du Text in Bytes umrechnen. Auf der nächsten Seite schickt Mia eine Sprachnachricht. Wie wird
+            aus ihrer Stimme etwas, das man in Bits speichern kann?
+          en: |
+            For almost all the writing systems in the world there is the character set **Unicode**. Today it has more than
+            170,000 characters. The first 128 are exactly the ASCII characters. But one byte only gives 256 different
+            numbers. So for the other characters, the phone needs more bits. Following a rule called **UTF-8**, it
+            stores a character in 1 to 4 bytes: A in 1 byte, Ä in 2, € in 3 and 😀 in 4 bytes.
+
+            Now you can turn text into bytes. On the next page Mia sends a voice message. How does her voice become
+            something that can be stored in bits?

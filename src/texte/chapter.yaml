@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Texte und Signale codieren
+  en: Encoding text and signals
+summary:
+  de: Für die Klassen 7 und 8. Wie Zeichen mit einer Codetabelle zu Bytes werden und wie aus analogen Signalen digitale Daten werden.
+  en: For ages 12 to 14. How characters become bytes with a code table, and how analog signals become digital data.
+pages: [zeichen, analog]
+selfAssessment:
+  pages:
+    - exercises:
+        - /texte/zeichen/#code-ueben
+        - /texte/zeichen/#code-ueben
+        - /texte/zeichen/#bits-eines-worts
+    - exercises:
+        - /texte/analog/#stufen-aus-bits
+        - /texte/analog/#bits-pro-sekunde
+        - /texte/analog/#mehr-messpunkte

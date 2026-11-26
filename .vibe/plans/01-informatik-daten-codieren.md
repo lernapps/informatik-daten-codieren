@@ -8,7 +8,7 @@ phase: commit
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 1
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
-failedChecks: { accessible: 4, checks-pass: 1 }
+failedChecks: { accessible: 4, checks-pass: 1, plan-file: 1 }
 ---
 
 # Plan: informatik-daten-codieren, first version
@@ -420,18 +420,20 @@ Content-Guide.
 - [x] (skipped: Repo, main, gh-pages und Pages hat der Orchestrator angelegt; die Vorschau unter lernapps.net läuft) Load skill `lernapps-github`. Set up the repository and Pages as it says. Ask for the repository's name and
       every click only the creator can make, in one message.
 - [x] Push `work`, open the preview pull request and see its checks to green, as skill `lernapps-github` says.
-- [ ] **Checkpoint:** publish. Show what the app does and the preview link from the comment "Vorschau der App". Ask
+- [x] **Checkpoint:** publish. Show what the app does and the preview link from the comment "Vorschau der App". Ask
       whether it may go online. Stop and wait for the yes.
-- [ ] Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: `work` into `main` as one squash commit,
+      Creator: Der Mensch hat PR #1 gemergt (Freigabe über den Orchestrator).
+- [x] (skipped: Der Mensch hat PR #1 als Squash-Commit 99f8566 gemergt; Pages-Lauf 45861401519 grün) Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: `work` into `main` as one squash commit,
       the run of `Pages` watched to its end.
-- [ ] Open the address the job `deploy` printed and confirm that the app shows. Never use a derived address.
-- [ ] Load skill `lernapps-listing`. Write the entry under "Entry draft" as it says, with the creator's answer to
+- [x] Open the address the job `deploy` printed and confirm that the app shows. Never use a derived address.
+- [x] (skipped: Katalogeintrag macht im Epic #509 der Orchestrator laut Auftrag, Punkt 6) Load skill `lernapps-listing`. Write the entry under "Entry draft" as it says, with the creator's answer to
       "Finding the app".
-- [ ] Fill the retrospective.
-- [ ] Commit this plan on `main` and push it: the listing check and the review read it there.
-- [ ] **Checkpoint:** list. Open the listing pull request as skill `lernapps-listing` says, without asking first: the
+- [x] Fill the retrospective.
+- [x] (skipped: Push auf main ist in diesem Epic nicht erlaubt; der Plan liegt auf work, der Orchestrator entscheidet) Commit this plan on `main` and push it: the listing check and the review read it there.
+- [x] **Checkpoint:** list. Open the listing pull request as skill `lernapps-listing` says, without asking first: the
       pull request is the review. See it to "bestanden", then show the creator the pull request and its result.
-- [ ] If the plan changed since its last push, commit it on `main` and push again.
+      Creator: Den Katalogeintrag legt der Orchestrator an; der Inhalt ist ihm geschickt.
+- [x] (skipped: Plan liegt auf increment/7-8 und kommt mit dem Inkrement nach main) If the plan changed since its last push, commit it on `main` and push again.
 
 ### Entry draft
 
@@ -446,12 +448,22 @@ Content-Guide.
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+commit; Checkpoints Recherche, Plan, Musterseite und Veröffentlichen bestanden (Antworten des Orchestrators,
+Veröffentlichen durch den Menschen). Erste Version als Squash-Commit 99f8566 auf `main`, Pages-Lauf grün, online unter
+der Adresse, die der Job `deploy` nennt. Katalogeintrag: Aufgabe des Orchestrators.
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+5 Nachrichten des Orchestrators nach dem Ja zum Plan: (1) Figuren der Klasse 6b von #490, (2) Ja zur Musterseite,
+(3) Antwort auf die Meldung „Veröffentlichen“ (Freigabe beim Menschen), (4) Nachtrag 3 Rechteinhaber, dazu (5) ein
+„Versuch es noch einmal“ des Menschen nach einem Neustart der Session. Nachtrag 1 (zwei Sprachen) kam vor dem Ja.
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, messages or answers, and your choice. "None" if none. -->
+- Typische Fehler der Kinder: aus dem Auftrag abgeleitet; der Fachprüfer hat sie bestätigt.
+- Bilder je Sprache: Die Runtime erlaubt nur eine Datei; darum Bilder ohne Wörter und Beschriftungen als Marker
+  einer `labelled-figure` (an app-templates#209 gemeldet).
+- Werte für Datenmengen (Seite Text 2 kB, Foto 3 MB, Film 2 GB): als „ungefähr“ gekennzeichnet, ohne Quelle.
+- Zimmerbelegung, Zug, Ausflug mit Bus 27: selbst festgelegt und an den Orchestrator gemeldet.
+- Selbsteinschätzung: nur Übungen, die ohne ihre Seite verständlich sind; „Daten deuten“ und „Der Baum“ dadurch
+  schwach abgefragt.

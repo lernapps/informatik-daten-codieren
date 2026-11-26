@@ -133,7 +133,7 @@ blocks:
         props:
           task:
             de: "Lege die Zahl {n} mit acht Karten."
-            en: "Make the number {n} with eight cards."
+            en: "Lay out the number {n} with eight cards."
           cards: 8
           min: 33
           max: 255
@@ -194,6 +194,32 @@ blocks:
         steps:
           - de: "1 Byte = 8 Bit, also {{B}} Byte = {{B}} · 8 Bit = {{answer}} Bit."
             en: "1 byte = 8 bits, so {{B}} bytes = {{B}} × 8 bits = {{answer}} bits."
+      - type: generated
+        id: bit-in-byte
+        given:
+          n: { int: [16, 96], step: 8 }
+        task:
+          text:
+            de: "Eine Nachricht hat {{n}} Bit. Wie viele Byte sind das?"
+            en: "A message has {{n}} bits. How many bytes is that?"
+        answer:
+          value: "n / 8"
+          compare: { number: { format: integer, unit: { de: Byte, en: bytes } } }
+        mistakes:
+          - value: "n * 8"
+            message:
+              de: "Von Bit zu Byte wird die Zahl kleiner: Teile durch 8, statt mal 8 zu rechnen."
+              en: "From bits to bytes the number gets smaller: divide by 8 instead of multiplying by 8."
+          - value: "n"
+            message:
+              de: Das ist die Zahl der Bit. Gefragt sind Byte.
+              en: That is the number of bits. The question is about bytes.
+        hint:
+          de: "8 Bit sind 1 Byte."
+          en: "8 bits are 1 byte."
+        steps:
+          - de: "8 Bit = 1 Byte, also {{n}} Bit = {{n}} : 8 Byte = {{answer}} Byte."
+            en: "8 bits = 1 byte, so {{n}} bits = {{n}} ÷ 8 bytes = {{answer}} bytes."
       - type: generated
         id: kb-in-byte
         given:

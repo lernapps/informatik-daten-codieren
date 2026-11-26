@@ -30,20 +30,20 @@ Ids und „Ich kann …“-Sätze aus `https://lernapps.net/apps/map/informatik.
 | bits | `src/bits/codes.yaml` | `codierung-im-alltag` | zeichen-bedeutung, morse-decodieren, nest-codieren, sos-zeichen, code-geheim |
 | bits | `src/bits/binaersystem.yaml` | `binaersystem` | karten-lesen, naechste-karte, wie-viele-zahlen, falsche-seite, bits-lesen-ueben, zimmer-ordnen (BitReihe) |
 | bits | `src/bits/umrechnen.yaml` | `dezimal-in-binaer` | karten-legen (BitKarten), dezimal-binaer-ueben, teilen-ordnen, karten-fuer-40, zwoelf-binaer |
-| bits | `src/bits/bit-und-byte.yaml` | `bit-und-byte` | groesste-mit-acht, byte-legen (BitKarten), byte-in-bit, kb-in-byte, einheiten-ordnen, was-ist-wie-gross, fotos-auf-tablet |
+| bits | `src/bits/bit-und-byte.yaml` | `bit-und-byte` | groesste-mit-acht, byte-legen (BitKarten), byte-in-bit, bit-in-byte, kb-in-byte, einheiten-ordnen, was-ist-wie-gross, fotos-auf-tablet |
 | bilder | `src/bilder/pixel.yaml` | `pixelgrafik` | pixel-zaehlen, bild-malen (PixelEditor), zeile-decodieren, farbe-decodieren, bits-farbbild, bild-kennt-form |
 | bilder | `src/bilder/vektor.yaml` | `pixel-und-vektorgrafik` | welche-treppig, pixel-nach-vergroessern, zahlen-kreis, was-speichert-wer, foto-vektor, logo-plakat |
 | geheim | `src/geheim/skytale.yaml` | `verschluesselung-grundidee` | streifen-lesen, begriffe, spalten-lesen, zeilen-zaehlen, entschluesseln |
 | geheim | `src/geheim/caesar.yaml` | `caesar-verschluesselung` | b-wird, caesar-verschluesseln, caesar-entschluesseln (CaesarScheibe), schluessel-finden, z-wird-c, entschluesseln-schritte |
 | geheim | `src/geheim/sicherheit.yaml` | `verschluesselung-bewerten` | caesar-knacken (CaesarScheibe), caesar-schluessel-zahl, verfahren-ordnen, geheimes-verfahren, am-besten-schuetzen, verfahren-schluessel |
-| texte (später) | `src/texte/zeichen.yaml` | `zeichencodierung` | |
-| texte (später) | `src/texte/analog.yaml` | `analog-und-digital` | |
+| texte | `src/texte/zeichen.yaml` | `zeichencodierung` | wie-gespeichert, buchstabe-legen (BitKarten {c}), code-ueben, bytes-decodieren, bits-eines-worts, umlaut-ascii |
+| texte | `src/texte/analog.yaml` | `analog-und-digital` | welche-uhr, analog-oder-digital, stufen-aus-bits, bits-pro-sekunde, mbit-und-mb, mehr-messpunkte (Abtasten) |
 
 Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf einer früheren Seite geübt.
 
 ## Content structure
 
-- Kapitel: `information`, `bits`, `bilder`, `geheim` (später `texte`). Eine Seite je Baustein.
+- Kapitel: `information`, `bits`, `bilder`, `geheim` (5-6), `texte` (7-8, Welle 2). Eine Seite je Baustein.
 - Abschnitte einer Seite, feste ids, Titel je Seite passend: `einstieg` (Szene der Klassenfahrt und eine erste,
   leichte Aufgabe), `idee` (das Neue, mit Bild), `beispiel` (ein `example`-Kasten), `ausprobieren` (nur, wo eine
   Komponente bedient wird), `uebung` (die Übungen von leicht zu schwer; am Ende ein kurzer Text: was du jetzt
@@ -57,6 +57,8 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
 - Zeitfolge der Seiten: Kapitel 1 vor der Fahrt (Zettel, Plan, Abstimmung als Rückblick, Zimmerplan); Kapitel 2
   Ankunft (Weg vom Bahnhof, Zimmertüren mit Bit-Karten), Dienstag Ausflug mit Bus 27, Fotos; Kapitel 3 Plakat;
   Kapitel 4 Überraschung für die Parallelklasse 6c, die auch in der Jugendherberge wohnt.
+- Kapitel 5 (7-8): ein Jahr später, Klasse 7b, alle 12, wieder Fahrt an den Seeberg; die Geschichte steht als Chat
+  im Text (**Name:** Nachricht), ohne Szenenbild.
 - Zimmer: 13 Jona und Tom, 22 Selin und Mia, 9 Ben und Ali (Baum, Bit-Karten-Türen). Jona und Selin schlafen in
   verschiedenen Zimmern (Morsen mit der Taschenlampe). Abstimmung: Seeberg 11, Falkenburg 7, Bärenhöhle 5,
   Lindenzoo 3 von 26 Kindern. Tagesplan Montag: Ankunft 11, Wanderung 14-17 (18 Kinder), Boot 15 (8), Nachtwanderung
@@ -64,6 +66,7 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
 - Klassenfahrt-Nachricht: Klartext „TREFFEN MONTAG ACHT UHR AM BAHNHOF“ / „MEET ON MONDAY AT EIGHT AT THE STATION“;
   Zettel „6b · 11.5. · 8:00 · Bahnhof“ / „6b · 11 May · 8:00 · station“; Caesar, Schlüssel 3: „WUHIIHQ PRQWDJ DFKW
   XKU DP EDKQKRI“ / „PHHW RQ PRQGDB DW HLJKW DW WKH VWDWLRQ“.
+- `tasks: { start: first }` in `src/app.yaml`: jede Übung beginnt bei Aufgabe 1 (seit app-templates 0.24).
 - Sprachen `[de, en]`: jeder Text eine Karte `{ de: …, en: … }`; Deutsch ist die Ausgangssprache, Englisch eine
   vollständige Übersetzung.
 
@@ -100,6 +103,13 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
   nur A-Z), Schlüssel `min`..`max` ohne 13. Fehler: falsche Richtung, eine Stelle daneben.
 - **Bits erkunden** (`binaersystem`): Komponente `BitReihe` (keine Übung), zeigt Bitfolge und Zahl.
 - Gemeinsame Hilfen der Bit-Karten: `src/components/Bits.ts`.
+- **Zeichen zum Code** (`zeichencodierung`): BitKarten mit 8 Karten, `min: 66`, `max: 90`, Aufgabe mit `{c}` (das
+  Zeichen zum Code); generated `code-ueben` aus `src/data/buchstaben.yaml` (A-Z: `z`, `code`, `bin`), Fehler Stelle
+  im Alphabet (code − 64) und A als 0 (code − 65).
+- **Digitalisieren** (`analog-und-digital`): Komponente `Abtasten` (keine Übung): Kurve, Regler Messpunkte 2-32 und
+  Bit 1-4, Ansage per `aria-live`; generated Stufen = `pow(2, n)`, Bits pro Sekunde = Messungen × Bit; Mbit/s gegen
+  MB (÷ 8).
+- **Bit → Byte** (`bit-und-byte`): generated `bit-in-byte`, n in Achterschritten, Fehler · 8.
 - Fragen: jede falsche Option mit `info`, das sagt, warum sie nicht passt; Zahlaufgaben mit 2-3 `mistakes`.
 
 ## Figures
@@ -135,9 +145,6 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
 4. 1 bis 3 ihrer Übungen in `selfAssessment` der `chapter.yaml` aufnehmen, wie Skill
    `lernapps-explainer-self-assessment` sagt (nur Übungen, die ohne ihre Seite verständlich sind).
 5. `npx vp build`, `npx vp check --fix`, `npx --no -- lernapps check`, dann committen.
-6. Kapitel 5 (`texte`): „Zeichen werden Zahlen“ (`zeichencodierung`, BitKarten mit 8 Karten, ASCII A-Z, die
-   Klassenfahrt-Nachricht als Bytes), „Analog und digital“ (`analog-und-digital`, Komponente Abtasten).
-
 ## Rules learned from mistakes
 
 - `image` ist eine Datei für alle Sprachen: keine Wörter in Bildern (Fund beim Baum).
