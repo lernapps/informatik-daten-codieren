@@ -1,0 +1,300 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Bit und Byte
+  en: Bits and bytes
+description:
+  de: "Die Einheiten Bit, Byte, Kilobyte, Megabyte und Gigabyte erklären und Datenmengen vergleichen."
+  en: "Explaining the units bit, byte, kilobyte, megabyte and gigabyte, and comparing amounts of data."
+competencies: [bit-und-byte]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Acht Karten auf einmal
+      en: Eight cards at once
+    blocks:
+      - type: text
+        text:
+          de: |
+            Am Seeberg macht Mia viele Fotos mit dem Tablet. „Ist der Speicher bald voll?“, fragt Jona. Um das zu
+            beantworten, musst du wissen, wie man Datenmengen misst.
+
+            Auf den Seiten davor hast du mit fünf Karten gerechnet. Ein Computer fasst meist **acht** Bits zusammen.
+          en: |
+            At Seeberg, Mia takes lots of photos with her tablet. “Will the storage be full soon?” asks Jona. To answer
+            that, you need to know how amounts of data are measured.
+
+            On the pages before you worked with five cards. A computer usually groups **eight** bits together.
+      - type: figure
+        image: images/byte-karten.svg
+        alt:
+          de: "Acht verdeckte Bit-Karten nebeneinander. Über ihnen stehen die Werte 128, 64, 32, 16, 8, 4, 2 und 1."
+          en: "Eight face-down bit cards in a row. Above them are the values 128, 64, 32, 16, 8, 4, 2 and 1."
+        caption:
+          de: Acht Bit-Karten. Die Werte verdoppeln sich weiter nach links.
+          en: Eight bit cards. The values keep doubling to the left.
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: number
+        id: groesste-mit-acht
+        text:
+          de: Welche ist die größte Zahl, die du mit diesen acht Karten legen kannst?
+          en: What is the biggest number you can make with these eight cards?
+        answer: 255
+        tolerance: 0
+        mistakes:
+          - answer: 128
+            message:
+              de: 128 ist die größte Karte. Du darfst aber alle Karten offen hinlegen.
+              en: 128 is the biggest card. But you can turn all the cards face up.
+          - answer: 256
+            message:
+              de: Für 256 bräuchtest du eine neunte Karte. Zähle alle acht Werte zusammen.
+              en: For 256 you would need a ninth card. Add up all eight values.
+        hint:
+          de: "Bei fünf Karten war die größte Zahl 16 + 8 + 4 + 2 + 1 = 31."
+          en: "With five cards the biggest number was 16 + 8 + 4 + 2 + 1 = 31."
+        explanation:
+          de: "128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255. Mit acht Bits gibt es also die Zahlen 0 bis 255."
+          en: "128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255. So with eight bits there are the numbers 0 to 255."
+  - type: section
+    id: idee
+    title:
+      de: Ein Byte sind 8 Bit
+      en: One byte is 8 bits
+    blocks:
+      - type: definition
+        term:
+          de: Byte
+          en: byte
+        explanation:
+          de: Ein Byte sind 8 Bit, wie eine Reihe aus acht Bit-Karten. In einem Byte kann man zum Beispiel eine Zahl von 0 bis 255 speichern.
+          en: One byte is 8 bits, like a row of eight bit cards. In one byte you can store, for example, a number from 0 to 255.
+      - type: text
+        text:
+          de: Für große Datenmengen gibt es größere Einheiten. Jede ist **1000-mal** so groß wie die davor. Die Werte für Nachricht, Foto und Film sind ungefähr, es kommt auf das Gerät an.
+          en: There are bigger units for large amounts of data. Each one is **1000 times** as big as the one before. The sizes for the message, photo and film are only rough, they depend on the device.
+      - type: table
+        caption:
+          de: Einheiten für Datenmengen mit Beispielen
+          en: Units for amounts of data, with examples
+        header:
+          - de: Einheit
+            en: Unit
+          - de: so groß
+            en: size
+          - de: Beispiel, ungefähr
+            en: example, roughly
+        rows:
+          - [
+              { de: "1 Byte (B)", en: "1 byte (B)" },
+              { de: "8 Bit", en: "8 bits" },
+              { de: "eine Zahl von 0 bis 255", en: "a number from 0 to 255" },
+            ]
+          - [
+              { de: "1 Kilobyte (KB)", en: "1 kilobyte (KB)" },
+              { de: "1000 Byte", en: "1000 bytes" },
+              { de: "eine kurze Nachricht", en: "a short message" },
+            ]
+          - [
+              { de: "1 Megabyte (MB)", en: "1 megabyte (MB)" },
+              { de: "1000 KB", en: "1000 KB" },
+              { de: "ein Foto hat etwa 3 MB", en: "a photo is about 3 MB" },
+            ]
+          - [
+              { de: "1 Gigabyte (GB)", en: "1 gigabyte (GB)" },
+              { de: "1000 MB", en: "1000 MB" },
+              { de: "ein Film hat etwa 2 GB", en: "a film is about 2 GB" },
+            ]
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: "Bit und Byte sind nicht dasselbe: 1 Byte = 8 Bit. „Kilo“ heißt wie bei Kilogramm und Kilometer 1000. Manche Geräte rechnen mit 1024, das lernst du später."
+              en: "Bit and byte are not the same: 1 byte = 8 bits. “Kilo” means 1000, as in kilogram and kilometre. Some devices count with 1024, you will learn about that later."
+  - type: section
+    id: ausprobieren
+    title:
+      de: Ausprobieren
+      en: Try it out
+    blocks:
+      - type: text
+        text:
+          de: Hier sind acht Karten, also ein Byte. Tippe auf eine Karte, um sie umzudrehen. Unter den Karten siehst du die Bitfolge. Lege die Zahl, dann drücke „Prüfen“.
+          en: Here are eight cards, which is one byte. Tap a card to turn it over. Below the cards you can see the bit string. Make the number, then press “Check”.
+      - type: vue-component
+        id: byte-legen
+        component: BitKarten
+        props:
+          task:
+            de: "Lege die Zahl {n} mit acht Karten."
+            en: "Make the number {n} with eight cards."
+          cards: 8
+          min: 33
+          max: 255
+          card:
+            de: "Karte {v}"
+            en: "Card {v}"
+          open:
+            de: offen
+            en: face up
+          closed:
+            de: verdeckt
+            en: face down
+          line:
+            de: "Bitfolge: {b}"
+            en: "Bit string: {b}"
+          mistakes:
+            - de: "Deine Karten zeigen {s}. Du hast von der falschen Seite gelegt: Die Karte 128 liegt links."
+              en: "Your cards show {s}. You laid them out from the wrong end: card 128 is on the left."
+            - de: "Deine Karten zeigen zusammen {s}, das ist weniger als {n}. Es fehlt noch eine Karte."
+              en: "Your cards show {s} altogether, which is less than {n}. A card is still missing."
+            - de: "Deine Karten zeigen zusammen {s}, das ist mehr als {n}. Eine Karte ist zu viel."
+              en: "Your cards show {s} altogether, which is more than {n}. One card is too many."
+        examples:
+          accepted:
+            - { answer: [1, 0, 1, 0, 1, 1, 0, 1], seed: 1 }
+          rejected:
+            - { answer: [0, 0, 0, 0, 0, 0, 0, 0] }
+            - { answer: [1, 0, 1, 1, 0, 1, 0, 1], seed: 1 }
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: byte-in-bit
+        given:
+          B: { int: [2, 12] }
+        task:
+          text:
+            de: "Mias Nachricht an Jona hat {{B}} Byte. Wie viele Bit sind das?"
+            en: "Mia's message to Jona is {{B}} bytes. How many bits is that?"
+        answer:
+          value: "8 * B"
+          compare: { number: { format: integer, unit: { de: Bit, en: bits } } }
+        mistakes:
+          - value: "10 * B"
+            message:
+              de: "Ein Byte hat 8 Bit, nicht 10. Rechne {{B}} · 8."
+              en: "A byte has 8 bits, not 10. Work out {{B}} × 8."
+          - value: "B"
+            message:
+              de: Das ist die Zahl der Byte. Jedes Byte hat 8 Bit.
+              en: That is the number of bytes. Each byte has 8 bits.
+        hint:
+          de: "1 Byte = 8 Bit."
+          en: "1 byte = 8 bits."
+        steps:
+          - de: "1 Byte = 8 Bit, also {{B}} Byte = {{B}} · 8 Bit = {{answer}} Bit."
+            en: "1 byte = 8 bits, so {{B}} bytes = {{B}} × 8 bits = {{answer}} bits."
+      - type: generated
+        id: kb-in-byte
+        given:
+          K: { int: [2, 9] }
+        task:
+          text:
+            de: "Ein kleines Bild hat {{K}} KB. Wie viele Byte sind das?"
+            en: "A small picture is {{K}} KB. How many bytes is that?"
+        answer:
+          value: "1000 * K"
+          compare: { number: { format: integer, unit: { de: Byte, en: bytes } } }
+        mistakes:
+          - value: "1024 * K"
+            message:
+              de: "Hier gilt wie bei Kilogramm: 1 KB = 1000 Byte."
+              en: "Here it works like kilograms: 1 KB = 1000 bytes."
+          - value: "8 * K"
+            message:
+              de: Mal 8 rechnest du von Byte in Bit. Von Kilobyte in Byte ist es mal 1000.
+              en: You multiply by 8 to go from bytes to bits. From kilobytes to bytes it is times 1000.
+        steps:
+          - de: "1 KB = 1000 Byte, also {{K}} KB = {{K}} · 1000 Byte = {{answer}} Byte."
+            en: "1 KB = 1000 bytes, so {{K}} KB = {{K}} × 1000 bytes = {{answer}} bytes."
+      - type: ordering
+        id: einheiten-ordnen
+        text:
+          de: Ordne die Datenmengen, die kleinste zuerst.
+          en: Put the amounts of data in order, the smallest first.
+        items:
+          - de: 1 Bit
+            en: 1 bit
+          - de: 1 Byte
+            en: 1 byte
+          - de: 1 Kilobyte
+            en: 1 kilobyte
+          - de: 1 Megabyte
+            en: 1 megabyte
+          - de: 1 Gigabyte
+            en: 1 gigabyte
+        explanation:
+          de: Ein Byte sind 8 Bit. Danach ist jede Einheit 1000-mal so groß wie die davor.
+          en: One byte is 8 bits. After that, each unit is 1000 times as big as the one before.
+      - type: matching
+        id: was-ist-wie-gross
+        text:
+          de: Wie groß ist das ungefähr? Ordne zu.
+          en: Roughly how big is it? Match them.
+        pairs:
+          - left:
+              de: eine kurze Nachricht an Jona
+              en: a short message to Jona
+            right:
+              de: 1 KB
+              en: 1 KB
+          - left:
+              de: ein Foto vom Seeberg
+              en: a photo of Seeberg
+            right:
+              de: 3 MB
+              en: 3 MB
+          - left:
+              de: ein Film für den Abend
+              en: a film for the evening
+            right:
+              de: 2 GB
+              en: 2 GB
+        explanation:
+          de: Ein Text braucht wenig Platz, ein Foto viel mehr und ein Film am meisten, weil er aus sehr vielen Bildern und Ton besteht.
+          en: A text needs little space, a photo much more and a film the most, because it is made of very many pictures and sound.
+      - type: number
+        id: fotos-auf-tablet
+        text:
+          de: Auf Mias Tablet sind noch 3 GB frei. Jedes Foto hat 3 MB. Wie viele Fotos passen noch darauf?
+          en: Mia's tablet has 3 GB free. Each photo is 3 MB. How many more photos fit on it?
+        answer: 1000
+        tolerance: 0
+        unit:
+          de: Fotos
+          en: photos
+        mistakes:
+          - answer: 1
+            message:
+              de: GB und MB sind verschiedene Einheiten. Rechne erst 3 GB in MB um.
+              en: GB and MB are different units. First turn 3 GB into MB.
+          - answer: 1024
+            message:
+              de: "Hier gilt: 1 GB = 1000 MB."
+              en: "Here: 1 GB = 1000 MB."
+        hint:
+          de: "3 GB = 3000 MB."
+          en: "3 GB = 3000 MB."
+        explanation:
+          de: "3 GB = 3000 MB. 3000 MB : 3 MB = 1000 Fotos. Der Speicher reicht noch lange."
+          en: "3 GB = 3000 MB. 3000 MB ÷ 3 MB = 1000 photos. The storage will last a long time."
+      - type: text
+        text:
+          de: |
+            Rückblick auf das Kapitel: Du kennst Codes aus dem Alltag, liest und legst Zahlen mit Bit-Karten und
+            weißt, wie viel ein Byte ist. Ein Foto hat Millionen Byte. Im nächsten Kapitel siehst du, wie ein Bild
+            aus Bits entsteht.
+          en: |
+            Looking back on the chapter: you know codes from everyday life, you can read and make numbers with bit
+            cards, and you know how much a byte is. A photo has millions of bytes. In the next chapter you will see how
+            a picture is made of bits.

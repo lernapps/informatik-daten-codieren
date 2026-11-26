@@ -377,7 +377,7 @@ Content-Guide.
       Creator: Ja, die übrigen Seiten folgen diesem Muster. Als Nächstes Kapitel 1 mit dem Baum.
 - [x] Kapitel information: Seiten Information und Daten, Daten deuten (Zettel- und Tabellenbilder)
 - [x] Kapitel information: Seiten Tabelle-Diagramm-Bild und Der Baum (Säulendiagramm, Baum-Bild, Turnierbaum)
-- [ ] Kapitel bits: Seiten Codes im Alltag, Zahlen in Bits (Datei zahlen.yaml), Bit und Byte
+- [x] Kapitel bits: Seiten Codes im Alltag, Zahlen in Bits (Datei zahlen.yaml), Bit und Byte
 - [ ] Kapitel bilder: Komponente PixelEditor mit Logik und Test, Datei bilder.yaml, Seiten Bilder aus Pixeln und Pixel oder Vektor
 - [ ] Kapitel geheim: Komponente CaesarScheibe mit Logik und Test, Skytale-Bild, Seiten Geheimschrift, Caesar-Scheibe, Wie sicher ist das?
 - [ ] Zwei Prüfer als Subagenten (Lernende 5-6, fachlich Informatik), Funde beheben
