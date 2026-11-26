@@ -81,6 +81,26 @@
       "competencies": [
         "bit-und-byte"
       ]
+    },
+    {
+      "path": "bilder/pixel/",
+      "title": {
+        "de": "Bilder aus Pixeln",
+        "en": "Pictures made of pixels"
+      },
+      "competencies": [
+        "pixelgrafik"
+      ]
+    },
+    {
+      "path": "bilder/vektor/",
+      "title": {
+        "de": "Pixel oder Vektor?",
+        "en": "Pixels or vectors?"
+      },
+      "competencies": [
+        "pixel-und-vektorgrafik"
+      ]
     }
   ]
 }
