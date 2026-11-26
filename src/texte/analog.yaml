@@ -1,0 +1,264 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Analog und digital
+  en: Analog and digital
+description:
+  de: "Den Unterschied zwischen analoger und digitaler Darstellung erklären und sehen, wie eine Stimme digitalisiert wird."
+  en: "Explaining the difference between analog and digital and seeing how a voice is digitised."
+competencies: [analog-und-digital]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Eine Sprachnachricht
+      en: A voice message
+    blocks:
+      - type: text
+        text:
+          de: |
+            Im Klassenchat der 7b schickt Mia eine Sprachnachricht: „Ich bringe den Ball mit!“
+
+            **Jona:** Text sind Bytes, das weiß ich jetzt. Aber wie kommt Mias Stimme in 0 und 1?
+
+            Eine Stimme ist eine Schallwelle. Sie ändert sich stufenlos, ohne Sprünge. Auf dieser Seite siehst du, wie
+            daraus Zahlen werden, die das Handy als Bits speichert.
+          en: |
+            In class 7b's chat, Mia sends a voice message: “I'll bring the ball!”
+
+            **Jona:** Text is bytes, I know that now. But how does Mia's voice get into 0 and 1?
+
+            A voice is a sound wave. It changes smoothly, without jumps. On this page you will see how it turns into
+            numbers that the phone stores as bits.
+      - type: single-choice
+        id: welche-uhr
+        text:
+          de: Welche Uhr zeigt die Zeit stufenlos, also auch jeden Augenblick zwischen zwei Minuten?
+          en: Which clock shows the time smoothly, so every moment between two minutes as well?
+        options:
+          - text:
+              de: Eine Uhr mit Zeigern
+              en: A clock with hands
+            correct: true
+            info:
+              de: Die Zeiger wandern ohne Sprünge weiter. Das nennt man analog.
+              en: The hands move on without jumps. That is called analog.
+          - text:
+              de: Eine Uhr mit Ziffern
+              en: A clock with digits
+            correct: false
+            info:
+              de: Die Ziffern springen von einer Minute zur nächsten. Dazwischen zeigt sie nichts an. Das nennt man digital.
+              en: The digits jump from one minute to the next. In between, it shows nothing. That is called digital.
+        explanation:
+          de: Analoge Anzeigen ändern sich stufenlos, digitale in Schritten, als Zahlen.
+          en: Analog displays change smoothly, digital ones in steps, as numbers.
+  - type: section
+    id: idee
+    title:
+      de: Messen und runden
+      en: Measuring and rounding
+    blocks:
+      - type: definition
+        term:
+          de: analog
+          en: analog
+        explanation:
+          de: Analog heißt, ein Wert ändert sich stufenlos und kann jeden Zwischenwert haben, wie eine Schallwelle oder die Zeiger einer Uhr.
+          en: Analog means a value changes smoothly and can have any value in between, like a sound wave or the hands of a clock.
+      - type: definition
+        term:
+          de: digital
+          en: digital
+        explanation:
+          de: Digital heißt, ein Wert wird in Stufen als Zahl dargestellt, im Computer als Binärzahl.
+          en: Digital means a value is shown in steps as a number, in a computer as a binary number.
+      - type: matching
+        id: analog-oder-digital
+        text:
+          de: Ordne jedem Ding zu, wie es den Wert zeigt oder speichert.
+          en: Match each thing to how it shows or stores its value.
+        pairs:
+          - left:
+              de: Uhr mit Zeigern
+              en: clock with hands
+            right:
+              de: stufenlos, analog
+              en: smoothly, analog
+          - left:
+              de: Mias Sprachnachricht auf dem Handy
+              en: Mia's voice message on the phone
+            right:
+              de: als Messwerte in Bits, digital
+              en: as measured values in bits, digital
+          - left:
+              de: Uhr mit Ziffern
+              en: clock with digits
+            right:
+              de: in Minutenschritten als Ziffern, digital
+              en: in steps of one minute as digits, digital
+        explanation:
+          de: Analog ist stufenlos. Digital ist in Stufen, als Zahlen.
+          en: Analog is smooth. Digital is in steps, as numbers.
+      - type: text
+        text:
+          de: |
+            Beim **Digitalisieren** macht das Handy zwei Schritte:
+
+            1. **Abtasten:** Es misst die Schallwelle in gleichen Abständen, zum Beispiel 8000-mal in jeder Sekunde.
+            2. **Runden:** Jeden Messwert rundet es auf die nächste erlaubte Stufe und speichert deren Nummer als
+               Binärzahl. Mit 2 Bit gibt es 4 Stufen (00, 01, 10, 11), mit 3 Bit schon 8.
+          en: |
+            When **digitising**, the phone takes two steps:
+
+            1. **Sampling:** it measures the sound wave at equal intervals, for example 8000 times every second.
+            2. **Rounding:** it rounds each measured value to the nearest allowed level and stores that level's number
+               as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Zwischen zwei Messpunkten und zwischen zwei Stufen geht etwas verloren. Mehr Messpunkte und mehr Bit machen die digitale Stimme genauer, aber auch größer.
+              en: Something gets lost between two measuring points and between two levels. More points and more bits make the digital voice more exact, but also bigger.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Ausprobieren
+      en: Try it out
+    blocks:
+      - type: text
+        text:
+          de: Die blaue Linie ist ein Stück einer Schallwelle. Die rote gestrichelte Treppe mit den Punkten zeigt, was gespeichert wird. Die grauen Linien sind die erlaubten Stufen. Schiebe die Regler, auch mit den Pfeiltasten, und beobachte, wie nah die Treppe der Welle kommt.
+          en: The blue line is a piece of a sound wave. The red dashed staircase with the dots shows what is stored. The grey lines are the allowed levels. Move the sliders, also with the arrow keys, and watch how close the staircase gets to the wave.
+      - type: vue-component
+        component: Abtasten
+        props:
+          pointsLabel:
+            de: Messpunkte
+            en: Measuring points
+          bitsLabel:
+            de: Bit pro Messpunkt
+            en: Bits per point
+          line:
+            de: "{n} Messpunkte · {s} Stufen · {b} Bit zusammen"
+            en: "{n} measuring points · {s} levels · {b} bits altogether"
+          curveLabel:
+            de: Schallwelle
+            en: sound wave
+          storedLabel:
+            de: gespeicherte Werte
+            en: stored values
+        nojs:
+          de: |
+            Eine Schallwelle und darüber die gespeicherten Werte als Treppe. Zwei Regler stellen ein, wie oft gemessen
+            wird (2 bis 32 Messpunkte) und wie viele Bit jeder Messwert hat (1 bis 4).
+
+            - 4 Messpunkte, 1 Bit: 2 Stufen, 4 Bit zusammen. Die Treppe hat mit der Welle wenig zu tun.
+            - 8 Messpunkte, 2 Bit: 4 Stufen, 16 Bit zusammen. Die Form der Welle ist grob zu erkennen.
+            - 32 Messpunkte, 4 Bit: 16 Stufen, 128 Bit zusammen. Die Treppe liegt dicht an der Welle.
+          en: |
+            A sound wave with the stored values above it as a staircase. Two sliders set how often it is measured (2 to
+            32 measuring points) and how many bits each measured value has (1 to 4).
+
+            - 4 points, 1 bit: 2 levels, 4 bits altogether. The staircase has little to do with the wave.
+            - 8 points, 2 bits: 4 levels, 16 bits altogether. The shape of the wave can roughly be seen.
+            - 32 points, 4 bits: 16 levels, 128 bits altogether. The staircase lies close to the wave.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: stufen-aus-bits
+        given:
+          n: { int: [3, 8] }
+        task:
+          text:
+            de: "Jeder Messwert wird mit {{n}} Bit gespeichert. Wie viele verschiedene Stufen gibt es?"
+            en: "Each measured value is stored with {{n}} bits. How many different levels are there?"
+        answer:
+          value: "pow(2, n)"
+          compare: { number: { format: integer } }
+        mistakes:
+          - value: "2 * n"
+            message:
+              de: "Du hast {{n}} · 2 gerechnet. Jedes Bit mehr verdoppelt die Zahl der Stufen: 2 · 2 · … · 2, {{n}}-mal."
+              en: "You worked out {{n}} × 2. Each extra bit doubles the number of levels: 2 × 2 × … × 2, {{n}} times."
+          - value: "n"
+            message:
+              de: Das ist die Zahl der Bit. Gefragt ist, wie viele Stufen man damit unterscheiden kann.
+              en: That is the number of bits. The question is how many levels you can tell apart with them.
+        hint:
+          de: "1 Bit: 2 Stufen, 2 Bit: 4 Stufen, 3 Bit: …"
+          en: "1 bit: 2 levels, 2 bits: 4 levels, 3 bits: …"
+        steps:
+          - de: "Jedes Bit verdoppelt die Zahl der Stufen. Mit {{n}} Bit sind es {{answer}} Stufen."
+            en: "Each bit doubles the number of levels. With {{n}} bits there are {{answer}} levels."
+      - type: generated
+        id: bits-pro-sekunde
+        given:
+          m: { oneOf: [100, 500, 1000, 8000] }
+          b: { oneOf: [4, 8, 16] }
+        task:
+          text:
+            de: "Ein Gerät misst {{m}}-mal pro Sekunde und speichert jeden Messwert mit {{b}} Bit. Wie viele Bit sind das in einer Sekunde?"
+            en: "A device measures {{m}} times per second and stores each measured value with {{b}} bits. How many bits is that in one second?"
+        answer:
+          value: "m * b"
+          compare: { number: { format: integer, unit: { de: Bit, en: bits } } }
+        mistakes:
+          - value: "m + b"
+            message:
+              de: Jeder der {{m}} Messwerte braucht {{b}} Bit. Rechne mal, nicht plus.
+              en: Each of the {{m}} measured values needs {{b}} bits. Multiply, don't add.
+          - value: "m * b / 8"
+            message:
+              de: Das sind Byte. Gefragt sind Bit.
+              en: Those are bytes. The question is about bits.
+        steps:
+          - de: "{{m}} Messwerte · {{b}} Bit = {{answer}} Bit pro Sekunde."
+            en: "{{m}} measured values × {{b}} bits = {{answer}} bits per second."
+      - type: number
+        id: mbit-und-mb
+        text:
+          de: Mias Internet schafft 16 Mbit/s, also 16 Megabit pro Sekunde. Wie viele Megabyte kann sie in einer Sekunde laden?
+          en: Mia's internet manages 16 Mbit/s, that is 16 megabits per second. How many megabytes can she download in one second?
+        answer: 2
+        tolerance: 0
+        unit:
+          de: MB
+          en: MB
+        mistakes:
+          - answer: 16
+            message:
+              de: "Mbit und MB sind nicht dasselbe: 1 Byte sind 8 Bit, also auch 1 MB = 8 Mbit."
+              en: "Mbit and MB are not the same: 1 byte is 8 bits, so 1 MB = 8 Mbit too."
+          - answer: 128
+            message:
+              de: Von Bit zu Byte teilst du durch 8, du malst nicht mal 8.
+              en: From bits to bytes you divide by 8, you don't multiply by 8.
+        explanation:
+          de: "16 Mbit : 8 = 2 MB. Internet wird in Mbit/s angegeben, Speicher in MB."
+          en: "16 Mbit ÷ 8 = 2 MB. Internet speed is given in Mbit/s, storage in MB."
+      - type: true-false
+        id: mehr-messpunkte
+        text:
+          de: Misst das Handy öfter pro Sekunde, wird die Sprachnachricht genauer, aber auch größer.
+          en: If the phone measures more often per second, the voice message becomes more exact, but also bigger.
+        answer: true
+        explanation:
+          de: Jeder Messpunkt braucht Bits. Mehr Messpunkte heißt mehr Bits, also eine größere Datei.
+          en: Each measuring point needs bits. More points means more bits, so a bigger file.
+      - type: text
+        text:
+          de: |
+            Rückblick auf das Kapitel: Text wird mit einer Codetabelle zu Bytes, eine Stimme durch Messen und Runden
+            zu Zahlen. Ob Zettel, Bild, Geheimschrift oder Sprachnachricht: Am Ende speichert der Computer alles mit
+            0 und 1.
+          en: |
+            Looking back on the chapter: text becomes bytes with a code table, a voice becomes numbers by measuring and
+            rounding. Whether it is a note, a picture, secret writing or a voice message: in the end the computer stores
+            everything with 0 and 1.
