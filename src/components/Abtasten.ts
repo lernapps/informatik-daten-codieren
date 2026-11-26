@@ -3,9 +3,9 @@
 // Abtasten.test.ts.
 import { fill } from "./Bits.ts";
 
-/** The sound curve, a value between −1 and 1 at the time t from 0 to 1. */
+/** The sound curve at the time t from 0 to 1: it reaches about ±0.95, so it uses the whole range of the levels. */
 export function curve(t: number): number {
-  return 0.6 * Math.sin(2 * Math.PI * t) + 0.35 * Math.sin(6 * Math.PI * t + 0.5);
+  return 1.24 * (0.6 * Math.sin(2 * Math.PI * t) + 0.35 * Math.sin(6 * Math.PI * t + 0.5));
 }
 
 /** How many levels `bits` bits can tell apart. */

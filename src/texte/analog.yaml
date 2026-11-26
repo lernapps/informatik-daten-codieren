@@ -40,8 +40,8 @@ blocks:
               en: A clock with hands
             correct: true
             info:
-              de: Die Zeiger wandern ohne Sprünge weiter. Das nennt man analog.
-              en: The hands move on without jumps. That is called analog.
+              de: Die Stellung der Zeiger zeigt die Zeit als Winkel. Der Minutenzeiger steht auch zwischen zwei Minutenstrichen. Das nennt man analog.
+              en: The position of the hands shows the time as an angle. The minute hand also stands between two minute marks. That is called analog.
           - text:
               de: Eine Uhr mit Ziffern
               en: A clock with digits
@@ -70,48 +70,57 @@ blocks:
           de: digital
           en: digital
         explanation:
-          de: Digital heißt, ein Wert wird in Stufen als Zahl dargestellt, im Computer als Binärzahl.
-          en: Digital means a value is shown in steps as a number, in a computer as a binary number.
+          de: Digital heißt, ein Wert wird nur zu einzelnen Zeitpunkten und in Stufen als Zahl festgehalten, im Computer als Binärzahl.
+          en: Digital means a value is only recorded at single moments in time and in steps as a number, in a computer as a binary number.
       - type: matching
         id: analog-oder-digital
         text:
-          de: Ordne jedem Ding zu, wie es den Wert zeigt oder speichert.
-          en: Match each thing to how it shows or stores its value.
+          de: Wie zeigt oder speichert jedes Ding seinen Wert? Ordne zu.
+          en: How does each thing show or store its value? Match them.
         pairs:
           - left:
               de: Uhr mit Zeigern
               en: clock with hands
             right:
-              de: stufenlos, analog
-              en: smoothly, analog
+              de: Der Zeiger steht auch zwischen zwei Strichen.
+              en: The hand also stands between two marks.
+          - left:
+              de: Spannung im Mikrofon
+              en: voltage in the microphone
+            right:
+              de: Sie ändert sich stufenlos mit dem Schall.
+              en: It changes smoothly with the sound.
           - left:
               de: Mias Sprachnachricht auf dem Handy
               en: Mia's voice message on the phone
             right:
-              de: als Messwerte in Bits, digital
-              en: as measured values in bits, digital
+              de: Sie besteht aus Messwerten in Bits.
+              en: It is made of measured values in bits.
           - left:
               de: Uhr mit Ziffern
               en: clock with digits
             right:
-              de: in Minutenschritten als Ziffern, digital
-              en: in steps of one minute as digits, digital
+              de: Sie springt von Minute zu Minute.
+              en: It jumps from minute to minute.
         explanation:
-          de: Analog ist stufenlos. Digital ist in Stufen, als Zahlen.
-          en: Analog is smooth. Digital is in steps, as numbers.
+          de: Zeigeruhr und Mikrofon sind analog, sie ändern sich stufenlos. Sprachnachricht und Ziffernuhr sind digital, in Stufen als Zahlen. Auch ein modernes Handy hat mit dem Mikrofon ein analoges Teil.
+          en: The clock with hands and the microphone are analog, they change smoothly. The voice message and the clock with digits are digital, in steps as numbers. Even a modern phone has an analog part, its microphone.
       - type: text
         text:
           de: |
-            Beim **Digitalisieren** macht das Handy zwei Schritte:
+            Das Mikrofon im Handy macht aus dem Schall eine elektrische Spannung. Sie ändert sich stufenlos mit der
+            Stimme, ist also noch analog. Beim **Digitalisieren** macht das Handy dann zwei Schritte:
 
             1. **Abtasten:** Es misst die Schallwelle in gleichen Abständen, zum Beispiel 8000-mal in jeder Sekunde.
             2. **Runden:** Jeden Messwert rundet es auf die nächste erlaubte Stufe und speichert deren Nummer als
                Binärzahl. Mit 2 Bit gibt es 4 Stufen (00, 01, 10, 11), mit 3 Bit schon 8.
           en: |
-            When **digitising**, the phone takes two steps:
+            The microphone in the phone turns the sound into an electrical voltage. It changes smoothly with the voice,
+            so it is still analog. When **digitising**, the phone then takes two steps:
 
-            1. **Sampling:** it measures the sound wave at equal intervals, for example 8000 times every second.
-            2. **Rounding:** it rounds each measured value to the nearest allowed level and stores that level's number
+            1. **Sampling:** it measures the sound wave at equal intervals, for example 8000 times every second (the
+               sample rate).
+            2. **Quantising (rounding):** it rounds each measured value to the nearest allowed level and stores that level's number
                as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8.
       - type: note
         title:
@@ -137,13 +146,13 @@ blocks:
         props:
           pointsLabel:
             de: Messpunkte
-            en: Measuring points
+            en: Samples
           bitsLabel:
             de: Bit pro Messpunkt
-            en: Bits per point
+            en: Bit depth
           line:
             de: "{n} Messpunkte · {s} Stufen · {b} Bit zusammen"
-            en: "{n} measuring points · {s} levels · {b} bits altogether"
+            en: "{n} samples · {s} levels · {b} bits altogether"
           curveLabel:
             de: Schallwelle
             en: sound wave
@@ -191,6 +200,10 @@ blocks:
             message:
               de: Das ist die Zahl der Bit. Gefragt ist, wie viele Stufen man damit unterscheiden kann.
               en: That is the number of bits. The question is how many levels you can tell apart with them.
+          - value: "pow(2, n) - 1"
+            message:
+              de: Das ist die Nummer der höchsten Stufe. Die Stufe 0 zählt aber mit.
+              en: That is the number of the highest level. But level 0 counts too.
         hint:
           de: "1 Bit: 2 Stufen, 2 Bit: 4 Stufen, 3 Bit: …"
           en: "1 bit: 2 levels, 2 bits: 4 levels, 3 bits: …"
@@ -224,8 +237,8 @@ blocks:
       - type: number
         id: mbit-und-mb
         text:
-          de: Mias Internet schafft 16 Mbit/s, also 16 Megabit pro Sekunde. Wie viele Megabyte kann sie in einer Sekunde laden?
-          en: Mia's internet manages 16 Mbit/s, that is 16 megabits per second. How many megabytes can she download in one second?
+          de: Mia schickt ihre Sprachnachricht übers Internet. Es schafft 16 Mbit/s, also 16 Megabit pro Sekunde. Wie viele Megabyte sind das in einer Sekunde?
+          en: Mia sends her voice message over the internet. It manages 16 Mbit/s, that is 16 megabits per second. How many megabytes is that in one second?
         answer: 2
         tolerance: 0
         unit:

@@ -4,7 +4,7 @@ title:
   en: Characters become numbers
 description:
   de: "Wie Buchstaben mit einer Codetabelle wie ASCII oder Unicode als Binärzahlen gespeichert werden."
-  en: "How letters are stored as binary numbers with a code table such as ASCII or Unicode."
+  en: "How letters are stored as binary numbers with a character set such as ASCII or Unicode."
 competencies: [zeichencodierung]
 blocks:
   - type: section
@@ -67,7 +67,7 @@ blocks:
     id: idee
     title:
       de: Eine Codetabelle für Zeichen
-      en: A code table for characters
+      en: A character set
     blocks:
       - type: text
         text:
@@ -75,12 +75,12 @@ blocks:
             Damit alle Geräte dieselben Zahlen benutzen, gibt es eine feste **Codetabelle**. Die bekannteste heißt
             **ASCII**. Sie hat 128 Zeichen mit den Codes 0 bis 127: Großbuchstaben, Kleinbuchstaben, Ziffern,
             Satzzeichen und Steuerzeichen, aber keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
-            bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Für Selins Nachricht reichen A bis Z.
+            bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Für Selins Nachricht reichen A bis Z und das Leerzeichen.
           en: |
-            So that all devices use the same numbers, there is a fixed **code table**. The best known one is called
+            So that all devices use the same numbers, there is a fixed **character set**, a code table. The best known one is called
             **ASCII**. It has 128 characters with the codes 0 to 127: capital letters, small letters, digits,
             punctuation marks and control characters, but no letters with accents such as Ä. A has the number 65, B 66,
-            C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin's message, A to Z are enough.
+            C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin's message, A to Z and the space are enough.
       - type: table
         caption:
           de: Ein Teil der ASCII-Tabelle mit dem Byte zu jedem Code
@@ -101,10 +101,10 @@ blocks:
       - type: definition
         term:
           de: Codetabelle
-          en: code table
+          en: character set
         explanation:
           de: Eine Codetabelle legt fest, welche Zahl zu welchem Zeichen gehört. Die Zahl speichert der Computer als Binärzahl.
-          en: A code table fixes which number belongs to which character. The computer stores the number as a binary number.
+          en: A character set (code table) fixes which number belongs to which character. The computer stores the number as a binary number.
       - type: note
         title:
           de: Merke
@@ -174,10 +174,10 @@ blocks:
           mistakes:
             - de: "Deine Karten zeigen {s}. Du hast von der falschen Seite gelegt: Die Karte 128 liegt links."
               en: "Your cards show {s}. You laid them out from the wrong end: card 128 is on the left."
-            - de: "Deine Karten zeigen {s}, das ist weniger als der Code von {c}. Zähle von A = 65 weiter."
-              en: "Your cards show {s}, which is less than the code of {c}. Count on from A = 65."
-            - de: "Deine Karten zeigen {s}, das ist mehr als der Code von {c}. Zähle von A = 65 weiter."
-              en: "Your cards show {s}, which is more than the code of {c}. Count on from A = 65."
+            - de: "Deine Karten zeigen {s}, das ist weniger als der Code von {c}. Prüfe den Code (A = 65) und zähle deine Karten zusammen."
+              en: "Your cards show {s}, which is less than the code of {c}. Check the code (A = 65) and add up your cards."
+            - de: "Deine Karten zeigen {s}, das ist mehr als der Code von {c}. Prüfe den Code (A = 65) und zähle deine Karten zusammen."
+              en: "Your cards show {s}, which is more than the code of {c}. Check the code (A = 65) and add up your cards."
         examples:
           accepted:
             - { answer: [0, 1, 0, 1, 0, 0, 0, 1], seed: 1 }
@@ -212,12 +212,16 @@ blocks:
             message:
               de: "Du hast bei A mit 0 angefangen. A hat den Code 65."
               en: "You started at 0 for A. A has the code 65."
+          - value: "e.code + 1"
+            message:
+              de: "A ist schon der 1. Buchstabe. Rechne 65 + Stelle − 1."
+              en: "A is already the 1st letter. Work out 65 + place − 1."
         hint:
           de: "Welcher Buchstabe im Alphabet ist es? Der 1. hat 65."
           en: "Which letter of the alphabet is it? The 1st has 65."
         steps:
-          - de: "A = 65, und {{e.z}} kommt nach A. Also hat {{e.z}} den Code {{answer}}."
-            en: "A = 65, and {{e.z}} comes after A. So {{e.z}} has the code {{answer}}."
+          - de: "{{e.z}} ist der {{e.stelle}}. Buchstabe. A = 65, also hat {{e.z}} den Code 65 + {{e.stelle}} − 1 = {{answer}}."
+            en: "{{e.z}} is letter number {{e.stelle}}. A = 65, so {{e.z}} has the code 65 + {{e.stelle}} − 1 = {{answer}}."
           - de: "Als Byte: {{e.bin}}."
             en: "As a byte: {{e.bin}}."
       - type: matching
@@ -242,8 +246,8 @@ blocks:
       - type: number
         id: bits-eines-worts
         text:
-          de: Wie viele Bit braucht das Wort SEEBERG in ASCII?
-          en: How many bits does the word SEEBERG need in ASCII?
+          de: Wie viele Bit braucht das Wort SEEBERG, wenn jedes Zeichen als ein Byte gespeichert wird?
+          en: How many bits does the word SEEBERG need if each character is stored as one byte?
         answer: 56
         tolerance: 0
         unit:
@@ -258,6 +262,14 @@ blocks:
             message:
               de: Ein Byte hat 8 Bit, nicht 10.
               en: A byte has 8 bits, not 10.
+          - answer: 49
+            message:
+              de: ASCII-Codes passen zwar in 7 Bit, gespeichert wird aber immer ein ganzes Byte mit 8 Bit.
+              en: ASCII codes do fit into 7 bits, but a whole byte with 8 bits is always stored.
+          - answer: 8
+            message:
+              de: Das ist ein Byte, also nur ein Buchstabe. SEEBERG hat 7.
+              en: That is one byte, so only one letter. SEEBERG has 7.
         explanation:
           de: "7 Buchstaben sind 7 Byte. 7 · 8 = 56 Bit."
           en: "7 letters are 7 bytes. 7 × 8 = 56 bits."
@@ -279,7 +291,7 @@ blocks:
       - type: text
         text:
           de: |
-            Für alle Schriften der Welt gibt es die Codetabelle **Unicode**. Sie hat heute mehr als 170 000 Zeichen.
+            Für fast alle Schriften der Welt gibt es die Codetabelle **Unicode**. Sie hat heute mehr als 170 000 Zeichen.
             Die ersten 128 sind genau die ASCII-Zeichen. Mit einem Byte gibt es aber nur 256 verschiedene Zahlen. Für
             die anderen Zeichen braucht das Handy darum mehr Bits. Nach einer Regel namens **UTF-8** speichert es ein
             Zeichen in 1 bis 4 Byte: A in 1 Byte, Ä in 2, € in 3 und 😀 in 4 Byte.
@@ -287,7 +299,7 @@ blocks:
             Jetzt kannst du Text in Bytes umrechnen. Auf der nächsten Seite schickt Mia eine Sprachnachricht. Wie wird
             aus ihrer Stimme etwas, das man in Bits speichern kann?
           en: |
-            For all the writing systems in the world there is the code table **Unicode**. Today it has more than
+            For almost all the writing systems in the world there is the character set **Unicode**. Today it has more than
             170,000 characters. The first 128 are exactly the ASCII characters. But one byte only gives 256 different
             numbers. So for the other characters, the phone needs more bits. Following a rule called **UTF-8**, it
             stores a character in 1 to 4 bytes: A in 1 byte, Ä in 2, € in 3 and 😀 in 4 bytes.

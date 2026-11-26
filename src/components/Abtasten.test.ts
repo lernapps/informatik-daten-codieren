@@ -1,8 +1,14 @@
 import { expect, test } from "vite-plus/test";
 import { curve, error, level, levels, samples, summary, valueOf } from "./Abtasten.ts";
 
-test("the curve stays between −1 and 1", () => {
-  for (let k = 0; k <= 100; k++) expect(Math.abs(curve(k / 100))).toBeLessThan(1);
+test("the curve stays between −1 and 1 and nearly reaches both ends", () => {
+  const all = Array.from({ length: 2001 }, (_, k) => curve(k / 2000));
+  for (const v of all) expect(Math.abs(v)).toBeLessThan(1);
+  expect(Math.max(...all.map(Math.abs))).toBeGreaterThan(0.9);
+});
+
+test("the default setting (8 points, 2 bits) uses all four levels", () => {
+  expect(new Set(samples(8, 2).map((point) => point.stored)).size).toBe(4);
 });
 
 test("n bits give 2^n levels, and every value lands on one of them", () => {
@@ -22,6 +28,7 @@ test("n bits give 2^n levels, and every value lands on one of them", () => {
 test("more points and more bits bring the stored values closer to the curve", () => {
   expect(error(32, 4)).toBeLessThan(error(4, 4));
   expect(error(32, 4)).toBeLessThan(error(32, 1));
+  expect(error(8, 2)).toBeLessThan(error(4, 1));
   expect(samples(8, 2)).toHaveLength(8);
 });
 

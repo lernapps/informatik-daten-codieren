@@ -1,80 +1,106 @@
 # Großbuchstaben A bis Z mit ihrem Code (Unicode-Block Basic Latin = ASCII, U+0041 bis U+005A) und dem Byte.
-# z: der Buchstabe; code: Dezimalzahl; bin: das Byte mit 8 Stellen.
+# z: der Buchstabe; stelle: Platz im Alphabet; code: Dezimalzahl; bin: das Byte mit 8 Stellen.
 - z: A
+  stelle: 1
   code: 65
   bin: "01000001"
 - z: B
+  stelle: 2
   code: 66
   bin: "01000010"
 - z: C
+  stelle: 3
   code: 67
   bin: "01000011"
 - z: D
+  stelle: 4
   code: 68
   bin: "01000100"
 - z: E
+  stelle: 5
   code: 69
   bin: "01000101"
 - z: F
+  stelle: 6
   code: 70
   bin: "01000110"
 - z: G
+  stelle: 7
   code: 71
   bin: "01000111"
 - z: H
+  stelle: 8
   code: 72
   bin: "01001000"
 - z: I
+  stelle: 9
   code: 73
   bin: "01001001"
 - z: J
+  stelle: 10
   code: 74
   bin: "01001010"
 - z: K
+  stelle: 11
   code: 75
   bin: "01001011"
 - z: L
+  stelle: 12
   code: 76
   bin: "01001100"
 - z: M
+  stelle: 13
   code: 77
   bin: "01001101"
 - z: N
+  stelle: 14
   code: 78
   bin: "01001110"
 - z: O
+  stelle: 15
   code: 79
   bin: "01001111"
 - z: P
+  stelle: 16
   code: 80
   bin: "01010000"
 - z: Q
+  stelle: 17
   code: 81
   bin: "01010001"
 - z: R
+  stelle: 18
   code: 82
   bin: "01010010"
 - z: S
+  stelle: 19
   code: 83
   bin: "01010011"
 - z: T
+  stelle: 20
   code: 84
   bin: "01010100"
 - z: U
+  stelle: 21
   code: 85
   bin: "01010101"
 - z: V
+  stelle: 22
   code: 86
   bin: "01010110"
 - z: W
+  stelle: 23
   code: 87
   bin: "01010111"
 - z: X
+  stelle: 24
   code: 88
   bin: "01011000"
 - z: Y
+  stelle: 25
   code: 89
   bin: "01011001"
 - z: Z
+  stelle: 26
   code: 90
   bin: "01011010"

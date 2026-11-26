@@ -200,8 +200,8 @@ blocks:
           n: { int: [16, 96], step: 8 }
         task:
           text:
-            de: "Ein Code hat {{n}} Bit. Wie viele Byte sind das?"
-            en: "A code has {{n}} bits. How many bytes is that?"
+            de: "Eine Nachricht hat {{n}} Bit. Wie viele Byte sind das?"
+            en: "A message has {{n}} bits. How many bytes is that?"
         answer:
           value: "n / 8"
           compare: { number: { format: integer, unit: { de: Byte, en: bytes } } }
@@ -210,6 +210,10 @@ blocks:
             message:
               de: "Von Bit zu Byte wird die Zahl kleiner: Teile durch 8, statt mal 8 zu rechnen."
               en: "From bits to bytes the number gets smaller: divide by 8 instead of multiplying by 8."
+          - value: "n"
+            message:
+              de: Das ist die Zahl der Bit. Gefragt sind Byte.
+              en: That is the number of bits. The question is about bytes.
         hint:
           de: "8 Bit sind 1 Byte."
           en: "8 bits are 1 byte."

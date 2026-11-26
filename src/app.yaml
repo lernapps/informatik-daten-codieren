@@ -7,19 +7,21 @@ title:
 intro:
   de: |
     Die Klasse 6b fährt an den Seeberg. Wer fährt mit, wohin, wann? Diese Information schreibst du immer wieder
-    neu auf: als Tabelle und Baum, als Zahl aus Bits, als Pixelbild und als Geheimschrift. So lernst du, wie ein
-    Computer alles mit 0 und 1 speichert. Für die Klassen 5 und 6.
+    neu auf: als Tabelle und Baum, als Zahl aus Bits, als Pixelbild und als Geheimschrift, ein Jahr später in der 7b
+    auch als Bytes und als Sprachnachricht. So lernst du, wie ein Computer alles mit 0 und 1 speichert. Kapitel 1
+    bis 4 für die Klassen 5 und 6, Kapitel 5 für die Klassen 7 und 8.
   en: |
     Class 6b is going on a school trip to Seeberg. Who is going, where, and when? You will write down this information again and
-    again in new ways: as a table and a tree, as a number made of bits, as a pixel image and in secret writing. This
-    is how you learn how a computer stores everything with 0 and 1. For ages 10 to 12.
+    again in new ways: as a table and a tree, as a number made of bits, as a pixel image and in secret writing, and one year
+    later in class 7b as bytes and as a voice message. This is how you learn how a computer stores everything with 0
+    and 1. Chapters 1 to 4 for ages 10 to 12, chapter 5 for ages 12 to 14.
 languages: [de, en]
 chapters: [information, bits, bilder, geheim, texte]
 sources:
   - title:
       de: "The Unicode Standard, Version 18.0.0 (Unicode Consortium)"
       en: "The Unicode Standard, Version 18.0.0 (Unicode Consortium)"
-    url: https://www.unicode.org/versions/latest/
+    url: https://www.unicode.org/versions/Unicode18.0.0/
   - title:
       de: "RFC 3629: UTF-8, a transformation format of ISO 10646"
       en: "RFC 3629: UTF-8, a transformation format of ISO 10646"
