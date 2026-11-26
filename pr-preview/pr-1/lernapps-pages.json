@@ -1,0 +1,16 @@
+{
+  "format": 1,
+  "strand": "informatik/daten",
+  "pages": [
+    {
+      "path": "bits/binaersystem/",
+      "title": {
+        "de": "Die Bit-Karten",
+        "en": "The bit cards"
+      },
+      "competencies": [
+        "binaersystem"
+      ]
+    }
+  ]
+}
