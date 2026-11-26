@@ -1,0 +1,82 @@
+# Bilder aus 6 × 6 Pixeln für den PixelEditor. zeilen: jede Zeile als Zahl, deren 6 Bits die Pixel sind
+# (links das Bit 32; 1 schwarz, 0 weiß). Die Bitfolge steht als Kommentar daneben.
+- name:
+    de: Zelt
+    en: tent
+  zeilen:
+    - 12 # 001100
+    - 30 # 011110
+    - 30 # 011110
+    - 63 # 111111
+    - 51 # 110011
+    - 51 # 110011
+- name:
+    de: Haus
+    en: house
+  zeilen:
+    - 4 # 000100
+    - 14 # 001110
+    - 31 # 011111
+    - 17 # 010001
+    - 21 # 010101
+    - 29 # 011101
+- name:
+    de: Boot
+    en: boat
+  zeilen:
+    - 4 # 000100
+    - 6 # 000110
+    - 7 # 000111
+    - 4 # 000100
+    - 63 # 111111
+    - 30 # 011110
+- name:
+    de: Fahne
+    en: flag
+  zeilen:
+    - 48 # 110000
+    - 60 # 111100
+    - 63 # 111111
+    - 48 # 110000
+    - 32 # 100000
+    - 32 # 100000
+- name:
+    de: Pfeil
+    en: arrow
+  zeilen:
+    - 4 # 000100
+    - 6 # 000110
+    - 63 # 111111
+    - 63 # 111111
+    - 6 # 000110
+    - 4 # 000100
+- name:
+    de: Baum
+    en: tree
+  zeilen:
+    - 12 # 001100
+    - 30 # 011110
+    - 63 # 111111
+    - 30 # 011110
+    - 12 # 001100
+    - 12 # 001100
+- name:
+    de: Herz
+    en: heart
+  zeilen:
+    - 0 # 000000
+    - 27 # 011011
+    - 63 # 111111
+    - 30 # 011110
+    - 12 # 001100
+    - 0 # 000000
+- name:
+    de: Schlüssel
+    en: key
+  zeilen:
+    - 24 # 011000
+    - 36 # 100100
+    - 39 # 100111
+    - 37 # 100101
+    - 24 # 011000
+    - 0 # 000000

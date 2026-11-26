@@ -1,0 +1,227 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Pixel oder Vektor?
+  en: Pixels or vectors?
+description:
+  de: "Pixel- und Vektorgrafik unterscheiden und begründen, welche Grafikart für einen Zweck besser passt."
+  en: "Telling bitmap and vector images apart, and explaining which kind of image suits a purpose better."
+competencies: [pixel-und-vektorgrafik]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Ein Plakat für die Klassenfahrt
+      en: A poster for the school trip
+    blocks:
+      - type: text
+        text:
+          de: |
+            Jona und Selin machen ein großes Plakat für die Klassenfahrt. Darauf soll ein roter Kreis als Sonne.
+            Sie haben die Sonne auf zwei Arten gespeichert und beide gleich stark vergrößert.
+
+            Auf der Seite davor hast du Bilder aus Pixeln gemalt. Auf dieser Seite lernst du eine zweite Art kennen,
+            Bilder zu speichern.
+          en: |
+            Jona and Selin are making a big poster for the school trip. It is going to have a red circle on it as the
+            sun. They have stored the sun in two ways and made both equally bigger.
+
+            On the page before you drew pictures with pixels. On this page you will learn a second way of storing
+            pictures.
+      - type: figure
+        image: images/vergroessern.svg
+        alt:
+          de: "Zwei rote Kreise, gleich groß. Kreis A hat einen Rand aus Stufen. Kreis B hat einen glatten, runden Rand."
+          en: "Two red circles of the same size. Circle A has an edge made of steps. Circle B has a smooth, round edge."
+        caption:
+          de: Die Sonne, zweimal gleich stark vergrößert. Schau dir den Rand an.
+          en: The sun, made equally bigger twice. Look at the edge.
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: single-choice
+        id: welche-treppig
+        text:
+          de: Welche Sonne war eine Pixelgrafik?
+          en: Which sun was a bitmap image?
+        options:
+          - text: { de: A, en: A }
+            correct: true
+            info:
+              de: Beim Vergrößern werden die Pixel größer. Man sieht die einzelnen Kästchen als Stufen.
+              en: When you make it bigger, the pixels get bigger. You can see the single squares as steps.
+          - text: { de: B, en: B }
+            correct: false
+            info:
+              de: Der Rand von B ist glatt. Bei einer Pixelgrafik würden die Pixel beim Vergrößern als Stufen sichtbar.
+              en: The edge of B is smooth. With a bitmap image the pixels would show as steps when made bigger.
+        explanation:
+          de: Eine Pixelgrafik hat nur so viele Pixel, wie gespeichert sind. Vergrößerst du sie, wird jedes Pixel ein großes Kästchen.
+          en: A bitmap image only has as many pixels as are stored. If you make it bigger, each pixel becomes a big square.
+  - type: section
+    id: idee
+    title:
+      de: Formen statt Pixel
+      en: Shapes instead of pixels
+    blocks:
+      - type: definition
+        term:
+          de: Vektorgrafik
+          en: vector image
+        explanation:
+          de: Eine Vektorgrafik speichert ein Bild als Formen wie Kreis, Linie und Rechteck, jede mit ihren Zahlen, zum Beispiel Mittelpunkt, Radius und Farbe.
+          en: A vector image stores a picture as shapes such as circles, lines and rectangles, each with its numbers, for example the centre, the radius and the colour.
+      - type: text
+        text:
+          de: "Sonne B ist eine Vektorgrafik. Gespeichert ist nur: ein Kreis, Mittelpunkt (50 | 50), Radius 40, Farbe rot. Beim Vergrößern rechnet der Computer den Kreis neu aus. Darum bleibt der Rand glatt."
+          en: "Sun B is a vector image. All that is stored is: a circle, centre (50 | 50), radius 40, colour red. When you make it bigger, the computer works out the circle again. That is why the edge stays smooth."
+      - type: table
+        caption:
+          de: Pixelgrafik und Vektorgrafik im Vergleich
+          en: Bitmap and vector images compared
+        header:
+          - de: Vergleich
+            en: Comparison
+          - de: Pixelgrafik
+            en: bitmap image
+          - de: Vektorgrafik
+            en: vector image
+        rows:
+          - [
+              { de: speichert, en: stores },
+              { de: jedes Pixel, en: every pixel },
+              { de: Formen mit Zahlen, en: shapes with numbers },
+            ]
+          - [
+              { de: vergrößert, en: made bigger },
+              { de: wird treppig, en: gets steps },
+              { de: bleibt glatt, en: stays smooth },
+            ]
+          - [{ de: gut für, en: good for }, { de: Fotos, en: photos }, { de: Logos und Pläne, en: logos and plans }]
+        rowHeaders: true
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Keine Grafikart ist immer besser. Ein Foto hat Millionen verschiedene Farbpunkte, das lässt sich kaum in Formen beschreiben, also Pixelgrafik. Ein Logo aus wenigen Formen soll groß und klein scharf sein, also Vektorgrafik.
+              en: Neither kind is always better. A photo has millions of different coloured dots that you can hardly describe as shapes, so it is a bitmap image. A logo made of a few shapes should be sharp both big and small, so it is a vector image.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: number
+        id: pixel-nach-vergroessern
+        text:
+          de: Selins Zelt hat 6 · 6 = 36 Pixel. Sie zeigt es viermal so breit und viermal so hoch. Wie viele verschiedene Pixel sind im Bild gespeichert?
+          en: Selin's tent has 6 × 6 = 36 pixels. She shows it four times as wide and four times as high. How many different pixels are stored in the picture?
+        answer: 36
+        tolerance: 0
+        mistakes:
+          - answer: 576
+            message:
+              de: Beim Vergrößern kommen keine neuen Pixel dazu. Jedes der 36 Pixel wird nur größer gezeigt.
+              en: Making it bigger does not add new pixels. Each of the 36 pixels is just shown bigger.
+          - answer: 144
+            message:
+              de: Beim Vergrößern kommen keine neuen Pixel dazu. Es bleiben die gespeicherten Pixel.
+              en: Making it bigger does not add new pixels. The stored pixels stay the same.
+        explanation:
+          de: Es bleiben 36 Pixel. Jedes wird als größeres Kästchen gezeigt, darum sieht man Stufen.
+          en: There are still 36 pixels. Each one is shown as a bigger square, which is why you see steps.
+      - type: number
+        id: zahlen-kreis
+        text:
+          de: "Für Sonne B sind gespeichert: Mittelpunkt (50 | 50), Radius 40, Farbe rot. Wie viele Zahlen sind das?"
+          en: "For sun B, this is stored: centre (50 | 50), radius 40, colour red. How many numbers is that?"
+        answer: 3
+        tolerance: 0
+        mistakes:
+          - answer: 2
+            message:
+              de: Der Mittelpunkt hat zwei Zahlen, eine für rechts und eine für oben.
+              en: The centre has two numbers, one for across and one for up.
+          - answer: 4
+            message:
+              de: Rot ist hier ein Farbname, keine Zahl. Zähle nur die Zahlen.
+              en: Red is the name of a colour here, not a number. Count only the numbers.
+        explanation:
+          de: 50, 50 und 40. Mit diesen drei Zahlen und der Farbe ist der Kreis in jeder Größe beschrieben.
+          en: 50, 50 and 40. With these three numbers and the colour, the circle is described at any size.
+      - type: matching
+        id: was-speichert-wer
+        text:
+          de: Was speichert welche Grafikart? Ordne zu.
+          en: What does each kind of image store? Match them.
+        pairs:
+          - left:
+              de: Pixelgrafik
+              en: bitmap image
+            right:
+              de: die Farbe jedes einzelnen Bildpunkts
+              en: the colour of every single dot
+          - left:
+              de: Vektorgrafik
+              en: vector image
+            right:
+              de: Formen wie Kreis und Linie mit ihren Zahlen
+              en: shapes such as circles and lines with their numbers
+        distractors:
+          - de: den Namen des Bildes, zum Beispiel „Zelt“
+            en: the name of the picture, for example “tent”
+        explanation:
+          de: Keine der beiden Grafikarten speichert, was das Bild zeigt. Die eine speichert Bildpunkte, die andere Formen.
+          en: Neither kind stores what the picture shows. One stores dots, the other stores shapes.
+      - type: true-false
+        id: foto-vektor
+        text:
+          de: Ein Foto vom Seeberg speichert man am besten als Vektorgrafik.
+          en: A photo of Seeberg is best stored as a vector image.
+        answer: false
+        explanation:
+          de: Ein Foto hat sehr viele verschiedene Farbpunkte und kaum klare Formen. Dafür passt eine Pixelgrafik.
+          en: A photo has very many different coloured dots and hardly any clear shapes. A bitmap image suits it.
+      - type: single-choice
+        id: logo-plakat
+        text:
+          de: Das Zelt-Logo soll auf das Plakat und auf ein kleines T-Shirt-Bild, beide Male scharf. Welche Grafikart passt?
+          en: The tent logo is going on the poster and on a small T-shirt picture, sharp both times. Which kind of image suits it?
+        options:
+          - text:
+              de: Vektorgrafik, weil sie in jeder Größe glatt bleibt
+              en: a vector image, because it stays smooth at any size
+            correct: true
+            info:
+              de: Das Logo besteht aus wenigen Formen. Der Computer rechnet sie für jede Größe neu aus.
+              en: The logo is made of a few shapes. The computer works them out again for any size.
+          - text:
+              de: Pixelgrafik, weil sie jedes Pixel genau speichert
+              en: a bitmap image, because it stores every pixel exactly
+            correct: false
+            info:
+              de: Sie speichert jedes Pixel, aber nur in einer Größe. Auf dem Plakat würde das Logo treppig.
+              en: It stores every pixel, but only at one size. On the poster the logo would get steps.
+          - text:
+              de: Egal, beide werden beim Vergrößern gleich
+              en: it does not matter, both turn out the same when made bigger
+            correct: false
+            info:
+              de: Das stimmt nicht. Sonne A und Sonne B sahen vergrößert ganz verschieden aus.
+              en: That is not true. Sun A and sun B looked very different when made bigger.
+        explanation:
+          de: Für Logos, Schilder und Pläne aus klaren Formen ist eine Vektorgrafik besser.
+          en: For logos, signs and plans made of clear shapes, a vector image is better.
+      - type: text
+        text:
+          de: |
+            Rückblick auf das Kapitel: Ein Bild kann man als Pixel oder als Formen speichern, beides am Ende mit
+            Bits. Das Plakat hängt. Doch eine Nachricht der 6b soll die Parallelklasse 6c nicht lesen. Im nächsten
+            Kapitel lernst du, wie man eine Nachricht geheim hält.
+          en: |
+            Looking back on the chapter: a picture can be stored as pixels or as shapes, both in the end with bits.
+            The poster is up. But class 6b has a message that class 6c must not read. In the next chapter you will
+            learn how to keep a message secret.

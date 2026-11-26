@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Bilder aus Punkten und Formen
+  en: Pictures made of dots and shapes
+summary:
+  de: Ein Bild als Pixel codieren und decodieren, und Pixel- und Vektorgrafik vergleichen.
+  en: Encoding and decoding a picture as pixels, and comparing bitmap and vector images.
+pages: [pixel, vektor]

@@ -1,0 +1,250 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Bilder aus Pixeln
+  en: Pictures made of pixels
+description:
+  de: "Ein Bild als Raster aus Pixeln speichern: schwarz-weiß mit 0 und 1, farbig mit Farbnummern."
+  en: "Storing a picture as a grid of pixels: black and white with 0 and 1, in colour with colour numbers."
+competencies: [pixelgrafik]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Ein Logo für die Klassenfahrt
+      en: A logo for the school trip
+    blocks:
+      - type: text
+        text:
+          de: |
+            Selin malt ein Logo für die Klassenfahrt auf Karopapier: ein Zelt. Jedes Kästchen ist ganz schwarz oder
+            ganz weiß. Neben jede Zeile schreibt sie, welche Kästchen schwarz sind: 1 für schwarz, 0 für weiß.
+
+            Im letzten Kapitel hast du Zahlen mit Bits geschrieben. Auf dieser Seite siehst du, wie ein Bild aus Bits
+            entsteht.
+          en: |
+            Selin draws a logo for the school trip on squared paper: a tent. Each square is either all black or all
+            white. Next to each row she writes which squares are black: 1 for black, 0 for white.
+
+            In the last chapter you wrote numbers with bits. On this page you will see how a picture is made of bits.
+      - type: figure
+        image: images/zelt-pixel.svg
+        alt:
+          de: "Ein Raster aus 6 mal 6 Kästchen mit einem schwarzen Zelt. Neben den Zeilen steht von oben nach unten: 001100, 011110, 011110, 111111, 110011, 110011."
+          en: "A grid of 6 by 6 squares with a black tent. Next to the rows, from top to bottom, it says: 001100, 011110, 011110, 111111, 110011, 110011."
+        caption:
+          de: Selins Zelt. Jede Zeile des Bildes ist eine Bitfolge.
+          en: Selin's tent. Each row of the picture is a bit string.
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: number
+        id: pixel-zaehlen
+        text:
+          de: Aus wie vielen Kästchen besteht Selins Bild?
+          en: How many squares is Selin's picture made of?
+        answer: 36
+        tolerance: 0
+        mistakes:
+          - answer: 12
+            message:
+              de: Du hast 6 + 6 gerechnet. Das Bild hat 6 Zeilen mit je 6 Kästchen, also 6 · 6.
+              en: You worked out 6 + 6. The picture has 6 rows with 6 squares each, so 6 × 6.
+          - answer: 18
+            message:
+              de: Das sind nur die schwarzen Kästchen. Gefragt sind alle, auch die weißen.
+              en: Those are only the black squares. The question is about all of them, the white ones too.
+        explanation:
+          de: 6 Zeilen mit je 6 Kästchen sind 6 · 6 = 36 Kästchen.
+          en: 6 rows with 6 squares each make 6 × 6 = 36 squares.
+  - type: section
+    id: idee
+    title:
+      de: Ein Pixel ist ein Bildpunkt
+      en: A pixel is a dot of the picture
+    blocks:
+      - type: definition
+        term:
+          de: Pixel
+          en: pixel
+        explanation:
+          de: Ein Pixel ist der kleinste Punkt eines Bildes. Jedes Pixel hat genau eine Farbe.
+          en: A pixel is the smallest dot of a picture. Each pixel has exactly one colour.
+      - type: definition
+        term:
+          de: Pixelgrafik
+          en: bitmap image
+        explanation:
+          de: Eine Pixelgrafik speichert ein Bild als Raster aus Zeilen und Spalten. Für jedes Pixel speichert sie seine Farbe als Zahl.
+          en: A bitmap image stores a picture as a grid of rows and columns. For each pixel it stores its colour as a number.
+      - type: text
+        text:
+          de: Für Farben braucht jedes Pixel mehr als ein Bit. Mit zwei Bits hat jedes Pixel eine von vier **Farbnummern**.
+          en: For colours, each pixel needs more than one bit. With two bits, each pixel has one of four **colour numbers**.
+      - type: table
+        caption:
+          de: Eine Farbtabelle mit zwei Bits je Pixel
+          en: A colour table with two bits per pixel
+        header:
+          - de: Farbnummer
+            en: Colour number
+          - de: Farbe
+            en: Colour
+        rows:
+          - [{ de: "00", en: "00" }, { de: weiß, en: white }]
+          - [{ de: "01", en: "01" }, { de: rot, en: red }]
+          - [{ de: "10", en: "10" }, { de: blau, en: blue }]
+          - [{ de: "11", en: "11" }, { de: schwarz, en: black }]
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Ein Pixelbild weiß nicht, dass es ein Zelt zeigt. Es kennt nur Pixel und ihre Farben, Zeile für Zeile von oben nach unten, jede Zeile von links nach rechts.
+              en: A bitmap image does not know that it shows a tent. It only knows pixels and their colours, row by row from top to bottom, each row from left to right.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Ausprobieren
+      en: Try it out
+    blocks:
+      - type: text
+        text:
+          de: Jetzt malst du selbst. Links steht der Code eines Bildes, Zeile für Zeile. Tippe auf ein Pixel, um es schwarz zu machen, noch einmal tippen macht es wieder weiß. „Alles weiß“ löscht das Bild. Dann drücke „Prüfen“.
+          en: Now you draw. On the left is the code of a picture, row by row. Tap a pixel to make it black, tap again to make it white. “All white” clears the picture. Then press “Check”.
+      - type: vue-component
+        id: bild-malen
+        component: PixelEditor
+        props:
+          task:
+            de: "Male das Bild nach dem Code. 1 heißt schwarz, 0 heißt weiß."
+            en: "Draw the picture from the code. 1 means black, 0 means white."
+          code: bits
+          bilder: { data: bilder }
+          codeLabel:
+            de: Code
+            en: Code
+          cell:
+            de: "Pixel Zeile {r}, Spalte {c}"
+            en: "Pixel row {r}, column {c}"
+          black:
+            de: schwarz
+            en: black
+          white:
+            de: weiß
+            en: white
+          reset:
+            de: Alles weiß
+            en: All white
+          shows:
+            de: "Das Bild zeigt: {name}."
+            en: "The picture shows: {name}."
+          mistakes:
+            - de: Dein Bild ist gespiegelt. Lies jede Zeile von links nach rechts.
+              en: Your picture is mirrored. Read each row from left to right.
+            - de: Schwarz und Weiß sind vertauscht. 1 heißt schwarz, 0 heißt weiß.
+              en: Black and white are swapped. 1 means black, 0 means white.
+            - de: Du hast jede Zeile des Codes als Spalte gemalt. Male Zeile 1 des Codes in die oberste Reihe.
+              en: You drew each row of the code as a column. Draw row 1 of the code in the top row.
+        examples:
+          accepted:
+            - { answer: [12, 30, 63, 30, 12, 12], seed: 1 }
+          rejected:
+            - { answer: [0, 0, 0, 0, 0, 0] }
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: single-choice
+        id: zeile-decodieren
+        text:
+          de: "Welche Pixelzeile hat den Code 100001? (■ ist schwarz, □ ist weiß.)"
+          en: "Which row of pixels has the code 100001? (■ is black, □ is white.)"
+        options:
+          - text: { de: "■□□□□■", en: "■□□□□■" }
+            correct: true
+            info:
+              de: Die erste und die letzte Ziffer sind 1, also sind nur das erste und das letzte Pixel schwarz.
+              en: The first and the last digit are 1, so only the first and the last pixel are black.
+          - text: { de: "□■■■■□", en: "□■■■■□" }
+            correct: false
+            info:
+              de: Hier sind Schwarz und Weiß vertauscht. Das wäre 011110.
+              en: Here black and white are swapped. That would be 011110.
+          - text: { de: "■■□□□□", en: "■■□□□□" }
+            correct: false
+            info:
+              de: Das wäre 110000. Beim Code 100001 ist das zweite Pixel weiß.
+              en: That would be 110000. With the code 100001 the second pixel is white.
+        explanation:
+          de: Jede Ziffer ist ein Pixel, von links nach rechts. 1 ist schwarz, 0 ist weiß.
+          en: Each digit is one pixel, from left to right. 1 is black, 0 is white.
+      - type: matching
+        id: farbe-decodieren
+        text:
+          de: "Mia malt eine Fahne mit der Farbtabelle. Welche Farbe hat welches Pixel? Ordne zu."
+          en: "Mia draws a flag with the colour table. Which colour is each pixel? Match them."
+        pairs:
+          - left:
+              de: "Pixel mit 01"
+              en: "pixel with 01"
+            right:
+              de: rot
+              en: red
+          - left:
+              de: "Pixel mit 10"
+              en: "pixel with 10"
+            right:
+              de: blau
+              en: blue
+          - left:
+              de: "Pixel mit 11"
+              en: "pixel with 11"
+            right:
+              de: schwarz
+              en: black
+        distractors:
+          - de: grün
+            en: green
+        explanation:
+          de: Die Farbtabelle sagt für jede Farbnummer die Farbe. Grün hat in dieser Tabelle keine Nummer.
+          en: The colour table gives the colour for each colour number. Green has no number in this table.
+      - type: number
+        id: bits-farbbild
+        text:
+          de: Ein Bild hat 6 · 6 Pixel. Jedes Pixel hat eine Farbnummer mit 2 Bits. Wie viele Bits braucht das Bild?
+          en: A picture has 6 × 6 pixels. Each pixel has a colour number with 2 bits. How many bits does the picture need?
+        answer: 72
+        tolerance: 0
+        unit:
+          de: Bit
+          en: bits
+        mistakes:
+          - answer: 36
+            message:
+              de: 36 Bit reichen nur für Schwarz-Weiß. Hier hat jedes Pixel 2 Bits.
+              en: 36 bits are only enough for black and white. Here each pixel has 2 bits.
+          - answer: 14
+            message:
+              de: Du hast 6 + 6 + 2 gerechnet. Rechne erst die Zahl der Pixel aus und dann mal 2.
+              en: You worked out 6 + 6 + 2. First work out the number of pixels, then multiply by 2.
+        explanation:
+          de: 6 · 6 = 36 Pixel, jedes mit 2 Bits. 36 · 2 = 72 Bits.
+          en: 6 × 6 = 36 pixels, each with 2 bits. 36 × 2 = 72 bits.
+      - type: true-false
+        id: bild-kennt-form
+        text:
+          de: Eine Pixelgrafik speichert, dass auf dem Bild ein Zelt ist.
+          en: A bitmap image stores the fact that there is a tent in the picture.
+        answer: false
+        explanation:
+          de: Eine Pixelgrafik speichert nur die Farbe jedes Pixels. Dass es ein Zelt ist, siehst erst du.
+          en: A bitmap image only stores the colour of each pixel. It is you who sees that it is a tent.
+      - type: text
+        text:
+          de: Jetzt kannst du ein Bild aus Pixeln codieren und decodieren. Selins Zelt soll auf ein großes Plakat. Was passiert, wenn man ein Pixelbild vergrößert? Das siehst du auf der nächsten Seite.
+          en: Now you can encode and decode a picture made of pixels. Selin's tent is going on a big poster. What happens when you make a bitmap image bigger? You will see on the next page.
