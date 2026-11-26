@@ -1,0 +1,195 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Codes im Alltag
+  en: Codes in everyday life
+description:
+  de: "Codes aus dem Alltag erkennen und eine Nachricht mit dem Morsecode codieren und decodieren."
+  en: "Recognising codes in everyday life, and encoding and decoding a message with Morse code."
+competencies: [codierung-im-alltag]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Nachrichten ohne Worte
+      en: Messages without words
+    blocks:
+      - type: text
+        text:
+          de: |
+            Die 6b ist mit dem Zug am Seeberg angekommen und läuft vom Bahnhof zur Jugendherberge. Selin zeigt auf
+            die Straße: Überall sind Nachrichten ohne Worte, an der Ampel, auf der Milchtüte in Mias Tasche, auf den
+            Schildern.
+
+            Im ersten Kapitel hast du gesehen, wie aus Information Daten werden. Auf dieser Seite lernst du
+            **Codes** kennen: feste Regeln, mit denen man Daten in andere Zeichen übersetzt.
+          en: |
+            Class 6b has arrived at Seeberg by train and is walking from the station to the youth hostel. Selin points at
+            the street: there are messages without words everywhere, at the traffic lights, on the milk carton in Mia's
+            bag, on the signs.
+
+            In the first chapter you saw how information becomes data. On this page you will learn about **codes**:
+            fixed rules for turning data into other symbols.
+      - type: figure
+        image: images/szene-ampel.svg
+        alt:
+          de: "Jona, Selin und Mia mit schwarzen Locken, Brille und lila Jacke stehen auf dem Gehweg. Neben ihnen leuchtet eine Ampel rot."
+          en: "Jona, Selin and Mia, who has black curls, glasses and a purple jacket, are standing on the pavement. Next to them, a traffic light is red."
+        caption:
+          de: "Jona, Selin und Mia auf dem Weg zur Jugendherberge"
+          en: "Jona, Selin and Mia on the way to the youth hostel"
+        source:
+          de: eigene Zeichnung, Figuren aus dem Explainer „Informatiksysteme“ (lernapps/informatik-computer)
+          en: own drawing, characters from the explainer “Computer systems” (lernapps/informatik-computer)
+        licence: CC-BY-4.0
+      - type: matching
+        id: zeichen-bedeutung
+        text:
+          de: Was bedeutet das Zeichen? Ordne zu.
+          en: What does the sign mean? Match them.
+        pairs:
+          - left:
+              de: Das rote Ampelmännchen leuchtet.
+              en: The red man at the crossing lights up.
+            right:
+              de: Stehen bleiben.
+              en: Stop and wait.
+          - left:
+              de: Das grüne Ampelmännchen leuchtet.
+              en: The green man at the crossing lights up.
+            right:
+              de: Du darfst gehen.
+              en: You may cross.
+          - left:
+              de: Die Kasse piept beim Strichcode der Milch.
+              en: The till beeps at the barcode on the milk.
+            right:
+              de: Die Kasse hat die Nummer der Ware gelesen.
+              en: The till has read the number of the product.
+        explanation:
+          de: Jedes Zeichen steht nach einer festen Regel für eine Bedeutung. Wer die Regel kennt, versteht das Zeichen ohne Worte.
+          en: Each sign stands for a meaning by a fixed rule. If you know the rule, you understand the sign without words.
+  - type: section
+    id: idee
+    title:
+      de: Der Morsecode
+      en: Morse code
+    blocks:
+      - type: text
+        text:
+          de: |
+            Am Seeberg schlafen Jona und Selin in verschiedenen Zimmern. Am Abend wollen sie sich mit der
+            Taschenlampe Nachrichten schicken. Unterwegs üben sie schon. Dafür nehmen sie den **Morsecode**: Jeder Buchstabe ist eine Folge aus
+            kurzen Blinkzeichen (·) und langen (–). Zwischen zwei Buchstaben machen sie eine Pause, hier eine Lücke.
+          en: |
+            At Seeberg, Jona and Selin sleep in different rooms. In the evening they want to send each other messages
+            with a torch. They practise on the way. For this they use **Morse code**: each letter is a series of short flashes (·) and long ones
+            (–). Between two letters they pause, shown here as a gap.
+      - type: table
+        caption:
+          de: Ein Teil der Morsetabelle
+          en: Part of the Morse code table
+        header:
+          - de: Buchstabe
+            en: Letter
+          - de: Zeichen
+            en: Signal
+        rows:
+          - [{ de: A, en: A }, { de: "· –", en: "· –" }]
+          - [{ de: E, en: E }, { de: "·", en: "·" }]
+          - [{ de: I, en: I }, { de: "· ·", en: "· ·" }]
+          - [{ de: M, en: M }, { de: "– –", en: "– –" }]
+          - [{ de: N, en: N }, { de: "– ·", en: "– ·" }]
+          - [{ de: O, en: O }, { de: "– – –", en: "– – –" }]
+          - [{ de: S, en: S }, { de: "· · ·", en: "· · ·" }]
+          - [{ de: T, en: T }, { de: "–", en: "–" }]
+      - type: definition
+        term:
+          de: Code
+          en: code
+        explanation:
+          de: Ein Code ist eine feste Regel, die Zeichen in andere Zeichen übersetzt. Codieren heißt, eine Nachricht mit dem Code übersetzen. Decodieren heißt, sie zurückübersetzen.
+          en: A code is a fixed rule that turns symbols into other symbols. To encode means to turn a message into the code. To decode means to turn it back.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Sender und Empfänger müssen **dieselbe Codetabelle** kennen. Und die Pausen gehören zum Code. Ohne Pause wird aus „· · ·“ (S) vielleicht „· ·“ und „·“ (I und E).
+              en: The sender and the receiver must know **the same code table**. And the pauses are part of the code. Without a pause, “· · ·” (S) might become “· ·” and “·” (I and E).
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: single-choice
+        id: morse-decodieren
+        text:
+          de: "Selin blinkt: · · · | · | · . Die Striche | sind Pausen. Welches Wort ist das?"
+          en: "Selin flashes: · · · | · | · . The lines | are pauses. Which word is it?"
+        options:
+          - text: { de: SEE, en: SEE }
+            correct: true
+            info:
+              de: "· · · ist S, dann zweimal · für E: SEE, wie im Seeberg."
+              en: "· · · is S, then · twice for E: SEE, as in Seeberg (and the English word see)."
+          - text: { de: EEEEE, en: EEEEE }
+            correct: false
+            info:
+              de: So liest du es, wenn du die Pausen nicht beachtest. Die ersten drei Punkte gehören zu einem Buchstaben.
+              en: That is how you read it if you ignore the pauses. The first three dots belong to one letter.
+          - text: { de: OEE, en: OEE }
+            correct: false
+            info:
+              de: O ist dreimal lang, – – –. Selin blinkt aber dreimal kurz.
+              en: O is three long flashes, – – –. But Selin flashes three short ones.
+        explanation:
+          de: Mit den Pausen ist jeder Buchstabe klar. Ohne Pausen könnte man die Zeichen ganz anders lesen.
+          en: With the pauses, every letter is clear. Without pauses you could read the signals in a very different way.
+      - type: ordering
+        id: nest-codieren
+        text:
+          de: Jona will NEST morsen. Bringe die Zeichen in die richtige Reihenfolge.
+          en: Jona wants to send NEST in Morse code. Put the signals in the right order.
+        items:
+          - { de: "– ·", en: "– ·" }
+          - { de: "·", en: "·" }
+          - { de: "· · ·", en: "· · ·" }
+          - { de: "–", en: "–" }
+        explanation:
+          de: "N ist – ·, E ist ·, S ist · · ·, T ist –. Die Reihenfolge der Buchstaben bestimmt die Reihenfolge der Zeichen."
+          en: "N is – ·, E is ·, S is · · ·, T is –. The order of the letters decides the order of the signals."
+      - type: number
+        id: sos-zeichen
+        text:
+          de: Wie viele Blinkzeichen braucht Jona für SOS? Zähle jeden Punkt und jeden Strich.
+          en: How many flashes does Jona need for SOS? Count every dot and every dash.
+        answer: 9
+        tolerance: 0
+        mistakes:
+          - answer: 3
+            message:
+              de: 3 ist die Zahl der Buchstaben. Jeder Buchstabe hat aber mehrere Zeichen.
+              en: 3 is the number of letters. But each letter has several signals.
+          - answer: 6
+            message:
+              de: Schau beim O noch einmal in die Tabelle. O hat drei lange Zeichen.
+              en: Look at O in the table again. O has three long signals.
+        explanation:
+          de: S ist · · ·, O ist – – –, S ist · · ·. Das sind 3 + 3 + 3 = 9 Zeichen.
+          en: S is · · ·, O is – – –, S is · · ·. That is 3 + 3 + 3 = 9 signals.
+      - type: true-false
+        id: code-geheim
+        text:
+          de: Ein Code ist immer geheim.
+          en: A code is always secret.
+        answer: false
+        explanation:
+          de: Den Morsecode, die Ampel und den Strichcode kann jeder kennen. Ein Code soll vor allem helfen, Nachrichten weiterzugeben. Wie man eine Nachricht geheim hält, lernst du im Kapitel „Geheime Botschaften“.
+          en: Anyone can know Morse code, the traffic lights and the barcode. A code is mainly there to help pass on messages. You will learn how to keep a message secret in the chapter “Secret messages”.
+      - type: text
+        text:
+          de: Jetzt kannst du mit einer Codetabelle codieren und decodieren. Der Morsecode braucht kurz, lang und die Pause. Auf der nächsten Seite schreibst du mit nur zwei Zeichen, 0 und 1, sogar Zahlen.
+          en: Now you can encode and decode with a code table. Morse code needs short, long and the pause. On the next page you will use just two symbols, 0 and 1, to write numbers too.

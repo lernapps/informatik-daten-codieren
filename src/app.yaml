@@ -1,0 +1,17 @@
+# yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+format: 2
+strand: informatik/daten
+title:
+  de: Daten darstellen und codieren
+  en: Representing and encoding data
+intro:
+  de: |
+    Die Klasse 6b fährt an den Seeberg. Wer fährt mit, wohin, wann? Diese Information schreibst du immer wieder
+    neu auf: als Tabelle und Baum, als Zahl aus Bits, als Pixelbild und als Geheimschrift. So lernst du, wie ein
+    Computer alles mit 0 und 1 speichert. Für die Klassen 5 und 6.
+  en: |
+    Class 6b is going on a school trip to Seeberg. Who is going, where, and when? You will write down this information again and
+    again in new ways: as a table and a tree, as a number made of bits, as a pixel image and in secret writing. This
+    is how you learn how a computer stores everything with 0 and 1. For ages 10 to 12.
+languages: [de, en]
+chapters: [information, bits, bilder, geheim]

@@ -1,0 +1,210 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Die Geheimschrift
+  en: Secret writing
+description:
+  de: "Die Grundidee der Verschlüsselung an der Skytale: Klartext, Geheimtext, Verfahren und Schlüssel."
+  en: "The basic idea of encryption with the scytale: plaintext, ciphertext, method and key."
+competencies: [verschluesselung-grundidee]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Die 6c darf das nicht lesen!
+      en: Class 6c must not read this!
+    blocks:
+      - type: text
+        text:
+          de: |
+            Die 6b plant eine Überraschung für die Parallelklasse 6c, die auch in der Jugendherberge wohnt. Jona will Selin schreiben, wo sie sich treffen.
+            Aber die 6c soll die Nachricht nicht lesen können, auch wenn sie den Zettel findet. Selin hat eine Idee
+            aus dem Geschichtsbuch: eine **Skytale**, einen Holzstab mit einem Streifen.
+
+            Im Kapitel „Alles ist 0 und 1“ waren Codes für alle lesbar. Auf dieser Seite lernst du, wie man eine
+            Nachricht **verschlüsselt**, damit nur Eingeweihte sie lesen.
+          en: |
+            Class 6b is planning a surprise for the other class, 6c, who are staying at the youth hostel too. Jona wants to write to Selin where they will meet.
+            But class 6c must not be able to read the message, even if they find the note. Selin has an idea from her
+            history book: a **scytale**, a wooden stick with a strip.
+
+            In the chapter “Everything is 0 and 1”, codes could be read by everyone. On this page you will learn how to
+            **encrypt** a message so that only people who are in on it can read it.
+      - type: figure
+        image: images/szene-geheim.svg
+        alt:
+          de: "Jona und Selin. Zwischen ihnen liegt ein Holzstab, um den ein heller Streifen gewickelt ist."
+          en: "Jona and Selin. Between them lies a wooden stick with a light strip wound around it."
+        caption:
+          de: "Jona und Selin mit der Skytale"
+          en: "Jona and Selin with the scytale"
+        source:
+          de: eigene Zeichnung, Figuren aus dem Explainer „Informatiksysteme“ (lernapps/informatik-computer)
+          en: own drawing, characters from the explainer “Computer systems” (lernapps/informatik-computer)
+        licence: CC-BY-4.0
+      - type: figure
+        image: images/skytale.svg
+        alt:
+          de: "Ein Holzstab. Ein heller Streifen ist schräg um ihn gewickelt. Auf dem Streifen stehen Zeichen nebeneinander, Reihe für Reihe. Ein Ende des Streifens hängt lose herunter."
+          en: "A wooden stick. A light strip is wound around it at a slant. On the strip there are signs next to each other, row by row. One end of the strip hangs loose."
+        caption:
+          de: Eine Skytale. Um den Stab gewickelt, stehen die Buchstaben (hier als Kästchen gezeichnet) in Reihen. Abgewickelt sind sie durcheinander.
+          en: A scytale. Wound around the stick, the letters (drawn here as boxes) are in rows. Unwound, they are jumbled.
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: true-false
+        id: streifen-lesen
+        text:
+          de: Die 6c findet nur den abgewickelten Streifen. Sie kann die Nachricht sofort lesen.
+          en: Class 6c only finds the unwound strip. They can read the message straight away.
+        answer: false
+        explanation:
+          de: Auf dem abgewickelten Streifen stehen die Buchstaben durcheinander. Lesbar werden sie erst wieder auf einem Stab mit der richtigen Dicke.
+          en: On the unwound strip the letters are jumbled. They only become readable again on a stick of the right thickness.
+  - type: section
+    id: idee
+    title:
+      de: Verfahren und Schlüssel
+      en: Method and key
+    blocks:
+      - type: text
+        text:
+          de: |
+            Ohne Stab geht es auch mit Kästchen, nach derselben Idee: Die Buchstaben werden nach einer festen Regel
+            vertauscht. Jona schreibt ZELT AM SEE ohne Leerzeichen in Zeilen mit je **3** Buchstaben. Dann liest er **Spalte für
+            Spalte** von oben nach unten.
+          en: |
+            You can also do it with boxes instead of a stick, with the same idea: the letters are swapped around by a
+            fixed rule. Jona writes MEET AT SIX without spaces in rows of **3** letters. Then he reads **column by
+            column** from top to bottom.
+      - type: table
+        caption:
+          de: "Jonas Kästchen. Spalte für Spalte gelesen: ZTS EAE LME, also ZTSEAELME."
+          en: "Jona's boxes. Read column by column: MTS EAI ETX, which gives MTSEAIETX."
+        header:
+          - { de: "1", en: "1" }
+          - { de: "2", en: "2" }
+          - { de: "3", en: "3" }
+        rows:
+          - [{ de: Z, en: M }, { de: E, en: E }, { de: L, en: E }]
+          - [{ de: T, en: T }, { de: A, en: A }, { de: M, en: T }]
+          - [{ de: S, en: S }, { de: E, en: I }, { de: E, en: X }]
+      - type: definition
+        term:
+          de: Verschlüsselung
+          en: encryption
+        explanation:
+          de: Beim Verschlüsseln macht man aus dem lesbaren **Klartext** mit einem Verfahren und einem geheimen Schlüssel einen **Geheimtext**. Nur wer den Schlüssel kennt, soll ihn wieder lesen können.
+          en: When you encrypt, you turn the readable **plaintext** into a **ciphertext** with a method and a secret key. Only someone who knows the key is meant to be able to read it again.
+      - type: definition
+        term:
+          de: Schlüssel
+          en: key
+        explanation:
+          de: Der Schlüssel ist das Geheimnis, das man zum Ver- und Entschlüsseln braucht, zum Beispiel eine Zahl. Das Verfahren dürfen alle kennen, den Schlüssel nicht.
+          en: The key is the secret you need to encrypt and decrypt, for example a number. Everyone may know the method, but not the key.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Das **Verfahren** ist die Regel, hier „in Zeilen schreiben, in Spalten lesen“. Der **Schlüssel** ist die Zahl, die man geheim hält, hier 3 Buchstaben pro Zeile. Zum Entschlüsseln schreibt Selin den Geheimtext wieder Spalte für Spalte in Kästchen mit 3 Spalten und liest die Zeilen.
+              en: The **method** is the rule, here “write in rows, read in columns”. The **key** is the number you keep secret, here 3 letters per row. To decrypt, Selin writes the ciphertext column by column into boxes with 3 columns again and reads the rows.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: matching
+        id: begriffe
+        text:
+          de: Ordne jedem Wort sein Beispiel aus Jonas Nachricht zu.
+          en: Match each word to its example from Jona's message.
+        pairs:
+          - left:
+              de: Klartext
+              en: plaintext
+            right:
+              de: ZELTAMSEE
+              en: MEETATSIX
+          - left:
+              de: Geheimtext
+              en: ciphertext
+            right:
+              de: ZTSEAELME
+              en: MTSEAIETX
+          - left:
+              de: Schlüssel
+              en: key
+            right:
+              de: 3 Buchstaben pro Zeile
+              en: 3 letters per row
+        distractors:
+          - de: der Zettel, auf dem die Nachricht steht
+            en: the note the message is written on
+        explanation:
+          de: Der Klartext ist lesbar, der Geheimtext nicht. Der Schlüssel macht aus dem einen den anderen.
+          en: The plaintext can be read, the ciphertext cannot. The key turns one into the other.
+      - type: ordering
+        id: spalten-lesen
+        text:
+          de: "Selin verschlüsselt BUS UM ACHT mit dem Schlüssel 3. Ihre Zeilen sind BUS, UMA, CHT. Ordne die Spalten so, wie sie gelesen werden."
+          en: "Selin encrypts BUS AT NINE with the key 3. Her rows are BUS, ATN, INE. Put the columns in the order they are read."
+        items:
+          - { de: "BUC (Spalte 1)", en: "BAI (column 1)" }
+          - { de: "UMH (Spalte 2)", en: "UTN (column 2)" }
+          - { de: "SAT (Spalte 3)", en: "SNE (column 3)" }
+        explanation:
+          de: Spalte für Spalte von links nach rechts, jede von oben nach unten. Der Geheimtext ist BUCUMHSAT.
+          en: Column by column from left to right, each from top to bottom. The ciphertext is BAIUTNSNE.
+      - type: number
+        id: zeilen-zaehlen
+        text:
+          de: Jona verschlüsselt eine Nachricht mit 12 Buchstaben. Der Schlüssel ist 4 Buchstaben pro Zeile. Wie viele Zeilen schreibt er?
+          en: Jona encrypts a message of 12 letters. The key is 4 letters per row. How many rows does he write?
+        answer: 3
+        tolerance: 0
+        mistakes:
+          - answer: 4
+            message:
+              de: 4 ist die Zahl der Buchstaben in einer Zeile. Gefragt ist, wie viele Zeilen es werden.
+              en: 4 is the number of letters in one row. The question is how many rows there are.
+          - answer: 48
+            message:
+              de: Du hast 12 · 4 gerechnet. Verteile die 12 Buchstaben auf Zeilen mit je 4.
+              en: You worked out 12 × 4. Share the 12 letters out into rows of 4.
+        explanation:
+          de: "12 Buchstaben, je 4 in einer Zeile, ergeben 12 : 4 = 3 Zeilen."
+          en: 12 letters, 4 in each row, give 12 ÷ 4 = 3 rows.
+      - type: single-choice
+        id: entschluesseln
+        text:
+          de: "Selin bekommt den Geheimtext TFMCRFSHEUES, 12 Buchstaben. Der Schlüssel ist 3 Buchstaben pro Zeile. Was ist der Klartext?"
+          en: "Selin gets the ciphertext BTTLOAWVATEE, 12 letters. The key is 3 letters per row. What is the plaintext?"
+        options:
+          - text: { de: TREFFUMSECHS, en: BOATATTWELVE }
+            correct: true
+            info:
+              de: "12 Buchstaben in 3 Spalten sind 4 Zeilen. Selin schreibt TFMC, RFSH und EUES als Spalten. Die Zeilen sind TRE, FFU, MSE, CHS: Treff um sechs."
+              en: "12 letters in 3 columns make 4 rows. Selin writes BTTL, OAWV and ATEE as columns. The rows are BOA, TAT, TWE, LVE: boat at twelve."
+          - text: { de: TCSUFRHEMFES, en: BLWTTOVETAAE }
+            correct: false
+            info:
+              de: Du hast den Geheimtext noch einmal verschlüsselt, also in Zeilen geschrieben. Zum Entschlüsseln schreibst du ihn in Spalten.
+              en: You encrypted the ciphertext again, by writing it in rows. To decrypt, you write it in columns.
+          - text: { de: SEUEHSFRCMFT, en: EETAVWAOLTTB }
+            correct: false
+            info:
+              de: Das ist der Geheimtext rückwärts gelesen. Die Skytale vertauscht die Buchstaben anders.
+              en: That is the ciphertext read backwards. The scytale mixes up the letters in a different way.
+        explanation:
+          de: Zum Entschlüsseln schreibt man den Geheimtext Spalte für Spalte in Kästchen mit 3 Spalten und liest die Zeilen.
+          en: To decrypt, you write the ciphertext column by column into boxes with 3 columns and read the rows.
+      - type: text
+        text:
+          de: Jetzt kannst du mit einem Verfahren und einem Schlüssel ver- und entschlüsseln. Auf der nächsten Seite lernst du ein Verfahren, bei dem jeder Buchstabe ein anderer wird, die Caesar-Scheibe.
+          en: Now you can encrypt and decrypt with a method and a key. On the next page you will learn a method where every letter becomes a different one, the Caesar disc.

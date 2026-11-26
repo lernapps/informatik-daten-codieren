@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Information wird zu Daten
+  en: Information becomes data
+summary:
+  de: Aus einer Nachricht werden Daten und aus Daten wieder Information, als Zettel, Tabelle, Diagramm und Baum.
+  en: A message becomes data, and data becomes information again, as a note, a table, a chart and a tree.
+pages: [daten, deuten, darstellen, baum]
+selfAssessment:
+  pages:
+    - exercises:
+        - /information/daten/#weg-der-nachricht
+        - /information/daten/#daten-oder-information
+        - /information/deuten/#was-ist-21
+    - exercises:
+        - /information/darstellen/#alle-stimmen
+        - /information/darstellen/#frage-und-form
+        - /information/baum/#wurzel-unten

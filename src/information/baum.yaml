@@ -1,0 +1,241 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Der Baum
+  en: The tree
+description:
+  de: "Der Baum als Darstellung: Wurzel, Knoten, Kanten und Blätter am Zimmerplan und am Turnierbaum."
+  en: "The tree as a way of showing data: root, nodes, edges and leaves in the room plan and a tournament tree."
+competencies: [baum]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Wer schläft wo?
+      en: Who sleeps where?
+    blocks:
+      - type: text
+        text:
+          de: |
+            Schon vor der Fahrt teilt Frau Berg die Zimmer am Seeberg ein. Sie zeichnet einen Plan, damit alle schnell ihr Zimmer finden.
+            Hier siehst du einen Ausschnitt: drei Zimmer, 13, 22 und 9, mit je zwei Kindern.
+
+            Auf der Seite davor hast du Tabelle, Diagramm und Text kennengelernt. Auf dieser Seite lernst du eine
+            Form für Daten, die ineinander stecken: die Klasse hat Zimmer, die Zimmer haben Kinder.
+          en: |
+            Even before the trip, Ms Berg shares out the rooms at Seeberg. She draws a plan so that everyone can find their room quickly.
+            Here you can see part of it: three rooms, 13, 22 and 9, with two children each.
+
+            On the page before you learnt about tables, charts and text. On this page you will learn a form for data
+            that fits inside other data: the class has rooms, and the rooms have children.
+      - type: labelled-figure
+        image: images/baum-zimmer.svg
+        alt:
+          de: "Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13, 22 und 9. Unter Zimmer 13 stehen Jona und Tom, unter 22 Selin und Mia, unter 9 Ben und Ali. Die Kästchen ganz unten haben einen gestrichelten Rand."
+          en: "A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below room 13 are Jona and Tom, below 22 Selin and Mia, below 9 Ben and Ali. The boxes at the very bottom have a dashed border."
+        caption:
+          de: Frau Bergs Zimmerplan als Baum. Die Zahlen 1 bis 4 zeigen die Teile des Baums.
+          en: Ms Berg's room plan as a tree. The numbers 1 to 4 show the parts of the tree.
+        labels:
+          - x: 66
+            y: 12
+            text:
+              de: "Wurzel: der oberste Knoten"
+              en: "root: the top node"
+          - x: 67
+            y: 27
+            text:
+              de: "Kante: eine Linie zwischen zwei Knoten"
+              en: "edge: a line between two nodes"
+          - x: 5
+            y: 38
+            text:
+              de: "Knoten: ein Kästchen im Baum"
+              en: "node: a box in the tree"
+          - x: 97
+            y: 69
+            text:
+              de: "Blatt: ein Knoten ohne Knoten darunter"
+              en: "leaf: a node with no nodes below it"
+        source:
+          de: eigene Zeichnung
+          en: own drawing
+        licence: CC-BY-4.0
+      - type: single-choice
+        id: ali-zimmer
+        text:
+          de: In welchem Zimmer schläft Ali?
+          en: Which room does Ali sleep in?
+        options:
+          - text: { de: "9", en: "9" }
+            correct: true
+            info:
+              de: Von Ali führt eine Kante nach oben zum Knoten 9.
+              en: An edge leads up from Ali to the node 9.
+          - text: { de: "22", en: "22" }
+            correct: false
+            info:
+              de: Unter Zimmer 22 stehen Selin und Mia.
+              en: Below room 22 are Selin and Mia.
+          - text: { de: "13", en: "13" }
+            correct: false
+            info:
+              de: Unter Zimmer 13 stehen Jona und Tom.
+              en: Below room 13 are Jona and Tom.
+        explanation:
+          de: Folge der Kante von Ali nach oben. Sie führt zu genau einem Zimmer, der 9.
+          en: Follow the edge from Ali upwards. It leads to exactly one room, 9.
+  - type: section
+    id: idee
+    title:
+      de: Wurzel oben, Blätter unten
+      en: Root at the top, leaves at the bottom
+    blocks:
+      - type: definition
+        term:
+          de: Baum
+          en: tree
+        explanation:
+          de: Ein Baum zeigt Daten, die ineinander stecken. Er besteht aus Knoten und Kanten. Ganz oben steht ein Knoten, die Wurzel. Knoten ohne Knoten darunter heißen Blätter.
+          en: A tree shows data that fits inside other data. It is made of nodes and edges. At the very top there is one node, the root. Nodes with no nodes below them are called leaves.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: |
+                Ein Baum in der Informatik steht auf dem Kopf: Die Wurzel ist **oben**, die Blätter sind **unten**.
+                Jeder Knoten außer der Wurzel hängt an genau **einem** Knoten darüber. Darum gibt es von der Wurzel zu
+                jedem Blatt genau einen Weg.
+              en: |
+                A tree in computer science is upside down: the root is at the **top**, the leaves are at the
+                **bottom**. Every node except the root hangs from exactly **one** node above it. That is why there is
+                exactly one path from the root to each leaf.
+  - type: section
+    id: beispiel
+    title:
+      de: Beispiel
+      en: Example
+    blocks:
+      - type: example
+        title:
+          de: Der Turnierbaum
+          en: The tournament tree
+        blocks:
+          - type: text
+            text:
+              de: |
+                Am Abend spielen vier Kinder Tischtennis. Wer gewinnt, kommt eine Reihe höher. Unten stehen die vier
+                Kinder, das sind die Blätter. Die Wurzel oben ist das Kind, das das Turnier gewonnen hat.
+              en: |
+                In the evening, four children play table tennis. Whoever wins moves up one row. At the bottom are the
+                four children, they are the leaves. The root at the top is the child who won the tournament.
+          - type: figure
+            image: images/turnier.svg
+            alt:
+              de: "Ein Baum mit drei Reihen. Unten: Jona, Selin, Mia und Ali. In der Mitte: Selin und Mia. Oben: Mia."
+              en: "A tree with three rows. At the bottom: Jona, Selin, Mia and Ali. In the middle: Selin and Mia. At the top: Mia."
+            caption:
+              de: Der Turnierbaum. Lies von unten nach oben, wer gegen wen gespielt hat.
+              en: The tournament tree. Read from the bottom up who played against whom.
+            source:
+              de: eigene Zeichnung
+              en: own drawing
+            licence: CC-BY-4.0
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: matching
+        id: teile-des-baums
+        text:
+          de: Ordne jeden Teil des Zimmerbaums seinem Beispiel zu.
+          en: Match each part of the room tree to its example.
+        pairs:
+          - left:
+              de: Wurzel
+              en: root
+            right:
+              de: der Knoten 6b
+              en: the node 6b
+          - left:
+              de: Blatt
+              en: leaf
+            right:
+              de: der Knoten Ben
+              en: the node Ben
+          - left:
+              de: Kante
+              en: edge
+            right:
+              de: die Linie von 22 zu Mia
+              en: the line from 22 to Mia
+        distractors:
+          - de: ein Zimmerschlüssel
+            en: a room key
+        explanation:
+          de: Die Wurzel ist der oberste Knoten, ein Blatt hat keinen Knoten darunter, und eine Kante verbindet zwei Knoten.
+          en: The root is the top node, a leaf has no node below it, and an edge connects two nodes.
+      - type: number
+        id: blaetter-turnier
+        text:
+          de: Wie viele Blätter hat der Turnierbaum?
+          en: How many leaves does the tournament tree have?
+        answer: 4
+        tolerance: 0
+        mistakes:
+          - answer: 7
+            message:
+              de: Du hast alle Knoten gezählt. Blätter sind nur die Knoten ganz unten.
+              en: You counted all the nodes. Leaves are only the nodes at the very bottom.
+          - answer: 1
+            message:
+              de: Das ist die Wurzel. Die Blätter stehen unten.
+              en: That is the root. The leaves are at the bottom.
+        explanation:
+          de: Ganz unten stehen 4 Knoten ohne Knoten darunter, die vier Kinder.
+          en: At the very bottom there are 4 nodes with no nodes below them, the four children.
+      - type: number
+        id: kanten-zimmer
+        text:
+          de: Wie viele Kanten hat der Zimmerbaum?
+          en: How many edges does the room tree have?
+        answer: 9
+        tolerance: 0
+        mistakes:
+          - answer: 10
+            message:
+              de: Du hast die Knoten gezählt. Zähle die Linien.
+              en: You counted the nodes. Count the lines.
+          - answer: 6
+            message:
+              de: Du hast nur die Kanten zu den Kindern gezählt. Auch von 6b zu den Zimmern führen Kanten.
+              en: You only counted the edges to the children. There are also edges from 6b to the rooms.
+        hint:
+          de: Jeder Knoten außer der Wurzel hat genau eine Kante nach oben.
+          en: Every node except the root has exactly one edge going up.
+        explanation:
+          de: "3 Kanten von 6b zu den Zimmern und 6 Kanten von den Zimmern zu den Kindern: 9. Ein Baum hat immer eine Kante weniger als Knoten."
+          en: "3 edges from 6b to the rooms and 6 edges from the rooms to the children: 9. That is always one less than the number of nodes."
+      - type: true-false
+        id: wurzel-unten
+        text:
+          de: In einem Baum der Informatik steht die Wurzel unten, wie bei einem echten Baum.
+          en: In a computer science tree, the root is at the bottom, like on a real tree.
+        answer: false
+        explanation:
+          de: In der Informatik steht der Baum auf dem Kopf. Die Wurzel ist oben, die Blätter sind unten.
+          en: In computer science, the tree is upside down. The root is at the top, the leaves are at the bottom.
+      - type: text
+        text:
+          de: |
+            Rückblick auf das Kapitel: Die Klassenfahrt hast du als Zettel, Tabelle, Säulendiagramm, Text und Baum
+            gesehen. Immer war es dieselbe Information, nur anders dargestellt. Im nächsten Kapitel lernst du, wie ein
+            Computer solche Daten speichert: nur mit 0 und 1.
+          en: |
+            Looking back on the chapter: you have seen the school trip as a note, a table, a bar chart, a text and a
+            tree. It was always the same information, just shown in a different way. In the next chapter you will learn
+            how a computer stores data like this: only with 0 and 1.

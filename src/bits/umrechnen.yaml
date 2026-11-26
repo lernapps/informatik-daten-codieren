@@ -1,0 +1,227 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Zahlen in Bits
+  en: Numbers in bits
+description:
+  de: "Eine Dezimalzahl in eine Binärzahl umrechnen: mit den Bit-Karten und durch fortgesetztes Teilen durch 2."
+  en: "Turning a decimal number into a binary number: with the bit cards and by dividing by 2 again and again."
+competencies: [dezimal-in-binaer]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: Der Bus Nummer 27
+      en: Bus number 27
+    blocks:
+      - type: text
+        text:
+          de: |
+            Am Dienstag macht die 6b einen Ausflug mit dem Bus Nummer 27. Jona will die Nummer mit den Bit-Karten an
+            die Zimmertür hängen, damit alle es wissen. Zuerst übt er mit anderen Zahlen: Lege die Zahl, die die
+            Aufgabe nennt. Die 27 kommt danach.
+
+            Auf der Seite davor hast du Bit-Karten gelesen und daraus eine Zahl gemacht. Jetzt gehst du den Weg
+            zurück: Aus einer Zahl werden Bits.
+          en: |
+            On Tuesday, class 6b goes on an outing on bus number 27. Jona wants to put the number on the room door with
+            bit cards, so that everyone knows. First he practises with other numbers: make the number the task gives.
+            The 27 comes after that.
+
+            On the page before you read bit cards and turned them into a number. Now you go the other way: a number
+            becomes bits.
+      - type: vue-component
+        id: karten-legen
+        component: BitKarten
+        props:
+          task:
+            de: "Drehe die Karten um, bis sie zusammen {n} zeigen. Dann drücke „Prüfen“."
+            en: "Turn over the cards until together they show {n}. Then press “Check”."
+          cards: 5
+          min: 3
+          max: 31
+          card:
+            de: "Karte {v}"
+            en: "Card {v}"
+          open:
+            de: offen
+            en: face up
+          closed:
+            de: verdeckt
+            en: face down
+          line:
+            de: "Bitfolge: {b}"
+            en: "Bit string: {b}"
+          mistakes:
+            - de: "Deine Karten zeigen {s}. Du hast die Karten von der falschen Seite gelegt: Die größte Karte liegt links."
+              en: "Your cards show {s}. You laid the cards out from the wrong end: the biggest card is on the left."
+            - de: "Deine Karten zeigen zusammen {s}, das ist weniger als {n}. Prüfe von der größten Karte an: Passt sie noch in den Rest?"
+              en: "Your cards show {s} altogether, which is less than {n}. Check from the biggest card: does it still fit into what is left?"
+            - de: "Deine Karten zeigen zusammen {s}, das ist mehr als {n}. Prüfe von der größten Karte an: Passt sie noch in den Rest?"
+              en: "Your cards show {s} altogether, which is more than {n}. Check from the biggest card: does it still fit into what is left?"
+        examples:
+          accepted:
+            - { answer: [1, 0, 1, 1, 0], seed: 1 }
+          rejected:
+            - { answer: [0, 0, 0, 0, 0] }
+            - { answer: [1, 1, 1, 1, 1] }
+            - { answer: [0, 1, 1, 0, 1], seed: 1 }
+  - type: section
+    id: idee
+    title:
+      de: Zwei Wege zur Binärzahl
+      en: Two methods to get the binary number
+    blocks:
+      - type: text
+        text:
+          de: "**Weg 1: Die größte Karte zuerst.** Gehe von links nach rechts. Frage bei jeder Karte: Passt sie noch in den Rest? Dann drehe sie um und ziehe ihren Wert ab."
+          en: "**Method 1: The biggest card first.** Go from left to right. For each card, ask: does it still fit into what is left? Then turn it over and take its value away."
+      - type: table
+        caption:
+          de: "Weg 1 für die Zahl 27"
+          en: "Method 1 for the number 27"
+        header:
+          - de: Karte
+            en: Card
+          - de: Passt sie?
+            en: Does it fit?
+          - de: Rest
+            en: Still to make
+        rows:
+          - [{ de: "16", en: "16" }, { de: "ja: 1", en: "yes: 1" }, { de: "27 − 16 = 11", en: "27 − 16 = 11" }]
+          - [{ de: "8", en: "8" }, { de: "ja: 1", en: "yes: 1" }, { de: "11 − 8 = 3", en: "11 − 8 = 3" }]
+          - [{ de: "4", en: "4" }, { de: "nein: 0", en: "no: 0" }, { de: "3", en: "3" }]
+          - [{ de: "2", en: "2" }, { de: "ja: 1", en: "yes: 1" }, { de: "3 − 2 = 1", en: "3 − 2 = 1" }]
+          - [{ de: "1", en: "1" }, { de: "ja: 1", en: "yes: 1" }, { de: "1 − 1 = 0", en: "1 − 1 = 0" }]
+      - type: text
+        text:
+          de: "**Weg 2: Immer durch 2 teilen.** Teile die Zahl durch 2 und schreibe den Rest auf. Teile das Ergebnis wieder durch 2, bis 0 herauskommt. Die Reste, **von unten nach oben** gelesen, sind die Binärzahl. Dieser Weg klappt auch für große Zahlen, ohne Karten."
+          en: "**Method 2: Keep dividing by 2.** Divide the number by 2 and write down the remainder. Divide the result by 2 again, until you get 0. The remainders, read **from the bottom up**, are the binary number. This method also works for big numbers, without cards."
+      - type: example
+        title:
+          de: "Weg 2 für die Zahl 27"
+          en: "Method 2 for the number 27"
+        blocks:
+          - type: table
+            caption:
+              de: "Lies die Reste von unten nach oben: 11011. Probe: 16 + 8 + 2 + 1 = 27."
+              en: "Read the remainders from the bottom up: 11011. Check: 16 + 8 + 2 + 1 = 27."
+            header:
+              - de: Rechnung
+                en: Division
+              - de: Rest
+                en: Remainder
+            rows:
+              - [{ de: "27 : 2 = 13", en: "27 ÷ 2 = 13" }, { de: "1", en: "1" }]
+              - [{ de: "13 : 2 = 6", en: "13 ÷ 2 = 6" }, { de: "1", en: "1" }]
+              - [{ de: "6 : 2 = 3", en: "6 ÷ 2 = 3" }, { de: "0", en: "0" }]
+              - [{ de: "3 : 2 = 1", en: "3 ÷ 2 = 1" }, { de: "1", en: "1" }]
+              - [{ de: "1 : 2 = 0", en: "1 ÷ 2 = 0" }, { de: "1", en: "1" }]
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Beim Teilen kommt der Rest für die Karte 1 zuerst heraus. Darum liest du die Reste von unten nach oben. Liest du sie von oben, steht die Zahl verkehrt herum.
+              en: When you divide, the remainder for card 1 comes out first. That is why you read the remainders from the bottom up. If you read them from the top, the number is the wrong way round.
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: generated
+        id: dezimal-binaer-ueben
+        given:
+          e: { pick: 1, from: { data: zahlen } }
+        where:
+          - "e.binZahl != e.gespiegelt"
+          - "e.dez != 27"
+        task:
+          text:
+            de: "Schreibe die Zahl {{e.dez}} als Binärzahl. Führende Nullen darfst du weglassen."
+            en: "Write the number {{e.dez}} as a binary number. You may leave out zeros at the front."
+        answer:
+          value: "e.binZahl"
+          compare: { number: { format: integer } }
+        mistakes:
+          - value: "e.gespiegelt"
+            message:
+              de: "Du hast die Reste von oben nach unten gelesen. Lies sie von unten nach oben."
+              en: "You read the remainders from the top down. Read them from the bottom up."
+        hint:
+          de: "Teile immer durch 2 und schreibe jeden Rest auf. Oder frage bei jeder Karte von 16 abwärts: Passt sie noch?"
+          en: "Keep dividing by 2 and write down each remainder. Or ask for each card from 16 down: does it still fit?"
+        steps:
+          - de: "Teilen: {{e.teilen}}."
+            en: "Dividing: {{e.teilen}}."
+          - de: "Die Reste von unten nach oben: {{e.bin}}. Probe mit den Karten: {{e.karten}} = {{e.dez}}."
+            en: "The remainders from the bottom up: {{e.bin}}. Check with the cards: {{e.karten}} = {{e.dez}}."
+      - type: ordering
+        id: teilen-ordnen
+        text:
+          de: Selin rechnet 13 in eine Binärzahl um. Bringe ihre Rechenschritte in die richtige Reihenfolge.
+          en: Selin turns 13 into a binary number. Put her steps in the right order.
+        items:
+          - de: "13 : 2 = 6 Rest 1"
+            en: "13 ÷ 2 = 6 remainder 1"
+          - de: "6 : 2 = 3 Rest 0"
+            en: "6 ÷ 2 = 3 remainder 0"
+          - de: "3 : 2 = 1 Rest 1"
+            en: "3 ÷ 2 = 1 remainder 1"
+          - de: "1 : 2 = 0 Rest 1"
+            en: "1 ÷ 2 = 0 remainder 1"
+        explanation:
+          de: Jeder Schritt teilt das Ergebnis des Schritts davor. Von unten gelesen sind die Reste 1101, also 13.
+          en: Each step divides the result of the step before. Read from the bottom, the remainders are 1101, which is 13.
+      - type: number
+        id: karten-fuer-40
+        text:
+          de: Mia schreibt die Zahl 40 als Binärzahl. Wie viele Stellen (Bits) hat sie?
+          en: Mia writes the number 40 as a binary number. How many digits (bits) does it have?
+        answer: 6
+        tolerance: 0
+        mistakes:
+          - answer: 5
+            message:
+              de: Mit fünf Stellen kommst du nur bis 31. Für 40 brauchst du noch die Karte 32.
+              en: With five digits you can only get up to 31. For 40 you also need card 32.
+          - answer: 2
+            message:
+              de: Du hast nur die Einsen gezählt, 32 und 8. Die Nullen für 16, 4, 2 und 1 sind auch Stellen.
+              en: You only counted the ones, 32 and 8. The zeros for 16, 4, 2 and 1 are digits too.
+        hint:
+          de: Welche ist die größte Karte, die in 40 passt?
+          en: What is the biggest card that fits into 40?
+        explanation:
+          de: "40 = 32 + 8. Die Reihe geht von 32 bis 1, das sind 6 Stellen: 101000."
+          en: "40 = 32 + 8. The row goes from 32 down to 1, which is 6 digits: 101000."
+      - type: single-choice
+        id: zwoelf-binaer
+        text:
+          de: Welche Binärzahl ist die Zahl 12?
+          en: Which binary number is the number 12?
+        options:
+          - text: { de: "1100", en: "1100" }
+            correct: true
+            info:
+              de: "8 + 4 = 12. Die Karten 8 und 4 sind offen, 2 und 1 verdeckt."
+              en: "8 + 4 = 12. Cards 8 and 4 are face up, 2 and 1 face down."
+          - text: { de: "0011", en: "0011" }
+            correct: false
+            info:
+              de: Das ist 1100 verkehrt herum. 0011 ist 2 + 1 = 3.
+              en: That is 1100 the wrong way round. 0011 is 2 + 1 = 3.
+          - text: { de: "1010", en: "1010" }
+            correct: false
+            info:
+              de: "1010 ist 8 + 2 = 10."
+              en: "1010 is 8 + 2 = 10."
+        explanation:
+          de: "12 = 8 + 4, also sind die Karten 8 und 4 offen: 1100."
+          en: "12 = 8 + 4, so cards 8 and 4 are face up: 1100."
+      - type: text
+        text:
+          de: Jetzt kannst du jede Zahl in Bits umrechnen. Auf der nächsten Seite erfährst du, wie viele Bits ein Computer zusammenfasst und wie viele Bits ein Foto braucht.
+          en: Now you can turn any number into bits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.
