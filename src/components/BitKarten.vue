@@ -5,10 +5,10 @@
 // "Prüfen", checks, gives the feedback, the task number and "Neue Aufgabe".
 import { computed, ref } from "vue";
 import { dots, fill, text, values } from "./Bits.ts";
-import { generate } from "./BitKarten.ts";
+import { charOf, generate } from "./BitKarten.ts";
 
 const props = defineProps<{
-  /** The task, with {n} for the number to lay out. */
+  /** The task, with {n} for the number to lay out and {c} for the character with that code. */
   task: string;
   /** The number of cards, 5 or 8. */
   cards: number;
@@ -44,7 +44,7 @@ function toggle(index: number): void {
 
 <template>
   <div class="bit-karten">
-    <p>{{ fill(task, { n: current.n }) }}</p>
+    <p>{{ fill(task, { n: current.n, c: charOf(current.n) }) }}</p>
     <div class="bit-karten-row" :class="{ 'bit-karten-many': cards > 5, 'bit-karten-checked': checked }">
       <div v-for="(value, index) in row" :key="value" class="bit-karten-place">
         <span class="bit-karten-value" aria-hidden="true">{{ value }}</span>

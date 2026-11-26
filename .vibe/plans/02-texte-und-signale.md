@@ -4,7 +4,7 @@
 # Archetype, as in the app's first plan. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: code
 # prePushFailures: failed pre-push runs of this increment, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -33,6 +33,7 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
 
 ## Key decisions
 
+- Kein `scope`, wie in Welle 1: kein `open-task`, kein Material des Creators.
 - Gleicher Archetyp und Strang; neues Kapitel `texte` mit zwei Seiten, je ein Baustein. Keine Wiederholung nötig:
   `bit-und-byte` und `binaersystem` werden in Kapitel 2 geübt.
 - Geschichte für 7-8 als Chat der Klasse (Nachrichten), dieselben Figuren ein Jahr später (7b), keine neuen Bilder der
@@ -78,8 +79,9 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
 - [x] Write under "Notes" the didactic approach per competency and the scope (in, out, data range).
 - [x] The increment needs a kind of content the guide does not cover (a new page structure, screen, component or kind
       of exercise): load skills `lernapps-explainer-design` and `lernapps-exercise-patterns`. Else skip this task.
-- [ ] **Checkpoint:** research. Show in plain words: the new competencies by chapter, the didactic approach, the
+- [x] **Checkpoint:** research. Show in plain words: the new competencies by chapter, the didactic approach, the
       scope, every "(guess)", the sources and what is unchecked. Stop and wait. Changes: change them, then ask again.
+      Creator: Ja zum Plan, baue die Musterseite texte/zeichen. Mbit/s auf texte/zeichen oder texte/analog, Bit → Byte (÷ 8) darf auf bits/bit-und-byte. Klasse 7b, alle 12, als Chat. Bleib bei 0.21.0. Unicode 18.0 und RFC 3629 mit Link belegen.
 
 ### Answers
 
@@ -94,24 +96,31 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
 
 ### Tasks
 
-- [ ] Load skill `lernapps-content-growth`. Add the tasks of Code as slices, one per competency, in the guide's
+- [x] Load skill `lernapps-content-growth`. Add the tasks of Code as slices, one per competency, in the guide's
       order, one call each: `npx --no -- lernapps plan add --at slices "<task>"`. Say in each which sub-agent may
       write it in parallel, if any.
-- [ ] Write "Content method": the guide's patterns, figures and components per slice. Anything new: map it as skill
+- [x] Write "Content method": the guide's patterns, figures and components per slice. Anything new: map it as skill
       `lernapps-explainer-design` says, and say why the guide's patterns do not fit.
-- [ ] Draw a sketch of each new component or interactive exercise, in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, new competencies by chapter, slices; in plain words what learners see and do and
+- [x] Draw a sketch of each new component or interactive exercise, in `.vibe/sketches/`.
+- [x] Show the creator, short: goal, new competencies by chapter, slices; in plain words what learners see and do and
       what is new. At most 2 questions.
-- [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
+- [x] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
+      Creator: Ja zum Plan, baue die Musterseite texte/zeichen.
 
 ### Content method
 
-<!-- One line each: the guide's patterns, figures and components used, and where; anything new, what it does and
-cannot. Something new goes into the guide in the slice that adds it. -->
-<!-- An explainer: per figure, model and component its learning action in two to four sentences
-(`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
-page, which a link. -->
+- `texte/zeichen`: Muster des Guides (einstieg, idee mit Merke, ausprobieren, beispiel, uebung). Komponente BitKarten
+  mit 8 Karten, neu der Platzhalter {c} (Zeichen zum Code, A = 65). Generated „Code eines Buchstabens“ aus
+  `src/data/buchstaben.yaml` (A-Z: `z`, `code`, `bin`); Fehler: Stelle im Alphabet (code − 64), A als 0 (code − 65).
+  Fragen: Speicherung als Zahl (single-choice), Bits eines Worts (number), Bytes → JONA (matching), Ä in ASCII
+  (true-false). Unicode 18.0 und UTF-8 (RFC 3629) als Ausblick mit Link in `sources`.
+- `texte/analog`: neue Komponente `Abtasten` (keine Übung, `nojs`): Kurve als SVG, zwei Regler (Messpunkte 2-32,
+  Bit 1-4), die digitale Treppe in einer zweiten Farbe mit Punkten als zweitem Merkmal. Kein Block kann eine Kurve
+  mit Reglern zeigen. Generated: Stufen = 2^Bit (`pow`), Bits pro Sekunde = Messpunkte × Bit; Mbit/s gegen MB
+  (÷ 8). Matching analog/digital, true-false „digital ist immer genauer“.
+- `bits/bit-und-byte`: ein generated „Bit → Byte“ mit Fehlern ·8 und ÷10.
+- Geschichte: Klasse 7b (alle 12), ein Jahr später, als Chat im Text (**Name:** Nachricht).
 
 ## Code
 
@@ -124,17 +133,21 @@ page, which a link. -->
 
 ### Tasks
 
-- [ ] `git switch -c increment/<NN>-<short name>` from `main`. Commit this plan on it.
-- [ ] Load skill `lernapps-cli`. Update the app as its section "Update" says. Commit the update alone and fix its
+- [x] (skipped: Branch heißt increment/7-8, wie der Orchestrator vorgibt) `git switch -c increment/<NN>-<short name>` from `main`. Commit this plan on it.
+- [x] Load skill `lernapps-cli`. Update the app as its section "Update" says. Commit the update alone and fix its
       findings before any content. The update replaces the `lernapps-*` skills: read again those you use.
-- [ ] Load skill `lernapps-explainer` and the content guide.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer` and the content guide.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: slices: one per competency, as written in Plan -->
+- [ ] Musterseite texte/zeichen (zeichencodierung): BitKarten mit {c}, Datei buchstaben.yaml, Codetabelle, Unicode-Ausblick; kein Subagent (Muster)
+- [ ] Seite texte/analog (analog-und-digital): Komponente Abtasten, Bits pro Sekunde, Mbit/s gegen MB; kein Subagent (eine Komponente, ein Kapitel)
+- [ ] bits/bit-und-byte: generated Bit → Byte (÷ 8)
+- [ ] Zwei Prüfer (Lernende 7-8, Informatik), Funde beheben
+<!-- tasks: slices (4 added): one per competency, as written in Plan -->
 - [ ] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
       the creator and go on. A new pattern: load skill `lernapps-learner-check`, do its learner check, fix what it
       finds, then ask the creator whether the others may follow it, and wait.

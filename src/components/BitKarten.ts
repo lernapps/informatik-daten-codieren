@@ -4,9 +4,12 @@
 // is only one). The model is ProzentFeld of @lernapps/app-templates.
 import { bitsOf, fill, text, valueOf } from "./Bits.ts";
 
+/** The character whose code is `n`, for a task with {c} (65 is A). */
+export const charOf = (n: number) => String.fromCharCode(n);
+
 /** The props the logic needs. */
 export interface Props {
-  /** The task, with {n} for the number to lay out. */
+  /** The task, with {n} for the number to lay out and {c} for the character with that code (65 is A). */
   task: string;
   /** The number of cards, 5 or 8. */
   cards: number;
@@ -95,7 +98,7 @@ export function reason(task: Task, answer: Answer, props: Props, _lang?: string)
   const s = valueOf(answer);
   const index = text(answer) === text(wrong(task)) ? 0 : s < task.n ? 1 : s > task.n ? 2 : -1;
   const message = index < 0 ? undefined : props.mistakes?.[index];
-  return message === undefined ? undefined : fill(message, { n: task.n, s });
+  return message === undefined ? undefined : fill(message, { n: task.n, s, c: charOf(task.n) });
 }
 
 /** The values of the open cards of a row, e.g. "8 + 4 + 1". */
@@ -109,7 +112,10 @@ function sum(bits: readonly number[]): string {
 /** The task as a learner sees it, and its solution. */
 export function describe(task: Task, props: Props, _lang: string): { task: string; solution: string } {
   const bits = solution(task);
-  return { task: fill(props.task, { n: task.n }), solution: `${text(bits)}: ${sum(bits)} = ${task.n}` };
+  return {
+    task: fill(props.task, { n: task.n, c: charOf(task.n) }),
+    solution: `${text(bits)}: ${sum(bits)} = ${task.n}`,
+  };
 }
 
 /** The task once, with {n}. */
@@ -118,8 +124,8 @@ export function template(props: Props, _lang: string): string {
 }
 
 /** What sets a task: the number. */
-export function params(task: Task, _props: Props, _lang: string): Record<string, number> {
-  return { n: task.n };
+export function params(task: Task, props: Props, _lang: string): Record<string, number | string> {
+  return props.task.includes("{c}") ? { n: task.n, c: charOf(task.n) } : { n: task.n };
 }
 
 /** An answer as text: the row of bits. */

@@ -48,3 +48,14 @@ test("describe states the task and the sum of the open cards", () => {
   });
   expect(params({ n: 27, cards: 5 }, props, "de")).toEqual({ n: 27 });
 });
+
+test("a task may name the character of the code", () => {
+  const letters = { ...props, task: "Lege {c}.", cards: 8, min: 66, max: 90 };
+  for (let seed = 1; seed <= 50; seed++) {
+    const task = generate(seed, letters);
+    expect(task.n).toBeGreaterThanOrEqual(66);
+    expect(task.n).toBeLessThanOrEqual(90);
+  }
+  expect(describe({ n: 74, cards: 8 }, letters, "de").task).toBe("Lege J.");
+  expect(params({ n: 74, cards: 8 }, letters, "de")).toEqual({ n: 74, c: "J" });
+});
