@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Geheime Botschaften
+  en: Secret messages
+summary:
+  de: Eine Nachricht mit Skytale und Caesar-Scheibe ver- und entschlüsseln und beurteilen, wie sicher ein Verfahren ist.
+  en: Encrypting and decrypting a message with a scytale and a Caesar disc, and judging how secure a method is.
+pages: [skytale, caesar, sicherheit]

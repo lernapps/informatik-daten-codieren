@@ -23,19 +23,19 @@ Ids und „Ich kann …“-Sätze aus `https://lernapps.net/apps/map/informatik.
 
 | Kapitel | Datei | Baustein | Übungs-ids |
 |---|---|---|---|
-| information | `src/information/daten.yaml` | `information-und-daten` | siehe Seite |
-| information | `src/information/deuten.yaml` | `daten-interpretieren` | |
-| information | `src/information/darstellen.yaml` | `darstellungsformen-von-information` | |
-| information | `src/information/baum.yaml` | `baum` | |
-| bits | `src/bits/codes.yaml` | `codierung-im-alltag` | |
-| bits | `src/bits/binaersystem.yaml` | `binaersystem` | `karten-lesen`, `bits-lesen`, `bits-lesen-ueben`, `karte-legen`, `naechste-karte` |
-| bits | `src/bits/umrechnen.yaml` | `dezimal-in-binaer` | |
-| bits | `src/bits/bit-und-byte.yaml` | `bit-und-byte` | |
-| bilder | `src/bilder/pixel.yaml` | `pixelgrafik` | |
-| bilder | `src/bilder/vektor.yaml` | `pixel-und-vektorgrafik` | |
-| geheim | `src/geheim/skytale.yaml` | `verschluesselung-grundidee` | |
-| geheim | `src/geheim/caesar.yaml` | `caesar-verschluesselung` | |
-| geheim | `src/geheim/sicherheit.yaml` | `verschluesselung-bewerten` | |
+| information | `src/information/daten.yaml` | `information-und-daten` | zettel-klar, weg-der-nachricht, daten-zaehlen, information-erkennen, daten-oder-information |
+| information | `src/information/deuten.yaml` | `daten-interpretieren` | was-ist-21, boot-15, wanderung-dauer, tag-ordnen, zahl-immer-gleich |
+| information | `src/information/darstellen.yaml` | `darstellungsformen-von-information` | strichliste-zaehlen, alle-stimmen, frage-und-form, ziele-ordnen, diagramm-immer |
+| information | `src/information/baum.yaml` | `baum` | ali-zimmer, teile-des-baums, blaetter-turnier, kanten-zimmer, wurzel-unten |
+| bits | `src/bits/codes.yaml` | `codierung-im-alltag` | zeichen-bedeutung, morse-decodieren, nest-codieren, sos-zeichen, code-geheim |
+| bits | `src/bits/binaersystem.yaml` | `binaersystem` | karten-lesen, naechste-karte, wie-viele-zahlen, falsche-seite, bits-lesen-ueben, zimmer-ordnen (BitReihe) |
+| bits | `src/bits/umrechnen.yaml` | `dezimal-in-binaer` | karten-legen (BitKarten), dezimal-binaer-ueben, teilen-ordnen, karten-fuer-40, zwoelf-binaer |
+| bits | `src/bits/bit-und-byte.yaml` | `bit-und-byte` | groesste-mit-acht, byte-legen (BitKarten), byte-in-bit, kb-in-byte, einheiten-ordnen, was-ist-wie-gross, fotos-auf-tablet |
+| bilder | `src/bilder/pixel.yaml` | `pixelgrafik` | pixel-zaehlen, bild-malen (PixelEditor), zeile-decodieren, farbe-decodieren, bits-farbbild, bild-kennt-form |
+| bilder | `src/bilder/vektor.yaml` | `pixel-und-vektorgrafik` | welche-treppig, pixel-nach-vergroessern, zahlen-kreis, was-speichert-wer, foto-vektor, logo-plakat |
+| geheim | `src/geheim/skytale.yaml` | `verschluesselung-grundidee` | streifen-lesen, begriffe, spalten-lesen, zeilen-zaehlen, entschluesseln |
+| geheim | `src/geheim/caesar.yaml` | `caesar-verschluesselung` | b-wird, caesar-verschluesseln, caesar-entschluesseln (CaesarScheibe), schluessel-finden, z-wird-c, entschluesseln-schritte |
+| geheim | `src/geheim/sicherheit.yaml` | `verschluesselung-bewerten` | caesar-knacken (CaesarScheibe), caesar-schluessel-zahl, verfahren-ordnen, geheimes-verfahren, am-besten-schuetzen, verfahren-schluessel |
 | texte (später) | `src/texte/zeichen.yaml` | `zeichencodierung` | |
 | texte (später) | `src/texte/analog.yaml` | `analog-und-digital` | |
 
@@ -80,21 +80,32 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
   `src/bits/binaersystem.yaml`.
 - **Karte legen** (`binaersystem`, `dezimal-in-binaer`, `bit-und-byte`): Komponente `BitKarten`, Prop `cards` (5
   oder 8), `min`, `max`, Aufgabentext mit `{n}`. Richtig: Summe der offenen Karten = n.
-- **Zahl → Binärzahl** (`dezimal-in-binaer`): `generated` aus `src/data/zahlen.yaml`.
+- **Zahl → Binärzahl** (`dezimal-in-binaer`): `generated` mit `pick: 1` aus `src/data/zahlen.yaml` (3-31; Felder
+  `dez`, `bin`, `binZahl`, `gespiegelt`, `karten`, `teilen` je Sprache); Fehler „Reste von oben gelesen“
+  (`gespiegelt`). Die Datei ist mit einem kleinen Python-Skript erzeugt: für n von 3 bis 31 Binärdarstellung ohne
+  führende Nullen, umgekehrt, und die Teilungskette.
 - **Einheiten umrechnen** (`bit-und-byte`): `generated`/`number` mit Fehlern ·10 und ·1024.
-- **Pixelbild malen** (`pixelgrafik`): Komponente `PixelEditor`, Bilder aus `src/data/bilder.yaml`.
-- **Caesar** (`caesar-verschluesselung`, `verschluesselung-bewerten`): Komponente `CaesarScheibe`.
+- **Pixelbild malen** (`pixelgrafik`): Komponente `PixelEditor` (6 × 6, Code `bits` oder `zahl`), Bilder aus
+  `src/data/bilder.yaml` (Feld `zeilen`: sechs Zahlen, je 6 Bits, links das Bit 32). Fehler: gespiegelt, 0/1
+  vertauscht, Zeilen und Spalten vertauscht.
+- **Caesar** (`caesar-verschluesselung`, `verschluesselung-bewerten`): Komponente `CaesarScheibe`, Prop `mode`
+  `verschluesseln`, `entschluesseln` oder `knacken`, Wörter aus `src/data/woerter.yaml` (je Sprache eigene Wörter,
+  nur A-Z), Schlüssel `min`..`max` ohne 13. Fehler: falsche Richtung, eine Stelle daneben.
+- **Bits erkunden** (`binaersystem`): Komponente `BitReihe` (keine Übung), zeigt Bitfolge und Zahl.
+- Gemeinsame Hilfen der Bit-Karten: `src/components/Bits.ts`.
 - Fragen: jede falsche Option mit `info`, das sagt, warum sie nicht passt; Zahlaufgaben mit 2-3 `mistakes`.
 
 ## Figures
 
-- Eigene SVG in `src/images/`, `source: { de: eigene Zeichnung, en: own drawing }`, `licence: CC-BY-4.0`. Text in
-  Bildern wird übersetzt: je Sprache eine Datei `<name>.svg` und `<name>-en.svg`, wo das Bild Wörter enthält.
+- Eigene SVG in `src/images/`, `source: { de: eigene Zeichnung, en: own drawing }`, `licence: CC-BY-4.0`, erzeugt
+  mit kleinen Python-Skripten. `image` ist eine Datei für beide Sprachen: **keine Wörter im Bild**, nur Zahlen und
+  Namen (Kinder, Orte). Wörter stehen in `caption`, `alt` oder als Marker einer `labelled-figure` (Baum).
+- Unten in jedem Bild 44 px frei: Das Lizenz-Abzeichen der Runtime liegt unten rechts.
 - **Bit-Karten** (wiederkehrendes Bild, auch für #492): Karten nebeneinander, die größte links; über jeder Karte ihr
   Wert (16, 8, 4, 2, 1). Offen: weiße Karte mit so vielen schwarzen Punkten, darunter „1“. Verdeckt: graue Rückseite
   mit Streifen, darunter „0“.
 - **Baum** (wiederkehrendes Bild, auch für #492, #496): Wurzel oben, Kanten als Linien nach unten, Knoten als
-  abgerundete Rechtecke, Blätter mit gestricheltem Rand; Beschriftung „Wurzel“, „Knoten“, „Kante“, „Blatt“.
+  abgerundete Rechtecke, Blätter mit gestricheltem Rand; Beschriftung als Marker 1-4 einer `labelled-figure` (`baum-zimmer.svg`).
 - Farben: Umrisse `#333`, Punkte `#222`, verdeckt `#9aa0a6` mit Streifen, Fläche weiß; Bilder haben einen eigenen
   weißen Hintergrund, damit sie im Dark Mode lesbar bleiben.
 - `caption`: wohin schauen; `alt`: was das Bild zeigt, nie die Lösung einer Aufgabe.

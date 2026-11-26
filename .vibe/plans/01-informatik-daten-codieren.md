@@ -379,7 +379,7 @@ Content-Guide.
 - [x] Kapitel information: Seiten Tabelle-Diagramm-Bild und Der Baum (Säulendiagramm, Baum-Bild, Turnierbaum)
 - [x] Kapitel bits: Seiten Codes im Alltag, Zahlen in Bits (Datei zahlen.yaml), Bit und Byte
 - [x] Kapitel bilder: Komponente PixelEditor mit Logik und Test, Datei bilder.yaml, Seiten Bilder aus Pixeln und Pixel oder Vektor
-- [ ] Kapitel geheim: Komponente CaesarScheibe mit Logik und Test, Skytale-Bild, Seiten Geheimschrift, Caesar-Scheibe, Wie sicher ist das?
+- [x] Kapitel geheim: Komponente CaesarScheibe mit Logik und Test, Skytale-Bild, Seiten Geheimschrift, Caesar-Scheibe, Wie sicher ist das?
 - [ ] Zwei Prüfer als Subagenten (Lernende 5-6, fachlich Informatik), Funde beheben
 <!-- tasks: pages (6 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).

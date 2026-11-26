@@ -1,0 +1,231 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Die Caesar-Scheibe
+  en: The Caesar disc
+description:
+  de: "Mit der Caesar-Verschlüsselung und einem Schlüssel ver- und entschlüsseln, mit einer Caesar-Scheibe."
+  en: "Encrypting and decrypting with the Caesar cipher and a key, using a Caesar disc."
+competencies: [caesar-verschluesselung]
+blocks:
+  - type: section
+    id: einstieg
+    title:
+      de: A wird D
+      en: A becomes D
+    blocks:
+      - type: text
+        text:
+          de: |
+            Selin findet die Skytale umständlich. Mia kennt ein anderes Verfahren, das schon der römische Feldherr
+            Gaius Julius Caesar benutzt haben soll: Jeder Buchstabe wird durch einen anderen ersetzt, der im Alphabet
+            ein paar Stellen weiter steht. Mia macht es mit 3 Stellen: A wird D.
+
+            Auf der Seite davor hast du Verfahren und Schlüssel kennengelernt. Auf dieser Seite ver- und
+            entschlüsselst du mit der **Caesar-Verschlüsselung**.
+          en: |
+            Selin thinks the scytale is too fiddly. Mia knows another method, which the Roman general Gaius Julius
+            Caesar is said to have used: each letter is replaced by another one that comes a few places later in the
+            alphabet. Mia uses 3 places: A becomes D.
+
+            On the page before you learnt about methods and keys. On this page you will encrypt and decrypt with the
+            **Caesar cipher**.
+      - type: single-choice
+        id: b-wird
+        text:
+          de: A wird D. Was wird aus B?
+          en: A becomes D. What does B become?
+        options:
+          - text: { de: E, en: E }
+            correct: true
+            info:
+              de: "B, C, D, E: drei Stellen weiter steht E."
+              en: "B, C, D, E: three places further on is E."
+          - text: { de: D, en: D }
+            correct: false
+            info:
+              de: D ist schon der Buchstabe für A. Jeder Buchstabe rückt um 3 Stellen weiter.
+              en: D is already the letter for A. Every letter moves on 3 places.
+          - text: { de: C, en: C }
+            correct: false
+            info:
+              de: C ist nur eine Stelle weiter. Zähle drei Stellen.
+              en: C is only one place further on. Count three places.
+        explanation:
+          de: Jeder Buchstabe rückt um dieselbe Zahl von Stellen weiter, hier um 3.
+          en: Every letter moves on by the same number of places, here by 3.
+  - type: section
+    id: idee
+    title:
+      de: Der Schlüssel ist eine Zahl
+      en: The key is a number
+    blocks:
+      - type: text
+        text:
+          de: |
+            Bei der Caesar-Verschlüsselung ist der **Schlüssel** die Zahl der Stellen. Nach Z geht es wieder mit A
+            weiter: Mit dem Schlüssel 3 wird X zu A, Y zu B und Z zu C. Zum **Entschlüsseln** gehst du dieselbe
+            Zahl von Stellen zurück.
+
+            Die Nachricht der Klassenfahrt, TREFFEN MONTAG ACHT UHR AM BAHNHOF, heißt mit dem Schlüssel 3:
+            WUHIIHQ PRQWDJ DFKW XKU DP EDKQKRI.
+          en: |
+            In the Caesar cipher, the **key** is the number of places. After Z you start again at A: with the key 3, X
+            becomes A, Y becomes B and Z becomes C. To **decrypt**, you go back the same number of places.
+
+            The school trip message, MEET ON MONDAY AT EIGHT AT THE STATION, with the key 3 is:
+            PHHW RQ PRQGDB DW HLJKW DW WKH VWDWLRQ.
+      - type: note
+        title:
+          de: Merke
+          en: Remember
+        blocks:
+          - type: text
+            text:
+              de: Verschlüsseln heißt vorwärts zählen, entschlüsseln heißt rückwärts zählen, immer um den Schlüssel. Auf der Caesar-Scheibe liest du beim Verschlüsseln von außen nach innen und beim Entschlüsseln von innen nach außen.
+              en: Encrypting means counting forwards, decrypting means counting backwards, always by the key. On the Caesar disc you read from the outside in when you encrypt, and from the inside out when you decrypt.
+  - type: section
+    id: ausprobieren
+    title:
+      de: Ausprobieren
+      en: Try it out
+    blocks:
+      - type: text
+        text:
+          de: |
+            Außen auf der Scheibe steht der Klartext, innen der Geheimtext. Mit „+1“ und „−1“ drehst du den inneren
+            Ring, die Zahl in der Mitte ist der Schlüssel. Drehe auf den Schlüssel der Aufgabe, lies jeden Buchstaben
+            ab und tippe das Wort in das Feld. Dann drücke „Prüfen“.
+          en: |
+            On the outside of the disc is the plaintext, on the inside the ciphertext. With “+1” and “−1” you turn the
+            inner ring, the number in the middle is the key. Turn it to the key of the task, read off each letter and
+            type the word into the field. Then press “Check”.
+      - type: vue-component
+        id: caesar-verschluesseln
+        component: CaesarScheibe
+        props:
+          mode: verschluesseln
+          task:
+            de: "Verschlüssle {wort} mit dem Schlüssel {k}."
+            en: "Encrypt {wort} with the key {k}."
+          woerter: { data: woerter }
+          min: 2
+          max: 9
+          field:
+            de: Geheimtext
+            en: Ciphertext
+          turned:
+            de: "Gedreht um {k}"
+            en: "Turned by {k}"
+          back:
+            de: "−1"
+            en: "−1"
+          forward:
+            de: "+1"
+            en: "+1"
+          mapping:
+            de: "Die Scheibe zeigt, außen und innen: {list}"
+            en: "The disc shows, outside and inside: {list}"
+          mistakes:
+            - de: Du hast rückwärts gezählt. Zum Verschlüsseln zählst du {k} Stellen vorwärts.
+              en: You counted backwards. To encrypt, you count {k} places forwards.
+            - de: Du bist eine Stelle zu weit gegangen. Der Schlüssel ist {k}.
+              en: You went one place too far. The key is {k}.
+        examples:
+          accepted:
+            - { answer: "MCTVG", seed: 1 }
+          rejected:
+            - { answer: "ICRCG", seed: 1 }
+      - type: vue-component
+        id: caesar-entschluesseln
+        component: CaesarScheibe
+        props:
+          mode: entschluesseln
+          task:
+            de: "Entschlüssle {geheim}. Der Schlüssel ist {k}."
+            en: "Decrypt {geheim}. The key is {k}."
+          woerter: { data: woerter }
+          min: 2
+          max: 9
+          field:
+            de: Klartext
+            en: Plaintext
+          turned:
+            de: "Gedreht um {k}"
+            en: "Turned by {k}"
+          back:
+            de: "−1"
+            en: "−1"
+          forward:
+            de: "+1"
+            en: "+1"
+          mapping:
+            de: "Die Scheibe zeigt, außen und innen: {list}"
+            en: "The disc shows, outside and inside: {list}"
+          mistakes:
+            - de: Du hast vorwärts gezählt. Zum Entschlüsseln zählst du {k} Stellen zurück, auf der Scheibe von innen nach außen.
+              en: You counted forwards. To decrypt, you count {k} places back, on the disc from the inside out.
+            - de: Du bist eine Stelle zu weit gegangen. Der Schlüssel ist {k}.
+              en: You went one place too far. The key is {k}.
+        examples:
+          accepted:
+            - { answer: "KARTE", seed: 1 }
+          rejected:
+            - { answer: "OEVXI", seed: 1 }
+  - type: section
+    id: uebung
+    title:
+      de: Übung
+      en: Practice
+    blocks:
+      - type: number
+        id: schluessel-finden
+        text:
+          de: Mit einem Schlüssel wird aus A der Buchstabe F. Welcher Schlüssel ist es?
+          en: With a key, A becomes F. Which key is it?
+        answer: 5
+        tolerance: 0
+        mistakes:
+          - answer: 6
+            message:
+              de: Du hast das A mitgezählt. Zähle nur die Schritte von A bis F.
+              en: You counted the A as well. Count only the steps from A to F.
+          - answer: 21
+            message:
+              de: 21 Schritte bräuchtest du rückwärts. Der Schlüssel zählt vorwärts.
+              en: You would need 21 steps going backwards. The key counts forwards.
+        hint:
+          de: Zähle die Schritte A → B → C … bis F.
+          en: Count the steps A → B → C … up to F.
+        explanation:
+          de: A → B → C → D → E → F sind 5 Schritte. Der Schlüssel ist 5.
+          en: A → B → C → D → E → F is 5 steps. The key is 5.
+      - type: true-false
+        id: z-wird-c
+        text:
+          de: Mit dem Schlüssel 3 wird aus Z der Buchstabe C.
+          en: With the key 3, Z becomes C.
+        answer: true
+        explanation:
+          de: Nach Z geht es mit A weiter. Z → A → B → C sind 3 Schritte.
+          en: After Z you start again at A. Z → A → B → C is 3 steps.
+      - type: ordering
+        id: entschluesseln-schritte
+        text:
+          de: Selin bekommt einen Geheimtext und den Schlüssel 4. Ordne ihre Schritte.
+          en: Selin gets a ciphertext and the key 4. Put her steps in order.
+        items:
+          - de: Sie dreht die Scheibe auf 4.
+            en: She turns the disc to 4.
+          - de: Sie sucht den ersten Buchstaben des Geheimtexts innen.
+            en: She finds the first letter of the ciphertext on the inside.
+          - de: Sie liest außen den Buchstaben des Klartexts ab.
+            en: She reads off the letter of the plaintext on the outside.
+          - de: Sie macht mit dem nächsten Buchstaben weiter.
+            en: She goes on with the next letter.
+        explanation:
+          de: Zuerst wird der Schlüssel eingestellt. Dann geht Selin Buchstabe für Buchstabe von innen nach außen.
+          en: First the key is set. Then Selin goes letter by letter from the inside out.
+      - type: text
+        text:
+          de: Jetzt kannst du mit der Caesar-Scheibe ver- und entschlüsseln. Die 6c hat die verschlüsselte Nachricht gefunden. Kann sie sie ohne Schlüssel knacken? Das findest du auf der nächsten Seite heraus.
+          en: Now you can encrypt and decrypt with the Caesar disc. Class 6c has found the encrypted message. Can they crack it without the key? You will find out on the next page.
