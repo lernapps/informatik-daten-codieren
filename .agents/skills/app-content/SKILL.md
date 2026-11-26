@@ -30,7 +30,7 @@ Ids und „Ich kann …“-Sätze aus `https://lernapps.net/apps/map/informatik.
 | bits | `src/bits/codes.yaml` | `codierung-im-alltag` | zeichen-bedeutung, morse-decodieren, nest-codieren, sos-zeichen, code-geheim |
 | bits | `src/bits/binaersystem.yaml` | `binaersystem` | karten-lesen, naechste-karte, wie-viele-zahlen, falsche-seite, bits-lesen-ueben, zimmer-ordnen (BitReihe) |
 | bits | `src/bits/umrechnen.yaml` | `dezimal-in-binaer` | karten-legen (BitKarten), dezimal-binaer-ueben, teilen-ordnen, karten-fuer-40, zwoelf-binaer |
-| bits | `src/bits/bit-und-byte.yaml` | `bit-und-byte` | groesste-mit-acht, byte-legen (BitKarten), byte-in-bit, kb-in-byte, einheiten-ordnen, was-ist-wie-gross, fotos-auf-tablet |
+| bits | `src/bits/bit-und-byte.yaml` | `bit-und-byte` | groesste-mit-acht, byte-legen (BitKarten), byte-in-bit, bit-in-byte, kb-in-byte, einheiten-ordnen, was-ist-wie-gross, fotos-auf-tablet |
 | bilder | `src/bilder/pixel.yaml` | `pixelgrafik` | pixel-zaehlen, bild-malen (PixelEditor), zeile-decodieren, farbe-decodieren, bits-farbbild, bild-kennt-form |
 | bilder | `src/bilder/vektor.yaml` | `pixel-und-vektorgrafik` | welche-treppig, pixel-nach-vergroessern, zahlen-kreis, was-speichert-wer, foto-vektor, logo-plakat |
 | geheim | `src/geheim/skytale.yaml` | `verschluesselung-grundidee` | streifen-lesen, begriffe, spalten-lesen, zeilen-zaehlen, entschluesseln |
