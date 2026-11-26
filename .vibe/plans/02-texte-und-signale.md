@@ -4,7 +4,7 @@
 # Archetype, as in the app's first plan. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: code
+phase: commit
 # prePushFailures: failed pre-push runs of this increment, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -53,6 +53,12 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
 - Quellen (geöffnet 2026-11-26): Unicode 18.0.0, https://www.unicode.org/versions/latest/ (172 808 Zeichen); Code von
   A-Z = U+0041-U+005A (65-90), Leerzeichen U+0020 (32), aus dem Unicode-Block Basic Latin (= ASCII); RFC 3629 UTF-8,
   https://www.rfc-editor.org/rfc/rfc3629.txt (1 Byte für U+0000-007F, 2 Bytes bis 07FF, 4 Bytes ab U+10000).
+- Prüfungen (Subagenten): Musterseite als Lernende 7-8 (Chat, ASCII-Umfang, Wiederholungen, verratene Antwort,
+  Reihenfolge, UTF-8 begründet), fachlich Informatik (Abtasten-Kurve zu flach, 7-Bit-ASCII, Fehler code + 1 und
+  2^n − 1, Zeigeruhr, Definition digital, Mikrofon, englische Begriffe, Intro, Unicode-Link), ganzes Kapitel als
+  Lernende (Rückblick „ganze App“, Mikrofon vor der Aufgabe, verratene Zuordnung → multiple-choice, Steuerzeichen,
+  Regler den Schritten zugeordnet). Behoben. An den Orchestrator: Zahlen mit Tausenderpunkt („8.000“, „64,000“)
+  gelten als falsch; Rückmeldung von Übungskomponenten wird nicht angesagt (Runtime).
 - Fehlvorstellungen: Computer speichert Buchstaben „als Bild“; ein Zeichen = 1 Bit; Ä hat einen ASCII-Code;
   digital = genauer immer; mehr Messpunkte ändert nichts; Mbit und MB gleich.
 - Umfang: ASCII nur A-Z und Leerzeichen; Unicode nur als Ausblick (Ä, € und Emoji brauchen mehr Bytes); Abtasten mit
@@ -143,17 +149,18 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite texte/zeichen (zeichencodierung): BitKarten mit {c}, Datei buchstaben.yaml, Codetabelle, Unicode-Ausblick; kein Subagent (Muster)
-- [ ] Seite texte/analog (analog-und-digital): Komponente Abtasten, Bits pro Sekunde, Mbit/s gegen MB; kein Subagent (eine Komponente, ein Kapitel)
-- [ ] bits/bit-und-byte: generated Bit → Byte (÷ 8)
-- [ ] Zwei Prüfer (Lernende 7-8, Informatik), Funde beheben
+- [x] Musterseite texte/zeichen (zeichencodierung): BitKarten mit {c}, Datei buchstaben.yaml, Codetabelle, Unicode-Ausblick; kein Subagent (Muster)
+- [x] Seite texte/analog (analog-und-digital): Komponente Abtasten, Bits pro Sekunde, Mbit/s gegen MB; kein Subagent (eine Komponente, ein Kapitel)
+- [x] bits/bit-und-byte: generated Bit → Byte (÷ 8)
+- [x] Zwei Prüfer (Lernende 7-8, Informatik), Funde beheben
 <!-- tasks: slices (4 added): one per competency, as written in Plan -->
-- [ ] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
+- [x] **Checkpoint:** the pattern page, after the first slice. A slice in a pattern the app already has: show it to
       the creator and go on. A new pattern: load skill `lernapps-learner-check`, do its learner check, fix what it
       finds, then ask the creator whether the others may follow it, and wait.
-- [ ] Update the content guide so that it describes the app as it is now (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
-- [ ] Look at every changed screen, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
+      Creator: Ja, texte/analog folgt diesem Muster, mit der Komponente Abtasten.
+- [x] Update the content guide so that it describes the app as it is now (`app-content-matches`).
+- [x] Run `npx --no -- lernapps check` until it passes.
+- [x] Look at every changed screen, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
 
 ## Commit
 
@@ -164,9 +171,9 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
 
 ### Tasks
 
-- [ ] If pages or exercises changed, load skill `lernapps-explainer-self-assessment` and update the self-assessment
+- [x] If pages or exercises changed, load skill `lernapps-explainer-self-assessment` and update the self-assessment
       as it says. Commit.
-- [ ] Load skill `lernapps-github`. Push the branch, open the preview pull request and see its checks to green, as it
+- [x] Load skill `lernapps-github`. Push the branch, open the preview pull request and see its checks to green, as it
       says.
 - [ ] **Checkpoint:** publish. Show what the increment adds and the preview link. Ask whether it may go online. Stop
       and wait for the yes.
