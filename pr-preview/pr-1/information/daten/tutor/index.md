@@ -43,10 +43,13 @@ Information und Daten unterscheiden: Ein Zettel mit Daten wird erst durch den Zu
 
 ### Ein Zettel auf dem Boden
 
-Jona findet im Klassenzimmer der 6b einen Zettel auf dem Boden. Darauf stehen nur ein paar Zeichen.
+Jona, Selin und Mia sind 11 Jahre alt und gehen in die Klasse 6b. Jona findet im Klassenzimmer einen
+Zettel auf dem Boden. Darauf stehen nur ein paar Zeichen.
 Jona dreht den Zettel hin und her. Was soll das bedeuten?
 
 Auf dieser Seite lernst du, was **Daten** sind und wann aus ihnen eine **Information** wird.
+
+Bild: Jona mit kurzen rotblonden Haaren und grünem Pulli und Selin mit dunklem Pferdeschwanz und oranger Jacke stehen im Klassenzimmer. Zwischen ihnen liegt ein gelber Zettel auf dem Boden. Bildunterschrift: Jona und Selin im Klassenzimmer der 6b
 
 Bild: Ein gelber Zettel. Darauf steht: 6b · 11.5. · 8:00. Darunter ist ein Zug gemalt. Bildunterschrift: Der Zettel, den Jona gefunden hat
 
@@ -54,7 +57,7 @@ Bild: Ein gelber Zettel. Darauf steht: 6b · 11.5. · 8:00. Darunter ist ein Zug
 
 ### Daten brauchen einen Zusammenhang
 
-Selin sieht den Zettel und lacht: „Das ist von Frau Berg! Am Montag, 11. Mai, fahren wir auf
+Selin sieht den Zettel und lacht: „Das ist von Frau Berg, unserer Klassenlehrerin! Am Montag, 11. Mai, fahren wir auf
 Klassenfahrt. Wir treffen uns um 8 Uhr am Bahnhof, da, wo der Zug fährt.“ Selin kennt den
 **Zusammenhang**: Frau Berg plant die Klassenfahrt der 6b. Darum versteht sie den Zettel.
 

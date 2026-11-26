@@ -50,6 +50,8 @@ history book: a **scytale**, a wooden stick with a strip.
 In the chapter “Everything is 0 and 1”, codes could be read by everyone. On this page you will learn how to
 **encrypt** a message so that only people who are in on it can read it.
 
+Picture: Jona and Selin. Between them lies a wooden stick with a light strip wound around it. Caption: Jona and Selin with the scytale
+
 Picture: A wooden stick. A light strip is wound around it at a slant. On the strip there are signs next to each other, row by row. One end of the strip hangs loose. Caption: A scytale. Wound around the stick, the letters are in rows. Unwound, they are jumbled.
 
 - Exercise `streifen-lesen` (below)

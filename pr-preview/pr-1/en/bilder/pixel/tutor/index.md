@@ -48,6 +48,8 @@ white. Next to each row she writes which squares are black: 1 for black, 0 for w
 
 In the last chapter you wrote numbers with bits. On this page you will see how a picture is made of bits.
 
+Picture: Selin next to a sheet of squared paper. A tent made of black squares is drawn on the paper. Caption: Selin and her tent logo
+
 Picture: A grid of 6 by 6 squares with a black tent. Next to the rows, from top to bottom, it says: 001100, 011110, 011110, 111111, 110011, 110011. Caption: Selin's tent. Each row of the picture is a bit string.
 
 - Exercise `pixel-zaehlen` (below)

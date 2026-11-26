@@ -49,6 +49,8 @@ ganz weiß. Neben jede Zeile schreibt sie, welche Kästchen schwarz sind: 1 für
 Im letzten Kapitel hast du Zahlen mit Bits geschrieben. Auf dieser Seite siehst du, wie ein Bild aus Bits
 entsteht.
 
+Bild: Selin neben einem Blatt Karopapier. Auf dem Papier ist ein Zelt aus schwarzen Kästchen gemalt. Bildunterschrift: Selin und ihr Zelt-Logo
+
 Bild: Ein Raster aus 6 mal 6 Kästchen mit einem schwarzen Zelt. Neben den Zeilen steht von oben nach unten: 001100, 011110, 011110, 111111, 110011, 110011. Bildunterschrift: Selins Zelt. Jede Zeile des Bildes ist eine Bitfolge.
 
 - Aufgabe `pixel-zaehlen` (unten)

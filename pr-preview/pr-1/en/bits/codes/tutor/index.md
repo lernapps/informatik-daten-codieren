@@ -49,6 +49,8 @@ everywhere, at the traffic lights, on the milk carton in Mia's bag, on the signs
 In the first chapter you saw how information becomes data. On this page you will learn about **codes**:
 fixed rules for turning data into other symbols.
 
+Picture: Jona, Selin and Mia, who has black curls, glasses and a purple jacket, are sitting on the bus and looking out of the window. Outside, a traffic light is red. Caption: Jona, Selin and Mia on the bus to Seeberg
+
 - Exercise `zeichen-bedeutung` (below)
 
 ### Morse code

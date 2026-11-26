@@ -50,6 +50,8 @@ aus dem Geschichtsbuch: eine **Skytale**, einen Holzstab mit einem Streifen.
 Im Kapitel „Alles ist 0 und 1“ waren Codes für alle lesbar. Auf dieser Seite lernst du, wie man eine
 Nachricht **verschlüsselt**, damit nur Eingeweihte sie lesen.
 
+Bild: Jona und Selin. Zwischen ihnen liegt ein Holzstab, um den ein heller Streifen gewickelt ist. Bildunterschrift: Jona und Selin mit der Skytale
+
 Bild: Ein Holzstab. Ein heller Streifen ist schräg um ihn gewickelt. Auf dem Streifen stehen Zeichen nebeneinander, Reihe für Reihe. Ein Ende des Streifens hängt lose herunter. Bildunterschrift: Eine Skytale. Um den Stab gewickelt, stehen die Buchstaben in Reihen. Abgewickelt sind sie durcheinander.
 
 - Aufgabe `streifen-lesen` (unten)

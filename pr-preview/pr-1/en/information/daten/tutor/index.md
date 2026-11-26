@@ -43,10 +43,12 @@ Telling information and data apart: a note with data only becomes information wh
 
 ### A note on the floor
 
-Jona finds a note on the floor of class 6b's classroom. There are only a few symbols on it. Jona turns
+Jona, Selin and Mia are 11 years old and in class 6b. Jona finds a note on the classroom floor. There are only a few symbols on it. Jona turns
 the note this way and that. What is it supposed to mean?
 
 On this page you will learn what **data** is and when it becomes **information**.
+
+Picture: Jona, with short ginger hair and a green hoodie, and Selin, with a dark ponytail and an orange jacket, are standing in the classroom. Between them a yellow note lies on the floor. Caption: Jona and Selin in class 6b’s classroom
 
 Picture: A yellow note. It says: 6b · 11.5. · 8:00. Below that, a train is drawn. Caption: The note that Jona found
 
@@ -54,7 +56,7 @@ Picture: A yellow note. It says: 6b · 11.5. · 8:00. Below that, a train is dra
 
 ### Data needs a context
 
-Selin sees the note and laughs: “That's from Ms Berg! On Monday, 11 May, we are going on our school
+Selin sees the note and laughs: “That's from Ms Berg, our class teacher! On Monday, 11 May, we are going on our school
 trip. We meet at 8 o'clock at the station, where the train leaves.” Selin knows the **context**: Ms Berg
 is planning class 6b's school trip. In Germany, 11.5. is how you write 11 May. That is why she understands
 the note.

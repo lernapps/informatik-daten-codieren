@@ -49,6 +49,8 @@ der Ampel, auf der Milchtüte in Mias Tasche, auf den Schildern an der Straße.
 Im ersten Kapitel hast du gesehen, wie aus Information Daten werden. Auf dieser Seite lernst du
 **Codes** kennen: feste Regeln, mit denen man Daten in andere Zeichen übersetzt.
 
+Bild: Jona, Selin und Mia mit schwarzen Locken, Brille und lila Jacke sitzen im Bus und schauen aus dem Fenster. Draußen leuchtet eine Ampel rot. Bildunterschrift: Jona, Selin und Mia im Bus zum Seeberg
+
 - Aufgabe `zeichen-bedeutung` (unten)
 
 ### Der Morsecode
