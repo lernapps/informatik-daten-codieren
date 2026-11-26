@@ -1,10 +1,17 @@
 # yaml-language-server: $schema=../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
 format: 2
-# The strand of the learning map the app stays in, <subject>/<strand> (e.g. mathematik/stochastik); then each page
-# names its competencies. none: the app is on no strand, and no page names competencies. A unit app across the strands
-# of a subject whose map allows it names subject: <subject> (e.g. franzoesisch) instead of strand.
-strand: none
-title: Platzhalter
-intro: Dieses Kapitel hält den Platz frei, bis der geplante Inhalt da ist.
-languages: [de]
-chapters: [thema]
+strand: informatik/daten
+title:
+  de: Daten darstellen und codieren
+  en: Representing and encoding data
+intro:
+  de: |
+    Die Klasse 6b macht eine Klassenfahrt. Wer fährt mit, wohin, wann? Diese Information schreibst du immer wieder
+    neu auf: als Tabelle und Baum, als Zahl aus Bits, als Pixelbild und als Geheimschrift. So lernst du, wie ein
+    Computer alles mit 0 und 1 speichert. Für die Klassen 5 und 6.
+  en: |
+    Class 6b is going on a school trip. Who is going, where, and when? You will write down this information again and
+    again in new ways: as a table and a tree, as a number made of bits, as a pixel image and in secret writing. This
+    is how you learn how a computer stores everything with 0 and 1. For ages 10 to 12.
+languages: [de, en]
+chapters: [bits]

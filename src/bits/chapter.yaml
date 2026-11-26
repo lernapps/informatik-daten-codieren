@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=../../node_modules/@lernapps/app-templates/runtime/explainer/explainer.v2.schema.json
+title:
+  de: Alles ist 0 und 1
+  en: Everything is 0 and 1
+summary:
+  de: Codes aus dem Alltag, die Bit-Karten, Zahlen in Bits und wie viel ein Byte ist.
+  en: Codes in everyday life, the bit cards, numbers in bits and how much a byte is.
+pages: [binaersystem]
