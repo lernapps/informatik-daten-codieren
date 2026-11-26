@@ -43,6 +43,16 @@
       ]
     },
     {
+      "path": "bits/codes/",
+      "title": {
+        "de": "Codes im Alltag",
+        "en": "Codes in everyday life"
+      },
+      "competencies": [
+        "codierung-im-alltag"
+      ]
+    },
+    {
       "path": "bits/binaersystem/",
       "title": {
         "de": "Die Bit-Karten",
@@ -50,6 +60,26 @@
       },
       "competencies": [
         "binaersystem"
+      ]
+    },
+    {
+      "path": "bits/umrechnen/",
+      "title": {
+        "de": "Zahlen in Bits",
+        "en": "Numbers in bits"
+      },
+      "competencies": [
+        "dezimal-in-binaer"
+      ]
+    },
+    {
+      "path": "bits/bit-und-byte/",
+      "title": {
+        "de": "Bit und Byte",
+        "en": "Bits and bytes"
+      },
+      "competencies": [
+        "bit-und-byte"
       ]
     }
   ]
