@@ -39,53 +39,52 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 ## Context: the page “The bit cards”
 
-The binary system with bit cards: read numbers made of 0 and 1 and convert them to decimal numbers.
+The binary system with bit cards: read numbers made of 0 and 1 and turn them into decimal numbers.
 
-### A room without digits
+### A room without a number
 
 Class 6b has arrived at the youth hostel “Am Seeberg”. Jona and Selin are looking for their room. But there
-are no digits on the doors. On every door there are five cards. Some cards are face up, some face down.
-The value of each card is written above it.
+is no room number on the doors. On every door there are five cards. A card that is face up shows dots. A
+card that is face down shows its back, and the back has no dots. Above each card it says how many dots it
+has when it is face up. This number is the **value** of the card.
 
-On this page you will learn how to write any number with only 0 and 1. This is a code with only two
-symbols, like the codes on the page before.
+Here you will learn to write any number with only 0 and 1: a code with only two symbols.
 
-Picture: Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down. Below the cards it says 0 1 1 0 1. Caption: The cards on Jona and Selin's door. Count the dots on the cards that are face up.
+Picture: Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down. Caption: The cards on Jona and Selin's door. Count the dots on the cards that are face up.
 
 - Exercise `karten-lesen` (below)
 
 ### One card is one bit
 
-Each card can only be in one of two states: face up or face down. For face up you write **1**, for face
-down **0**. So the door of room 13 shows the digits 0 1 1 0 1.
+Each card is either face up or face down. For face up you write **1**, for face down **0**. Then Jona and
+Selin's door shows: face down, face up, face up, face down, face up. In short: **01101**. These digits in a
+row are called a **bit string**.
 
-Look at the values above the cards: each card is worth twice as much as the card to its right. The
-smallest card is on the right.
+- **bit**: A bit is a symbol with only two possible values, 0 or 1.
 
-- **bit**: A bit is the smallest unit of data. It has exactly two values, 0 or 1, like a card that is face down or face up.
-
-- **binary number**: A binary number is a number made only of the digits 0 and 1. Each place has a value that is twice as big as the value of the place to its right.
-
-The binary number 01101. Each 1 counts as much as the value above it.:
-- Value of the card | 16 | 8 | 4 | 2 | 1
-- Digit | 0 | 1 | 1 | 0 | 1
-- counts | 0 | 8 | 4 | 0 | 1
+- **binary number**: A binary number is written only with the digits 0 and 1. Each 1 counts as much as the value of its card.
 
 **Remember: Remember**
 
-You read a binary number the way you lay out the cards: the card with the biggest value is on the
-left. The number system with the values 1, 2, 4, 8, 16 … is called the **binary system**. We usually
-write numbers in the **decimal system** with the digits 0 to 9 and the values 1, 10, 100 …
+Each card is worth twice as much as the card to its right. The biggest card is on the left. That is why
+it matters **where** a 1 is, not just how many ones there are.
+
+You know this from ones, tens and hundreds: there, each place is worth ten times as much (**decimal
+system**). With the cards, each place is worth twice as much (**binary system**).
+
+- Exercise `naechste-karte` (below)
 
 ### Try it out
 
-Tap a card to turn it over. Below the cards you can see the bits and the number they show. “Turn all face down” turns all the cards over again. Find out which numbers you can lay out.
+Tap a card to turn it over. Below the cards you can see the bit string and the number it shows. “Turn all
+face down” turns all the cards over again.
 
-Interactive: Five bit cards with the values 16, 8, 4, 2 and 1, all face down. When you tap a card, it turns over. Below the cards you can read which number the face-up cards show, for example “Bits: 00101 · number: 5” for the cards 4 and 1. When all the cards are face up, the bits are 11111 and the number is 31.
+Find out: What is the smallest number, and what is the biggest? Is there a number in between that you
+cannot make?
 
-- Exercise `groesste-zahl` (below)
+Interactive: Five bit cards with the values 16, 8, 4, 2 and 1, all face down. When you tap a card, it turns over. Below the cards you can read which number the face-up cards show, for example “Bit string: 00101 · Number: 5” for the cards 4 and 1. With all the cards face down it is 00000, which is 0. With all face up it is 11111, which is 31.
 
-- Exercise `naechste-karte` (below)
+- Exercise `wie-viele-zahlen` (below)
 
 ### Example
 
@@ -93,7 +92,7 @@ Interactive: Five bit cards with the values 16, 8, 4, 2 and 1, all face down. Wh
 
 Picture: Five cards with the values 16, 8, 4, 2 and 1. The cards 16, 4 and 2 are face up, the cards 8 and 1 face down. Below it says 1 0 1 1 0. Caption: The door of Mia's room
 
-1. Write the value of its card above each digit: 16, 8, 4, 2, 1.
+1. Look at the value above each digit: 16, 8, 4, 2, 1.
 2. Take only the values that have a 1 below them: 16, 4 and 2.
 3. Add them up: 16 + 4 + 2 = 22.
 
@@ -107,7 +106,7 @@ The binary number 10110 is the decimal number 22. Mia sleeps in room 22.
 
 - Exercise `zimmer-ordnen` (below)
 
-Now you can read any binary number with five digits. On the next page you go the other way. The bus number is 27. How do you lay it out with the cards?
+Now you can read any binary number with five digits. On the next page you go the other way and make the number of the bus, 27, with the cards yourself.
 
 ### Exercise karten-lesen
 
@@ -117,20 +116,9 @@ Now you can read any binary number with five digits. On the next page you go the
 - Explanation: 8 + 4 + 1 = 13. Jona and Selin sleep in room 13.
 - The app's hint: Card 8 has 8 dots, card 4 has 4 dots.
 - Typical mistakes and what the app says:
-  - 3: You counted the face-up cards. Count the dots on each face-up card and add them up.
+  - 3: You counted the face-up cards. Add up their dots.
   - 31: You also counted the face-down cards. A face-down card does not count.
 - Link: [../?via=tutor#karten-lesen](../?via=tutor#karten-lesen)
-
-### Exercise groesste-zahl
-
-- Task: What is the biggest number you can lay out with these five cards?
-- Answer format: type a number
-- Solution: 31
-- Explanation: With all the cards face up, it is 16 + 8 + 4 + 2 + 1 = 31. So with five cards you can lay out every number from 0 to 31.
-- Typical mistakes and what the app says:
-  - 16: 16 is the biggest card. But you can lay out several cards face up.
-  - 32: For 32 you need a sixth card. Lay out all five cards face up and add them up.
-- Link: [../?via=tutor#groesste-zahl](../?via=tutor#groesste-zahl)
 
 ### Exercise naechste-karte
 
@@ -138,12 +126,24 @@ Now you can read any binary number with five digits. On the next page you go the
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ 32 – 32 is twice as much as 16. This is how the row goes on.
-  - ✗ 17 – 17 is only 1 more than 16. But each card is worth twice as much as the card to its right.
-  - ✗ 20 – With 20 the step would be 4. But in the row 1, 2, 4, 8, 16 the value doubles every time.
-  - ✗ 64 – 64 comes after the sixth card.
+  - ✗ 17 – 17 is only 1 more than 16. But the values double.
+  - ✗ 20 – With 20 the step would be 4. But the values double.
+  - ✗ 64 – 64 would be the seventh card, to the left of the 32.
 - Solution: 32
-- Explanation: The values double from right to left: 1, 2, 4, 8, 16, 32.
+- Explanation: 1, 2, 4, 8, 16, 32: each card is worth twice as much.
 - Link: [../?via=tutor#naechste-karte](../?via=tutor#naechste-karte)
+
+### Exercise wie-viele-zahlen
+
+- Task: How many different numbers can you make with the five cards? Count 0 as well.
+- Answer format: type a number
+- Solution: 32
+- Explanation: You can make every number from 0 to 31, with no gaps. That is 32 numbers.
+- The app's hint: Make the smallest and the biggest number. Can you make every number in between?
+- Typical mistakes and what the app says:
+  - 31: 31 is the biggest number. But 0 counts too: from 0 to 31 there is one number more.
+  - 5: 5 is the number of cards, not of numbers.
+- Link: [../?via=tutor#wie-viele-zahlen](../?via=tutor#wie-viele-zahlen)
 
 ### Exercise falsche-seite
 
@@ -157,41 +157,33 @@ Now you can read any binary number with five digits. On the next page you go the
 
 - Task: „Which decimal number is the binary number {b4}{b3}{b2}{b1}{b0}?“
 - Answer format: type a number
-- The app's hint: „Write the values 16, 8, 4, 2, 1 above the digits.“
+- The app's hint: „Draw five cards and write 16, 8, 4, 2, 1 above them.“
 - Steps of the solution:
   - Values above the digits: 16 · {b4}, 8 · {b3}, 4 · {b2}, 2 · {b1}, 1 · {b0}.
   - Only the cards with a 1 count. Together that makes {answer}.
 - Typical mistakes and what the app says:
   - F1: „You read from the wrong end. Card 16 is on the left, card 1 is on the right.“
   - F2: „You counted the ones. Each 1 counts as much as the card it belongs to.“
+  - F3: „You copied the binary number. You are looking for the decimal number.“
 - Link to number n: `../?bits-lesen-ueben=n&via=tutor#bits-lesen-ueben`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
 
 ```
-No. | b4 | b3 | b2 | b1 | b0 | Solution | F1 | F2
-1 | 0 | 1 | 1 | 1 | 1 | 15 | 30 | 4
-2 | 1 | 0 | 0 | 1 | 0 | 18 | 9 | 2
-3 | 0 | 1 | 0 | 0 | 1 | 9 | 18 | 2
-4 | 0 | 0 | 0 | 1 | 0 | 2 | 8 | 1
-5 | 0 | 1 | 0 | 0 | 0 | 8 | 2 | 1
-6 | 0 | 0 | 0 | 1 | 1 | 3 | 24 | 2
-7 | 1 | 0 | 1 | 1 | 1 | 23 | 29 | 4
-8 | 1 | 1 | 1 | 0 | 1 | 29 | 23 | 4
-9 | 0 | 0 | 1 | 1 | 1 | 7 | 28 | 3
-10 | 1 | 0 | 0 | 0 | 0 | 16 | 1 | 1
-11 | 0 | 0 | 1 | 0 | 1 | 5 | 20 | 2
-12 | 1 | 0 | 0 | 1 | 1 | 19 | 25 | 3
-13 | 1 | 1 | 0 | 0 | 1 | 25 | 19 | 3
-14 | 1 | 1 | 1 | 1 | 0 | 30 | 15 | 4
-15 | 0 | 0 | 1 | 1 | 0 | 6 | 12 | 2
-16 | 0 | 1 | 1 | 0 | 0 | 12 | 6 | 2
-17 | 1 | 1 | 0 | 1 | 0 | 26 | 11 | 3
-18 | 1 | 1 | 1 | 0 | 0 | 28 | 7 | 3
-19 | 1 | 0 | 1 | 1 | 0 | 22 | 13 | 3
-20 | 1 | 1 | 0 | 0 | 0 | 24 | 3 | 2
-21 | 0 | 1 | 1 | 0 | 1 | 13 | 22 | 3
-22 | 0 | 1 | 0 | 1 | 1 | 11 | 26 | 3
-23 | 1 | 0 | 1 | 0 | 0 | 20 | 5 | 2
+No. | b4 | b3 | b2 | b1 | b0 | Solution | F1 | F2 | F3
+1 | 0 | 1 | 1 | 1 | 1 | 15 | 30 | 4 | 1,111
+2 | 1 | 0 | 0 | 1 | 0 | 18 | 9 | 2 | 10,010
+3 | 0 | 1 | 0 | 1 | 1 | 11 | 26 | 3 | 1,011
+4 | 1 | 1 | 1 | 1 | 0 | 30 | 15 | 4 | 11,110
+5 | 0 | 0 | 0 | 1 | 1 | 3 | 24 | 2 | 11
+6 | 1 | 0 | 1 | 1 | 1 | 23 | 29 | 4 | 10,111
+7 | 1 | 1 | 1 | 0 | 1 | 29 | 23 | 4 | 11,101
+8 | 1 | 1 | 0 | 0 | 0 | 24 | 3 | 2 | 11,000
+9 | 0 | 0 | 1 | 1 | 0 | 6 | 12 | 2 | 110
+10 | 0 | 0 | 1 | 0 | 1 | 5 | 20 | 2 | 101
+11 | 1 | 1 | 0 | 0 | 1 | 25 | 19 | 3 | 11,001
+12 | 0 | 1 | 1 | 0 | 0 | 12 | 6 | 2 | 1,100
+13 | 1 | 1 | 0 | 1 | 0 | 26 | 11 | 3 | 11,010
+14 | 1 | 0 | 1 | 0 | 0 | 20 | 5 | 2 | 10,100
 ```
 
 ### Exercise zimmer-ordnen

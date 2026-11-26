@@ -47,51 +47,48 @@
 </ul>
 <h2>Kontext: die Seite „Die Bit-Karten“</h2>
 <p>Das Binärsystem mit Bit-Karten: Zahlen aus 0 und 1 lesen und in Dezimalzahlen umrechnen.</p>
-<h3>Ein Zimmer ohne Ziffern</h3>
+<h3>Ein Zimmer ohne Nummer</h3>
 <p>Die 6b ist in der Jugendherberge „Am Seeberg“ angekommen. Jona und Selin suchen ihr Zimmer. Aber an den
-Türen stehen keine Ziffern. An jeder Tür hängen fünf Karten. Manche Karten liegen offen, manche verdeckt.
-Über jeder Karte steht ihr Wert.</p>
-<p>Auf dieser Seite lernst du, wie man jede Zahl nur mit 0 und 1 schreibt. Das ist ein Code mit nur zwei
-Zeichen, wie bei den Codes auf der Seite davor.</p>
-<p>Bild: Fünf Karten nebeneinander mit den Werten 16, 8, 4, 2 und 1. Die Karten 8, 4 und 1 liegen offen und zeigen 8, 4 und 1 Punkte. Die Karten 16 und 2 sind verdeckt. Unter den Karten steht 0 1 1 0 1. Bildunterschrift: Die Karten an der Tür von Jona und Selin. Zähle die Punkte auf den offenen Karten.</p>
+Türen steht keine Zimmernummer. An jeder Tür hängen fünf Karten. Eine offene Karte zeigt Punkte. Eine
+verdeckte Karte zeigt ihre Rückseite, und die hat keine Punkte. Über jeder Karte steht, wie viele Punkte
+sie offen hat. Diese Zahl ist der <strong>Wert</strong> der Karte.</p>
+<p>Hier lernst du, jede Zahl nur mit 0 und 1 zu schreiben: ein Code mit nur zwei Zeichen.</p>
+<p>Bild: Fünf Karten nebeneinander mit den Werten 16, 8, 4, 2 und 1. Die Karten 8, 4 und 1 liegen offen und zeigen 8, 4 und 1 Punkte. Die Karten 16 und 2 sind verdeckt. Bildunterschrift: Die Karten an der Tür von Jona und Selin. Zähle die Punkte auf den offenen Karten.</p>
 <ul>
 <li>Aufgabe <code>karten-lesen</code> (unten)</li>
 </ul>
 <h3>Eine Karte ist ein Bit</h3>
-<p>Jede Karte kann nur zwei Zustände haben: offen oder verdeckt. Für offen schreibst du <strong>1</strong>, für verdeckt
-<strong>0</strong>. Die Tür von Zimmer 13 zeigt also die Ziffern 0 1 1 0 1.</p>
-<p>Schau dir die Werte über den Karten an: Jede Karte ist doppelt so viel wert wie die Karte rechts neben ihr.
-Die kleinste Karte liegt rechts.</p>
+<p>Jede Karte liegt entweder offen oder verdeckt. Für offen schreibst du <strong>1</strong>, für verdeckt <strong>0</strong>. Die Tür
+von Jona und Selin zeigt dann: verdeckt, offen, offen, verdeckt, offen. Kurz: <strong>01101</strong>. Diese Ziffern
+hintereinander nennt man eine <strong>Bitfolge</strong>.</p>
 <ul>
-<li><p><strong>Bit</strong>: Ein Bit ist die kleinste Einheit für Daten. Es hat genau zwei Werte, 0 oder 1, wie eine Karte, die verdeckt oder offen liegt.</p>
+<li><p><strong>Bit</strong>: Ein Bit ist ein Zeichen mit nur zwei möglichen Werten, 0 oder 1.</p>
 </li>
-<li><p><strong>Binärzahl</strong>: Eine Binärzahl ist eine Zahl, die nur aus den Ziffern 0 und 1 besteht. Jede Stelle hat einen Wert, der doppelt so groß ist wie der Wert der Stelle rechts daneben.</p>
+<li><p><strong>Binärzahl</strong>: Eine Binärzahl schreibt man nur mit den Ziffern 0 und 1. Jede 1 zählt so viel wie der Wert ihrer Karte.</p>
 </li>
-</ul>
-<p>Die Binärzahl 01101. Jede 1 zählt so viel wie der Wert über ihr.:</p>
-<ul>
-<li>Wert der Karte | 16 | 8 | 4 | 2 | 1</li>
-<li>Ziffer | 0 | 1 | 1 | 0 | 1</li>
-<li>zählt | 0 | 8 | 4 | 0 | 1</li>
 </ul>
 <p><strong>Merke: Merke</strong></p>
-<p>Du liest eine Binärzahl so, wie du die Karten hinlegst: Die Karte mit dem größten Wert liegt links.
-Das Zahlensystem mit den Werten 1, 2, 4, 8, 16 … heißt <strong>Binärsystem</strong>. Wir schreiben Zahlen sonst im
-<strong>Dezimalsystem</strong> mit den Ziffern 0 bis 9 und den Werten 1, 10, 100 …</p>
-<h3>Ausprobieren</h3>
-<p>Tippe auf eine Karte, um sie umzudrehen. Unter den Karten siehst du die Bitfolge und die Zahl, die sie zeigt. „Alle verdecken“ dreht alle Karten wieder um. Finde heraus, welche Zahlen du legen kannst.</p>
-<p>Interaktiv: Fünf Bit-Karten mit den Werten 16, 8, 4, 2 und 1, alle verdeckt. Tippt man auf eine Karte, dreht sie sich um. Darunter steht, welche Zahl die offenen Karten zeigen, zum Beispiel „Bitfolge: 00101 · Zahl: 5“ für die Karten 4 und 1. Sind alle Karten offen, ist es die Bitfolge 11111 und die Zahl 31.</p>
+<p>Jede Karte ist doppelt so viel wert wie die Karte rechts neben ihr. Die größte Karte liegt links.
+Darum zählt es, <strong>wo</strong> eine 1 steht, nicht nur, wie viele Einsen es sind.</p>
+<p>Das kennst du von Einern, Zehnern und Hundertern: Dort ist jede Stelle zehnmal so viel wert
+(<strong>Dezimalsystem</strong>). Bei den Karten ist jede Stelle doppelt so viel wert (<strong>Binärsystem</strong>).</p>
 <ul>
-<li><p>Aufgabe <code>groesste-zahl</code> (unten)</p>
-</li>
-<li><p>Aufgabe <code>naechste-karte</code> (unten)</p>
-</li>
+<li>Aufgabe <code>naechste-karte</code> (unten)</li>
+</ul>
+<h3>Ausprobieren</h3>
+<p>Tippe auf eine Karte, um sie umzudrehen. Unter den Karten siehst du die Bitfolge und die Zahl, die sie
+zeigt. „Alle verdecken“ dreht alle Karten wieder um.</p>
+<p>Finde heraus: Welche ist die kleinste Zahl, welche die größte? Gibt es dazwischen eine Zahl, die du nicht
+legen kannst?</p>
+<p>Interaktiv: Fünf Bit-Karten mit den Werten 16, 8, 4, 2 und 1, alle verdeckt. Tippt man auf eine Karte, dreht sie sich um. Darunter steht, welche Zahl die offenen Karten zeigen, zum Beispiel „Bitfolge: 00101 · Zahl: 5“ für die Karten 4 und 1. Sind alle Karten verdeckt, ist es 00000, also 0. Sind alle offen, ist es 11111, also 31.</p>
+<ul>
+<li>Aufgabe <code>wie-viele-zahlen</code> (unten)</li>
 </ul>
 <h3>Beispiel</h3>
 <p><strong>Beispiel: Welches Zimmer ist 10110?</strong></p>
 <p>Bild: Fünf Karten mit den Werten 16, 8, 4, 2 und 1. Die Karten 16, 4 und 2 liegen offen, die Karten 8 und 1 verdeckt. Darunter steht 1 0 1 1 0. Bildunterschrift: Die Tür von Mias Zimmer</p>
 <ol>
-<li>Schreibe über jede Ziffer den Wert ihrer Karte: 16, 8, 4, 2, 1.</li>
+<li>Schau, welcher Wert über jeder Ziffer steht: 16, 8, 4, 2, 1.</li>
 <li>Nimm nur die Werte, unter denen eine 1 steht: 16, 4 und 2.</li>
 <li>Zähle sie zusammen: 16 + 4 + 2 = 22.</li>
 </ol>
@@ -105,7 +102,7 @@ Das Zahlensystem mit den Werten 1, 2, 4, 8, 16 … heißt <strong>Binärsystem</
 <li><p>Aufgabe <code>zimmer-ordnen</code> (unten)</p>
 </li>
 </ul>
-<p>Jetzt kannst du jede Binärzahl mit fünf Stellen lesen. Auf der nächsten Seite gehst du den Weg zurück. Die Busnummer ist 27. Wie legst du sie mit den Karten?</p>
+<p>Jetzt kannst du jede Binärzahl mit fünf Stellen lesen. Auf der nächsten Seite gehst du den Weg zurück und legst die Nummer des Busses, 27, selbst mit den Karten.</p>
 <h3>Aufgabe karten-lesen</h3>
 <ul>
 <li>Aufgabe: Wie viele Punkte zeigen die offenen Karten zusammen? Das ist die Nummer des Zimmers.</li>
@@ -114,24 +111,11 @@ Das Zahlensystem mit den Werten 1, 2, 4, 8, 16 … heißt <strong>Binärsystem</
 <li>Erklärung: 8 + 4 + 1 = 13. Jona und Selin schlafen in Zimmer 13.</li>
 <li>Tipp der App: Die Karte 8 hat 8 Punkte, die Karte 4 hat 4 Punkte.</li>
 <li>Typische Fehler und was die App sagt:<ul>
-<li>3: Du hast die offenen Karten gezählt. Zähle die Punkte auf jeder offenen Karte und zähle sie zusammen.</li>
+<li>3: Du hast die offenen Karten gezählt. Zähle ihre Punkte zusammen.</li>
 <li>31: Du hast auch die verdeckten Karten mitgezählt. Eine verdeckte Karte zählt nicht.</li>
 </ul>
 </li>
 <li>Link: <a href="../?via=tutor#karten-lesen">../?via=tutor#karten-lesen</a></li>
-</ul>
-<h3>Aufgabe groesste-zahl</h3>
-<ul>
-<li>Aufgabe: Welche Zahl ist die größte, die du mit diesen fünf Karten legen kannst?</li>
-<li>Antwortformat: eine Zahl eintippen</li>
-<li>Lösung: 31</li>
-<li>Erklärung: Liegen alle Karten offen, sind es 16 + 8 + 4 + 2 + 1 = 31. Mit fünf Karten legst du also jede Zahl von 0 bis 31.</li>
-<li>Typische Fehler und was die App sagt:<ul>
-<li>16: 16 ist die größte Karte. Du darfst aber mehrere Karten offen hinlegen.</li>
-<li>32: Für 32 brauchst du eine sechste Karte. Lege alle fünf Karten offen und zähle zusammen.</li>
-</ul>
-</li>
-<li>Link: <a href="../?via=tutor#groesste-zahl">../?via=tutor#groesste-zahl</a></li>
 </ul>
 <h3>Aufgabe naechste-karte</h3>
 <ul>
@@ -139,14 +123,28 @@ Das Zahlensystem mit den Werten 1, 2, 4, 8, 16 … heißt <strong>Binärsystem</
 <li>Antwortformat: eine Antwort wählen</li>
 <li>Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):<ul>
 <li>✓ 32 – 32 ist doppelt so viel wie 16. So geht die Reihe weiter.</li>
-<li>✗ 17 – 17 ist nur 1 mehr als 16. Jede Karte ist aber doppelt so viel wert wie ihre rechte Nachbarin.</li>
-<li>✗ 20 – Bei 20 wäre der Abstand 4. In der Reihe 1, 2, 4, 8, 16 verdoppelt sich der Wert aber jedes Mal.</li>
-<li>✗ 64 – 64 kommt erst nach der sechsten Karte.</li>
+<li>✗ 17 – 17 ist nur 1 mehr als 16. Die Werte verdoppeln sich aber.</li>
+<li>✗ 20 – Bei 20 wäre der Abstand 4. Die Werte verdoppeln sich aber.</li>
+<li>✗ 64 – 64 wäre erst die siebte Karte, links neben der 32.</li>
 </ul>
 </li>
 <li>Lösung: 32</li>
-<li>Erklärung: Die Werte verdoppeln sich von rechts nach links: 1, 2, 4, 8, 16, 32.</li>
+<li>Erklärung: 1, 2, 4, 8, 16, 32: Jede Karte ist doppelt so viel wert.</li>
 <li>Link: <a href="../?via=tutor#naechste-karte">../?via=tutor#naechste-karte</a></li>
+</ul>
+<h3>Aufgabe wie-viele-zahlen</h3>
+<ul>
+<li>Aufgabe: Wie viele verschiedene Zahlen kannst du mit den fünf Karten legen? Zähle die 0 mit.</li>
+<li>Antwortformat: eine Zahl eintippen</li>
+<li>Lösung: 32</li>
+<li>Erklärung: Du kannst jede Zahl von 0 bis 31 legen, ohne Lücke. Das sind 32 Zahlen.</li>
+<li>Tipp der App: Lege die kleinste und die größte Zahl. Kannst du jede Zahl dazwischen legen?</li>
+<li>Typische Fehler und was die App sagt:<ul>
+<li>31: 31 ist die größte Zahl. Aber auch die 0 zählt mit: Von 0 bis 31 sind es eine Zahl mehr.</li>
+<li>5: 5 ist die Zahl der Karten, nicht der Zahlen.</li>
+</ul>
+</li>
+<li>Link: <a href="../?via=tutor#wie-viele-zahlen">../?via=tutor#wie-viele-zahlen</a></li>
 </ul>
 <h3>Aufgabe falsche-seite</h3>
 <ul>
@@ -160,7 +158,7 @@ Das Zahlensystem mit den Werten 1, 2, 4, 8, 16 … heißt <strong>Binärsystem</
 <ul>
 <li>Aufgabe: „Welche Dezimalzahl ist die Binärzahl {b4}{b3}{b2}{b1}{b0}?“</li>
 <li>Antwortformat: eine Zahl eintippen</li>
-<li>Tipp der App: „Schreibe die Werte 16, 8, 4, 2, 1 über die Ziffern.“</li>
+<li>Tipp der App: „Male dir fünf Karten auf und schreibe 16, 8, 4, 2, 1 darüber.“</li>
 <li>Lösungsweg:<ul>
 <li>Werte über die Ziffern: 16 · {b4}, 8 · {b3}, 4 · {b2}, 2 · {b1}, 1 · {b0}.</li>
 <li>Nur die Karten mit einer 1 zählen. Zusammen sind das {answer}.</li>
@@ -168,36 +166,28 @@ Das Zahlensystem mit den Werten 1, 2, 4, 8, 16 … heißt <strong>Binärsystem</
 </li>
 <li>Typische Fehler und was die App sagt:<ul>
 <li>F1: „Du hast von der falschen Seite gelesen. Die Karte 16 liegt links, die Karte 1 rechts.“</li>
-<li>F2: „Du hast die Einsen gezählt. Jede 1 zählt so viel wie die Karte, über der sie steht.“</li>
+<li>F2: „Du hast die Einsen gezählt. Jede 1 zählt so viel wie die Karte, zu der sie gehört.“</li>
+<li>F3: „Du hast die Binärzahl abgeschrieben. Gesucht ist die Dezimalzahl.“</li>
 </ul>
 </li>
 <li>Link zu Nummer n: <code>../?bits-lesen-ueben=n&amp;via=tutor#bits-lesen-ueben</code></li>
 <li>Aufgaben nach Nummer: die Werte für <code>{…}</code>, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. <code>{answer}</code> ist die Lösung.</li>
 </ul>
-<pre><code>Nr. | b4 | b3 | b2 | b1 | b0 | Lösung | F1 | F2
-1 | 0 | 1 | 1 | 1 | 1 | 15 | 30 | 4
-2 | 1 | 0 | 0 | 1 | 0 | 18 | 9 | 2
-3 | 0 | 1 | 0 | 0 | 1 | 9 | 18 | 2
-4 | 0 | 0 | 0 | 1 | 0 | 2 | 8 | 1
-5 | 0 | 1 | 0 | 0 | 0 | 8 | 2 | 1
-6 | 0 | 0 | 0 | 1 | 1 | 3 | 24 | 2
-7 | 1 | 0 | 1 | 1 | 1 | 23 | 29 | 4
-8 | 1 | 1 | 1 | 0 | 1 | 29 | 23 | 4
-9 | 0 | 0 | 1 | 1 | 1 | 7 | 28 | 3
-10 | 1 | 0 | 0 | 0 | 0 | 16 | 1 | 1
-11 | 0 | 0 | 1 | 0 | 1 | 5 | 20 | 2
-12 | 1 | 0 | 0 | 1 | 1 | 19 | 25 | 3
-13 | 1 | 1 | 0 | 0 | 1 | 25 | 19 | 3
-14 | 1 | 1 | 1 | 1 | 0 | 30 | 15 | 4
-15 | 0 | 0 | 1 | 1 | 0 | 6 | 12 | 2
-16 | 0 | 1 | 1 | 0 | 0 | 12 | 6 | 2
-17 | 1 | 1 | 0 | 1 | 0 | 26 | 11 | 3
-18 | 1 | 1 | 1 | 0 | 0 | 28 | 7 | 3
-19 | 1 | 0 | 1 | 1 | 0 | 22 | 13 | 3
-20 | 1 | 1 | 0 | 0 | 0 | 24 | 3 | 2
-21 | 0 | 1 | 1 | 0 | 1 | 13 | 22 | 3
-22 | 0 | 1 | 0 | 1 | 1 | 11 | 26 | 3
-23 | 1 | 0 | 1 | 0 | 0 | 20 | 5 | 2
+<pre><code>Nr. | b4 | b3 | b2 | b1 | b0 | Lösung | F1 | F2 | F3
+1 | 0 | 1 | 1 | 1 | 1 | 15 | 30 | 4 | 1111
+2 | 1 | 0 | 0 | 1 | 0 | 18 | 9 | 2 | 10 010
+3 | 0 | 1 | 0 | 1 | 1 | 11 | 26 | 3 | 1011
+4 | 1 | 1 | 1 | 1 | 0 | 30 | 15 | 4 | 11 110
+5 | 0 | 0 | 0 | 1 | 1 | 3 | 24 | 2 | 11
+6 | 1 | 0 | 1 | 1 | 1 | 23 | 29 | 4 | 10 111
+7 | 1 | 1 | 1 | 0 | 1 | 29 | 23 | 4 | 11 101
+8 | 1 | 1 | 0 | 0 | 0 | 24 | 3 | 2 | 11 000
+9 | 0 | 0 | 1 | 1 | 0 | 6 | 12 | 2 | 110
+10 | 0 | 0 | 1 | 0 | 1 | 5 | 20 | 2 | 101
+11 | 1 | 1 | 0 | 0 | 1 | 25 | 19 | 3 | 11 001
+12 | 0 | 1 | 1 | 0 | 0 | 12 | 6 | 2 | 1100
+13 | 1 | 1 | 0 | 1 | 0 | 26 | 11 | 3 | 11 010
+14 | 1 | 0 | 1 | 0 | 0 | 20 | 5 | 2 | 10 100
 </code></pre>
 <h3>Aufgabe zimmer-ordnen</h3>
 <ul>

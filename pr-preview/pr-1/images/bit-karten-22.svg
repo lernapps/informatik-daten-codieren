@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 154" role="img">
-<title>Bit-Karten 16, 8, 4, 2, 1; die Karten 16, 4 und 2 liegen offen</title>
-<rect width="352" height="154" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 198" role="img">
+<title>Bit-Karten 16, 8, 4, 2, 1; die Karten 16, 4 und 2 liegen offen, darunter 1 0 1 1 0</title>
+<rect width="352" height="198" fill="#fff"/>
 <defs><pattern id="rueckseite" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="12" height="12" fill="#b5babf"/><rect width="6" height="12" fill="#9aa0a6"/></pattern></defs>
 <g font-family="sans-serif" font-weight="700" text-anchor="middle" fill="#222">
 <text x="40.0" y="20" font-size="18">16</text>

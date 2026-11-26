@@ -7,7 +7,7 @@
     <link rel="modulepreload" crossorigin href="../../../assets/tasks-DADUYy52-D5IfZDbd.js">
     <link rel="stylesheet" crossorigin href="../../../assets/index-DYVfKw6-.css">
     <title>The bit cards – Representing and encoding data</title>
-    <meta name="description" content="The binary system with bit cards: read numbers made of 0 and 1 and convert them to decimal numbers." />
+    <meta name="description" content="The binary system with bit cards: read numbers made of 0 and 1 and turn them into decimal numbers." />
     <meta name="lernapps-archetype" content="explainer" />
     <link rel="alternate" hreflang="de" href="../../../bits/binaersystem/" />
     <link rel="alternate" hreflang="en" href="../../../en/bits/binaersystem/" />
@@ -31,24 +31,24 @@
 </details>
 <p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
 <p class="explainer-tutor-status" role="status" aria-live="polite"></p>
-<script type="application/json" class="explainer-tutor-prompt">{"start":"Load ⟦base⟧bits/binaersystem/tutor/⟦query⟧ and be my tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../../en/","storage":"informatik-daten-codieren","page":{"id":"binaersystem","title":"The bit cards","exercises":[{"id":"karten-lesen","section":"einstieg","numbered":false},{"id":"groesste-zahl","section":"ausprobieren","numbered":false},{"id":"naechste-karte","section":"ausprobieren","numbered":false},{"id":"falsche-seite","section":"uebung","numbered":false},{"id":"bits-lesen-ueben","section":"uebung","numbered":true},{"id":"zimmer-ordnen","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","beispiel","uebung"]},"tutor":"bits/binaersystem/tutor/","markdown":"bits/binaersystem/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"I need help with a learning unit. I will tell you in a moment what it is about.","go":"Learn with {name}","done":"✓ Copied – now paste it into {name}","copy":"Copy the text","copied":"The prompt is copied. Paste it into the chat of your AI assistant.","failed":"Copying did not work. Try again."}</script>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Load ⟦base⟧bits/binaersystem/tutor/⟦query⟧ and be my tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../../en/","storage":"informatik-daten-codieren","page":{"id":"binaersystem","title":"The bit cards","exercises":[{"id":"karten-lesen","section":"einstieg","numbered":false},{"id":"naechste-karte","section":"idee","numbered":false},{"id":"wie-viele-zahlen","section":"ausprobieren","numbered":false},{"id":"falsche-seite","section":"uebung","numbered":false},{"id":"bits-lesen-ueben","section":"uebung","numbered":true},{"id":"zimmer-ordnen","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","beispiel","uebung"]},"tutor":"bits/binaersystem/tutor/","markdown":"bits/binaersystem/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"I need help with a learning unit. I will tell you in a moment what it is about.","go":"Learn with {name}","done":"✓ Copied – now paste it into {name}","copy":"Copy the text","copied":"The prompt is copied. Paste it into the chat of your AI assistant.","failed":"Copying did not work. Try again."}</script>
 </div>
 </div>
 
-<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">A room without digits</a></li><li><a href="#idee">One card is one bit</a></li><li><a href="#ausprobieren">Try it out</a></li><li><a href="#beispiel">Example</a></li><li><a href="#uebung">Practice</a></li></ol></nav>
+<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">A room without a number</a></li><li><a href="#idee">One card is one bit</a></li><li><a href="#ausprobieren">Try it out</a></li><li><a href="#beispiel">Example</a></li><li><a href="#uebung">Practice</a></li></ol></nav>
 <section class="explainer-section">
-<h2 id="einstieg">A room without digits</h2>
-<div class="explainer-block" data-block="einstieg/1" data-block-id="8c3b2aa2" data-block-type="text" data-block-order="1">
+<h2 id="einstieg">A room without a number</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="223845f2" data-block-type="text" data-block-order="1">
 <div class="block-text"><p>Class 6b has arrived at the youth hostel “Am Seeberg”. Jona and Selin are looking for their room. But there
-are no digits on the doors. On every door there are five cards. Some cards are face up, some face down.
-The value of each card is written above it.</p>
-<p>On this page you will learn how to write any number with only 0 and 1. This is a code with only two
-symbols, like the codes on the page before.</p></div>
+is no room number on the doors. On every door there are five cards. A card that is face up shows dots. A
+card that is face down shows its back, and the back has no dots. Above each card it says how many dots it
+has when it is face up. This number is the <strong>value</strong> of the card.</p>
+<p>Here you will learn to write any number with only 0 and 1: a code with only two symbols.</p></div>
 </div>
-<div class="explainer-block" data-block="einstieg/2" data-block-id="40e4f3ba" data-block-type="figure" data-block-order="2">
-<figure class="block-figure"><div class="block-image-credit block-image-fill"><img src="../../../images/bit-karten-13.svg" alt="Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down. Below the cards it says 0 1 1 0 1." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing. Licence: CC-BY-4.0." aria-label="Source: own drawing. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>The cards on Jona and Selin&#39;s door. Count the dots on the cards that are face up.</p></figcaption></figure>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="b53b3637" data-block-type="figure" data-block-order="2">
+<figure class="block-figure"><div class="block-image-credit block-image-fill"><img src="../../../images/bit-karten-13.svg" alt="Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing. Licence: CC-BY-4.0." aria-label="Source: own drawing. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>The cards on Jona and Selin&#39;s door. Count the dots on the cards that are face up.</p></figcaption></figure>
 </div>
-<div class="explainer-block" data-block="einstieg/3" data-block-id="00121109" data-block-type="number" data-block-order="3">
+<div class="explainer-block" data-block="einstieg/3" data-block-id="b5cff60d" data-block-type="number" data-block-order="3">
 <div class="explainer-exercise explainer-question" id="karten-lesen">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-karten-lesen" data-id="karten-lesen" data-type="number">
@@ -69,77 +69,35 @@ symbols, like the codes on the page before.</p></div>
 <p><strong>Right answer:</strong> 13</p>
 <p class="question-explanation">8 + 4 + 1 = 13. Jona and Selin sleep in room 13.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"karten-lesen","text":"How many dots do the face-up cards show altogether? That is the room number.","explanation":"8 + 4 + 1 = 13. Jona and Selin sleep in room 13.","links":[],"hint":"Card 8 has 8 dots, card 4 has 4 dots.","type":"number","answer":13,"tolerance":0,"mistakes":[{"answer":3,"message":"You counted the face-up cards. Count the dots on each face-up card and add them up."},{"answer":31,"message":"You also counted the face-down cards. A face-down card does not count."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"karten-lesen","text":"How many dots do the face-up cards show altogether? That is the room number.","explanation":"8 + 4 + 1 = 13. Jona and Selin sleep in room 13.","links":[],"hint":"Card 8 has 8 dots, card 4 has 4 dots.","type":"number","answer":13,"tolerance":0,"mistakes":[{"answer":3,"message":"You counted the face-up cards. Add up their dots."},{"answer":31,"message":"You also counted the face-down cards. A face-down card does not count."}]},"rendered":{}}</script>
 </div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="idee">One card is one bit</h2>
-<div class="explainer-block" data-block="idee/1" data-block-id="42980e35" data-block-type="text" data-block-order="4">
-<div class="block-text"><p>Each card can only be in one of two states: face up or face down. For face up you write <strong>1</strong>, for face
-down <strong>0</strong>. So the door of room 13 shows the digits 0 1 1 0 1.</p>
-<p>Look at the values above the cards: each card is worth twice as much as the card to its right. The
-smallest card is on the right.</p></div>
+<div class="explainer-block" data-block="idee/1" data-block-id="98adea71" data-block-type="text" data-block-order="4">
+<div class="block-text"><p>Each card is either face up or face down. For face up you write <strong>1</strong>, for face down <strong>0</strong>. Then Jona and
+Selin&#39;s door shows: face down, face up, face up, face down, face up. In short: <strong>01101</strong>. These digits in a
+row are called a <strong>bit string</strong>.</p></div>
 </div>
-<div class="explainer-block" data-block="idee/2" data-block-id="2e8c3199" data-block-type="definition" data-block-order="5">
-<dl class="explainer-definition"><dt><dfn id="begriff-bit"><a href="../../../en/glossar/#bit">bit</a></dfn></dt><dd><p>A bit is the smallest unit of data. It has exactly two values, 0 or 1, like a card that is face down or face up.</p></dd></dl>
+<div class="explainer-block" data-block="idee/2" data-block-id="e3c888ec" data-block-type="definition" data-block-order="5">
+<dl class="explainer-definition"><dt><dfn id="begriff-bit"><a href="../../../en/glossar/#bit">bit</a></dfn></dt><dd><p>A bit is a symbol with only two possible values, 0 or 1.</p></dd></dl>
 </div>
-<div class="explainer-block" data-block="idee/3" data-block-id="0e7ddf8a" data-block-type="definition" data-block-order="6">
-<dl class="explainer-definition"><dt><dfn id="begriff-binaerzahl"><a href="../../../en/glossar/#binaerzahl">binary number</a></dfn></dt><dd><p>A binary number is a number made only of the digits 0 and 1. Each place has a value that is twice as big as the value of the place to its right.</p></dd></dl>
+<div class="explainer-block" data-block="idee/3" data-block-id="b79fdc3a" data-block-type="definition" data-block-order="6">
+<dl class="explainer-definition"><dt><dfn id="begriff-binaerzahl"><a href="../../../en/glossar/#binaerzahl">binary number</a></dfn></dt><dd><p>A binary number is written only with the digits 0 and 1. Each 1 counts as much as the value of its card.</p></dd></dl>
 </div>
-<div class="explainer-block" data-block="idee/4" data-block-id="01df2fe6" data-block-type="table" data-block-order="7">
-<div class="block-table" role="region" aria-label="The binary number 01101. Each 1 counts as much as the value above it." tabindex="0"><table><caption>The binary number 01101. Each 1 counts as much as the value above it.</caption><thead><tr><th scope="col">Value of the card</th><th scope="col">16</th><th scope="col">8</th><th scope="col">4</th><th scope="col">2</th><th scope="col">1</th></tr></thead><tbody><tr><th scope="row">Digit</th><td>0</td><td>1</td><td>1</td><td>0</td><td>1</td></tr><tr><th scope="row">counts</th><td>0</td><td>8</td><td>4</td><td>0</td><td>1</td></tr></tbody></table></div>
-</div>
-<div class="explainer-block" data-block="idee/5" data-block-id="02b90db3" data-block-type="note" data-block-order="8">
+<div class="explainer-block" data-block="idee/4" data-block-id="fcc77df0" data-block-type="note" data-block-order="7">
 <div class="explainer-box explainer-note">
 <h3 class="explainer-box-title">Remember</h3>
-<div class="explainer-block" data-block="idee/5/1" data-block-id="290ec8ec" data-block-type="text" data-block-order="9">
-<div class="block-text"><p>You read a binary number the way you lay out the cards: the card with the biggest value is on the
-left. The number system with the values 1, 2, 4, 8, 16 … is called the <strong>binary system</strong>. We usually
-write numbers in the <strong>decimal system</strong> with the digits 0 to 9 and the values 1, 10, 100 …</p></div>
+<div class="explainer-block" data-block="idee/4/1" data-block-id="745c41a8" data-block-type="text" data-block-order="8">
+<div class="block-text"><p>Each card is worth twice as much as the card to its right. The biggest card is on the left. That is why
+it matters <strong>where</strong> a 1 is, not just how many ones there are.</p>
+<p>You know this from ones, tens and hundreds: there, each place is worth ten times as much (<strong>decimal
+system</strong>). With the cards, each place is worth twice as much (<strong>binary system</strong>).</p></div>
 </div>
 </div>
 </div>
-</section>
-<section class="explainer-section">
-<h2 id="ausprobieren">Try it out</h2>
-<div class="explainer-block" data-block="ausprobieren/1" data-block-id="4d5d0995" data-block-type="text" data-block-order="10">
-<div class="block-text"><p>Tap a card to turn it over. Below the cards you can see the bits and the number they show. “Turn all face down” turns all the cards over again. Find out which numbers you can lay out.</p></div>
-</div>
-<div class="explainer-block" data-block="ausprobieren/2" data-block-id="603ac6e4" data-block-type="vue-component" data-block-order="11">
-<div class="explainer-component" data-component="BitReihe">
-<div class="explainer-island" hidden><div class="bit-reihe" data-v-b6e558df><div class="bit-reihe-row" data-v-b6e558df><!--[--><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>16</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 16: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>8</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 8: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>4</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 4: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>2</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 2: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>1</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 1: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><!--]--></div><p class="bit-reihe-line" aria-live="polite" data-v-b6e558df>Bits: 00000 · number: 0</p><div class="bit-reihe-actions" data-v-b6e558df><button type="button" class="bit-reihe-reset" data-v-b6e558df>Turn all face down</button></div></div></div>
-<div class="explainer-nojs"><p>Five bit cards with the values 16, 8, 4, 2 and 1, all face down. When you tap a card, it turns over. Below
-the cards you can read which number the face-up cards show, for example “Bits: 00101 · number: 5” for the
-cards 4 and 1. When all the cards are face up, the bits are 11111 and the number is 31.</p></div>
-<script type="application/json" class="explainer-component-props">{"cards":5,"card":"Card {v}","open":"face up","closed":"face down","line":"Bits: {b} · number: {n}","reset":"Turn all face down"}</script>
-</div>
-</div>
-<div class="explainer-block" data-block="ausprobieren/3" data-block-id="2f2b12f2" data-block-type="number" data-block-order="12">
-<div class="explainer-exercise explainer-question" id="groesste-zahl">
-<p class="explainer-exercise-label">Exercise</p>
-<div class="question" id="frage-groesste-zahl" data-id="groesste-zahl" data-type="number">
-<form class="question-form" novalidate>
-<fieldset>
-<legend class="question-text">What is the biggest number you can lay out with these five cards?</legend>
-<label class="question-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-groesste-zahl">  </label>
-</fieldset>
-<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
-<div class="question-reveal" hidden>
-<p><strong>Right answer:</strong> 31</p>
-<p class="question-explanation">With all the cards face up, it is 16 + 8 + 4 + 2 + 1 = 31. So with five cards you can lay out every number from 0 to 31.</p>
-</div>
-<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
-</form>
-</div>
-<details class="explainer-solution"><summary>Solution</summary>
-<p><strong>Right answer:</strong> 31</p>
-<p class="question-explanation">With all the cards face up, it is 16 + 8 + 4 + 2 + 1 = 31. So with five cards you can lay out every number from 0 to 31.</p>
-</details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"groesste-zahl","text":"What is the biggest number you can lay out with these five cards?","explanation":"With all the cards face up, it is 16 + 8 + 4 + 2 + 1 = 31. So with five cards you can lay out every number from 0 to 31.","links":[],"type":"number","answer":31,"tolerance":0,"mistakes":[{"answer":16,"message":"16 is the biggest card. But you can lay out several cards face up."},{"answer":32,"message":"For 32 you need a sixth card. Lay out all five cards face up and add them up."}]},"rendered":{}}</script>
-</div>
-</div>
-<div class="explainer-block" data-block="ausprobieren/4" data-block-id="4fa7dd9b" data-block-type="single-choice" data-block-order="13">
+<div class="explainer-block" data-block="idee/5" data-block-id="6b6ce151" data-block-type="single-choice" data-block-order="9">
 <div class="explainer-exercise explainer-question" id="naechste-karte">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-naechste-karte" data-id="naechste-karte" data-type="single-choice">
@@ -155,11 +113,11 @@ cards 4 and 1. When all the cards are face up, the bits are 11111 and the number
 <div class="question-reveal" hidden>
 <ul class="question-infos">
 <li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>32</strong> <span class="question-badge question-badge-right">right answer</span></p><p>32 is twice as much as 16. This is how the row goes on.</p></li>
-<li class="question-info" data-option="1"><p class="question-info-head"><strong>17</strong></p><p>17 is only 1 more than 16. But each card is worth twice as much as the card to its right.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>20</strong></p><p>With 20 the step would be 4. But in the row 1, 2, 4, 8, 16 the value doubles every time.</p></li>
-<li class="question-info" data-option="3"><p class="question-info-head"><strong>64</strong></p><p>64 comes after the sixth card.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>17</strong></p><p>17 is only 1 more than 16. But the values double.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>20</strong></p><p>With 20 the step would be 4. But the values double.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>64</strong></p><p>64 would be the seventh card, to the left of the 32.</p></li>
 </ul>
-<p class="question-explanation">The values double from right to left: 1, 2, 4, 8, 16, 32.</p>
+<p class="question-explanation">1, 2, 4, 8, 16, 32: each card is worth twice as much.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
 </form>
@@ -167,27 +125,70 @@ cards 4 and 1. When all the cards are face up, the bits are 11111 and the number
 <details class="explainer-solution"><summary>Solution</summary>
 <ul class="question-infos">
 <li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>32</strong> <span class="question-badge question-badge-right">right answer</span></p><p>32 is twice as much as 16. This is how the row goes on.</p></li>
-<li class="question-info" data-option="1"><p class="question-info-head"><strong>17</strong></p><p>17 is only 1 more than 16. But each card is worth twice as much as the card to its right.</p></li>
-<li class="question-info" data-option="2"><p class="question-info-head"><strong>20</strong></p><p>With 20 the step would be 4. But in the row 1, 2, 4, 8, 16 the value doubles every time.</p></li>
-<li class="question-info" data-option="3"><p class="question-info-head"><strong>64</strong></p><p>64 comes after the sixth card.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>17</strong></p><p>17 is only 1 more than 16. But the values double.</p></li>
+<li class="question-info" data-option="2"><p class="question-info-head"><strong>20</strong></p><p>With 20 the step would be 4. But the values double.</p></li>
+<li class="question-info" data-option="3"><p class="question-info-head"><strong>64</strong></p><p>64 would be the seventh card, to the left of the 32.</p></li>
 </ul>
-<p class="question-explanation">The values double from right to left: 1, 2, 4, 8, 16, 32.</p>
+<p class="question-explanation">1, 2, 4, 8, 16, 32: each card is worth twice as much.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"naechste-karte","text":"Jona wants to put a sixth card to the left of the 16. What value must it have?","explanation":"The values double from right to left: 1, 2, 4, 8, 16, 32.","links":[],"type":"single-choice","options":[{"text":"32","correct":true,"info":"32 is twice as much as 16. This is how the row goes on."},{"text":"17","correct":false,"info":"17 is only 1 more than 16. But each card is worth twice as much as the card to its right."},{"text":"20","correct":false,"info":"With 20 the step would be 4. But in the row 1, 2, 4, 8, 16 the value doubles every time."},{"text":"64","correct":false,"info":"64 comes after the sixth card."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"naechste-karte","text":"Jona wants to put a sixth card to the left of the 16. What value must it have?","explanation":"1, 2, 4, 8, 16, 32: each card is worth twice as much.","links":[],"type":"single-choice","options":[{"text":"32","correct":true,"info":"32 is twice as much as 16. This is how the row goes on."},{"text":"17","correct":false,"info":"17 is only 1 more than 16. But the values double."},{"text":"20","correct":false,"info":"With 20 the step would be 4. But the values double."},{"text":"64","correct":false,"info":"64 would be the seventh card, to the left of the 32."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Try it out</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="18eb34b3" data-block-type="text" data-block-order="10">
+<div class="block-text"><p>Tap a card to turn it over. Below the cards you can see the bit string and the number it shows. “Turn all
+face down” turns all the cards over again.</p>
+<p>Find out: What is the smallest number, and what is the biggest? Is there a number in between that you
+cannot make?</p></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="ecca39ed" data-block-type="vue-component" data-block-order="11">
+<div class="explainer-component" data-component="BitReihe">
+<div class="explainer-island" hidden><div class="bit-reihe" data-v-b6e558df><div class="bit-reihe-row" data-v-b6e558df><!--[--><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>16</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 16: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>8</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 8: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>4</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 4: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>2</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 2: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><div class="bit-reihe-place" data-v-b6e558df><span class="bit-reihe-value" aria-hidden="true" data-v-b6e558df>1</span><button type="button" class="bit-reihe-card" aria-pressed="false" aria-label="Card 1: face down" data-v-b6e558df><!----></button><span class="bit-reihe-bit" aria-hidden="true" data-v-b6e558df>0</span></div><!--]--></div><p class="bit-reihe-line" aria-live="polite" data-v-b6e558df>Bit string: 00000 · Number: 0</p><div class="bit-reihe-actions" data-v-b6e558df><button type="button" class="bit-reihe-reset" data-v-b6e558df>Turn all face down</button></div></div></div>
+<div class="explainer-nojs"><p>Five bit cards with the values 16, 8, 4, 2 and 1, all face down. When you tap a card, it turns over. Below
+the cards you can read which number the face-up cards show, for example “Bit string: 00101 · Number: 5”
+for the cards 4 and 1. With all the cards face down it is 00000, which is 0. With all face up it is 11111,
+which is 31.</p></div>
+<script type="application/json" class="explainer-component-props">{"cards":5,"card":"Card {v}","open":"face up","closed":"face down","line":"Bit string: {b} · Number: {n}","reset":"Turn all face down"}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/3" data-block-id="7ca33cfc" data-block-type="number" data-block-order="12">
+<div class="explainer-exercise explainer-question" id="wie-viele-zahlen">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-wie-viele-zahlen" data-id="wie-viele-zahlen" data-type="number">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">How many different numbers can you make with the five cards? Count 0 as well.</legend>
+<label class="question-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-wie-viele-zahlen">  </label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> 32</p>
+<p class="question-explanation">You can make every number from 0 to 31, with no gaps. That is 32 numbers.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> 32</p>
+<p class="question-explanation">You can make every number from 0 to 31, with no gaps. That is 32 numbers.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"wie-viele-zahlen","text":"How many different numbers can you make with the five cards? Count 0 as well.","explanation":"You can make every number from 0 to 31, with no gaps. That is 32 numbers.","links":[],"hint":"Make the smallest and the biggest number. Can you make every number in between?","type":"number","answer":32,"tolerance":0,"mistakes":[{"answer":31,"message":"31 is the biggest number. But 0 counts too: from 0 to 31 there is one number more."},{"answer":5,"message":"5 is the number of cards, not of numbers."}]},"rendered":{}}</script>
 </div>
 </div>
 </section>
 <section class="explainer-section">
 <h2 id="beispiel">Example</h2>
-<div class="explainer-block" data-block="beispiel/1" data-block-id="c56fbe0b" data-block-type="example" data-block-order="14">
+<div class="explainer-block" data-block="beispiel/1" data-block-id="fe9ba038" data-block-type="example" data-block-order="13">
 <div class="explainer-box explainer-example">
 <h3 class="explainer-box-title">Which room is 10110?</h3>
-<div class="explainer-block" data-block="beispiel/1/1" data-block-id="4fdc2551" data-block-type="figure" data-block-order="15">
+<div class="explainer-block" data-block="beispiel/1/1" data-block-id="4fdc2551" data-block-type="figure" data-block-order="14">
 <figure class="block-figure"><div class="block-image-credit block-image-fill"><img src="../../../images/bit-karten-22.svg" alt="Five cards with the values 16, 8, 4, 2 and 1. The cards 16, 4 and 2 are face up, the cards 8 and 1 face down. Below it says 1 0 1 1 0." loading="lazy" decoding="async"><span class="block-credit" tabindex="0" role="img" data-info="Source: own drawing. Licence: CC-BY-4.0." aria-label="Source: own drawing. Licence: CC-BY-4.0.">© CC-BY-4.0</span></div><figcaption><p>The door of Mia&#39;s room</p></figcaption></figure>
 </div>
-<div class="explainer-block" data-block="beispiel/1/2" data-block-id="75e8da55" data-block-type="text" data-block-order="16">
+<div class="explainer-block" data-block="beispiel/1/2" data-block-id="a6b6a22e" data-block-type="text" data-block-order="15">
 <div class="block-text"><ol>
-<li>Write the value of its card above each digit: 16, 8, 4, 2, 1.</li>
+<li>Look at the value above each digit: 16, 8, 4, 2, 1.</li>
 <li>Take only the values that have a 1 below them: 16, 4 and 2.</li>
 <li>Add them up: 16 + 4 + 2 = 22.</li>
 </ol>
@@ -198,7 +199,7 @@ cards 4 and 1. When all the cards are face up, the bits are 11111 and the number
 </section>
 <section class="explainer-section">
 <h2 id="uebung">Practice</h2>
-<div class="explainer-block" data-block="uebung/1" data-block-id="fedd3e4a" data-block-type="true-false" data-block-order="17">
+<div class="explainer-block" data-block="uebung/1" data-block-id="fedd3e4a" data-block-type="true-false" data-block-order="16">
 <div class="explainer-exercise explainer-question" id="falsche-seite">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-falsche-seite" data-id="falsche-seite" data-type="true-false">
@@ -223,18 +224,18 @@ cards 4 and 1. When all the cards are face up, the bits are 11111 and the number
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"falsche-seite","text":"The binary numbers 00111 and 11100 are the same number, because both have three ones.","explanation":"It matters where the ones are. 00111 is 4 + 2 + 1 = 7, but 11100 is 16 + 8 + 4 = 28.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/2" data-block-id="07c04e9b" data-block-type="generated" data-block-order="18">
+<div class="explainer-block" data-block="uebung/2" data-block-id="f85ba21f" data-block-type="generated" data-block-order="17">
 <div class="explainer-exercise explainer-generated" id="bits-lesen-ueben">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="explainer-live" hidden></div>
 <p class="explainer-worked-intro">Three worked tasks, each with its solution:</p>
-<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Task no. 1</p><p class="explainer-task">Which decimal number is the binary number 01111?</p><details class="explainer-hint"><summary>Hint</summary><p>Write the values 16, 8, 4, 2, 1 above the digits.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Values above the digits: 16 · 0, 8 · 1, 4 · 1, 2 · 1, 1 · 1.</li><li>Only the cards with a 1 count. Together that makes 15.</li></ol><p><strong>Right answer:</strong> 15</p></details></li>
-<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 2</p><p class="explainer-task">Which decimal number is the binary number 10010?</p><details class="explainer-hint"><summary>Hint</summary><p>Write the values 16, 8, 4, 2, 1 above the digits.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Values above the digits: 16 · 1, 8 · 0, 4 · 0, 2 · 1, 1 · 0.</li><li>Only the cards with a 1 count. Together that makes 18.</li></ol><p><strong>Right answer:</strong> 18</p></details></li>
-<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 3</p><p class="explainer-task">Which decimal number is the binary number 01001?</p><details class="explainer-hint"><summary>Hint</summary><p>Write the values 16, 8, 4, 2, 1 above the digits.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Values above the digits: 16 · 0, 8 · 1, 4 · 0, 2 · 0, 1 · 1.</li><li>Only the cards with a 1 count. Together that makes 9.</li></ol><p><strong>Right answer:</strong> 9</p></details></li></ol>
-<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"en","spec":{"type":"generated","id":"bits-lesen-ueben","given":{"b4":{"int":[0,1]},"b3":{"int":[0,1]},"b2":{"int":[0,1]},"b1":{"int":[0,1]},"b0":{"int":[0,1]}},"where":["16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 16*b0 + 8*b1 + 4*b2 + 2*b3 + b4","16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != b4 + b3 + b2 + b1 + b0"],"task":{"text":{"de":"Welche Dezimalzahl ist die Binärzahl {{b4}}{{b3}}{{b2}}{{b1}}{{b0}}?","en":"Which decimal number is the binary number {{b4}}{{b3}}{{b2}}{{b1}}{{b0}}?"}},"answer":{"value":"16*b4 + 8*b3 + 4*b2 + 2*b1 + b0","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"16*b0 + 8*b1 + 4*b2 + 2*b3 + b4","message":{"de":"Du hast von der falschen Seite gelesen. Die Karte 16 liegt links, die Karte 1 rechts.","en":"You read from the wrong end. Card 16 is on the left, card 1 is on the right."}},{"value":"b4 + b3 + b2 + b1 + b0","message":{"de":"Du hast die Einsen gezählt. Jede 1 zählt so viel wie die Karte, über der sie steht.","en":"You counted the ones. Each 1 counts as much as the card it belongs to."}}],"hint":{"de":"Schreibe die Werte 16, 8, 4, 2, 1 über die Ziffern.","en":"Write the values 16, 8, 4, 2, 1 above the digits."},"steps":[{"de":"Werte über die Ziffern: 16 · {{b4}}, 8 · {{b3}}, 4 · {{b2}}, 2 · {{b1}}, 1 · {{b0}}.","en":"Values above the digits: 16 · {{b4}}, 8 · {{b3}}, 4 · {{b2}}, 2 · {{b1}}, 1 · {{b0}}."},{"de":"Nur die Karten mit einer 1 zählen. Zusammen sind das {{answer}}.","en":"Only the cards with a 1 count. Together that makes {{answer}}."}]},"templates":{"en":{"task":"Which decimal number is the binary number ⟦b4⟧⟦b3⟧⟦b2⟧⟦b1⟧⟦b0⟧?","steps":["Values above the digits: 16 · ⟦b4⟧, 8 · ⟦b3⟧, 4 · ⟦b2⟧, 2 · ⟦b1⟧, 1 · ⟦b0⟧.","Only the cards with a 1 count. Together that makes ⟦answer⟧."],"hint":"Write the values 16, 8, 4, 2, 1 above the digits.","messages":["You read from the wrong end. Card 16 is on the left, card 1 is on the right.","You counted the ones. Each 1 counts as much as the card it belongs to."]}},"data":{},"seeds":[1,2,3,4,7,8,10,12,13,14,16,18,19,20,23,25,26,31,33,43,45,48,57],"texts":{"newTask":"New task","practice":"Practise yourself, with new tasks each time:","hint":"Hint","solution":"Solution","taskNumber":"Task no. {n}"}}</script>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Task no. 1</p><p class="explainer-task">Which decimal number is the binary number 01111?</p><details class="explainer-hint"><summary>Hint</summary><p>Draw five cards and write 16, 8, 4, 2, 1 above them.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Values above the digits: 16 · 0, 8 · 1, 4 · 1, 2 · 1, 1 · 1.</li><li>Only the cards with a 1 count. Together that makes 15.</li></ol><p><strong>Right answer:</strong> 15</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 2</p><p class="explainer-task">Which decimal number is the binary number 10010?</p><details class="explainer-hint"><summary>Hint</summary><p>Draw five cards and write 16, 8, 4, 2, 1 above them.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Values above the digits: 16 · 1, 8 · 0, 4 · 0, 2 · 1, 1 · 0.</li><li>Only the cards with a 1 count. Together that makes 18.</li></ol><p><strong>Right answer:</strong> 18</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 3</p><p class="explainer-task">Which decimal number is the binary number 01011?</p><details class="explainer-hint"><summary>Hint</summary><p>Draw five cards and write 16, 8, 4, 2, 1 above them.</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Values above the digits: 16 · 0, 8 · 1, 4 · 0, 2 · 1, 1 · 1.</li><li>Only the cards with a 1 count. Together that makes 11.</li></ol><p><strong>Right answer:</strong> 11</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"en","spec":{"type":"generated","id":"bits-lesen-ueben","given":{"b4":{"int":[0,1]},"b3":{"int":[0,1]},"b2":{"int":[0,1]},"b1":{"int":[0,1]},"b0":{"int":[0,1]}},"where":["b4 + b3 + b2 + b1 + b0 >= 2","16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 16*b0 + 8*b1 + 4*b2 + 2*b3 + b4","16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 13 and 16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 22","16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 7 and 16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 28","16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 9 and 16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 19"],"task":{"text":{"de":"Welche Dezimalzahl ist die Binärzahl {{b4}}{{b3}}{{b2}}{{b1}}{{b0}}?","en":"Which decimal number is the binary number {{b4}}{{b3}}{{b2}}{{b1}}{{b0}}?"}},"answer":{"value":"16*b4 + 8*b3 + 4*b2 + 2*b1 + b0","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"16*b0 + 8*b1 + 4*b2 + 2*b3 + b4","message":{"de":"Du hast von der falschen Seite gelesen. Die Karte 16 liegt links, die Karte 1 rechts.","en":"You read from the wrong end. Card 16 is on the left, card 1 is on the right."}},{"value":"b4 + b3 + b2 + b1 + b0","message":{"de":"Du hast die Einsen gezählt. Jede 1 zählt so viel wie die Karte, zu der sie gehört.","en":"You counted the ones. Each 1 counts as much as the card it belongs to."}},{"value":"10000*b4 + 1000*b3 + 100*b2 + 10*b1 + b0","message":{"de":"Du hast die Binärzahl abgeschrieben. Gesucht ist die Dezimalzahl.","en":"You copied the binary number. You are looking for the decimal number."}}],"hint":{"de":"Male dir fünf Karten auf und schreibe 16, 8, 4, 2, 1 darüber.","en":"Draw five cards and write 16, 8, 4, 2, 1 above them."},"steps":[{"de":"Werte über die Ziffern: 16 · {{b4}}, 8 · {{b3}}, 4 · {{b2}}, 2 · {{b1}}, 1 · {{b0}}.","en":"Values above the digits: 16 · {{b4}}, 8 · {{b3}}, 4 · {{b2}}, 2 · {{b1}}, 1 · {{b0}}."},{"de":"Nur die Karten mit einer 1 zählen. Zusammen sind das {{answer}}.","en":"Only the cards with a 1 count. Together that makes {{answer}}."}]},"templates":{"en":{"task":"Which decimal number is the binary number ⟦b4⟧⟦b3⟧⟦b2⟧⟦b1⟧⟦b0⟧?","steps":["Values above the digits: 16 · ⟦b4⟧, 8 · ⟦b3⟧, 4 · ⟦b2⟧, 2 · ⟦b1⟧, 1 · ⟦b0⟧.","Only the cards with a 1 count. Together that makes ⟦answer⟧."],"hint":"Draw five cards and write 16, 8, 4, 2, 1 above them.","messages":["You read from the wrong end. Card 16 is on the left, card 1 is on the right.","You counted the ones. Each 1 counts as much as the card it belongs to.","You copied the binary number. You are looking for the decimal number."]}},"data":{},"seeds":[1,2,3,6,8,10,12,13,14,16,19,25,26,57],"texts":{"newTask":"New task","practice":"Practise yourself, with new tasks each time:","hint":"Hint","solution":"Solution","taskNumber":"Task no. {n}"}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/3" data-block-id="50df20ea" data-block-type="ordering" data-block-order="19">
+<div class="explainer-block" data-block="uebung/3" data-block-id="50df20ea" data-block-type="ordering" data-block-order="18">
 <div class="explainer-exercise explainer-question" id="zimmer-ordnen">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-zimmer-ordnen" data-id="zimmer-ordnen" data-type="ordering">
@@ -264,8 +265,8 @@ cards 4 and 1. When all the cards are face up, the bits are 11111 and the number
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"zimmer-ordnen","text":"Put the room numbers in order of size, the smallest first.","explanation":"00111 is 7, 01001 is 9, 10000 is 16 and 10011 is 19.","links":[],"type":"ordering","items":["00111","01001","10000","10011"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/4" data-block-id="e0aaf92d" data-block-type="text" data-block-order="20">
-<div class="block-text"><p>Now you can read any binary number with five digits. On the next page you go the other way. The bus number is 27. How do you lay it out with the cards?</p></div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="fde51200" data-block-type="text" data-block-order="19">
+<div class="block-text"><p>Now you can read any binary number with five digits. On the next page you go the other way and make the number of the bus, 27, with the cards yourself.</p></div>
 </div>
 </section>
 <p class="explainer-feedback-invite" hidden><span>Found a mistake or have an idea for this app?</span> <button type="button" class="explainer-feedback-switch">Give feedback on “Representing and encoding data”</button></p>
@@ -306,7 +307,7 @@ cards 4 and 1. When all the cards are face up, the bits are 11111 and the number
 <span class="explainer-feedback-local">Kept in this browser only</span>
 <button type="button" class="explainer-feedback-off">End</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-daten-codieren","app":"Representing and encoding data","root":"../../../en/","repository":"lernapps/informatik-daten-codieren","revision":"d8ee049","page":{"title":"The bit cards","order":0}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-daten-codieren","app":"Representing and encoding data","root":"../../../en/","repository":"lernapps/informatik-daten-codieren","revision":"70bbcd5","page":{"title":"The bit cards","order":0}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Page through"></nav>
