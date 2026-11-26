@@ -118,6 +118,20 @@ Strang `informatik/daten` („Information und Daten“). Alle 13 Bausteine haben
   GI ID-12), außer als Ausblick „so schützt du dich“.
 - Sprachen: Deutsch und Englisch, je ein Seitenbaum; jeder Text als Karte `{ de, en }`.
 
+### Prüfungen und was behoben ist
+
+- Musterseite, Prüfung als Lernende (Subagent): Widerspruch „keine Ziffern“, unerklärte Wörter (Wert, Bitfolge),
+  Wiederholungen, verratene Aufgabe „größte Zahl“, Aufgabenpool mit Zahlen von der Seite, Englisch. Alles behoben.
+- Fachliche Prüfung Informatik (Subagent): gemischtes Alphabet als „sicher“ dargestellt, falscher Zählfehler 18
+  beim Zelt, Skytale-Dicke falsch herum, „die meisten Kinder“ (11 von 26), Kreis-Aufgabe gegen die Definition,
+  Tagesplan widersprüchlich, BitKarten-Meldungen, mehrdeutige Aufgaben (40, Vergrößern, Wurzel-Ablenker), Morse
+  „zwei Zeichen“, 3 × 3-Skytale selbstinvers, KB → kB, Stellenwert, Blätter, Englisch. Alles behoben. Nicht
+  umgesetzt: Bit → Byte (÷ 8) üben, Mbit/s vs. MB (an den Orchestrator gemeldet).
+- Ganze App, Prüfung als Lernende (Subagent, de und en): Zug oder Bus, Zimmerbelegung, Zeitfolge, Ziel spät
+  genannt, 6c nicht eingeführt, verratene Antwort (40), Reste („Nachricht“), Mittelpunkt/Radius erklärt, Grammatik,
+  Glossar (Schlüssel), Englisch (red man, 24-Stunden-Uhr, Seeberg). Behoben. Laufzeit-Funde (Tausendertrennzeichen in
+  Lösungen „11 110“, Tutor-Seite „it“) an den Orchestrator gemeldet.
+
 ### Quellen
 
 - Lernlandkarte Informatik, https://lernapps.net/apps/map/informatik.json (Quelle der Karte: GI-Bildungsstandards).
@@ -382,8 +396,8 @@ Content-Guide.
 - [x] Kapitel geheim: Komponente CaesarScheibe mit Logik und Test, Skytale-Bild, Seiten Geheimschrift, Caesar-Scheibe, Wie sicher ist das?
 - [x] Zwei Prüfer als Subagenten (Lernende 5-6, fachlich Informatik), Funde beheben
 <!-- tasks: pages (6 added): the other pages or screens, after the pattern -->
-- [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
-- [ ] Run `npx --no -- lernapps check` until it passes.
+- [x] Update the content guide so that it describes the app as built (`app-content-matches`).
+- [x] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.
       Compare each with its sketch.
 - [ ] Do the whole-app check of skill `lernapps-learner-check`. Fix what it finds and write under "Notes" what you
