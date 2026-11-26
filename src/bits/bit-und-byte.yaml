@@ -133,7 +133,7 @@ blocks:
         props:
           task:
             de: "Lege die Zahl {n} mit acht Karten."
-            en: "Make the number {n} with eight cards."
+            en: "Lay out the number {n} with eight cards."
           cards: 8
           min: 33
           max: 255
