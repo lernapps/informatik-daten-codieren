@@ -27,6 +27,18 @@ blocks:
 
             In the last chapter you wrote numbers with bits. On this page you will see how a picture is made of bits.
       - type: figure
+        image: images/szene-logo.svg
+        alt:
+          de: "Selin neben einem Blatt Karopapier. Auf dem Papier ist ein Zelt aus schwarzen Kästchen gemalt."
+          en: "Selin next to a sheet of squared paper. A tent made of black squares is drawn on the paper."
+        caption:
+          de: "Selin und ihr Zelt-Logo"
+          en: "Selin and her tent logo"
+        source:
+          de: eigene Zeichnung, Figuren aus dem Explainer „Informatiksysteme“ (lernapps/informatik-computer)
+          en: own drawing, characters from the explainer “Computer systems” (lernapps/informatik-computer)
+        licence: CC-BY-4.0
+      - type: figure
         image: images/zelt-pixel.svg
         alt:
           de: "Ein Raster aus 6 mal 6 Kästchen mit einem schwarzen Zelt. Neben den Zeilen steht von oben nach unten: 001100, 011110, 011110, 111111, 110011, 110011."

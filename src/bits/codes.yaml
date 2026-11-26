@@ -27,6 +27,18 @@ blocks:
 
             In the first chapter you saw how information becomes data. On this page you will learn about **codes**:
             fixed rules for turning data into other symbols.
+      - type: figure
+        image: images/szene-bus.svg
+        alt:
+          de: "Jona, Selin und Mia mit schwarzen Locken, Brille und lila Jacke sitzen im Bus und schauen aus dem Fenster. Draußen leuchtet eine Ampel rot."
+          en: "Jona, Selin and Mia, who has black curls, glasses and a purple jacket, are sitting on the bus and looking out of the window. Outside, a traffic light is red."
+        caption:
+          de: "Jona, Selin und Mia im Bus zum Seeberg"
+          en: "Jona, Selin and Mia on the bus to Seeberg"
+        source:
+          de: eigene Zeichnung, Figuren aus dem Explainer „Informatiksysteme“ (lernapps/informatik-computer)
+          en: own drawing, characters from the explainer “Computer systems” (lernapps/informatik-computer)
+        licence: CC-BY-4.0
       - type: matching
         id: zeichen-bedeutung
         text:

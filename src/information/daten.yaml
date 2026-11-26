@@ -16,15 +16,28 @@ blocks:
       - type: text
         text:
           de: |
-            Jona findet im Klassenzimmer der 6b einen Zettel auf dem Boden. Darauf stehen nur ein paar Zeichen.
+            Jona, Selin und Mia sind 11 Jahre alt und gehen in die Klasse 6b. Jona findet im Klassenzimmer einen
+            Zettel auf dem Boden. Darauf stehen nur ein paar Zeichen.
             Jona dreht den Zettel hin und her. Was soll das bedeuten?
 
             Auf dieser Seite lernst du, was **Daten** sind und wann aus ihnen eine **Information** wird.
           en: |
-            Jona finds a note on the floor of class 6b's classroom. There are only a few symbols on it. Jona turns
+            Jona, Selin and Mia are 11 years old and in class 6b. Jona finds a note on the classroom floor. There are only a few symbols on it. Jona turns
             the note this way and that. What is it supposed to mean?
 
             On this page you will learn what **data** is and when it becomes **information**.
+      - type: figure
+        image: images/szene-zettel.svg
+        alt:
+          de: "Jona mit kurzen rotblonden Haaren und grünem Pulli und Selin mit dunklem Pferdeschwanz und oranger Jacke stehen im Klassenzimmer. Zwischen ihnen liegt ein gelber Zettel auf dem Boden."
+          en: "Jona, with short ginger hair and a green hoodie, and Selin, with a dark ponytail and an orange jacket, are standing in the classroom. Between them a yellow note lies on the floor."
+        caption:
+          de: "Jona und Selin im Klassenzimmer der 6b"
+          en: "Jona and Selin in class 6b’s classroom"
+        source:
+          de: eigene Zeichnung, Figuren aus dem Explainer „Informatiksysteme“ (lernapps/informatik-computer)
+          en: own drawing, characters from the explainer “Computer systems” (lernapps/informatik-computer)
+        licence: CC-BY-4.0
       - type: figure
         image: images/zettel.svg
         alt:
@@ -55,11 +68,11 @@ blocks:
       - type: text
         text:
           de: |
-            Selin sieht den Zettel und lacht: „Das ist von Frau Berg! Am Montag, 11. Mai, fahren wir auf
+            Selin sieht den Zettel und lacht: „Das ist von Frau Berg, unserer Klassenlehrerin! Am Montag, 11. Mai, fahren wir auf
             Klassenfahrt. Wir treffen uns um 8 Uhr am Bahnhof, da, wo der Zug fährt.“ Selin kennt den
             **Zusammenhang**: Frau Berg plant die Klassenfahrt der 6b. Darum versteht sie den Zettel.
           en: |
-            Selin sees the note and laughs: “That's from Ms Berg! On Monday, 11 May, we are going on our school
+            Selin sees the note and laughs: “That's from Ms Berg, our class teacher! On Monday, 11 May, we are going on our school
             trip. We meet at 8 o'clock at the station, where the train leaves.” Selin knows the **context**: Ms Berg
             is planning class 6b's school trip. In Germany, 11.5. is how you write 11 May. That is why she understands
             the note.

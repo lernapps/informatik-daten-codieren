@@ -30,6 +30,18 @@ blocks:
             In the chapter “Everything is 0 and 1”, codes could be read by everyone. On this page you will learn how to
             **encrypt** a message so that only people who are in on it can read it.
       - type: figure
+        image: images/szene-geheim.svg
+        alt:
+          de: "Jona und Selin. Zwischen ihnen liegt ein Holzstab, um den ein heller Streifen gewickelt ist."
+          en: "Jona and Selin. Between them lies a wooden stick with a light strip wound around it."
+        caption:
+          de: "Jona und Selin mit der Skytale"
+          en: "Jona and Selin with the scytale"
+        source:
+          de: eigene Zeichnung, Figuren aus dem Explainer „Informatiksysteme“ (lernapps/informatik-computer)
+          en: own drawing, characters from the explainer “Computer systems” (lernapps/informatik-computer)
+        licence: CC-BY-4.0
+      - type: figure
         image: images/skytale.svg
         alt:
           de: "Ein Holzstab. Ein heller Streifen ist schräg um ihn gewickelt. Auf dem Streifen stehen Zeichen nebeneinander, Reihe für Reihe. Ein Ende des Streifens hängt lose herunter."
