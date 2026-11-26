@@ -101,6 +101,36 @@
       "competencies": [
         "pixel-und-vektorgrafik"
       ]
+    },
+    {
+      "path": "geheim/skytale/",
+      "title": {
+        "de": "Die Geheimschrift",
+        "en": "Secret writing"
+      },
+      "competencies": [
+        "verschluesselung-grundidee"
+      ]
+    },
+    {
+      "path": "geheim/caesar/",
+      "title": {
+        "de": "Die Caesar-Scheibe",
+        "en": "The Caesar disc"
+      },
+      "competencies": [
+        "caesar-verschluesselung"
+      ]
+    },
+    {
+      "path": "geheim/sicherheit/",
+      "title": {
+        "de": "Wie sicher ist das?",
+        "en": "How secure is it?"
+      },
+      "competencies": [
+        "verschluesselung-bewerten"
+      ]
     }
   ]
 }
