@@ -72,56 +72,24 @@ blocks:
         explanation:
           de: Digital heißt, ein Wert wird nur zu einzelnen Zeitpunkten und in Stufen als Zahl festgehalten, im Computer als Binärzahl.
           en: Digital means a value is only recorded at single moments in time and in steps as a number, in a computer as a binary number.
-      - type: matching
-        id: analog-oder-digital
-        text:
-          de: Wie zeigt oder speichert jedes Ding seinen Wert? Ordne zu.
-          en: How does each thing show or store its value? Match them.
-        pairs:
-          - left:
-              de: Uhr mit Zeigern
-              en: clock with hands
-            right:
-              de: Der Zeiger steht auch zwischen zwei Strichen.
-              en: The hand also stands between two marks.
-          - left:
-              de: Spannung im Mikrofon
-              en: voltage in the microphone
-            right:
-              de: Sie ändert sich stufenlos mit dem Schall.
-              en: It changes smoothly with the sound.
-          - left:
-              de: Mias Sprachnachricht auf dem Handy
-              en: Mia's voice message on the phone
-            right:
-              de: Sie besteht aus Messwerten in Bits.
-              en: It is made of measured values in bits.
-          - left:
-              de: Uhr mit Ziffern
-              en: clock with digits
-            right:
-              de: Sie springt von Minute zu Minute.
-              en: It jumps from minute to minute.
-        explanation:
-          de: Zeigeruhr und Mikrofon sind analog, sie ändern sich stufenlos. Sprachnachricht und Ziffernuhr sind digital, in Stufen als Zahlen. Auch ein modernes Handy hat mit dem Mikrofon ein analoges Teil.
-          en: The clock with hands and the microphone are analog, they change smoothly. The voice message and the clock with digits are digital, in steps as numbers. Even a modern phone has an analog part, its microphone.
       - type: text
         text:
           de: |
             Das Mikrofon im Handy macht aus dem Schall eine elektrische Spannung. Sie ändert sich stufenlos mit der
             Stimme, ist also noch analog. Beim **Digitalisieren** macht das Handy dann zwei Schritte:
 
-            1. **Abtasten:** Es misst die Schallwelle in gleichen Abständen, zum Beispiel 8000-mal in jeder Sekunde.
+            1. **Abtasten:** Es misst die Spannung in gleichen Abständen, zum Beispiel 8000-mal in jeder Sekunde.
             2. **Runden:** Jeden Messwert rundet es auf die nächste erlaubte Stufe und speichert deren Nummer als
                Binärzahl. Mit 2 Bit gibt es 4 Stufen (00, 01, 10, 11), mit 3 Bit schon 8.
           en: |
             The microphone in the phone turns the sound into an electrical voltage. It changes smoothly with the voice,
             so it is still analog. When **digitising**, the phone then takes two steps:
 
-            1. **Sampling:** it measures the sound wave at equal intervals, for example 8000 times every second (the
-               sample rate).
+            1. **Sampling:** it measures the voltage at equal intervals, for example 8000 times every second. Each
+               measurement is called a **sample**.
             2. **Quantising (rounding):** it rounds each measured value to the nearest allowed level and stores that level's number
-               as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8.
+               as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8. The number
+               of bits per sample is called the **bit depth**.
       - type: note
         title:
           de: Merke
@@ -131,6 +99,43 @@ blocks:
             text:
               de: Zwischen zwei Messpunkten und zwischen zwei Stufen geht etwas verloren. Mehr Messpunkte und mehr Bit machen die digitale Stimme genauer, aber auch größer.
               en: Something gets lost between two measuring points and between two levels. More points and more bits make the digital voice more exact, but also bigger.
+      - type: multiple-choice
+        id: analog-oder-digital
+        text:
+          de: Was davon ist digital? Kreuze alle an.
+          en: Which of these are digital? Tick all of them.
+        options:
+          - text:
+              de: Mias Sprachnachricht auf dem Handy
+              en: Mia's voice message on the phone
+            correct: true
+            info:
+              de: Sie besteht aus Messwerten, die als Bits gespeichert sind.
+              en: It is made of measured values stored as bits.
+          - text:
+              de: Eine Uhr mit Ziffern
+              en: A clock with digits
+            correct: true
+            info:
+              de: Sie springt von Minute zu Minute und zeigt Zahlen.
+              en: It jumps from minute to minute and shows numbers.
+          - text:
+              de: Die Spannung im Mikrofon
+              en: The voltage in the microphone
+            correct: false
+            info:
+              de: Sie ändert sich stufenlos mit dem Schall. Sie ist analog, auch in einem modernen Handy.
+              en: It changes smoothly with the sound. It is analog, even in a modern phone.
+          - text:
+              de: Eine Uhr mit Zeigern
+              en: A clock with hands
+            correct: false
+            info:
+              de: Der Minutenzeiger steht auch zwischen zwei Strichen. Sie ist analog.
+              en: The minute hand also stands between two marks. It is analog.
+        explanation:
+          de: Digital ist, was nur einzelne Werte in Stufen als Zahlen festhält. Analog ändert sich stufenlos.
+          en: Digital is what only records single values in steps as numbers. Analog changes smoothly.
   - type: section
     id: ausprobieren
     title:
@@ -139,8 +144,8 @@ blocks:
     blocks:
       - type: text
         text:
-          de: Die blaue Linie ist ein Stück einer Schallwelle. Die rote gestrichelte Treppe mit den Punkten zeigt, was gespeichert wird. Die grauen Linien sind die erlaubten Stufen. Schiebe die Regler, auch mit den Pfeiltasten, und beobachte, wie nah die Treppe der Welle kommt.
-          en: The blue line is a piece of a sound wave. The red dashed staircase with the dots shows what is stored. The grey lines are the allowed levels. Move the sliders, also with the arrow keys, and watch how close the staircase gets to the wave.
+          de: Die blaue Linie ist die Spannung im Mikrofon während eines kurzen Augenblicks, von links nach rechts. Jeder rote Punkt ist ein Messpunkt, die rote gestrichelte Treppe zeigt, was gespeichert wird. Die grauen Linien sind die erlaubten Stufen. Der Regler „Messpunkte“ gehört zum Abtasten, der Regler „Bit pro Messpunkt“ zum Runden. Schiebe sie, auch mit den Pfeiltasten, und beobachte, wie nah die Treppe der Welle kommt.
+          en: The blue line is the voltage in the microphone during a short moment, from left to right. Each red dot is a sample, the red dashed staircase shows what is stored. The grey lines are the allowed levels. The slider “Samples” belongs to sampling, the slider “Bit depth” to quantising. Move them, also with the arrow keys, and watch how close the staircase gets to the wave.
       - type: vue-component
         component: Abtasten
         props:
@@ -251,7 +256,7 @@ blocks:
               en: "Mbit and MB are not the same: 1 byte is 8 bits, so 1 MB = 8 Mbit too."
           - answer: 128
             message:
-              de: Von Bit zu Byte teilst du durch 8, du malst nicht mal 8.
+              de: Von Bit zu Byte teilst du durch 8, du rechnest nicht mal 8.
               en: From bits to bytes you divide by 8, you don't multiply by 8.
         explanation:
           de: "16 Mbit : 8 = 2 MB. Internet wird in Mbit/s angegeben, Speicher in MB."
@@ -259,12 +264,12 @@ blocks:
       - type: true-false
         id: mehr-messpunkte
         text:
-          de: Misst das Handy öfter pro Sekunde, wird die Sprachnachricht genauer, aber auch größer.
-          en: If the phone measures more often per second, the voice message becomes more exact, but also bigger.
+          de: Misst das Handy doppelt so oft pro Sekunde, braucht die Sprachnachricht doppelt so viele Bit.
+          en: If the phone measures twice as often per second, the voice message needs twice as many bits.
         answer: true
         explanation:
-          de: Jeder Messpunkt braucht Bits. Mehr Messpunkte heißt mehr Bits, also eine größere Datei.
-          en: Each measuring point needs bits. More points means more bits, so a bigger file.
+          de: Jeder Messpunkt braucht gleich viele Bit. Doppelt so viele Messpunkte brauchen also doppelt so viele Bit.
+          en: Each sample needs the same number of bits. So twice as many samples need twice as many bits.
       - type: text
         text:
           de: |

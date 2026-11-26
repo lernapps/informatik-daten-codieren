@@ -236,10 +236,10 @@ blocks:
       - type: text
         text:
           de: |
-            Rückblick auf die ganze App: Die Klassenfahrt hast du als Zettel, Tabelle, Diagramm und Baum gesehen, als
-            Zahl aus Bits, als Pixelbild und als Geheimschrift. Immer war es dieselbe Information, nur anders
-            dargestellt. Und ein Computer speichert jede dieser Formen am Ende mit 0 und 1.
+            Rückblick auf die Kapitel 1 bis 4: Die Klassenfahrt hast du als Zettel, Tabelle, Diagramm und Baum gesehen,
+            als Zahl aus Bits, als Pixelbild und als Geheimschrift. Immer war es dieselbe Information, nur anders
+            dargestellt. Im nächsten Kapitel, für die Klassen 7 und 8, werden auch Text und Stimme zu 0 und 1.
           en: |
-            Looking back on the whole app: you have seen the school trip as a note, a table, a chart and a tree, as a
+            Looking back on chapters 1 to 4: you have seen the school trip as a note, a table, a chart and a tree, as a
             number made of bits, as a pixel picture and as secret writing. It was always the same information, just
-            shown in a different way. And in the end, a computer stores every one of these forms with 0 and 1.
+            shown in a different way. In the next chapter, for ages 12 to 14, text and voice become 0 and 1 too.
