@@ -60,7 +60,7 @@ Picture: A grid of 6 by 6 squares with a black tent. Next to the rows, from top 
 
 - **bitmap image**: A bitmap image stores a picture as a grid of rows and columns. For each pixel it stores its colour as a number.
 
-For colours, each pixel needs more than one bit. With two bits, each pixel has one of four **colour numbers**.
+For more than two colours, each pixel needs more than one bit. With two bits, each pixel has one of four **colour numbers**.
 
 A colour table with two bits per pixel:
 - Colour number | Colour
@@ -98,8 +98,8 @@ Now you can encode and decode a picture made of pixels. Selin's tent is going on
 - Solution: 36
 - Explanation: 6 rows with 6 squares each make 6 × 6 = 36 squares.
 - Typical mistakes and what the app says:
-  - 12: You worked out 6 + 6. The picture has 6 rows with 6 squares each, so 6 × 6.
-  - 18: Those are only the black squares. The question is about all of them, the white ones too.
+  - 12: You worked out 6 + 6, or counted only the white squares. The picture has 6 rows with 6 squares each, so 6 × 6.
+  - 24: Those are only the black squares. The question is about all of them, the white ones too.
 - Link: [../?via=tutor#pixel-zaehlen](../?via=tutor#pixel-zaehlen)
 
 ### Exercise bild-malen

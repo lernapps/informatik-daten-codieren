@@ -59,7 +59,7 @@ In einer Tabelle steht der Zusammenhang oft in der **Überschrift** einer Spalte
 Plan für Montag am Seeberg:
 - Was | Uhrzeit | Wie viele Kinder
 - Ankunft | 11 | 26
-- Wanderung um den See | 14 bis 17 | 26
+- Wanderung um den See | 14 bis 17 | 18
 - Boot fahren | 15 | 8
 - Nachtwanderung | 21 | 21
 
@@ -108,7 +108,7 @@ Jetzt kannst du Daten in einer Tabelle richtig deuten. Auf der nächsten Seite s
 - Tipp der App: Die Wanderung beginnt um 14 Uhr. Wann endet sie?
 - Typische Fehler und was die App sagt:
   - 31: Du hast 14 und 17 zusammengezählt. „14 bis 17“ ist aber eine Zeitspanne: von 14 Uhr bis 17 Uhr.
-  - 26: 26 ist die Zahl der Kinder. Gefragt ist, wie lange die Wanderung dauert.
+  - 18: 18 ist die Zahl der Kinder, die wandern. Gefragt ist, wie lange die Wanderung dauert.
 - Link: [../?via=tutor#wanderung-dauer](../?via=tutor#wanderung-dauer)
 
 ### Aufgabe tag-ordnen
@@ -116,7 +116,7 @@ Jetzt kannst du Daten in einer Tabelle richtig deuten. Auf der nächsten Seite s
 - Aufgabe: Ordne den Tag am Seeberg nach der Uhrzeit, das Früheste zuerst.
 - Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
 - Lösung: 1. Ankunft, 2. Wanderung um den See, 3. Boot fahren, 4. Nachtwanderung
-- Erklärung: 11 Uhr, 14 Uhr, 15 Uhr, 21 Uhr. Die Bootsfahrt beginnt, während die anderen noch wandern: Nur 8 Kinder fahren Boot.
+- Erklärung: 11 Uhr, 14 Uhr, 15 Uhr, 21 Uhr. 18 Kinder wandern, die anderen 8 fahren um 15 Uhr Boot.
 - Link: [../?via=tutor#tag-ordnen](../?via=tutor#tag-ordnen)
 
 ### Aufgabe zahl-immer-gleich

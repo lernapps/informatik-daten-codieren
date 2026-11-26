@@ -69,8 +69,9 @@ row are called a **bit string**.
 Each card is worth twice as much as the card to its right. The biggest card is on the left. That is why
 it matters **where** a 1 is, not just how many ones there are.
 
-You know this from ones, tens and hundreds: there, each place is worth ten times as much (**decimal
-system**). With the cards, each place is worth twice as much (**binary system**).
+The value of a place is called its **place value**. You know this from ones, tens and hundreds: there,
+each place is worth ten times as much (**decimal system**). With the cards, each place is worth twice
+as much (**binary system**). Zeros at the very front change nothing: 00101 is the same number as 101.
 
 - Exercise `naechste-karte` (below)
 

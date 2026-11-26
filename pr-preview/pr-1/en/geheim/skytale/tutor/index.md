@@ -58,8 +58,8 @@ Picture: A wooden stick. A light strip is wound around it at a slant. On the str
 
 ### Method and key
 
-You can also do it with boxes instead of a stick. The thickness of the stick says how many letters fit
-into one row. Jona writes MEET AT SIX without spaces in rows of **3** letters. Then he reads **column by
+You can also do it with boxes instead of a stick, with the same idea: the letters are swapped around by a
+fixed rule. Jona writes MEET AT SIX without spaces in rows of **3** letters. Then he reads **column by
 column** from top to bottom.
 
 Jona's boxes. Read column by column: MTS EAI ETX, which gives MTSEAIETX.:
@@ -68,7 +68,7 @@ Jona's boxes. Read column by column: MTS EAI ETX, which gives MTSEAIETX.:
 - T | A | T
 - S | I | X
 
-- **encryption**: When you encrypt, you turn the readable **plaintext** into a **ciphertext** with a method and a secret key. Only someone who knows the key can decrypt it again.
+- **encryption**: When you encrypt, you turn the readable **plaintext** into a **ciphertext** with a method and a secret key. Only someone who knows the key is meant to be able to read it again.
 
 **Remember: Remember**
 
@@ -123,12 +123,12 @@ Now you can encrypt and decrypt with a method and a key. On the next page you wi
 
 ### Exercise entschluesseln
 
-- Task: Selin gets the ciphertext BTTOAEATN. The key is 3. What is the plaintext?
+- Task: Selin gets the ciphertext BTTLOAWVATEE, 12 letters. The key is 3 letters per row. What is the plaintext?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✓ BOATATTEN – Selin writes BTT, OAE and ATN as columns in the boxes. The rows are BOA, TAT, TEN: boat at ten.
-  - ✗ BTTOAEATN – That is the ciphertext itself. To decrypt, you write the letters in columns again.
-  - ✗ NTAEAOTTB – That is the ciphertext read backwards. The scytale mixes up the letters in a different way.
-- Solution: BOATATTEN
+  - ✓ BOATATTWELVE – 12 letters in 3 columns make 4 rows. Selin writes BTTL, OAWV and ATEE as columns. The rows are BOA, TAT, TWE, LVE: boat at twelve.
+  - ✗ BLWTTOVETAAE – You encrypted the ciphertext again, by writing it in rows. To decrypt, you write it in columns.
+  - ✗ EETAVWAOLTTB – That is the ciphertext read backwards. The scytale mixes up the letters in a different way.
+- Solution: BOATATTWELVE
 - Explanation: To decrypt, you write the ciphertext column by column into boxes with 3 columns and read the rows.
 - Link: [../?via=tutor#entschluesseln](../?via=tutor#entschluesseln)

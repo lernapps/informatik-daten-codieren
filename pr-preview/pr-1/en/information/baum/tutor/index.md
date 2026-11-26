@@ -43,8 +43,8 @@ The tree as a way of showing data: root, nodes, edges and leaves in the room pla
 
 ### Who sleeps where?
 
-At Seeberg, Ms Berg shares out the rooms. Class 6b has three rooms: 13, 22 and 9. Ms Berg draws a plan so
-that everyone can find their room quickly.
+At Seeberg, Ms Berg shares out the rooms. She draws a plan so that everyone can find their room quickly.
+Here you can see part of it: three rooms, 13, 22 and 9, with two children each.
 
 On the page before you learnt about tables, charts and text. On this page you will learn a form for data
 that fits inside other data: the class has rooms, and the rooms have children.
@@ -55,7 +55,7 @@ Picture: A tree. At the top it says 6b. Three lines lead down to the rooms 13, 2
 
 ### Root at the top, leaves at the bottom
 
-- **tree**: A tree shows data that fits inside other data. It is made of nodes and edges. At the very top there is one node, the root. The nodes at the very bottom are called leaves.
+- **tree**: A tree shows data that fits inside other data. It is made of nodes and edges. At the very top there is one node, the root. Nodes with no nodes below them are called leaves.
 
 **Remember: Remember**
 

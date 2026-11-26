@@ -62,12 +62,12 @@ Sonne B ist eine Vektorgrafik. Gespeichert ist nur: ein Kreis, Mittelpunkt (50 |
 Pixelgrafik und Vektorgrafik im Vergleich:
 - Vergleich | Pixelgrafik | Vektorgrafik
 - speichert | jedes Pixel | Formen mit Zahlen
-- vergrößert | wird treppig | bleibt glatt
+- vergrößert | wird treppig oder unscharf | bleibt glatt
 - gut für | Fotos | Logos und Pläne
 
 **Merke: Merke**
 
-Keine Grafikart ist immer besser. Ein Foto hat Millionen verschiedene Farbpunkte, das lässt sich kaum in Formen beschreiben, also Pixelgrafik. Ein Logo aus wenigen Formen soll groß und klein scharf sein, also Vektorgrafik.
+Keine Grafikart ist immer besser. Ein Foto hat Millionen Pixel in vielen Farben, das lässt sich kaum in Formen beschreiben, also Pixelgrafik. Ein Logo aus wenigen Formen soll groß und klein scharf sein, also Vektorgrafik.
 
 ### Übung
 
@@ -93,12 +93,12 @@ Kapitel lernst du, wie man eine Nachricht geheim hält.
   - ✓ A – Beim Vergrößern werden die Pixel größer. Man sieht die einzelnen Kästchen als Stufen.
   - ✗ B – Der Rand von B ist glatt. Bei einer Pixelgrafik würden die Pixel beim Vergrößern als Stufen sichtbar.
 - Lösung: A
-- Erklärung: Eine Pixelgrafik hat nur so viele Pixel, wie gespeichert sind. Vergrößerst du sie, wird jedes Pixel ein großes Kästchen.
+- Erklärung: Eine Pixelgrafik hat nur so viele Pixel, wie gespeichert sind. Vergrößerst du sie, wird jedes Pixel ein großes Kästchen. Manche Programme glätten den Rand, dann wird das Bild unscharf statt treppig.
 - Link: [../?via=tutor#welche-treppig](../?via=tutor#welche-treppig)
 
 ### Aufgabe pixel-nach-vergroessern
 
-- Aufgabe: Selins Zelt hat 6 · 6 = 36 Pixel. Sie zeigt es viermal so breit und viermal so hoch. Wie viele verschiedene Pixel sind im Bild gespeichert?
+- Aufgabe: Selins Zelt hat 6 · 6 = 36 Pixel. Sie zeigt es viermal so breit und viermal so hoch. Sie zeigt es nur größer an und speichert es nicht neu. Wie viele Pixel sind gespeichert?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 36
 - Erklärung: Es bleiben 36 Pixel. Jedes wird als größeres Kästchen gezeigt, darum sieht man Stufen.
@@ -109,13 +109,13 @@ Kapitel lernst du, wie man eine Nachricht geheim hält.
 
 ### Aufgabe zahlen-kreis
 
-- Aufgabe: Für Sonne B sind gespeichert: Mittelpunkt (50 | 50), Radius 40, Farbe rot. Wie viele Zahlen sind das?
+- Aufgabe: Für Sonne B sind gespeichert: Mittelpunkt (50 | 50), Radius 40, Farbe rot. Wie viele Zahlen beschreiben Lage und Größe des Kreises?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 3
 - Erklärung: 50, 50 und 40. Mit diesen drei Zahlen und der Farbe ist der Kreis in jeder Größe beschrieben.
 - Typische Fehler und was die App sagt:
   - 2: Der Mittelpunkt hat zwei Zahlen, eine für rechts und eine für oben.
-  - 4: Rot ist hier ein Farbname, keine Zahl. Zähle nur die Zahlen.
+  - 4: Die Farbe sagt nichts über Lage und Größe. Zähle nur die Zahlen für Mittelpunkt und Radius.
 - Link: [../?via=tutor#zahlen-kreis](../?via=tutor#zahlen-kreis)
 
 ### Aufgabe was-speichert-wer

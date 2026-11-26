@@ -11,7 +11,7 @@
     <meta name="lernapps-archetype" content="explainer" />
     <link rel="alternate" hreflang="de" href="../../../geheim/sicherheit/" />
     <link rel="alternate" hreflang="en" href="../../../en/geheim/sicherheit/" />
-    <script type="module" crossorigin src="../../../assets/islands-C7YVt0c5.js"></script>
+    <script type="module" crossorigin src="../../../assets/islands-CVr_SBvR.js"></script>
     <meta name="robots" content="noindex" />
   </head>
   <body>
@@ -38,10 +38,10 @@
 <nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">Class 6c gives it a go</a></li><li><a href="#idee">Trying every key</a></li><li><a href="#uebung">Practice</a></li></ol></nav>
 <section class="explainer-section">
 <h2 id="einstieg">Class 6c gives it a go</h2>
-<div class="explainer-block" data-block="einstieg/1" data-block-id="59f78df1" data-block-type="text" data-block-order="1">
+<div class="explainer-block" data-block="einstieg/1" data-block-id="0d52d9d4" data-block-type="text" data-block-order="1">
 <div class="block-text"><p>Class 6c has intercepted a word from 6b. They know that 6b encrypts with the Caesar disc. They just don&#39;t
-know the key. Play class 6c: turn the disc step by step until the letters on the inside give a word you
-can read on the outside. Then type in the key and press “Check”.</p>
+know the key. Play class 6c: turn the disc step by step until the letters on the outside, next to the
+secret letters on the inside, make a word. Then type in the key and press “Check”.</p>
 <p>On the page before you encrypted and decrypted with a key. On this page you judge how secure a method is.</p></div>
 </div>
 <div class="explainer-block" data-block="einstieg/2" data-block-id="2d231c50" data-block-type="vue-component" data-block-order="2">
@@ -56,23 +56,26 @@ can read on the outside. Then type in the key and press “Check”.</p>
 </section>
 <section class="explainer-section">
 <h2 id="idee">Trying every key</h2>
-<div class="explainer-block" data-block="idee/1" data-block-id="a1e88885" data-block-type="text" data-block-order="3">
+<div class="explainer-block" data-block="idee/1" data-block-id="cad86efb" data-block-type="text" data-block-order="3">
 <div class="block-text"><p>With Caesar there are only <strong>25</strong> keys, from 1 to 25. The key 26 would be like 0: nothing changes.
 Anyone who tries all 25 will definitely find the message, even without the key. With the scytale and 9
 letters there are even fewer sensible keys.</p>
 <p>A <strong>mixed alphabet</strong> is different: each letter gets any other letter, for example A becomes Q, B becomes M
-and so on. Then the key is the whole list. There are so many of these that the number has 27 digits.</p></div>
+and so on. Then the key is the whole list. There are so many of these that the number has 27 digits. That is much more
+secure than Caesar, but still not secure: because each letter is always replaced by the same one, common
+letters such as E give away something about the text.</p></div>
 </div>
-<div class="explainer-block" data-block="idee/2" data-block-id="50432bf6" data-block-type="table" data-block-order="4">
-<div class="block-table" role="region" aria-label="How many keys someone would have to try" tabindex="0"><table><caption>How many keys someone would have to try</caption><thead><tr><th scope="col">Method</th><th scope="col">Keys</th></tr></thead><tbody><tr><td>Morse code</td><td>none, everyone knows the table</td></tr><tr><td>Caesar</td><td>25</td></tr><tr><td>mixed alphabet</td><td>a number with 27 digits</td></tr></tbody></table></div>
+<div class="explainer-block" data-block="idee/2" data-block-id="a5104c90" data-block-type="table" data-block-order="4">
+<div class="block-table" role="region" aria-label="How many keys someone would have to try" tabindex="0"><table><caption>How many keys someone would have to try</caption><thead><tr><th scope="col">Method</th><th scope="col">Keys</th></tr></thead><tbody><tr><td>Morse code (not encryption)</td><td>none, everyone knows the table</td></tr><tr><td>Caesar</td><td>25</td></tr><tr><td>mixed alphabet</td><td>a number with 27 digits</td></tr></tbody></table></div>
 </div>
-<div class="explainer-block" data-block="idee/3" data-block-id="6a9d1f3b" data-block-type="note" data-block-order="5">
+<div class="explainer-block" data-block="idee/3" data-block-id="7d451a42" data-block-type="note" data-block-order="5">
 <div class="explainer-box explainer-note">
 <h3 class="explainer-box-title">Remember</h3>
-<div class="explainer-block" data-block="idee/3/1" data-block-id="6ec901ce" data-block-type="text" data-block-order="6">
-<div class="block-text"><p>A method is only secure if there are <strong>so many keys</strong> that nobody can try them all, and if the <strong>key
-stays secret</strong>. Everyone may know the method itself. It is the same today: computers encrypt with huge
-keys. You protect yourself by making your password long and never telling it to anyone.</p></div>
+<div class="explainer-block" data-block="idee/3/1" data-block-id="fd8e53c8" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>A secure method needs <strong>so many keys</strong> that nobody can try them all, and the <strong>key</strong> has to <strong>stay
+secret</strong>. That is needed, but not enough: the method must not have any other weak spot either. Everyone
+may know the method itself. Today computers encrypt with methods that experts have checked for a long
+time, and with huge keys. You protect yourself by making your password long and never telling it to anyone.</p></div>
 </div>
 </div>
 </div>
@@ -103,7 +106,7 @@ keys. You protect yourself by making your password long and never telling it to 
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"caesar-schluessel-zahl","text":"What is the largest number of keys class 6c has to try with Caesar to crack any message?","explanation":"The keys 1 to 25 each shift differently. After at most 25 tries the message can be read.","links":[],"type":"number","answer":25,"tolerance":0,"mistakes":[{"answer":26,"message":"The key 26 turns the disc all the way round. Then nothing changes, so it does not count."},{"answer":1,"message":"Class 6c does not know the key. In the worst case they have to try every one."}]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/2" data-block-id="58c0e4ef" data-block-type="ordering" data-block-order="8">
+<div class="explainer-block" data-block="uebung/2" data-block-id="e7e394ef" data-block-type="ordering" data-block-order="8">
 <div class="explainer-exercise explainer-question" id="verfahren-ordnen">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-verfahren-ordnen" data-id="verfahren-ordnen" data-type="ordering">
@@ -114,25 +117,25 @@ keys. You protect yourself by making your password long and never telling it to 
 <ul class="question-pairs">
 <li><label><span>Caesar with a key</span> <select name="frage-verfahren-ordnen-1" data-item="1"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option></select></label></li>
 <li><label><span>mixed alphabet</span> <select name="frage-verfahren-ordnen-2" data-item="2"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option></select></label></li>
-<li><label><span>Morse code</span> <select name="frage-verfahren-ordnen-0" data-item="0"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option></select></label></li>
+<li><label><span>Morse code (not encryption)</span> <select name="frage-verfahren-ordnen-0" data-item="0"><option value="">please choose</option><option value="0">Place 1</option><option value="1">Place 2</option><option value="2">Place 3</option></select></label></li>
 </ul>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
-<p><strong>Right answer:</strong> 1. Morse code, 2. Caesar with a key, 3. mixed alphabet</p>
-<p class="question-explanation">Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all.</p>
+<p><strong>Right answer:</strong> 1. Morse code (not encryption), 2. Caesar with a key, 3. mixed alphabet</p>
+<p class="question-explanation">Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all. But even it is not completely secure.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Solution</summary>
-<p><strong>Right answer:</strong> 1. Morse code, 2. Caesar with a key, 3. mixed alphabet</p>
-<p class="question-explanation">Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all.</p>
+<p><strong>Right answer:</strong> 1. Morse code (not encryption), 2. Caesar with a key, 3. mixed alphabet</p>
+<p class="question-explanation">Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all. But even it is not completely secure.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"verfahren-ordnen","text":"Put the methods in order of how secure they are, the least secure first.","explanation":"Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all.","links":[],"type":"ordering","items":["Morse code","Caesar with a key","mixed alphabet"]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"verfahren-ordnen","text":"Put the methods in order of how secure they are, the least secure first.","explanation":"Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all. But even it is not completely secure.","links":[],"type":"ordering","items":["Morse code (not encryption)","Caesar with a key","mixed alphabet"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/3" data-block-id="32b15f5f" data-block-type="true-false" data-block-order="9">
+<div class="explainer-block" data-block="uebung/3" data-block-id="38895a69" data-block-type="true-false" data-block-order="9">
 <div class="explainer-exercise explainer-question" id="geheimes-verfahren">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-geheimes-verfahren" data-id="geheimes-verfahren" data-type="true-false">
@@ -145,25 +148,25 @@ keys. You protect yourself by making your password long and never telling it to 
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
 <p><strong>Right answer:</strong> The statement is false.</p>
-<p class="question-explanation">Class 6c knew that 6b uses Caesar and still had a go. What makes a method secure is that there are very many keys and the key stays secret.</p>
+<p class="question-explanation">Class 6c knew that 6b uses Caesar and still had a go. Whether a method is secure does not depend on whether people know it. It needs very many keys, and the key has to stay secret.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Solution</summary>
 <p><strong>Right answer:</strong> The statement is false.</p>
-<p class="question-explanation">Class 6c knew that 6b uses Caesar and still had a go. What makes a method secure is that there are very many keys and the key stays secret.</p>
+<p class="question-explanation">Class 6c knew that 6b uses Caesar and still had a go. Whether a method is secure does not depend on whether people know it. It needs very many keys, and the key has to stay secret.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"geheimes-verfahren","text":"A method is secure if nobody knows how it works.","explanation":"Class 6c knew that 6b uses Caesar and still had a go. What makes a method secure is that there are very many keys and the key stays secret.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"geheimes-verfahren","text":"A method is secure if nobody knows how it works.","explanation":"Class 6c knew that 6b uses Caesar and still had a go. Whether a method is secure does not depend on whether people know it. It needs very many keys, and the key has to stay secret.","links":[],"type":"true-false","answer":false},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/4" data-block-id="a55e70c1" data-block-type="single-choice" data-block-order="10">
+<div class="explainer-block" data-block="uebung/4" data-block-id="fb6e01a7" data-block-type="single-choice" data-block-order="10">
 <div class="explainer-exercise explainer-question" id="am-besten-schuetzen">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-am-besten-schuetzen" data-id="am-besten-schuetzen" data-type="single-choice">
 <form class="question-form" novalidate>
 <fieldset>
-<legend class="question-text">How can class 6b best protect its next message?</legend>
+<legend class="question-text">Which of these three ways protects class 6b's next message best?</legend>
 <label class="question-option"><input type="radio" name="frage-am-besten-schuetzen" value="0"> <span>With a mixed alphabet, whose list they only pass on in person</span></label>
 <label class="question-option"><input type="radio" name="frage-am-besten-schuetzen" value="1"> <span>With Caesar and the key 25 instead of 3</span></label>
 <label class="question-option"><input type="radio" name="frage-am-besten-schuetzen" value="2"> <span>With the key written just below the message, so that Selin does not forget it</span></label>
@@ -175,7 +178,7 @@ keys. You protect yourself by making your password long and never telling it to 
 <li class="question-info" data-option="1"><p class="question-info-head"><strong>With Caesar and the key 25 instead of 3</strong></p><p>A different key does not help. Class 6c simply tries all 25.</p></li>
 <li class="question-info" data-option="2"><p class="question-info-head"><strong>With the key written just below the message, so that Selin does not forget it</strong></p><p>Whoever finds the note then also has the key. The key must be kept separate and secret.</p></li>
 </ul>
-<p class="question-explanation">Many possible keys and a secret key make a message secure.</p>
+<p class="question-explanation">Of these three ways, this is the best. Many possible keys and a secret key are needed for a message to be secure.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
 </form>
@@ -186,12 +189,12 @@ keys. You protect yourself by making your password long and never telling it to 
 <li class="question-info" data-option="1"><p class="question-info-head"><strong>With Caesar and the key 25 instead of 3</strong></p><p>A different key does not help. Class 6c simply tries all 25.</p></li>
 <li class="question-info" data-option="2"><p class="question-info-head"><strong>With the key written just below the message, so that Selin does not forget it</strong></p><p>Whoever finds the note then also has the key. The key must be kept separate and secret.</p></li>
 </ul>
-<p class="question-explanation">Many possible keys and a secret key make a message secure.</p>
+<p class="question-explanation">Of these three ways, this is the best. Many possible keys and a secret key are needed for a message to be secure.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"am-besten-schuetzen","text":"How can class 6b best protect its next message?","explanation":"Many possible keys and a secret key make a message secure.","links":[],"type":"single-choice","options":[{"text":"With a mixed alphabet, whose list they only pass on in person","correct":true,"info":"There are very many keys, and the key does not get into the wrong hands."},{"text":"With Caesar and the key 25 instead of 3","correct":false,"info":"A different key does not help. Class 6c simply tries all 25."},{"text":"With the key written just below the message, so that Selin does not forget it","correct":false,"info":"Whoever finds the note then also has the key. The key must be kept separate and secret."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"am-besten-schuetzen","text":"Which of these three ways protects class 6b's next message best?","explanation":"Of these three ways, this is the best. Many possible keys and a secret key are needed for a message to be secure.","links":[],"type":"single-choice","options":[{"text":"With a mixed alphabet, whose list they only pass on in person","correct":true,"info":"There are very many keys, and the key does not get into the wrong hands."},{"text":"With Caesar and the key 25 instead of 3","correct":false,"info":"A different key does not help. Class 6c simply tries all 25."},{"text":"With the key written just below the message, so that Selin does not forget it","correct":false,"info":"Whoever finds the note then also has the key. The key must be kept separate and secret."}]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/5" data-block-id="bda8ce13" data-block-type="matching" data-block-order="11">
+<div class="explainer-block" data-block="uebung/5" data-block-id="8e354b15" data-block-type="matching" data-block-order="11">
 <div class="explainer-exercise explainer-question" id="verfahren-schluessel">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-verfahren-schluessel" data-id="verfahren-schluessel" data-type="matching">
@@ -202,22 +205,22 @@ keys. You protect yourself by making your password long and never telling it to 
 <ul class="question-pairs">
 <li><label><span>Caesar</span> <select name="frage-verfahren-schluessel-0" data-left="0"><option value="">please choose</option><option value="0">25</option><option value="2">none, it is not secret</option><option value="1">a number with 27 digits</option></select></label></li>
 <li><label><span>mixed alphabet</span> <select name="frage-verfahren-schluessel-1" data-left="1"><option value="">please choose</option><option value="0">25</option><option value="2">none, it is not secret</option><option value="1">a number with 27 digits</option></select></label></li>
-<li><label><span>Morse code</span> <select name="frage-verfahren-schluessel-2" data-left="2"><option value="">please choose</option><option value="0">25</option><option value="2">none, it is not secret</option><option value="1">a number with 27 digits</option></select></label></li>
+<li><label><span>Morse code (not encryption)</span> <select name="frage-verfahren-schluessel-2" data-left="2"><option value="">please choose</option><option value="0">25</option><option value="2">none, it is not secret</option><option value="1">a number with 27 digits</option></select></label></li>
 </ul>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
-<p><strong>Right answer:</strong> Caesar – 25; mixed alphabet – a number with 27 digits; Morse code – none, it is not secret</p>
+<p><strong>Right answer:</strong> Caesar – 25; mixed alphabet – a number with 27 digits; Morse code (not encryption) – none, it is not secret</p>
 <p class="question-explanation">The more keys there are, the longer someone would have to try.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Solution</summary>
-<p><strong>Right answer:</strong> Caesar – 25; mixed alphabet – a number with 27 digits; Morse code – none, it is not secret</p>
+<p><strong>Right answer:</strong> Caesar – 25; mixed alphabet – a number with 27 digits; Morse code (not encryption) – none, it is not secret</p>
 <p class="question-explanation">The more keys there are, the longer someone would have to try.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"verfahren-schluessel","text":"How many keys does the method have? Match them.","explanation":"The more keys there are, the longer someone would have to try.","links":[],"type":"matching","pairs":[{"left":"Caesar","right":"25"},{"left":"mixed alphabet","right":"a number with 27 digits"},{"left":"Morse code","right":"none, it is not secret"}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"verfahren-schluessel","text":"How many keys does the method have? Match them.","explanation":"The more keys there are, the longer someone would have to try.","links":[],"type":"matching","pairs":[{"left":"Caesar","right":"25"},{"left":"mixed alphabet","right":"a number with 27 digits"},{"left":"Morse code (not encryption)","right":"none, it is not secret"}]},"rendered":{}}</script>
 </div>
 </div>
 <div class="explainer-block" data-block="uebung/6" data-block-id="57a9cdfd" data-block-type="text" data-block-order="12">
@@ -264,7 +267,7 @@ shown in a different way. And in the end, a computer stores every one of these f
 <span class="explainer-feedback-local">Kept in this browser only</span>
 <button type="button" class="explainer-feedback-off">End</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-daten-codieren","app":"Representing and encoding data","root":"../../../en/","repository":"lernapps/informatik-daten-codieren","revision":"2060b6a","page":{"title":"How secure is it?","order":12}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-daten-codieren","app":"Representing and encoding data","root":"../../../en/","repository":"lernapps/informatik-daten-codieren","revision":"2d27c40","page":{"title":"How secure is it?","order":12}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Page through"><a rel="prev" href="../../../en/geheim/caesar/">Back: The Caesar disc</a></nav>

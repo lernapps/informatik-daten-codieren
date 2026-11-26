@@ -86,7 +86,7 @@ Sender und Empfänger müssen **dieselbe Codetabelle** kennen. Und die Pausen ge
 
 - Aufgabe `code-geheim` (unten)
 
-Jetzt kannst du mit einer Codetabelle codieren und decodieren. Der Morsecode hat zwei Zeichen, kurz und lang. Auf der nächsten Seite schreibst du mit nur zwei Zeichen, 0 und 1, sogar Zahlen.
+Jetzt kannst du mit einer Codetabelle codieren und decodieren. Der Morsecode braucht kurz, lang und die Pause. Auf der nächsten Seite schreibst du mit nur zwei Zeichen, 0 und 1, sogar Zahlen.
 
 ### Aufgabe zeichen-bedeutung
 

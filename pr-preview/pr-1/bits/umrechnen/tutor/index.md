@@ -89,7 +89,7 @@ Beim Teilen kommt der Rest für die Karte 1 zuerst heraus. Darum liest du die Re
 
 - Aufgabe `zwoelf-binaer` (unten)
 
-Jetzt kannst du jede Zahl in Bits umrechnen. Für 40 brauchst du sechs Karten. Auf der nächsten Seite erfährst du, wie viele Bits ein Computer zusammenfasst und wie viele Bits ein Foto braucht.
+Jetzt kannst du jede Zahl in Bits umrechnen. Für 40 brauchst du sechs Stellen. Auf der nächsten Seite erfährst du, wie viele Bits ein Computer zusammenfasst und wie viele Bits ein Foto braucht.
 
 ### Aufgabe karten-legen
 
@@ -99,8 +99,8 @@ Jetzt kannst du jede Zahl in Bits umrechnen. Für 40 brauchst du sechs Karten. A
 - Was als richtig zählt: Richtig, wenn die Werte der offenen Karten zusammen n sind.
 - Typische Fehler (die Meldung der App passt zu einem davon):
   - F1: Die richtige Bitfolge von der falschen Seite gelegt (gespiegelt).
-  - F2: Eine Karte zu wenig: die offenen Karten ergeben weniger als n.
-  - F3: Eine Karte zu viel: die offenen Karten ergeben mehr als n.
+  - F2: Zu wenig: Die offenen Karten ergeben weniger als n (zum Beispiel eine Karte vergessen).
+  - F3: Zu viel: Die offenen Karten ergeben mehr als n.
 - Link zu Nummer n: `../?karten-legen=n&via=tutor#karten-legen`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
 
@@ -175,14 +175,14 @@ Nr. | e.dez | e.teilen | e.bin | e.karten | Lösung | F1
 
 ### Aufgabe karten-fuer-40
 
-- Aufgabe: Mia will die Zahl 40 legen. Wie viele Karten braucht sie mindestens?
+- Aufgabe: Mia schreibt die Zahl 40 als Binärzahl. Wie viele Stellen (Bits) hat sie?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 6
-- Erklärung: 40 = 32 + 8. Die Reihe geht von 32 bis 1, das sind 6 Karten: 101000.
+- Erklärung: 40 = 32 + 8. Die Reihe geht von 32 bis 1, das sind 6 Stellen: 101000.
 - Tipp der App: Welche ist die größte Karte, die in 40 passt?
 - Typische Fehler und was die App sagt:
-  - 5: Mit fünf Karten kommst du nur bis 31. Für 40 brauchst du noch die Karte 32.
-  - 2: Es liegen zwar nur zwei Karten offen, 32 und 8. Aber die verdeckten Karten 16, 4, 2 und 1 dazwischen gehören auch zur Reihe.
+  - 5: Mit fünf Stellen kommst du nur bis 31. Für 40 brauchst du noch die Karte 32.
+  - 2: Du hast nur die Einsen gezählt, 32 und 8. Die Nullen für 16, 4, 2 und 1 sind auch Stellen.
 - Link: [../?via=tutor#karten-fuer-40](../?via=tutor#karten-fuer-40)
 
 ### Aufgabe zwoelf-binaer

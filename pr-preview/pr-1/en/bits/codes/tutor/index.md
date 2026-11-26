@@ -86,7 +86,7 @@ The sender and the receiver must know **the same code table**. And the pauses ar
 
 - Exercise `code-geheim` (below)
 
-Now you can encode and decode with a code table. Morse code has two signals, short and long. On the next page you will use just two symbols, 0 and 1, to write numbers too.
+Now you can encode and decode with a code table. Morse code needs short, long and the pause. On the next page you will use just two symbols, 0 and 1, to write numbers too.
 
 ### Exercise zeichen-bedeutung
 

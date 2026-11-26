@@ -69,8 +69,9 @@ hintereinander nennt man eine **Bitfolge**.
 Jede Karte ist doppelt so viel wert wie die Karte rechts neben ihr. Die größte Karte liegt links.
 Darum zählt es, **wo** eine 1 steht, nicht nur, wie viele Einsen es sind.
 
-Das kennst du von Einern, Zehnern und Hundertern: Dort ist jede Stelle zehnmal so viel wert
-(**Dezimalsystem**). Bei den Karten ist jede Stelle doppelt so viel wert (**Binärsystem**).
+Den Wert einer Stelle nennt man **Stellenwert**. Das kennst du von Einern, Zehnern und Hundertern:
+Dort ist jede Stelle zehnmal so viel wert (**Dezimalsystem**). Bei den Karten ist jede Stelle doppelt
+so viel wert (**Binärsystem**). Nullen ganz vorne ändern nichts: 00101 ist dieselbe Zahl wie 101.
 
 - Aufgabe `naechste-karte` (unten)
 

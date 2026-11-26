@@ -73,7 +73,7 @@ Jona's table:
 
 Picture: A bar chart with four bars for Seeberg, Falkenburg, Bärenhöhle and Lindenzoo. On the left there is a scale from 0 to 12. The bar for Seeberg is the highest, the one for Lindenzoo the lowest. Caption: Mia's bar chart. The higher the bar, the more votes. The scale on the left shows the number of votes.
 
-Selin's sentence: “Most children, 11 of them, want to go to Seeberg. So that is where we are going.”
+Selin's sentence: “Seeberg got the most votes, 11 out of 26. So that is where we are going.”
 
 **Remember: Remember**
 

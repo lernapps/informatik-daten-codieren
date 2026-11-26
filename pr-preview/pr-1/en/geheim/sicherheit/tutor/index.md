@@ -44,8 +44,8 @@ Comparing encryption methods and judging how secure they are: how many keys woul
 ### Class 6c gives it a go
 
 Class 6c has intercepted a word from 6b. They know that 6b encrypts with the Caesar disc. They just don't
-know the key. Play class 6c: turn the disc step by step until the letters on the inside give a word you
-can read on the outside. Then type in the key and press “Check”.
+know the key. Play class 6c: turn the disc step by step until the letters on the outside, next to the
+secret letters on the inside, make a word. Then type in the key and press “Check”.
 
 On the page before you encrypted and decrypted with a key. On this page you judge how secure a method is.
 
@@ -58,19 +58,22 @@ Anyone who tries all 25 will definitely find the message, even without the key. 
 letters there are even fewer sensible keys.
 
 A **mixed alphabet** is different: each letter gets any other letter, for example A becomes Q, B becomes M
-and so on. Then the key is the whole list. There are so many of these that the number has 27 digits.
+and so on. Then the key is the whole list. There are so many of these that the number has 27 digits. That is much more
+secure than Caesar, but still not secure: because each letter is always replaced by the same one, common
+letters such as E give away something about the text.
 
 How many keys someone would have to try:
 - Method | Keys
-- Morse code | none, everyone knows the table
+- Morse code (not encryption) | none, everyone knows the table
 - Caesar | 25
 - mixed alphabet | a number with 27 digits
 
 **Remember: Remember**
 
-A method is only secure if there are **so many keys** that nobody can try them all, and if the **key
-stays secret**. Everyone may know the method itself. It is the same today: computers encrypt with huge
-keys. You protect yourself by making your password long and never telling it to anyone.
+A secure method needs **so many keys** that nobody can try them all, and the **key** has to **stay
+secret**. That is needed, but not enough: the method must not have any other weak spot either. Everyone
+may know the method itself. Today computers encrypt with methods that experts have checked for a long
+time, and with huge keys. You protect yourself by making your password long and never telling it to anyone.
 
 ### Practice
 
@@ -186,8 +189,8 @@ No. | wort (hidden) | geheim | k (hidden) | Solution | F1 | F2
 
 - Task: Put the methods in order of how secure they are, the least secure first.
 - Answer format: put the items in the right order (the app shows them shuffled)
-- Solution: 1. Morse code, 2. Caesar with a key, 3. mixed alphabet
-- Explanation: Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all.
+- Solution: 1. Morse code (not encryption), 2. Caesar with a key, 3. mixed alphabet
+- Explanation: Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all. But even it is not completely secure.
 - Link: [../?via=tutor#verfahren-ordnen](../?via=tutor#verfahren-ordnen)
 
 ### Exercise geheimes-verfahren
@@ -195,25 +198,25 @@ No. | wort (hidden) | geheim | k (hidden) | Solution | F1 | F2
 - Task: A method is secure if nobody knows how it works.
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
-- Explanation: Class 6c knew that 6b uses Caesar and still had a go. What makes a method secure is that there are very many keys and the key stays secret.
+- Explanation: Class 6c knew that 6b uses Caesar and still had a go. Whether a method is secure does not depend on whether people know it. It needs very many keys, and the key has to stay secret.
 - Link: [../?via=tutor#geheimes-verfahren](../?via=tutor#geheimes-verfahren)
 
 ### Exercise am-besten-schuetzen
 
-- Task: How can class 6b best protect its next message?
+- Task: Which of these three ways protects class 6b's next message best?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ With a mixed alphabet, whose list they only pass on in person – There are very many keys, and the key does not get into the wrong hands.
   - ✗ With Caesar and the key 25 instead of 3 – A different key does not help. Class 6c simply tries all 25.
   - ✗ With the key written just below the message, so that Selin does not forget it – Whoever finds the note then also has the key. The key must be kept separate and secret.
 - Solution: With a mixed alphabet, whose list they only pass on in person
-- Explanation: Many possible keys and a secret key make a message secure.
+- Explanation: Of these three ways, this is the best. Many possible keys and a secret key are needed for a message to be secure.
 - Link: [../?via=tutor#am-besten-schuetzen](../?via=tutor#am-besten-schuetzen)
 
 ### Exercise verfahren-schluessel
 
 - Task: How many keys does the method have? Match them.
 - Answer format: match each item on the left with one on the right
-- Solution: Caesar – 25; mixed alphabet – a number with 27 digits; Morse code – none, it is not secret
+- Solution: Caesar – 25; mixed alphabet – a number with 27 digits; Morse code (not encryption) – none, it is not secret
 - Explanation: The more keys there are, the longer someone would have to try.
 - Link: [../?via=tutor#verfahren-schluessel](../?via=tutor#verfahren-schluessel)

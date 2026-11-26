@@ -88,7 +88,7 @@ Now you can tell data and information apart. On the next page you will see that 
 - Task: If you only have the note, you know for sure what it is about.
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
-- Explanation: Without context, “8:00” could be a time or a price, and “6b” could be a class or a seat in the cinema.
+- Explanation: Without context, “8:00” could be a time or a score, and “6b” could be a class or a seat in the cinema.
 - Link: [../?via=tutor#zettel-klar](../?via=tutor#zettel-klar)
 
 ### Exercise weg-der-nachricht

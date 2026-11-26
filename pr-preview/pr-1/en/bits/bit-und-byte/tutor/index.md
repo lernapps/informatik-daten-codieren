@@ -61,8 +61,8 @@ There are bigger units for large amounts of data. Each one is **1000 times** as 
 Units for amounts of data, with examples:
 - Unit | size | example, roughly
 - 1 byte (B) | 8 bits | a number from 0 to 255
-- 1 kilobyte (KB) | 1000 bytes | a short message
-- 1 megabyte (MB) | 1000 KB | a photo is about 3 MB
+- 1 kilobyte (kB) | 1000 bytes | half a page of text
+- 1 megabyte (MB) | 1000 kB | a photo is about 3 MB
 - 1 gigabyte (GB) | 1000 MB | a film is about 2 GB
 
 **Remember: Remember**
@@ -111,8 +111,8 @@ a picture is made of bits.
 - What counts as right: Right if the values of the face-up cards add up to n.
 - Typical mistakes (the app's message fits one of them):
   - F1: The right bits laid out from the wrong end (mirrored).
-  - F2: One card too few: the face-up cards add up to less than n.
-  - F3: One card too many: the face-up cards add up to more than n.
+  - F2: Too little: the face-up cards add up to less than n (for example a card forgotten).
+  - F3: Too much: the face-up cards add up to more than n.
 - Link to number n: `../?byte-legen=n&via=tutor#byte-legen`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there.
 
@@ -217,12 +217,12 @@ No. | B | Solution | F1 | F2
 
 ### Exercise kb-in-byte
 
-- Task: „A small picture is {K} KB. How many bytes is that?“
+- Task: „A small picture is {K} kB. How many bytes is that?“
 - Answer format: type a number (bytes)
 - Steps of the solution:
-  - 1 KB = 1000 bytes, so {K} KB = {K} × 1000 bytes = {answer} bytes.
+  - 1 kB = 1000 bytes, so {K} kB = {K} × 1000 bytes = {answer} bytes.
 - Typical mistakes and what the app says:
-  - F1: „Here it works like kilograms: 1 KB = 1000 bytes.“
+  - F1: „Here it works like kilograms: 1 kB = 1000 bytes.“
   - F2: „You multiply by 8 to go from bytes to bits. From kilobytes to bytes it is times 1000.“
 - Link to number n: `../?kb-in-byte=n&via=tutor#kb-in-byte`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
@@ -251,7 +251,7 @@ No. | K | Solution | F1 | F2
 
 - Task: Roughly how big is it? Match them.
 - Answer format: match each item on the left with one on the right
-- Solution: a short message to Jona – 1 KB; a photo of Seeberg – 3 MB; a film for the evening – 2 GB
+- Solution: a page of text for the school magazine – 2 kB; a photo of Seeberg – 3 MB; a film for the evening – 2 GB
 - Explanation: A text needs little space, a photo much more and a film the most, because it is made of very many pictures and sound.
 - Link: [../?via=tutor#was-ist-wie-gross](../?via=tutor#was-ist-wie-gross)
 

@@ -61,7 +61,7 @@ Bild: Ein Raster aus 6 mal 6 Kästchen mit einem schwarzen Zelt. Neben den Zeile
 
 - **Pixelgrafik**: Eine Pixelgrafik speichert ein Bild als Raster aus Zeilen und Spalten. Für jedes Pixel speichert sie seine Farbe als Zahl.
 
-Für Farben braucht jedes Pixel mehr als ein Bit. Mit zwei Bits hat jedes Pixel eine von vier **Farbnummern**.
+Für mehr als zwei Farben braucht jedes Pixel mehr als ein Bit. Mit zwei Bits hat jedes Pixel eine von vier **Farbnummern**.
 
 Eine Farbtabelle mit zwei Bits je Pixel:
 - Farbnummer | Farbe
@@ -99,8 +99,8 @@ Jetzt kannst du ein Bild aus Pixeln codieren und decodieren. Selins Zelt soll au
 - Lösung: 36
 - Erklärung: 6 Zeilen mit je 6 Kästchen sind 6 · 6 = 36 Kästchen.
 - Typische Fehler und was die App sagt:
-  - 12: Du hast 6 + 6 gerechnet. Das Bild hat 6 Zeilen mit je 6 Kästchen, also 6 · 6.
-  - 18: Das sind nur die schwarzen Kästchen. Gefragt sind alle, auch die weißen.
+  - 12: Du hast 6 + 6 gerechnet oder nur die weißen Kästchen gezählt. Das Bild hat 6 Zeilen mit je 6 Kästchen, also 6 · 6.
+  - 24: Das sind nur die schwarzen Kästchen. Gefragt sind alle, auch die weißen.
 - Link: [../?via=tutor#pixel-zaehlen](../?via=tutor#pixel-zaehlen)
 
 ### Aufgabe bild-malen

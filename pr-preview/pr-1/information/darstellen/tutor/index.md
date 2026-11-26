@@ -73,7 +73,7 @@ Jonas Tabelle:
 
 Bild: Ein Säulendiagramm mit vier Säulen für Seeberg, Falkenburg, Bärenhöhle und Lindenzoo. Links steht eine Skala von 0 bis 12. Die Säule für Seeberg ist die höchste, die für Lindenzoo die niedrigste. Bildunterschrift: Mias Säulendiagramm. Je höher die Säule, desto mehr Stimmen. Die Skala links zeigt die Zahl der Stimmen.
 
-Selins Satz: „Die meisten Kinder, nämlich 11, wollen an den Seeberg. Darum fahren wir dorthin.“
+Selins Satz: „Der Seeberg hat die meisten Stimmen bekommen, 11 von 26. Darum fahren wir dorthin.“
 
 **Merke: Merke**
 

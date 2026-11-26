@@ -43,8 +43,8 @@ Der Baum als Darstellung: Wurzel, Knoten, Kanten und Blätter am Zimmerplan und 
 
 ### Wer schläft wo?
 
-Am Seeberg teilt Frau Berg die Zimmer ein. Die 6b hat drei Zimmer: 13, 22 und 9. Frau Berg zeichnet es
-so auf, dass alle schnell ihr Zimmer finden.
+Am Seeberg teilt Frau Berg die Zimmer ein. Sie zeichnet einen Plan, damit alle schnell ihr Zimmer finden.
+Hier siehst du einen Ausschnitt: drei Zimmer, 13, 22 und 9, mit je zwei Kindern.
 
 Auf der Seite davor hast du Tabelle, Diagramm und Text kennengelernt. Auf dieser Seite lernst du eine
 Form für Daten, die ineinander stecken: die Klasse hat Zimmer, die Zimmer haben Kinder.
@@ -55,7 +55,7 @@ Bild: Ein Baum. Oben steht 6b. Drei Linien führen nach unten zu den Zimmern 13,
 
 ### Wurzel oben, Blätter unten
 
-- **Baum**: Ein Baum zeigt Daten, die ineinander stecken. Er besteht aus Knoten und Kanten. Ganz oben steht ein Knoten, die Wurzel. Die Knoten ganz unten heißen Blätter.
+- **Baum**: Ein Baum zeigt Daten, die ineinander stecken. Er besteht aus Knoten und Kanten. Ganz oben steht ein Knoten, die Wurzel. Knoten ohne Knoten darunter heißen Blätter.
 
 **Merke: Merke**
 
@@ -122,7 +122,7 @@ Computer solche Daten speichert: nur mit 0 und 1.
 - Aufgabe: Wie viele Kanten hat der Zimmerbaum?
 - Antwortformat: eine Zahl eintippen
 - Lösung: 9
-- Erklärung: 3 Kanten von 6b zu den Zimmern und 6 Kanten von den Zimmern zu den Kindern: 9. Das ist immer ein Knoten weniger, als der Baum hat.
+- Erklärung: 3 Kanten von 6b zu den Zimmern und 6 Kanten von den Zimmern zu den Kindern: 9. Ein Baum hat immer eine Kante weniger als Knoten.
 - Tipp der App: Jeder Knoten außer der Wurzel hat genau eine Kante nach oben.
 - Typische Fehler und was die App sagt:
   - 10: Du hast die Knoten gezählt. Zähle die Linien.

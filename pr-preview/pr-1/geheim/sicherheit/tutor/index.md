@@ -44,8 +44,8 @@ Verschlüsselungsverfahren vergleichen und beurteilen, wie sicher sie sind: Wie 
 ### Die 6c probiert es
 
 Die 6c hat ein Wort der 6b abgefangen. Sie weiß, dass die 6b mit der Caesar-Scheibe verschlüsselt. Nur den
-Schlüssel kennt sie nicht. Spiel die 6c: Drehe die Scheibe Schritt für Schritt, bis innen ein Wort
-entsteht, das du außen lesen kannst. Tippe dann den Schlüssel ein und drücke „Prüfen“.
+Schlüssel kennt sie nicht. Spiel die 6c: Drehe die Scheibe Schritt für Schritt, bis die Buchstaben
+außen neben den Geheimbuchstaben innen ein Wort ergeben. Tippe dann den Schlüssel ein und drücke „Prüfen“.
 
 Auf der Seite davor hast du mit Schlüssel ver- und entschlüsselt. Auf dieser Seite beurteilst du, wie
 sicher ein Verfahren ist.
@@ -60,19 +60,21 @@ Buchstaben gibt es noch weniger sinnvolle Schlüssel.
 
 Anders ist ein **gemischtes Alphabet**: Jeder Buchstabe bekommt irgendeinen anderen, zum Beispiel A wird
 Q, B wird M und so weiter. Dann ist der Schlüssel die ganze Liste. Davon gibt es so viele, dass die Zahl
-27 Stellen hat.
+27 Stellen hat. Das ist viel sicherer als Caesar, aber trotzdem nicht sicher: Weil jeder Buchstabe immer
+durch denselben ersetzt wird, verraten zum Beispiel häufige Buchstaben wie E etwas über den Text.
 
 Wie viele Schlüssel jemand ausprobieren müsste:
 - Verfahren | Schlüssel
-- Morsecode | keinen, jeder kennt die Tabelle
+- Morsecode (keine Verschlüsselung) | keinen, jeder kennt die Tabelle
 - Caesar | 25
 - gemischtes Alphabet | eine Zahl mit 27 Stellen
 
 **Merke: Merke**
 
-Sicher ist ein Verfahren nur, wenn es **so viele Schlüssel** gibt, dass niemand alle ausprobieren
-kann, und wenn der **Schlüssel geheim** bleibt. Das Verfahren selbst darf jeder kennen. So ist es auch
-heute: Computer verschlüsseln mit riesigen Schlüsseln. Du schützt dich, indem du dein Passwort lang
+Ein sicheres Verfahren braucht **so viele Schlüssel**, dass niemand alle ausprobieren kann, und der
+**Schlüssel** muss **geheim** bleiben. Das ist nötig, aber noch nicht genug: Das Verfahren darf auch
+keine andere Lücke haben. Das Verfahren selbst darf jeder kennen. Heute verschlüsseln Computer mit
+Verfahren, die Fachleute lange geprüft haben, und mit riesigen Schlüsseln. Du schützt dich, indem du dein Passwort lang
 machst und es niemandem verrätst.
 
 ### Übung
@@ -189,8 +191,8 @@ Nr. | wort (verdeckt) | geheim | k (verdeckt) | Lösung | F1 | F2
 
 - Aufgabe: Ordne die Verfahren nach ihrer Sicherheit, das unsicherste zuerst.
 - Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
-- Lösung: 1. Morsecode, 2. Caesar mit Schlüssel, 3. gemischtes Alphabet
-- Erklärung: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann.
+- Lösung: 1. Morsecode (keine Verschlüsselung), 2. Caesar mit Schlüssel, 3. gemischtes Alphabet
+- Erklärung: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann. Ganz sicher ist aber auch es nicht.
 - Link: [../?via=tutor#verfahren-ordnen](../?via=tutor#verfahren-ordnen)
 
 ### Aufgabe geheimes-verfahren
@@ -198,25 +200,25 @@ Nr. | wort (verdeckt) | geheim | k (verdeckt) | Lösung | F1 | F2
 - Aufgabe: Ein Verfahren ist sicher, wenn niemand weiß, wie es funktioniert.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: Die 6c wusste, dass die 6b Caesar benutzt, und hat trotzdem probiert. Sicher macht ein Verfahren erst, dass es sehr viele Schlüssel gibt und der Schlüssel geheim bleibt.
+- Erklärung: Die 6c wusste, dass die 6b Caesar benutzt, und hat trotzdem probiert. Ob ein Verfahren sicher ist, hängt nicht davon ab, ob man es kennt. Es braucht sehr viele Schlüssel, und der Schlüssel muss geheim bleiben.
 - Link: [../?via=tutor#geheimes-verfahren](../?via=tutor#geheimes-verfahren)
 
 ### Aufgabe am-besten-schuetzen
 
-- Aufgabe: Wie schützt die 6b ihre nächste Nachricht am besten?
+- Aufgabe: Welcher dieser drei Wege schützt die nächste Nachricht der 6b am besten?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
   - ✓ Mit einem gemischten Alphabet, dessen Liste sie nur persönlich weitergibt – Es gibt sehr viele Schlüssel, und der Schlüssel kommt nicht in falsche Hände.
   - ✗ Mit Caesar und dem Schlüssel 25 statt 3 – Ein anderer Schlüssel hilft nicht. Die 6c probiert einfach alle 25 aus.
   - ✗ Mit dem Schlüssel gleich unter der Nachricht, damit Selin ihn nicht vergisst – Wer den Zettel findet, hat dann auch den Schlüssel. Der Schlüssel muss getrennt und geheim bleiben.
 - Lösung: Mit einem gemischten Alphabet, dessen Liste sie nur persönlich weitergibt
-- Erklärung: Viele mögliche Schlüssel und ein geheimer Schlüssel machen eine Nachricht sicher.
+- Erklärung: Von diesen drei Wegen ist das der beste. Viele mögliche Schlüssel und ein geheimer Schlüssel sind nötig, damit eine Nachricht sicher ist.
 - Link: [../?via=tutor#am-besten-schuetzen](../?via=tutor#am-besten-schuetzen)
 
 ### Aufgabe verfahren-schluessel
 
 - Aufgabe: Wie viele Schlüssel hat das Verfahren? Ordne zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Caesar – 25; gemischtes Alphabet – eine Zahl mit 27 Stellen; Morsecode – keinen, er ist nicht geheim
+- Lösung: Caesar – 25; gemischtes Alphabet – eine Zahl mit 27 Stellen; Morsecode (keine Verschlüsselung) – keinen, er ist nicht geheim
 - Erklärung: Je mehr Schlüssel es gibt, desto länger müsste jemand probieren.
 - Link: [../?via=tutor#verfahren-schluessel](../?via=tutor#verfahren-schluessel)

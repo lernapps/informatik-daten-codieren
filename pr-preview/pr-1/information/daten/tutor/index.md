@@ -88,7 +88,7 @@ Jetzt kannst du Daten und Information unterscheiden. Auf der nächsten Seite sie
 - Aufgabe: Wer nur den Zettel hat, weiß sicher, worum es geht.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: Ohne Zusammenhang kann „8:00“ eine Uhrzeit oder ein Preis sein, und „6b“ eine Klasse oder ein Platz im Kino.
+- Erklärung: Ohne Zusammenhang kann „8:00“ eine Uhrzeit oder ein Spielstand sein, und „6b“ eine Klasse oder ein Platz im Kino.
 - Link: [../?via=tutor#zettel-klar](../?via=tutor#zettel-klar)
 
 ### Aufgabe weg-der-nachricht

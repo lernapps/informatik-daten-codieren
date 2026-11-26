@@ -44,12 +44,12 @@ Telling bitmap and vector images apart, and explaining which kind of image suits
 ### A poster for the school trip
 
 Jona and Selin are making a big poster for the school trip. It is going to have a red circle on it as the
-sun. They have stored the sun in two ways and made both equally bigger.
+sun. They have stored the sun in two ways and enlarged both by the same amount.
 
 On the page before you drew pictures with pixels. On this page you will learn a second way of storing
 pictures.
 
-Picture: Two red circles of the same size. Circle A has an edge made of steps. Circle B has a smooth, round edge. Caption: The sun, made equally bigger twice. Look at the edge.
+Picture: Two red circles of the same size. Circle A has an edge made of steps. Circle B has a smooth, round edge. Caption: The sun, enlarged twice by the same amount. Look at the edge.
 
 - Exercise `welche-treppig` (below)
 
@@ -62,12 +62,12 @@ Sun B is a vector image. All that is stored is: a circle, centre (50 | 50), radi
 Bitmap and vector images compared:
 - Comparison | bitmap image | vector image
 - stores | every pixel | shapes with numbers
-- made bigger | gets steps | stays smooth
+- made bigger | becomes jagged or blurry | stays smooth
 - good for | photos | logos and plans
 
 **Remember: Remember**
 
-Neither kind is always better. A photo has millions of different coloured dots that you can hardly describe as shapes, so it is a bitmap image. A logo made of a few shapes should be sharp both big and small, so it is a vector image.
+Neither kind is always better. A photo has millions of pixels in many colours that you can hardly describe as shapes, so it is a bitmap image. A logo made of a few shapes should be sharp both big and small, so it is a vector image.
 
 ### Practice
 
@@ -93,12 +93,12 @@ learn how to keep a message secret.
   - ✓ A – When you make it bigger, the pixels get bigger. You can see the single squares as steps.
   - ✗ B – The edge of B is smooth. With a bitmap image the pixels would show as steps when made bigger.
 - Solution: A
-- Explanation: A bitmap image only has as many pixels as are stored. If you make it bigger, each pixel becomes a big square.
+- Explanation: A bitmap image only has as many pixels as are stored. If you make it bigger, each pixel becomes a big square. Some programs smooth the edge, then the picture becomes blurry instead of jagged.
 - Link: [../?via=tutor#welche-treppig](../?via=tutor#welche-treppig)
 
 ### Exercise pixel-nach-vergroessern
 
-- Task: Selin's tent has 6 × 6 = 36 pixels. She shows it four times as wide and four times as high. How many different pixels are stored in the picture?
+- Task: Selin's tent has 6 × 6 = 36 pixels. She shows it four times as wide and four times as high. She only shows it bigger and does not save it again. How many pixels are stored?
 - Answer format: type a number
 - Solution: 36
 - Explanation: There are still 36 pixels. Each one is shown as a bigger square, which is why you see steps.
@@ -109,13 +109,13 @@ learn how to keep a message secret.
 
 ### Exercise zahlen-kreis
 
-- Task: For sun B, this is stored: centre (50 | 50), radius 40, colour red. How many numbers is that?
+- Task: For sun B, this is stored: centre (50 | 50), radius 40, colour red. How many numbers describe where the circle is and how big it is?
 - Answer format: type a number
 - Solution: 3
 - Explanation: 50, 50 and 40. With these three numbers and the colour, the circle is described at any size.
 - Typical mistakes and what the app says:
   - 2: The centre has two numbers, one for across and one for up.
-  - 4: Red is the name of a colour here, not a number. Count only the numbers.
+  - 4: The colour says nothing about where the circle is or its size. Count only the numbers for the centre and the radius.
 - Link: [../?via=tutor#zahlen-kreis](../?via=tutor#zahlen-kreis)
 
 ### Exercise was-speichert-wer
@@ -140,7 +140,7 @@ learn how to keep a message secret.
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ a vector image, because it stays smooth at any size – The logo is made of a few shapes. The computer works them out again for any size.
-  - ✗ a bitmap image, because it stores every pixel exactly – It stores every pixel, but only at one size. On the poster the logo would get steps.
+  - ✗ a bitmap image, because it stores every pixel exactly – It stores every pixel, but only at one size. On the poster the logo would become jagged.
   - ✗ it does not matter, both turn out the same when made bigger – That is not true. Sun A and sun B looked very different when made bigger.
 - Solution: a vector image, because it stays smooth at any size
 - Explanation: For logos, signs and plans made of clear shapes, a vector image is better.

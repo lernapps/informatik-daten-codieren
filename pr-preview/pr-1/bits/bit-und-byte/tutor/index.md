@@ -61,8 +61,8 @@ Für große Datenmengen gibt es größere Einheiten. Jede ist **1000-mal** so gr
 Einheiten für Datenmengen mit Beispielen:
 - Einheit | so groß | Beispiel, ungefähr
 - 1 Byte (B) | 8 Bit | eine Zahl von 0 bis 255
-- 1 Kilobyte (KB) | 1000 Byte | eine kurze Nachricht
-- 1 Megabyte (MB) | 1000 KB | ein Foto hat etwa 3 MB
+- 1 Kilobyte (kB) | 1000 Byte | eine halbe Seite Text
+- 1 Megabyte (MB) | 1000 kB | ein Foto hat etwa 3 MB
 - 1 Gigabyte (GB) | 1000 MB | ein Film hat etwa 2 GB
 
 **Merke: Merke**
@@ -111,8 +111,8 @@ aus Bits entsteht.
 - Was als richtig zählt: Richtig, wenn die Werte der offenen Karten zusammen n sind.
 - Typische Fehler (die Meldung der App passt zu einem davon):
   - F1: Die richtige Bitfolge von der falschen Seite gelegt (gespiegelt).
-  - F2: Eine Karte zu wenig: die offenen Karten ergeben weniger als n.
-  - F3: Eine Karte zu viel: die offenen Karten ergeben mehr als n.
+  - F2: Zu wenig: Die offenen Karten ergeben weniger als n (zum Beispiel eine Karte vergessen).
+  - F3: Zu viel: Die offenen Karten ergeben mehr als n.
 - Link zu Nummer n: `../?byte-legen=n&via=tutor#byte-legen`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt.
 
@@ -217,12 +217,12 @@ Nr. | B | Lösung | F1 | F2
 
 ### Aufgabe kb-in-byte
 
-- Aufgabe: „Ein kleines Bild hat {K} KB. Wie viele Byte sind das?“
+- Aufgabe: „Ein kleines Bild hat {K} kB. Wie viele Byte sind das?“
 - Antwortformat: eine Zahl eintippen (Byte)
 - Lösungsweg:
-  - 1 KB = 1000 Byte, also {K} KB = {K} · 1000 Byte = {answer} Byte.
+  - 1 kB = 1000 Byte, also {K} kB = {K} · 1000 Byte = {answer} Byte.
 - Typische Fehler und was die App sagt:
-  - F1: „Hier gilt wie bei Kilogramm: 1 KB = 1000 Byte.“
+  - F1: „Hier gilt wie bei Kilogramm: 1 kB = 1000 Byte.“
   - F2: „Mal 8 rechnest du von Byte in Bit. Von Kilobyte in Byte ist es mal 1000.“
 - Link zu Nummer n: `../?kb-in-byte=n&via=tutor#kb-in-byte`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
@@ -251,7 +251,7 @@ Nr. | K | Lösung | F1 | F2
 
 - Aufgabe: Wie groß ist das ungefähr? Ordne zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: eine kurze Nachricht an Jona – 1 KB; ein Foto vom Seeberg – 3 MB; ein Film für den Abend – 2 GB
+- Lösung: eine Seite Text für die Schülerzeitung – 2 kB; ein Foto vom Seeberg – 3 MB; ein Film für den Abend – 2 GB
 - Erklärung: Ein Text braucht wenig Platz, ein Foto viel mehr und ein Film am meisten, weil er aus sehr vielen Bildern und Ton besteht.
 - Link: [../?via=tutor#was-ist-wie-gross](../?via=tutor#was-ist-wie-gross)
 

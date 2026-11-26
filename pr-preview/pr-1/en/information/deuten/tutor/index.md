@@ -59,7 +59,7 @@ degrees or euros. Ms Berg has sent the plan for the first day at Seeberg.
 Plan for Monday at Seeberg:
 - What | Time | How many children
 - Arrival | 11 | 26
-- Walk around the lake | 14 to 17 | 26
+- Walk around the lake | 14 to 17 | 18
 - Boat trip | 15 | 8
 - Night walk | 21 | 21
 
@@ -83,7 +83,7 @@ Now you can read data in a table correctly. On the next page you look back: how 
 
 - Task: Where Mia sees 21, and what it means. Match them.
 - Answer format: match each item on the left with one on the right
-- Solution: 21 on the thermometer – It is 21 degrees warm.; 21:00 on the alarm clock – It is 9 o'clock in the evening.; 21 candles on her cousin's cake – Her cousin is turning 21.; 21 on the sports shirt – That is the shirt number.
+- Solution: 21 on the thermometer – It is 21 degrees.; 21:00 on the alarm clock – It is 9 o'clock in the evening.; 21 candles on her cousin's cake – Her cousin is turning 21.; 21 on the sports shirt – That is the shirt number.
 - Explanation: The same data, the number 21, means something different depending on the context. The thermometer, the clock or the cake tells you how to read the 21.
 - Link: [../?via=tutor#was-ist-21](../?via=tutor#was-ist-21)
 
@@ -108,7 +108,7 @@ Now you can read data in a table correctly. On the next page you look back: how 
 - The app's hint: The walk starts at 14:00. When does it end?
 - Typical mistakes and what the app says:
   - 31: You added 14 and 17. But “14 to 17” is a time span: from 14:00 to 17:00.
-  - 26: 26 is the number of children. The question is how long the walk takes.
+  - 18: 18 is the number of children who go on the walk. The question is how long the walk takes.
 - Link: [../?via=tutor#wanderung-dauer](../?via=tutor#wanderung-dauer)
 
 ### Exercise tag-ordnen
@@ -116,7 +116,7 @@ Now you can read data in a table correctly. On the next page you look back: how 
 - Task: Put the day at Seeberg in order of time, the earliest first.
 - Answer format: put the items in the right order (the app shows them shuffled)
 - Solution: 1. Arrival, 2. Walk around the lake, 3. Boat trip, 4. Night walk
-- Explanation: 11:00, 14:00, 15:00, 21:00. The boat trip starts while the others are still walking: only 8 children go on the boat.
+- Explanation: 11:00, 14:00, 15:00, 21:00. 18 children go on the walk, the other 8 go on the boat trip at 15:00.
 - Link: [../?via=tutor#tag-ordnen](../?via=tutor#tag-ordnen)
 
 ### Exercise zahl-immer-gleich

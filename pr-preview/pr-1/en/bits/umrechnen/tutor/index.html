@@ -55,19 +55,19 @@ becomes bits.</p>
 <ul>
 <li>Exercise <code>karten-legen</code> (below)</li>
 </ul>
-<h3>Two ways to the binary number</h3>
-<p><strong>Way 1: The biggest card first.</strong> Go from left to right. For each card, ask: does it still fit into what is left? Then turn it over and take its value away.</p>
-<p>Way 1 for the number 27:</p>
+<h3>Two methods to get the binary number</h3>
+<p><strong>Method 1: The biggest card first.</strong> Go from left to right. For each card, ask: does it still fit into what is left? Then turn it over and take its value away.</p>
+<p>Method 1 for the number 27:</p>
 <ul>
-<li>Card | Does it fit? | Left</li>
+<li>Card | Does it fit? | Still to make</li>
 <li>16 | yes: 1 | 27 − 16 = 11</li>
 <li>8 | yes: 1 | 11 − 8 = 3</li>
 <li>4 | no: 0 | 3</li>
 <li>2 | yes: 1 | 3 − 2 = 1</li>
 <li>1 | yes: 1 | 1 − 1 = 0</li>
 </ul>
-<p><strong>Way 2: Keep dividing by 2.</strong> Divide the number by 2 and write down the remainder. Divide the result by 2 again, until you get 0. The remainders, read <strong>from the bottom up</strong>, are the binary number. This way also works for big numbers, without cards.</p>
-<p><strong>Example: Way 2 for the number 27</strong></p>
+<p><strong>Method 2: Keep dividing by 2.</strong> Divide the number by 2 and write down the remainder. Divide the result by 2 again, until you get 0. The remainders, read <strong>from the bottom up</strong>, are the binary number. This method also works for big numbers, without cards.</p>
+<p><strong>Example: Method 2 for the number 27</strong></p>
 <p>Read the remainders from the bottom up: 11011. Check: 16 + 8 + 2 + 1 = 27.:</p>
 <ul>
 <li>Division | Remainder</li>
@@ -90,7 +90,7 @@ becomes bits.</p>
 <li><p>Exercise <code>zwoelf-binaer</code> (below)</p>
 </li>
 </ul>
-<p>Now you can turn any number into bits. For 40 you need six cards. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.</p>
+<p>Now you can turn any number into bits. For 40 you need six digits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.</p>
 <h3>Exercise karten-legen</h3>
 <ul>
 <li>What to do: A row of bit cards, the largest on the left (16, 8, 4, 2, 1 or 128 … 1), all face down. The child taps cards to turn them over until the face-up cards add up to the number n, then presses “Check”. The sum is not shown before checking, only the bits.</li>
@@ -99,8 +99,8 @@ becomes bits.</p>
 <li>What counts as right: Right if the values of the face-up cards add up to n.</li>
 <li>Typical mistakes (the app&#39;s message fits one of them):<ul>
 <li>F1: The right bits laid out from the wrong end (mirrored).</li>
-<li>F2: One card too few: the face-up cards add up to less than n.</li>
-<li>F3: One card too many: the face-up cards add up to more than n.</li>
+<li>F2: Too little: the face-up cards add up to less than n (for example a card forgotten).</li>
+<li>F3: Too much: the face-up cards add up to more than n.</li>
 </ul>
 </li>
 <li>Link to number n: <code>../?karten-legen=n&amp;via=tutor#karten-legen</code></li>
@@ -177,14 +177,14 @@ becomes bits.</p>
 </ul>
 <h3>Exercise karten-fuer-40</h3>
 <ul>
-<li>Task: Mia wants to make the number 40. What is the smallest number of cards she needs?</li>
+<li>Task: Mia writes the number 40 as a binary number. How many digits (bits) does it have?</li>
 <li>Answer format: type a number</li>
 <li>Solution: 6</li>
-<li>Explanation: 40 = 32 + 8. The row goes from 32 down to 1, which is 6 cards: 101000.</li>
+<li>Explanation: 40 = 32 + 8. The row goes from 32 down to 1, which is 6 digits: 101000.</li>
 <li>The app&#39;s hint: What is the biggest card that fits into 40?</li>
 <li>Typical mistakes and what the app says:<ul>
-<li>5: With five cards you can only get up to 31. For 40 you also need card 32.</li>
-<li>2: Only two cards are face up, 32 and 8. But the face-down cards 16, 4, 2 and 1 in between are part of the row too.</li>
+<li>5: With five digits you can only get up to 31. For 40 you also need card 32.</li>
+<li>2: You only counted the ones, 32 and 8. The zeros for 16, 4, 2 and 1 are digits too.</li>
 </ul>
 </li>
 <li>Link: <a href="../?via=tutor#karten-fuer-40">../?via=tutor#karten-fuer-40</a></li>

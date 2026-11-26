@@ -11,7 +11,7 @@
     <meta name="lernapps-archetype" content="explainer" />
     <link rel="alternate" hreflang="de" href="../../../bits/umrechnen/" />
     <link rel="alternate" hreflang="en" href="../../../en/bits/umrechnen/" />
-    <script type="module" crossorigin src="../../../assets/islands-C7YVt0c5.js"></script>
+    <script type="module" crossorigin src="../../../assets/islands-CVr_SBvR.js"></script>
     <meta name="robots" content="noindex" />
   </head>
   <body>
@@ -35,7 +35,7 @@
 </div>
 </div>
 
-<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">Bus number 27</a></li><li><a href="#idee">Two ways to the binary number</a></li><li><a href="#uebung">Practice</a></li></ol></nav>
+<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">Bus number 27</a></li><li><a href="#idee">Two methods to get the binary number</a></li><li><a href="#uebung">Practice</a></li></ol></nav>
 <section class="explainer-section">
 <h2 id="einstieg">Bus number 27</h2>
 <div class="explainer-block" data-block="einstieg/1" data-block-id="ea02bd3d" data-block-type="text" data-block-order="1">
@@ -44,30 +44,30 @@ bit cards, so that everyone knows.</p>
 <p>On the page before you read bit cards and turned them into a number. Now you go the other way: a number
 becomes bits.</p></div>
 </div>
-<div class="explainer-block" data-block="einstieg/2" data-block-id="c756d1cd" data-block-type="vue-component" data-block-order="2">
+<div class="explainer-block" data-block="einstieg/2" data-block-id="cf6abb4c" data-block-type="vue-component" data-block-order="2">
 <div class="explainer-component" id="karten-legen" data-component="BitKarten" data-exercise data-seeds="[1,2,4,5,6,7,8,12,13,14,15,18,19,20,24,30,36,44,51,58]" data-checked>
 <p class="explainer-task-controls" hidden><span class="explainer-task-number" tabindex="-1" data-template="Task no. {n}">Task no. 1</span> <button type="button" class="explainer-new-task" title="New task"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 12a9 9 0 1 1-2.6-6.4"/><path d="M21 3v6h-6"/></svg><span class="explainer-new-task-text">New task</span></button></p>
 <form class="explainer-component-form" novalidate><div class="explainer-island" hidden><div class="bit-karten" data-v-1c1d921f><p data-v-1c1d921f>Turn over the cards until together they show 22. Then press “Check”.</p><div class="bit-karten-row" data-v-1c1d921f><!--[--><div class="bit-karten-place" data-v-1c1d921f><span class="bit-karten-value" aria-hidden="true" data-v-1c1d921f>16</span><button type="button" class="bit-karten-card" aria-pressed="false" aria-label="Card 16: face down" data-v-1c1d921f><!----></button><span class="bit-karten-bit" aria-hidden="true" data-v-1c1d921f>0</span></div><div class="bit-karten-place" data-v-1c1d921f><span class="bit-karten-value" aria-hidden="true" data-v-1c1d921f>8</span><button type="button" class="bit-karten-card" aria-pressed="false" aria-label="Card 8: face down" data-v-1c1d921f><!----></button><span class="bit-karten-bit" aria-hidden="true" data-v-1c1d921f>0</span></div><div class="bit-karten-place" data-v-1c1d921f><span class="bit-karten-value" aria-hidden="true" data-v-1c1d921f>4</span><button type="button" class="bit-karten-card" aria-pressed="false" aria-label="Card 4: face down" data-v-1c1d921f><!----></button><span class="bit-karten-bit" aria-hidden="true" data-v-1c1d921f>0</span></div><div class="bit-karten-place" data-v-1c1d921f><span class="bit-karten-value" aria-hidden="true" data-v-1c1d921f>2</span><button type="button" class="bit-karten-card" aria-pressed="false" aria-label="Card 2: face down" data-v-1c1d921f><!----></button><span class="bit-karten-bit" aria-hidden="true" data-v-1c1d921f>0</span></div><div class="bit-karten-place" data-v-1c1d921f><span class="bit-karten-value" aria-hidden="true" data-v-1c1d921f>1</span><button type="button" class="bit-karten-card" aria-pressed="false" aria-label="Card 1: face down" data-v-1c1d921f><!----></button><span class="bit-karten-bit" aria-hidden="true" data-v-1c1d921f>0</span></div><!--]--></div><p class="bit-karten-line" aria-live="polite" data-v-1c1d921f>Bit string: 00000</p></div></div><p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p></form>
 <div class="explainer-nojs"><div class="explainer-described"><p class="explainer-task-number">Task no. 1</p><div class="explainer-task"><p>Turn over the cards until together they show 22. Then press “Check”.</p></div><details class="explainer-solution"><summary>Solution</summary><p>10110: 16 + 4 + 2 = 22</p></details></div></div>
 <p class="question-feedback" data-right="Right!" data-wrong="Sorry, that is not right." data-incomplete="Answer first: choose, type or match everything."></p>
-<script type="application/json" class="explainer-component-props">{"task":"Turn over the cards until together they show {n}. Then press “Check”.","cards":5,"min":3,"max":31,"card":"Card {v}","open":"face up","closed":"face down","line":"Bit string: {b}","mistakes":["Your cards show {s}. You laid the cards out from the wrong end: the biggest card is on the left.","Your cards show {s} altogether, which is less than {n}. A card is still missing.","Your cards show {s} altogether, which is more than {n}. One card is too many."]}</script>
+<script type="application/json" class="explainer-component-props">{"task":"Turn over the cards until together they show {n}. Then press “Check”.","cards":5,"min":3,"max":31,"card":"Card {v}","open":"face up","closed":"face down","line":"Bit string: {b}","mistakes":["Your cards show {s}. You laid the cards out from the wrong end: the biggest card is on the left.","Your cards show {s} altogether, which is less than {n}. Check from the biggest card: does it still fit into what is left?","Your cards show {s} altogether, which is more than {n}. Check from the biggest card: does it still fit into what is left?"]}</script>
 </div>
 </div>
 </section>
 <section class="explainer-section">
-<h2 id="idee">Two ways to the binary number</h2>
-<div class="explainer-block" data-block="idee/1" data-block-id="64103f03" data-block-type="text" data-block-order="3">
-<div class="block-text"><p><strong>Way 1: The biggest card first.</strong> Go from left to right. For each card, ask: does it still fit into what is left? Then turn it over and take its value away.</p></div>
+<h2 id="idee">Two methods to get the binary number</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="b5ac4137" data-block-type="text" data-block-order="3">
+<div class="block-text"><p><strong>Method 1: The biggest card first.</strong> Go from left to right. For each card, ask: does it still fit into what is left? Then turn it over and take its value away.</p></div>
 </div>
-<div class="explainer-block" data-block="idee/2" data-block-id="147c9f58" data-block-type="table" data-block-order="4">
-<div class="block-table" role="region" aria-label="Way 1 for the number 27" tabindex="0"><table><caption>Way 1 for the number 27</caption><thead><tr><th scope="col">Card</th><th scope="col">Does it fit?</th><th scope="col">Left</th></tr></thead><tbody><tr><td>16</td><td>yes: 1</td><td>27 − 16 = 11</td></tr><tr><td>8</td><td>yes: 1</td><td>11 − 8 = 3</td></tr><tr><td>4</td><td>no: 0</td><td>3</td></tr><tr><td>2</td><td>yes: 1</td><td>3 − 2 = 1</td></tr><tr><td>1</td><td>yes: 1</td><td>1 − 1 = 0</td></tr></tbody></table></div>
+<div class="explainer-block" data-block="idee/2" data-block-id="0f671a4d" data-block-type="table" data-block-order="4">
+<div class="block-table" role="region" aria-label="Method 1 for the number 27" tabindex="0"><table><caption>Method 1 for the number 27</caption><thead><tr><th scope="col">Card</th><th scope="col">Does it fit?</th><th scope="col">Still to make</th></tr></thead><tbody><tr><td>16</td><td>yes: 1</td><td>27 − 16 = 11</td></tr><tr><td>8</td><td>yes: 1</td><td>11 − 8 = 3</td></tr><tr><td>4</td><td>no: 0</td><td>3</td></tr><tr><td>2</td><td>yes: 1</td><td>3 − 2 = 1</td></tr><tr><td>1</td><td>yes: 1</td><td>1 − 1 = 0</td></tr></tbody></table></div>
 </div>
-<div class="explainer-block" data-block="idee/3" data-block-id="b90fac1a" data-block-type="text" data-block-order="5">
-<div class="block-text"><p><strong>Way 2: Keep dividing by 2.</strong> Divide the number by 2 and write down the remainder. Divide the result by 2 again, until you get 0. The remainders, read <strong>from the bottom up</strong>, are the binary number. This way also works for big numbers, without cards.</p></div>
+<div class="explainer-block" data-block="idee/3" data-block-id="163c0268" data-block-type="text" data-block-order="5">
+<div class="block-text"><p><strong>Method 2: Keep dividing by 2.</strong> Divide the number by 2 and write down the remainder. Divide the result by 2 again, until you get 0. The remainders, read <strong>from the bottom up</strong>, are the binary number. This method also works for big numbers, without cards.</p></div>
 </div>
-<div class="explainer-block" data-block="idee/4" data-block-id="1f1800ac" data-block-type="example" data-block-order="6">
+<div class="explainer-block" data-block="idee/4" data-block-id="ddb6a069" data-block-type="example" data-block-order="6">
 <div class="explainer-box explainer-example">
-<h3 class="explainer-box-title">Way 2 for the number 27</h3>
+<h3 class="explainer-box-title">Method 2 for the number 27</h3>
 <div class="explainer-block" data-block="idee/4/1" data-block-id="dabc6c9b" data-block-type="table" data-block-order="7">
 <div class="block-table" role="region" aria-label="Read the remainders from the bottom up: 11011. Check: 16 + 8 + 2 + 1 = 27." tabindex="0"><table><caption>Read the remainders from the bottom up: 11011. Check: 16 + 8 + 2 + 1 = 27.</caption><thead><tr><th scope="col">Division</th><th scope="col">Remainder</th></tr></thead><tbody><tr><td>27 ÷ 2 = 13</td><td>1</td></tr><tr><td>13 ÷ 2 = 6</td><td>1</td></tr><tr><td>6 ÷ 2 = 3</td><td>0</td></tr><tr><td>3 ÷ 2 = 1</td><td>1</td></tr><tr><td>1 ÷ 2 = 0</td><td>1</td></tr></tbody></table></div>
 </div>
@@ -125,28 +125,28 @@ becomes bits.</p></div>
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"teilen-ordnen","text":"Selin turns 13 into a binary number. Put her steps in the right order.","explanation":"Each step divides the result of the step before. Read from the bottom, the remainders are 1101, which is 13.","links":[],"type":"ordering","items":["13 ÷ 2 = 6 remainder 1","6 ÷ 2 = 3 remainder 0","3 ÷ 2 = 1 remainder 1","1 ÷ 2 = 0 remainder 1"]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/3" data-block-id="0ad1b6eb" data-block-type="number" data-block-order="12">
+<div class="explainer-block" data-block="uebung/3" data-block-id="cc129f33" data-block-type="number" data-block-order="12">
 <div class="explainer-exercise explainer-question" id="karten-fuer-40">
 <p class="explainer-exercise-label">Exercise</p>
 <div class="question" id="frage-karten-fuer-40" data-id="karten-fuer-40" data-type="number">
 <form class="question-form" novalidate>
 <fieldset>
-<legend class="question-text">Mia wants to make the number 40. What is the smallest number of cards she needs?</legend>
+<legend class="question-text">Mia writes the number 40 as a binary number. How many digits (bits) does it have?</legend>
 <label class="question-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-karten-fuer-40">  </label>
 </fieldset>
 <div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
 <div class="question-reveal" hidden>
 <p><strong>Right answer:</strong> 6</p>
-<p class="question-explanation">40 = 32 + 8. The row goes from 32 down to 1, which is 6 cards: 101000.</p>
+<p class="question-explanation">40 = 32 + 8. The row goes from 32 down to 1, which is 6 digits: 101000.</p>
 </div>
 <p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
 </form>
 </div>
 <details class="explainer-solution"><summary>Solution</summary>
 <p><strong>Right answer:</strong> 6</p>
-<p class="question-explanation">40 = 32 + 8. The row goes from 32 down to 1, which is 6 cards: 101000.</p>
+<p class="question-explanation">40 = 32 + 8. The row goes from 32 down to 1, which is 6 digits: 101000.</p>
 </details>
-<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"karten-fuer-40","text":"Mia wants to make the number 40. What is the smallest number of cards she needs?","explanation":"40 = 32 + 8. The row goes from 32 down to 1, which is 6 cards: 101000.","links":[],"hint":"What is the biggest card that fits into 40?","type":"number","answer":6,"tolerance":0,"mistakes":[{"answer":5,"message":"With five cards you can only get up to 31. For 40 you also need card 32."},{"answer":2,"message":"Only two cards are face up, 32 and 8. But the face-down cards 16, 4, 2 and 1 in between are part of the row too."}]},"rendered":{}}</script>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"karten-fuer-40","text":"Mia writes the number 40 as a binary number. How many digits (bits) does it have?","explanation":"40 = 32 + 8. The row goes from 32 down to 1, which is 6 digits: 101000.","links":[],"hint":"What is the biggest card that fits into 40?","type":"number","answer":6,"tolerance":0,"mistakes":[{"answer":5,"message":"With five digits you can only get up to 31. For 40 you also need card 32."},{"answer":2,"message":"You only counted the ones, 32 and 8. The zeros for 16, 4, 2 and 1 are digits too."}]},"rendered":{}}</script>
 </div>
 </div>
 <div class="explainer-block" data-block="uebung/4" data-block-id="551bb52b" data-block-type="single-choice" data-block-order="13">
@@ -183,8 +183,8 @@ becomes bits.</p></div>
 <script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"zwoelf-binaer","text":"Which binary number is the number 12?","explanation":"12 = 8 + 4, so cards 8 and 4 are face up: 1100.","links":[],"type":"single-choice","options":[{"text":"1100","correct":true,"info":"8 + 4 = 12. Cards 8 and 4 are face up, 2 and 1 face down."},{"text":"0011","correct":false,"info":"That is 1100 the wrong way round. 0011 is 2 + 1 = 3."},{"text":"1010","correct":false,"info":"1010 is 8 + 2 = 10."}]},"rendered":{}}</script>
 </div>
 </div>
-<div class="explainer-block" data-block="uebung/5" data-block-id="ce072ac0" data-block-type="text" data-block-order="14">
-<div class="block-text"><p>Now you can turn any number into bits. For 40 you need six cards. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.</p></div>
+<div class="explainer-block" data-block="uebung/5" data-block-id="065e6e28" data-block-type="text" data-block-order="14">
+<div class="block-text"><p>Now you can turn any number into bits. For 40 you need six digits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.</p></div>
 </div>
 </section>
 <p class="explainer-feedback-invite" hidden><span>Found a mistake or have an idea for this app?</span> <button type="button" class="explainer-feedback-switch">Give feedback on “Representing and encoding data”</button></p>
@@ -225,7 +225,7 @@ becomes bits.</p></div>
 <span class="explainer-feedback-local">Kept in this browser only</span>
 <button type="button" class="explainer-feedback-off">End</button>
 </div>
-<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-daten-codieren","app":"Representing and encoding data","root":"../../../en/","repository":"lernapps/informatik-daten-codieren","revision":"2060b6a","page":{"title":"Numbers in bits","order":6}}</script>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-daten-codieren","app":"Representing and encoding data","root":"../../../en/","repository":"lernapps/informatik-daten-codieren","revision":"2d27c40","page":{"title":"Numbers in bits","order":6}}</script>
 </aside>
 </template>
 <nav class="explainer-pager" aria-label="Page through"><a rel="prev" href="../../../en/bits/binaersystem/">Back: The bit cards</a><a rel="next" href="../../../en/bits/bit-und-byte/">Next: Bits and bytes</a></nav>

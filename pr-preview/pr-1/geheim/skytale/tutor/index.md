@@ -58,8 +58,8 @@ Bild: Ein Holzstab. Ein heller Streifen ist schräg um ihn gewickelt. Auf dem St
 
 ### Verfahren und Schlüssel
 
-Ohne Stab geht es auch mit Kästchen. Die Dicke des Stabs sagt, wie viele Buchstaben in eine Zeile passen.
-Jona schreibt ZELT AM SEE ohne Leerzeichen in Zeilen mit je **3** Buchstaben. Dann liest er **Spalte für
+Ohne Stab geht es auch mit Kästchen, nach derselben Idee: Die Buchstaben werden nach einer festen Regel
+vertauscht. Jona schreibt ZELT AM SEE ohne Leerzeichen in Zeilen mit je **3** Buchstaben. Dann liest er **Spalte für
 Spalte** von oben nach unten.
 
 Jonas Kästchen. Spalte für Spalte gelesen: ZTS EAE LME, also ZTSEAELME.:
@@ -68,7 +68,7 @@ Jonas Kästchen. Spalte für Spalte gelesen: ZTS EAE LME, also ZTSEAELME.:
 - T | A | M
 - S | E | E
 
-- **Verschlüsselung**: Beim Verschlüsseln macht man aus dem lesbaren **Klartext** mit einem Verfahren und einem geheimen Schlüssel einen **Geheimtext**. Nur wer den Schlüssel kennt, kann ihn wieder entschlüsseln.
+- **Verschlüsselung**: Beim Verschlüsseln macht man aus dem lesbaren **Klartext** mit einem Verfahren und einem geheimen Schlüssel einen **Geheimtext**. Nur wer den Schlüssel kennt, soll ihn wieder lesen können.
 
 **Merke: Merke**
 
@@ -123,12 +123,12 @@ Jetzt kannst du mit einem Verfahren und einem Schlüssel ver- und entschlüsseln
 
 ### Aufgabe entschluesseln
 
-- Aufgabe: Selin bekommt den Geheimtext BTEOULOMF. Der Schlüssel ist 3. Was ist der Klartext?
+- Aufgabe: Selin bekommt den Geheimtext TFMCRFSHEUES, 12 Buchstaben. Der Schlüssel ist 3 Buchstaben pro Zeile. Was ist der Klartext?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ BOOTUMELF – Selin schreibt BTE, OUL und OMF als Spalten in die Kästchen. Die Zeilen sind BOO, TUM, ELF: Boot um elf.
-  - ✗ BTEOULOMF – Das ist der Geheimtext selbst. Zum Entschlüsseln schreibst du die Buchstaben wieder in Spalten.
-  - ✗ FMOLUOETB – Das ist der Geheimtext rückwärts gelesen. Die Skytale vertauscht die Buchstaben anders.
-- Lösung: BOOTUMELF
+  - ✓ TREFFUMSECHS – 12 Buchstaben in 3 Spalten sind 4 Zeilen. Selin schreibt TFMC, RFSH und EUES als Spalten. Die Zeilen sind TRE, FFU, MSE, CHS: Treff um sechs.
+  - ✗ TCSUFRHEMFES – Du hast den Geheimtext noch einmal verschlüsselt, also in Zeilen geschrieben. Zum Entschlüsseln schreibst du ihn in Spalten.
+  - ✗ SEUEHSFRCMFT – Das ist der Geheimtext rückwärts gelesen. Die Skytale vertauscht die Buchstaben anders.
+- Lösung: TREFFUMSECHS
 - Erklärung: Zum Entschlüsseln schreibt man den Geheimtext Spalte für Spalte in Kästchen mit 3 Spalten und liest die Zeilen.
 - Link: [../?via=tutor#entschluesseln](../?via=tutor#entschluesseln)

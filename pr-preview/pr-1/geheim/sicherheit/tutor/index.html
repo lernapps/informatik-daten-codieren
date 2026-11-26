@@ -49,8 +49,8 @@
 <p>Verschlüsselungsverfahren vergleichen und beurteilen, wie sicher sie sind: Wie viele Schlüssel müsste jemand ausprobieren?</p>
 <h3>Die 6c probiert es</h3>
 <p>Die 6c hat ein Wort der 6b abgefangen. Sie weiß, dass die 6b mit der Caesar-Scheibe verschlüsselt. Nur den
-Schlüssel kennt sie nicht. Spiel die 6c: Drehe die Scheibe Schritt für Schritt, bis innen ein Wort
-entsteht, das du außen lesen kannst. Tippe dann den Schlüssel ein und drücke „Prüfen“.</p>
+Schlüssel kennt sie nicht. Spiel die 6c: Drehe die Scheibe Schritt für Schritt, bis die Buchstaben
+außen neben den Geheimbuchstaben innen ein Wort ergeben. Tippe dann den Schlüssel ein und drücke „Prüfen“.</p>
 <p>Auf der Seite davor hast du mit Schlüssel ver- und entschlüsselt. Auf dieser Seite beurteilst du, wie
 sicher ein Verfahren ist.</p>
 <ul>
@@ -62,18 +62,20 @@ Wer alle 25 ausprobiert, findet die Nachricht sicher, auch ohne den Schlüssel. 
 Buchstaben gibt es noch weniger sinnvolle Schlüssel.</p>
 <p>Anders ist ein <strong>gemischtes Alphabet</strong>: Jeder Buchstabe bekommt irgendeinen anderen, zum Beispiel A wird
 Q, B wird M und so weiter. Dann ist der Schlüssel die ganze Liste. Davon gibt es so viele, dass die Zahl
-27 Stellen hat.</p>
+27 Stellen hat. Das ist viel sicherer als Caesar, aber trotzdem nicht sicher: Weil jeder Buchstabe immer
+durch denselben ersetzt wird, verraten zum Beispiel häufige Buchstaben wie E etwas über den Text.</p>
 <p>Wie viele Schlüssel jemand ausprobieren müsste:</p>
 <ul>
 <li>Verfahren | Schlüssel</li>
-<li>Morsecode | keinen, jeder kennt die Tabelle</li>
+<li>Morsecode (keine Verschlüsselung) | keinen, jeder kennt die Tabelle</li>
 <li>Caesar | 25</li>
 <li>gemischtes Alphabet | eine Zahl mit 27 Stellen</li>
 </ul>
 <p><strong>Merke: Merke</strong></p>
-<p>Sicher ist ein Verfahren nur, wenn es <strong>so viele Schlüssel</strong> gibt, dass niemand alle ausprobieren
-kann, und wenn der <strong>Schlüssel geheim</strong> bleibt. Das Verfahren selbst darf jeder kennen. So ist es auch
-heute: Computer verschlüsseln mit riesigen Schlüsseln. Du schützt dich, indem du dein Passwort lang
+<p>Ein sicheres Verfahren braucht <strong>so viele Schlüssel</strong>, dass niemand alle ausprobieren kann, und der
+<strong>Schlüssel</strong> muss <strong>geheim</strong> bleiben. Das ist nötig, aber noch nicht genug: Das Verfahren darf auch
+keine andere Lücke haben. Das Verfahren selbst darf jeder kennen. Heute verschlüsseln Computer mit
+Verfahren, die Fachleute lange geprüft haben, und mit riesigen Schlüsseln. Du schützt dich, indem du dein Passwort lang
 machst und es niemandem verrätst.</p>
 <h3>Übung</h3>
 <ul>
@@ -191,8 +193,8 @@ dargestellt. Und ein Computer speichert jede dieser Formen am Ende mit 0 und 1.<
 <ul>
 <li>Aufgabe: Ordne die Verfahren nach ihrer Sicherheit, das unsicherste zuerst.</li>
 <li>Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)</li>
-<li>Lösung: 1. Morsecode, 2. Caesar mit Schlüssel, 3. gemischtes Alphabet</li>
-<li>Erklärung: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann.</li>
+<li>Lösung: 1. Morsecode (keine Verschlüsselung), 2. Caesar mit Schlüssel, 3. gemischtes Alphabet</li>
+<li>Erklärung: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann. Ganz sicher ist aber auch es nicht.</li>
 <li>Link: <a href="../?via=tutor#verfahren-ordnen">../?via=tutor#verfahren-ordnen</a></li>
 </ul>
 <h3>Aufgabe geheimes-verfahren</h3>
@@ -200,12 +202,12 @@ dargestellt. Und ein Computer speichert jede dieser Formen am Ende mit 0 und 1.<
 <li>Aufgabe: Ein Verfahren ist sicher, wenn niemand weiß, wie es funktioniert.</li>
 <li>Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen</li>
 <li>Lösung: Die Aussage stimmt nicht.</li>
-<li>Erklärung: Die 6c wusste, dass die 6b Caesar benutzt, und hat trotzdem probiert. Sicher macht ein Verfahren erst, dass es sehr viele Schlüssel gibt und der Schlüssel geheim bleibt.</li>
+<li>Erklärung: Die 6c wusste, dass die 6b Caesar benutzt, und hat trotzdem probiert. Ob ein Verfahren sicher ist, hängt nicht davon ab, ob man es kennt. Es braucht sehr viele Schlüssel, und der Schlüssel muss geheim bleiben.</li>
 <li>Link: <a href="../?via=tutor#geheimes-verfahren">../?via=tutor#geheimes-verfahren</a></li>
 </ul>
 <h3>Aufgabe am-besten-schuetzen</h3>
 <ul>
-<li>Aufgabe: Wie schützt die 6b ihre nächste Nachricht am besten?</li>
+<li>Aufgabe: Welcher dieser drei Wege schützt die nächste Nachricht der 6b am besten?</li>
 <li>Antwortformat: eine Antwort wählen</li>
 <li>Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):<ul>
 <li>✓ Mit einem gemischten Alphabet, dessen Liste sie nur persönlich weitergibt – Es gibt sehr viele Schlüssel, und der Schlüssel kommt nicht in falsche Hände.</li>
@@ -214,14 +216,14 @@ dargestellt. Und ein Computer speichert jede dieser Formen am Ende mit 0 und 1.<
 </ul>
 </li>
 <li>Lösung: Mit einem gemischten Alphabet, dessen Liste sie nur persönlich weitergibt</li>
-<li>Erklärung: Viele mögliche Schlüssel und ein geheimer Schlüssel machen eine Nachricht sicher.</li>
+<li>Erklärung: Von diesen drei Wegen ist das der beste. Viele mögliche Schlüssel und ein geheimer Schlüssel sind nötig, damit eine Nachricht sicher ist.</li>
 <li>Link: <a href="../?via=tutor#am-besten-schuetzen">../?via=tutor#am-besten-schuetzen</a></li>
 </ul>
 <h3>Aufgabe verfahren-schluessel</h3>
 <ul>
 <li>Aufgabe: Wie viele Schlüssel hat das Verfahren? Ordne zu.</li>
 <li>Antwortformat: jedem Eintrag links den passenden rechts zuordnen</li>
-<li>Lösung: Caesar – 25; gemischtes Alphabet – eine Zahl mit 27 Stellen; Morsecode – keinen, er ist nicht geheim</li>
+<li>Lösung: Caesar – 25; gemischtes Alphabet – eine Zahl mit 27 Stellen; Morsecode (keine Verschlüsselung) – keinen, er ist nicht geheim</li>
 <li>Erklärung: Je mehr Schlüssel es gibt, desto länger müsste jemand probieren.</li>
 <li>Link: <a href="../?via=tutor#verfahren-schluessel">../?via=tutor#verfahren-schluessel</a></li>
 </ul>

@@ -51,21 +51,21 @@ becomes bits.
 
 - Exercise `karten-legen` (below)
 
-### Two ways to the binary number
+### Two methods to get the binary number
 
-**Way 1: The biggest card first.** Go from left to right. For each card, ask: does it still fit into what is left? Then turn it over and take its value away.
+**Method 1: The biggest card first.** Go from left to right. For each card, ask: does it still fit into what is left? Then turn it over and take its value away.
 
-Way 1 for the number 27:
-- Card | Does it fit? | Left
+Method 1 for the number 27:
+- Card | Does it fit? | Still to make
 - 16 | yes: 1 | 27 − 16 = 11
 - 8 | yes: 1 | 11 − 8 = 3
 - 4 | no: 0 | 3
 - 2 | yes: 1 | 3 − 2 = 1
 - 1 | yes: 1 | 1 − 1 = 0
 
-**Way 2: Keep dividing by 2.** Divide the number by 2 and write down the remainder. Divide the result by 2 again, until you get 0. The remainders, read **from the bottom up**, are the binary number. This way also works for big numbers, without cards.
+**Method 2: Keep dividing by 2.** Divide the number by 2 and write down the remainder. Divide the result by 2 again, until you get 0. The remainders, read **from the bottom up**, are the binary number. This method also works for big numbers, without cards.
 
-**Example: Way 2 for the number 27**
+**Example: Method 2 for the number 27**
 
 Read the remainders from the bottom up: 11011. Check: 16 + 8 + 2 + 1 = 27.:
 - Division | Remainder
@@ -89,7 +89,7 @@ When you divide, the remainder for card 1 comes out first. That is why you read 
 
 - Exercise `zwoelf-binaer` (below)
 
-Now you can turn any number into bits. For 40 you need six cards. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.
+Now you can turn any number into bits. For 40 you need six digits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.
 
 ### Exercise karten-legen
 
@@ -99,8 +99,8 @@ Now you can turn any number into bits. For 40 you need six cards. On the next pa
 - What counts as right: Right if the values of the face-up cards add up to n.
 - Typical mistakes (the app's message fits one of them):
   - F1: The right bits laid out from the wrong end (mirrored).
-  - F2: One card too few: the face-up cards add up to less than n.
-  - F3: One card too many: the face-up cards add up to more than n.
+  - F2: Too little: the face-up cards add up to less than n (for example a card forgotten).
+  - F3: Too much: the face-up cards add up to more than n.
 - Link to number n: `../?karten-legen=n&via=tutor#karten-legen`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there.
 
@@ -175,14 +175,14 @@ No. | e.dez | e.teilen | e.bin | e.karten | Solution | F1
 
 ### Exercise karten-fuer-40
 
-- Task: Mia wants to make the number 40. What is the smallest number of cards she needs?
+- Task: Mia writes the number 40 as a binary number. How many digits (bits) does it have?
 - Answer format: type a number
 - Solution: 6
-- Explanation: 40 = 32 + 8. The row goes from 32 down to 1, which is 6 cards: 101000.
+- Explanation: 40 = 32 + 8. The row goes from 32 down to 1, which is 6 digits: 101000.
 - The app's hint: What is the biggest card that fits into 40?
 - Typical mistakes and what the app says:
-  - 5: With five cards you can only get up to 31. For 40 you also need card 32.
-  - 2: Only two cards are face up, 32 and 8. But the face-down cards 16, 4, 2 and 1 in between are part of the row too.
+  - 5: With five digits you can only get up to 31. For 40 you also need card 32.
+  - 2: You only counted the ones, 32 and 8. The zeros for 16, 4, 2 and 1 are digits too.
 - Link: [../?via=tutor#karten-fuer-40](../?via=tutor#karten-fuer-40)
 
 ### Exercise zwoelf-binaer
