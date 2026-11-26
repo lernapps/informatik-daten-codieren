@@ -147,12 +147,12 @@ export const about = {
       en: "The right bits laid out from the wrong end (mirrored).",
     },
     {
-      de: "Eine Karte zu wenig: die offenen Karten ergeben weniger als n.",
-      en: "One card too few: the face-up cards add up to less than n.",
+      de: "Zu wenig: Die offenen Karten ergeben weniger als n (zum Beispiel eine Karte vergessen).",
+      en: "Too little: the face-up cards add up to less than n (for example a card forgotten).",
     },
     {
-      de: "Eine Karte zu viel: die offenen Karten ergeben mehr als n.",
-      en: "One card too many: the face-up cards add up to more than n.",
+      de: "Zu viel: Die offenen Karten ergeben mehr als n.",
+      en: "Too much: the face-up cards add up to more than n.",
     },
   ],
 };

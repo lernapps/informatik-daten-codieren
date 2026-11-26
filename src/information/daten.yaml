@@ -57,8 +57,8 @@ blocks:
           en: If you only have the note, you know for sure what it is about.
         answer: false
         explanation:
-          de: "Ohne Zusammenhang kann „8:00“ eine Uhrzeit oder ein Preis sein, und „6b“ eine Klasse oder ein Platz im Kino."
-          en: "Without context, “8:00” could be a time or a price, and “6b” could be a class or a seat in the cinema."
+          de: "Ohne Zusammenhang kann „8:00“ eine Uhrzeit oder ein Spielstand sein, und „6b“ eine Klasse oder ein Platz im Kino."
+          en: "Without context, “8:00” could be a time or a score, and “6b” could be a class or a seat in the cinema."
   - type: section
     id: idee
     title:

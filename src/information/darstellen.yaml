@@ -107,8 +107,8 @@ blocks:
         licence: CC-BY-4.0
       - type: text
         text:
-          de: "Selins Satz: „Die meisten Kinder, nämlich 11, wollen an den Seeberg. Darum fahren wir dorthin.“"
-          en: "Selin's sentence: “Most children, 11 of them, want to go to Seeberg. So that is where we are going.”"
+          de: "Selins Satz: „Der Seeberg hat die meisten Stimmen bekommen, 11 von 26. Darum fahren wir dorthin.“"
+          en: "Selin's sentence: “Seeberg got the most votes, 11 out of 26. So that is where we are going.”"
       - type: note
         title:
           de: Merke

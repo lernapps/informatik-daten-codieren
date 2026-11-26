@@ -16,14 +16,14 @@ blocks:
       - type: text
         text:
           de: |
-            Am Seeberg teilt Frau Berg die Zimmer ein. Die 6b hat drei Zimmer: 13, 22 und 9. Frau Berg zeichnet es
-            so auf, dass alle schnell ihr Zimmer finden.
+            Am Seeberg teilt Frau Berg die Zimmer ein. Sie zeichnet einen Plan, damit alle schnell ihr Zimmer finden.
+            Hier siehst du einen Ausschnitt: drei Zimmer, 13, 22 und 9, mit je zwei Kindern.
 
             Auf der Seite davor hast du Tabelle, Diagramm und Text kennengelernt. Auf dieser Seite lernst du eine
             Form für Daten, die ineinander stecken: die Klasse hat Zimmer, die Zimmer haben Kinder.
           en: |
-            At Seeberg, Ms Berg shares out the rooms. Class 6b has three rooms: 13, 22 and 9. Ms Berg draws a plan so
-            that everyone can find their room quickly.
+            At Seeberg, Ms Berg shares out the rooms. She draws a plan so that everyone can find their room quickly.
+            Here you can see part of it: three rooms, 13, 22 and 9, with two children each.
 
             On the page before you learnt about tables, charts and text. On this page you will learn a form for data
             that fits inside other data: the class has rooms, and the rooms have children.
@@ -95,8 +95,8 @@ blocks:
           de: Baum
           en: tree
         explanation:
-          de: Ein Baum zeigt Daten, die ineinander stecken. Er besteht aus Knoten und Kanten. Ganz oben steht ein Knoten, die Wurzel. Die Knoten ganz unten heißen Blätter.
-          en: A tree shows data that fits inside other data. It is made of nodes and edges. At the very top there is one node, the root. The nodes at the very bottom are called leaves.
+          de: Ein Baum zeigt Daten, die ineinander stecken. Er besteht aus Knoten und Kanten. Ganz oben steht ein Knoten, die Wurzel. Knoten ohne Knoten darunter heißen Blätter.
+          en: A tree shows data that fits inside other data. It is made of nodes and edges. At the very top there is one node, the root. Nodes with no nodes below them are called leaves.
       - type: note
         title:
           de: Merke
@@ -174,8 +174,8 @@ blocks:
               de: die Linie von 22 zu Mia
               en: the line from 22 to Mia
         distractors:
-          - de: die ganze Klasse auf der Klassenfahrt
-            en: the whole class on the trip
+          - de: ein Zimmerschlüssel
+            en: a room key
         explanation:
           de: Die Wurzel ist der oberste Knoten, ein Blatt hat keinen Knoten darunter, und eine Kante verbindet zwei Knoten.
           en: The root is the top node, a leaf has no node below it, and an edge connects two nodes.
@@ -218,7 +218,7 @@ blocks:
           de: Jeder Knoten außer der Wurzel hat genau eine Kante nach oben.
           en: Every node except the root has exactly one edge going up.
         explanation:
-          de: "3 Kanten von 6b zu den Zimmern und 6 Kanten von den Zimmern zu den Kindern: 9. Das ist immer ein Knoten weniger, als der Baum hat."
+          de: "3 Kanten von 6b zu den Zimmern und 6 Kanten von den Zimmern zu den Kindern: 9. Ein Baum hat immer eine Kante weniger als Knoten."
           en: "3 edges from 6b to the rooms and 6 edges from the rooms to the children: 9. That is always one less than the number of nodes."
       - type: true-false
         id: wurzel-unten

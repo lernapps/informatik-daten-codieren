@@ -17,15 +17,15 @@ blocks:
         text:
           de: |
             Die 6c hat ein Wort der 6b abgefangen. Sie weiß, dass die 6b mit der Caesar-Scheibe verschlüsselt. Nur den
-            Schlüssel kennt sie nicht. Spiel die 6c: Drehe die Scheibe Schritt für Schritt, bis innen ein Wort
-            entsteht, das du außen lesen kannst. Tippe dann den Schlüssel ein und drücke „Prüfen“.
+            Schlüssel kennt sie nicht. Spiel die 6c: Drehe die Scheibe Schritt für Schritt, bis die Buchstaben
+            außen neben den Geheimbuchstaben innen ein Wort ergeben. Tippe dann den Schlüssel ein und drücke „Prüfen“.
 
             Auf der Seite davor hast du mit Schlüssel ver- und entschlüsselt. Auf dieser Seite beurteilst du, wie
             sicher ein Verfahren ist.
           en: |
             Class 6c has intercepted a word from 6b. They know that 6b encrypts with the Caesar disc. They just don't
-            know the key. Play class 6c: turn the disc step by step until the letters on the inside give a word you
-            can read on the outside. Then type in the key and press “Check”.
+            know the key. Play class 6c: turn the disc step by step until the letters on the outside, next to the
+            secret letters on the inside, make a word. Then type in the key and press “Check”.
 
             On the page before you encrypted and decrypted with a key. On this page you judge how secure a method is.
       - type: vue-component
@@ -79,14 +79,17 @@ blocks:
 
             Anders ist ein **gemischtes Alphabet**: Jeder Buchstabe bekommt irgendeinen anderen, zum Beispiel A wird
             Q, B wird M und so weiter. Dann ist der Schlüssel die ganze Liste. Davon gibt es so viele, dass die Zahl
-            27 Stellen hat.
+            27 Stellen hat. Das ist viel sicherer als Caesar, aber trotzdem nicht sicher: Weil jeder Buchstabe immer
+            durch denselben ersetzt wird, verraten zum Beispiel häufige Buchstaben wie E etwas über den Text.
           en: |
             With Caesar there are only **25** keys, from 1 to 25. The key 26 would be like 0: nothing changes.
             Anyone who tries all 25 will definitely find the message, even without the key. With the scytale and 9
             letters there are even fewer sensible keys.
 
             A **mixed alphabet** is different: each letter gets any other letter, for example A becomes Q, B becomes M
-            and so on. Then the key is the whole list. There are so many of these that the number has 27 digits.
+            and so on. Then the key is the whole list. There are so many of these that the number has 27 digits. That is much more
+            secure than Caesar, but still not secure: because each letter is always replaced by the same one, common
+            letters such as E give away something about the text.
       - type: table
         caption:
           de: Wie viele Schlüssel jemand ausprobieren müsste
@@ -98,7 +101,7 @@ blocks:
             en: Keys
         rows:
           - [
-              { de: Morsecode, en: Morse code },
+              { de: Morsecode (keine Verschlüsselung), en: Morse code (not encryption) },
               { de: "keinen, jeder kennt die Tabelle", en: "none, everyone knows the table" },
             ]
           - [{ de: Caesar, en: Caesar }, { de: "25", en: "25" }]
@@ -114,14 +117,16 @@ blocks:
           - type: text
             text:
               de: |
-                Sicher ist ein Verfahren nur, wenn es **so viele Schlüssel** gibt, dass niemand alle ausprobieren
-                kann, und wenn der **Schlüssel geheim** bleibt. Das Verfahren selbst darf jeder kennen. So ist es auch
-                heute: Computer verschlüsseln mit riesigen Schlüsseln. Du schützt dich, indem du dein Passwort lang
+                Ein sicheres Verfahren braucht **so viele Schlüssel**, dass niemand alle ausprobieren kann, und der
+                **Schlüssel** muss **geheim** bleiben. Das ist nötig, aber noch nicht genug: Das Verfahren darf auch
+                keine andere Lücke haben. Das Verfahren selbst darf jeder kennen. Heute verschlüsseln Computer mit
+                Verfahren, die Fachleute lange geprüft haben, und mit riesigen Schlüsseln. Du schützt dich, indem du dein Passwort lang
                 machst und es niemandem verrätst.
               en: |
-                A method is only secure if there are **so many keys** that nobody can try them all, and if the **key
-                stays secret**. Everyone may know the method itself. It is the same today: computers encrypt with huge
-                keys. You protect yourself by making your password long and never telling it to anyone.
+                A secure method needs **so many keys** that nobody can try them all, and the **key** has to **stay
+                secret**. That is needed, but not enough: the method must not have any other weak spot either. Everyone
+                may know the method itself. Today computers encrypt with methods that experts have checked for a long
+                time, and with huge keys. You protect yourself by making your password long and never telling it to anyone.
   - type: section
     id: uebung
     title:
@@ -153,15 +158,15 @@ blocks:
           de: Ordne die Verfahren nach ihrer Sicherheit, das unsicherste zuerst.
           en: Put the methods in order of how secure they are, the least secure first.
         items:
-          - de: Morsecode
-            en: Morse code
+          - de: Morsecode (keine Verschlüsselung)
+            en: Morse code (not encryption)
           - de: Caesar mit Schlüssel
             en: Caesar with a key
           - de: gemischtes Alphabet
             en: mixed alphabet
         explanation:
-          de: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann.
-          en: Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all.
+          de: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann. Ganz sicher ist aber auch es nicht.
+          en: Anyone can read Morse code. Caesar has 25 keys. The mixed alphabet has so many that nobody can try them all. But even it is not completely secure.
       - type: true-false
         id: geheimes-verfahren
         text:
@@ -169,13 +174,13 @@ blocks:
           en: A method is secure if nobody knows how it works.
         answer: false
         explanation:
-          de: Die 6c wusste, dass die 6b Caesar benutzt, und hat trotzdem probiert. Sicher macht ein Verfahren erst, dass es sehr viele Schlüssel gibt und der Schlüssel geheim bleibt.
-          en: Class 6c knew that 6b uses Caesar and still had a go. What makes a method secure is that there are very many keys and the key stays secret.
+          de: Die 6c wusste, dass die 6b Caesar benutzt, und hat trotzdem probiert. Ob ein Verfahren sicher ist, hängt nicht davon ab, ob man es kennt. Es braucht sehr viele Schlüssel, und der Schlüssel muss geheim bleiben.
+          en: Class 6c knew that 6b uses Caesar and still had a go. Whether a method is secure does not depend on whether people know it. It needs very many keys, and the key has to stay secret.
       - type: single-choice
         id: am-besten-schuetzen
         text:
-          de: Wie schützt die 6b ihre nächste Nachricht am besten?
-          en: How can class 6b best protect its next message?
+          de: Welcher dieser drei Wege schützt die nächste Nachricht der 6b am besten?
+          en: Which of these three ways protects class 6b's next message best?
         options:
           - text:
               de: Mit einem gemischten Alphabet, dessen Liste sie nur persönlich weitergibt
@@ -199,8 +204,8 @@ blocks:
               de: Wer den Zettel findet, hat dann auch den Schlüssel. Der Schlüssel muss getrennt und geheim bleiben.
               en: Whoever finds the note then also has the key. The key must be kept separate and secret.
         explanation:
-          de: Viele mögliche Schlüssel und ein geheimer Schlüssel machen eine Nachricht sicher.
-          en: Many possible keys and a secret key make a message secure.
+          de: Von diesen drei Wegen ist das der beste. Viele mögliche Schlüssel und ein geheimer Schlüssel sind nötig, damit eine Nachricht sicher ist.
+          en: Of these three ways, this is the best. Many possible keys and a secret key are needed for a message to be secure.
       - type: matching
         id: verfahren-schluessel
         text:
@@ -220,8 +225,8 @@ blocks:
               de: eine Zahl mit 27 Stellen
               en: a number with 27 digits
           - left:
-              de: Morsecode
-              en: Morse code
+              de: Morsecode (keine Verschlüsselung)
+              en: Morse code (not encryption)
             right:
               de: keinen, er ist nicht geheim
               en: none, it is not secret

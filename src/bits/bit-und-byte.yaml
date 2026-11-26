@@ -94,13 +94,13 @@ blocks:
               { de: "eine Zahl von 0 bis 255", en: "a number from 0 to 255" },
             ]
           - [
-              { de: "1 Kilobyte (KB)", en: "1 kilobyte (KB)" },
+              { de: "1 Kilobyte (kB)", en: "1 kilobyte (kB)" },
               { de: "1000 Byte", en: "1000 bytes" },
-              { de: "eine kurze Nachricht", en: "a short message" },
+              { de: "eine halbe Seite Text", en: "half a page of text" },
             ]
           - [
               { de: "1 Megabyte (MB)", en: "1 megabyte (MB)" },
-              { de: "1000 KB", en: "1000 KB" },
+              { de: "1000 kB", en: "1000 kB" },
               { de: "ein Foto hat etwa 3 MB", en: "a photo is about 3 MB" },
             ]
           - [
@@ -152,10 +152,10 @@ blocks:
           mistakes:
             - de: "Deine Karten zeigen {s}. Du hast von der falschen Seite gelegt: Die Karte 128 liegt links."
               en: "Your cards show {s}. You laid them out from the wrong end: card 128 is on the left."
-            - de: "Deine Karten zeigen zusammen {s}, das ist weniger als {n}. Es fehlt noch eine Karte."
-              en: "Your cards show {s} altogether, which is less than {n}. A card is still missing."
-            - de: "Deine Karten zeigen zusammen {s}, das ist mehr als {n}. Eine Karte ist zu viel."
-              en: "Your cards show {s} altogether, which is more than {n}. One card is too many."
+            - de: "Deine Karten zeigen zusammen {s}, das ist weniger als {n}. Prüfe von der größten Karte an: Passt sie noch in den Rest?"
+              en: "Your cards show {s} altogether, which is less than {n}. Check from the biggest card: does it still fit into what is left?"
+            - de: "Deine Karten zeigen zusammen {s}, das ist mehr als {n}. Prüfe von der größten Karte an: Passt sie noch in den Rest?"
+              en: "Your cards show {s} altogether, which is more than {n}. Check from the biggest card: does it still fit into what is left?"
         examples:
           accepted:
             - { answer: [1, 0, 1, 0, 1, 1, 0, 1], seed: 1 }
@@ -200,23 +200,23 @@ blocks:
           K: { int: [2, 9] }
         task:
           text:
-            de: "Ein kleines Bild hat {{K}} KB. Wie viele Byte sind das?"
-            en: "A small picture is {{K}} KB. How many bytes is that?"
+            de: "Ein kleines Bild hat {{K}} kB. Wie viele Byte sind das?"
+            en: "A small picture is {{K}} kB. How many bytes is that?"
         answer:
           value: "1000 * K"
           compare: { number: { format: integer, unit: { de: Byte, en: bytes } } }
         mistakes:
           - value: "1024 * K"
             message:
-              de: "Hier gilt wie bei Kilogramm: 1 KB = 1000 Byte."
-              en: "Here it works like kilograms: 1 KB = 1000 bytes."
+              de: "Hier gilt wie bei Kilogramm: 1 kB = 1000 Byte."
+              en: "Here it works like kilograms: 1 kB = 1000 bytes."
           - value: "8 * K"
             message:
               de: Mal 8 rechnest du von Byte in Bit. Von Kilobyte in Byte ist es mal 1000.
               en: You multiply by 8 to go from bytes to bits. From kilobytes to bytes it is times 1000.
         steps:
-          - de: "1 KB = 1000 Byte, also {{K}} KB = {{K}} · 1000 Byte = {{answer}} Byte."
-            en: "1 KB = 1000 bytes, so {{K}} KB = {{K}} × 1000 bytes = {{answer}} bytes."
+          - de: "1 kB = 1000 Byte, also {{K}} kB = {{K}} · 1000 Byte = {{answer}} Byte."
+            en: "1 kB = 1000 bytes, so {{K}} kB = {{K}} × 1000 bytes = {{answer}} bytes."
       - type: ordering
         id: einheiten-ordnen
         text:
@@ -243,11 +243,11 @@ blocks:
           en: Roughly how big is it? Match them.
         pairs:
           - left:
-              de: eine kurze Nachricht an Jona
-              en: a short message to Jona
+              de: eine Seite Text für die Schülerzeitung
+              en: a page of text for the school magazine
             right:
-              de: 1 KB
-              en: 1 KB
+              de: 2 kB
+              en: 2 kB
           - left:
               de: ein Foto vom Seeberg
               en: a photo of Seeberg

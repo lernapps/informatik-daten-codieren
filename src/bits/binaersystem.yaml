@@ -104,14 +104,16 @@ blocks:
                 Jede Karte ist doppelt so viel wert wie die Karte rechts neben ihr. Die größte Karte liegt links.
                 Darum zählt es, **wo** eine 1 steht, nicht nur, wie viele Einsen es sind.
 
-                Das kennst du von Einern, Zehnern und Hundertern: Dort ist jede Stelle zehnmal so viel wert
-                (**Dezimalsystem**). Bei den Karten ist jede Stelle doppelt so viel wert (**Binärsystem**).
+                Den Wert einer Stelle nennt man **Stellenwert**. Das kennst du von Einern, Zehnern und Hundertern:
+                Dort ist jede Stelle zehnmal so viel wert (**Dezimalsystem**). Bei den Karten ist jede Stelle doppelt
+                so viel wert (**Binärsystem**). Nullen ganz vorne ändern nichts: 00101 ist dieselbe Zahl wie 101.
               en: |
                 Each card is worth twice as much as the card to its right. The biggest card is on the left. That is why
                 it matters **where** a 1 is, not just how many ones there are.
 
-                You know this from ones, tens and hundreds: there, each place is worth ten times as much (**decimal
-                system**). With the cards, each place is worth twice as much (**binary system**).
+                The value of a place is called its **place value**. You know this from ones, tens and hundreds: there,
+                each place is worth ten times as much (**decimal system**). With the cards, each place is worth twice
+                as much (**binary system**). Zeros at the very front change nothing: 00101 is the same number as 101.
       - type: single-choice
         id: naechste-karte
         text:

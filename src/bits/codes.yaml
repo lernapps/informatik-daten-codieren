@@ -189,5 +189,5 @@ blocks:
           en: Anyone can know Morse code, the traffic lights and the barcode. A code is mainly there to help pass on messages. You will learn how to keep a message secret in the chapter “Secret messages”.
       - type: text
         text:
-          de: Jetzt kannst du mit einer Codetabelle codieren und decodieren. Der Morsecode hat zwei Zeichen, kurz und lang. Auf der nächsten Seite schreibst du mit nur zwei Zeichen, 0 und 1, sogar Zahlen.
-          en: Now you can encode and decode with a code table. Morse code has two signals, short and long. On the next page you will use just two symbols, 0 and 1, to write numbers too.
+          de: Jetzt kannst du mit einer Codetabelle codieren und decodieren. Der Morsecode braucht kurz, lang und die Pause. Auf der nächsten Seite schreibst du mit nur zwei Zeichen, 0 und 1, sogar Zahlen.
+          en: Now you can encode and decode with a code table. Morse code needs short, long and the pause. On the next page you will use just two symbols, 0 and 1, to write numbers too.

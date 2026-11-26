@@ -68,7 +68,7 @@ Keine Seite braucht eine Wiederholung (`recap`): Jede Voraussetzung wird auf ein
   Bit-Karten / bit cards; Pixel / pixel; Pixelgrafik / bitmap image (raster image); Vektorgrafik / vector image;
   Baum, Wurzel, Knoten, Kante, Blatt / tree, root, node, edge, leaf; Verschlüsselung, Schlüssel, Klartext,
   Geheimtext / encryption, key, plaintext, ciphertext.
-- Einheiten: 1 Byte = 8 Bit; 1 Kilobyte (KB) = 1000 Byte, 1 MB = 1000 KB, 1 GB = 1000 MB. Kibibyte nicht.
+- Einheiten: 1 Byte = 8 Bit; 1 Kilobyte (kB, kleines k nach SI) = 1000 Byte, 1 MB = 1000 kB, 1 GB = 1000 MB. Kibibyte nicht.
 - Binärzahlen ohne Index, mit Wort: „die Binärzahl 01101“. Fünf Stellen in Kapitel 2 (Karten 16, 8, 4, 2, 1), acht
   auf „Bit und Byte“.
 - Glossar (`definition`): Daten, Information, Code, Bit, Byte, Binärzahl, Pixel, Vektorgrafik, Baum, Schlüssel …

@@ -134,7 +134,7 @@ blocks:
           accepted:
             - { answer: "MCTVG", seed: 1 }
           rejected:
-            - { answer: "ICRCG", seed: 1 }
+            - { answer: "IYPRC", seed: 1 }
       - type: vue-component
         id: caesar-entschluesseln
         component: CaesarScheibe

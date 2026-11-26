@@ -23,7 +23,7 @@ blocks:
             Bilder zu speichern.
           en: |
             Jona and Selin are making a big poster for the school trip. It is going to have a red circle on it as the
-            sun. They have stored the sun in two ways and made both equally bigger.
+            sun. They have stored the sun in two ways and enlarged both by the same amount.
 
             On the page before you drew pictures with pixels. On this page you will learn a second way of storing
             pictures.
@@ -34,7 +34,7 @@ blocks:
           en: "Two red circles of the same size. Circle A has an edge made of steps. Circle B has a smooth, round edge."
         caption:
           de: Die Sonne, zweimal gleich stark vergrößert. Schau dir den Rand an.
-          en: The sun, made equally bigger twice. Look at the edge.
+          en: The sun, enlarged twice by the same amount. Look at the edge.
         source:
           de: eigene Zeichnung
           en: own drawing
@@ -56,8 +56,8 @@ blocks:
               de: Der Rand von B ist glatt. Bei einer Pixelgrafik würden die Pixel beim Vergrößern als Stufen sichtbar.
               en: The edge of B is smooth. With a bitmap image the pixels would show as steps when made bigger.
         explanation:
-          de: Eine Pixelgrafik hat nur so viele Pixel, wie gespeichert sind. Vergrößerst du sie, wird jedes Pixel ein großes Kästchen.
-          en: A bitmap image only has as many pixels as are stored. If you make it bigger, each pixel becomes a big square.
+          de: Eine Pixelgrafik hat nur so viele Pixel, wie gespeichert sind. Vergrößerst du sie, wird jedes Pixel ein großes Kästchen. Manche Programme glätten den Rand, dann wird das Bild unscharf statt treppig.
+          en: A bitmap image only has as many pixels as are stored. If you make it bigger, each pixel becomes a big square. Some programs smooth the edge, then the picture becomes blurry instead of jagged.
   - type: section
     id: idee
     title:
@@ -94,7 +94,7 @@ blocks:
             ]
           - [
               { de: vergrößert, en: made bigger },
-              { de: wird treppig, en: gets steps },
+              { de: wird treppig oder unscharf, en: becomes jagged or blurry },
               { de: bleibt glatt, en: stays smooth },
             ]
           - [{ de: gut für, en: good for }, { de: Fotos, en: photos }, { de: Logos und Pläne, en: logos and plans }]
@@ -106,8 +106,8 @@ blocks:
         blocks:
           - type: text
             text:
-              de: Keine Grafikart ist immer besser. Ein Foto hat Millionen verschiedene Farbpunkte, das lässt sich kaum in Formen beschreiben, also Pixelgrafik. Ein Logo aus wenigen Formen soll groß und klein scharf sein, also Vektorgrafik.
-              en: Neither kind is always better. A photo has millions of different coloured dots that you can hardly describe as shapes, so it is a bitmap image. A logo made of a few shapes should be sharp both big and small, so it is a vector image.
+              de: Keine Grafikart ist immer besser. Ein Foto hat Millionen Pixel in vielen Farben, das lässt sich kaum in Formen beschreiben, also Pixelgrafik. Ein Logo aus wenigen Formen soll groß und klein scharf sein, also Vektorgrafik.
+              en: Neither kind is always better. A photo has millions of pixels in many colours that you can hardly describe as shapes, so it is a bitmap image. A logo made of a few shapes should be sharp both big and small, so it is a vector image.
   - type: section
     id: uebung
     title:
@@ -117,8 +117,8 @@ blocks:
       - type: number
         id: pixel-nach-vergroessern
         text:
-          de: Selins Zelt hat 6 · 6 = 36 Pixel. Sie zeigt es viermal so breit und viermal so hoch. Wie viele verschiedene Pixel sind im Bild gespeichert?
-          en: Selin's tent has 6 × 6 = 36 pixels. She shows it four times as wide and four times as high. How many different pixels are stored in the picture?
+          de: Selins Zelt hat 6 · 6 = 36 Pixel. Sie zeigt es viermal so breit und viermal so hoch. Sie zeigt es nur größer an und speichert es nicht neu. Wie viele Pixel sind gespeichert?
+          en: Selin's tent has 6 × 6 = 36 pixels. She shows it four times as wide and four times as high. She only shows it bigger and does not save it again. How many pixels are stored?
         answer: 36
         tolerance: 0
         mistakes:
@@ -136,8 +136,8 @@ blocks:
       - type: number
         id: zahlen-kreis
         text:
-          de: "Für Sonne B sind gespeichert: Mittelpunkt (50 | 50), Radius 40, Farbe rot. Wie viele Zahlen sind das?"
-          en: "For sun B, this is stored: centre (50 | 50), radius 40, colour red. How many numbers is that?"
+          de: "Für Sonne B sind gespeichert: Mittelpunkt (50 | 50), Radius 40, Farbe rot. Wie viele Zahlen beschreiben Lage und Größe des Kreises?"
+          en: "For sun B, this is stored: centre (50 | 50), radius 40, colour red. How many numbers describe where the circle is and how big it is?"
         answer: 3
         tolerance: 0
         mistakes:
@@ -147,8 +147,8 @@ blocks:
               en: The centre has two numbers, one for across and one for up.
           - answer: 4
             message:
-              de: Rot ist hier ein Farbname, keine Zahl. Zähle nur die Zahlen.
-              en: Red is the name of a colour here, not a number. Count only the numbers.
+              de: Die Farbe sagt nichts über Lage und Größe. Zähle nur die Zahlen für Mittelpunkt und Radius.
+              en: The colour says nothing about where the circle is or its size. Count only the numbers for the centre and the radius.
         explanation:
           de: 50, 50 und 40. Mit diesen drei Zahlen und der Farbe ist der Kreis in jeder Größe beschrieben.
           en: 50, 50 and 40. With these three numbers and the colour, the circle is described at any size.
@@ -204,7 +204,7 @@ blocks:
             correct: false
             info:
               de: Sie speichert jedes Pixel, aber nur in einer Größe. Auf dem Plakat würde das Logo treppig.
-              en: It stores every pixel, but only at one size. On the poster the logo would get steps.
+              en: It stores every pixel, but only at one size. On the poster the logo would become jagged.
           - text:
               de: Egal, beide werden beim Vergrößern gleich
               en: it does not matter, both turn out the same when made bigger
