@@ -44,7 +44,7 @@ Wie Buchstaben mit einer Codetabelle wie ASCII oder Unicode als Binärzahlen ges
 ### Eine Nachricht im Klassenchat
 
 Ein Jahr später: Jona, Selin und Mia sind jetzt 12 und gehen in die 7b. Wieder geht es an den Seeberg.
-Im Klassenchat schreibt Selin:
+Im Klassenchat schreibt Selin, wie letztes Jahr:
 
 **Selin:** TREFFEN MONTAG ACHT UHR AM BAHNHOF
 
@@ -56,9 +56,9 @@ Auf dieser Seite findest du es heraus, mit den Bit-Karten aus Kapitel 2.
 
 ### Eine Codetabelle für Zeichen
 
-Damit alle Geräte dieselben Zahlen benutzen, gibt es **Codetabellen**. Die bekannteste heißt
+Dafür gibt es **Codetabellen**. Die bekannteste heißt
 **ASCII**. Sie hat 128 Zeichen mit den Codes 0 bis 127: Großbuchstaben, Kleinbuchstaben, Ziffern,
-Satzzeichen und Steuerzeichen, aber keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
+Satzzeichen und Steuerzeichen wie „neue Zeile“, aber keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
 bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Selin braucht A bis Z und das Leerzeichen.
 
 Ein Teil der ASCII-Tabelle mit dem Byte zu jedem Code:

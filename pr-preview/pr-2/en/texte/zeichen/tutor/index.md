@@ -44,7 +44,7 @@ How letters are stored as binary numbers with a character set such as ASCII or U
 ### A message in the class chat
 
 One year later: Jona, Selin and Mia are 12 now and in class 7b. They are going to Seeberg again. In the
-class chat, Selin writes:
+class chat, Selin writes, just like last year:
 
 **Selin:** MEET ON MONDAY AT EIGHT AT THE STATION
 
@@ -58,7 +58,7 @@ On this page you will find out, with the bit cards from chapter 2.
 
 So that all devices use the same numbers, there is a fixed **character set**, a code table. The best known one is called
 **ASCII**. It has 128 characters with the codes 0 to 127: capital letters, small letters, digits,
-punctuation marks and control characters, but no letters with accents such as Ä. A has the number 65, B 66,
+punctuation marks and invisible control characters such as “new line”, but no letters like Ä, Ö, Ü. A has the number 65, B 66,
 C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin's message, A to Z and the space are enough.
 
 Part of the ASCII table with the byte for each code:

@@ -61,21 +61,23 @@ numbers that the phone stores as bits.</p>
 </li>
 <li><p><strong>digital</strong>: Digital means a value is only recorded at single moments in time and in steps as a number, in a computer as a binary number.</p>
 </li>
-<li><p>Exercise <code>analog-oder-digital</code> (below)</p>
-</li>
 </ul>
 <p>The microphone in the phone turns the sound into an electrical voltage. It changes smoothly with the voice,
 so it is still analog. When <strong>digitising</strong>, the phone then takes two steps:</p>
 <ol>
-<li><strong>Sampling:</strong> it measures the sound wave at equal intervals, for example 8000 times every second (the
-sample rate).</li>
+<li><strong>Sampling:</strong> it measures the voltage at equal intervals, for example 8000 times every second. Each
+measurement is called a <strong>sample</strong>.</li>
 <li><strong>Quantising (rounding):</strong> it rounds each measured value to the nearest allowed level and stores that level&#39;s number
-as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8.</li>
+as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8. The number
+of bits per sample is called the <strong>bit depth</strong>.</li>
 </ol>
 <p><strong>Remember: Remember</strong></p>
 <p>Something gets lost between two measuring points and between two levels. More points and more bits make the digital voice more exact, but also bigger.</p>
+<ul>
+<li>Exercise <code>analog-oder-digital</code> (below)</li>
+</ul>
 <h3>Try it out</h3>
-<p>The blue line is a piece of a sound wave. The red dashed staircase with the dots shows what is stored. The grey lines are the allowed levels. Move the sliders, also with the arrow keys, and watch how close the staircase gets to the wave.</p>
+<p>The blue line is the voltage in the microphone during a short moment, from left to right. Each red dot is a sample, the red dashed staircase shows what is stored. The grey lines are the allowed levels. The slider “Samples” belongs to sampling, the slider “Bit depth” to quantising. Move them, also with the arrow keys, and watch how close the staircase gets to the wave.</p>
 <p>Interactive: A sound wave with the stored values above it as a staircase. Two sliders set how often it is measured (2 to 32 measuring points) and how many bits each measured value has (1 to 4). - 4 points, 1 bit: 2 levels, 4 bits altogether. The staircase has little to do with the wave. - 8 points, 2 bits: 4 levels, 16 bits altogether. The shape of the wave can roughly be seen. - 32 points, 4 bits: 16 levels, 128 bits altogether. The staircase lies close to the wave.</p>
 <h3>Practice</h3>
 <ul>
@@ -106,10 +108,17 @@ everything with 0 and 1.</p>
 </ul>
 <h3>Exercise analog-oder-digital</h3>
 <ul>
-<li>Task: How does each thing show or store its value? Match them.</li>
-<li>Answer format: match each item on the left with one on the right</li>
-<li>Solution: clock with hands – The hand also stands between two marks.; voltage in the microphone – It changes smoothly with the sound.; Mia&#39;s voice message on the phone – It is made of measured values in bits.; clock with digits – It jumps from minute to minute.</li>
-<li>Explanation: The clock with hands and the microphone are analog, they change smoothly. The voice message and the clock with digits are digital, in steps as numbers. Even a modern phone has an analog part, its microphone.</li>
+<li>Task: Which of these are digital? Tick all of them.</li>
+<li>Answer format: choose all right answers</li>
+<li>Choices (✓ right, ✗ wrong, with the app&#39;s message):<ul>
+<li>✓ Mia&#39;s voice message on the phone – It is made of measured values stored as bits.</li>
+<li>✓ A clock with digits – It jumps from minute to minute and shows numbers.</li>
+<li>✗ The voltage in the microphone – It changes smoothly with the sound. It is analog, even in a modern phone.</li>
+<li>✗ A clock with hands – The minute hand also stands between two marks. It is analog.</li>
+</ul>
+</li>
+<li>Solution: Mia&#39;s voice message on the phone; A clock with digits</li>
+<li>Explanation: Digital is what only records single values in steps as numbers. Analog changes smoothly.</li>
 <li>Link: <a href="../?via=tutor#analog-oder-digital">../?via=tutor#analog-oder-digital</a></li>
 </ul>
 <h3>Exercise stufen-aus-bits</h3>
@@ -183,10 +192,10 @@ everything with 0 and 1.</p>
 </ul>
 <h3>Exercise mehr-messpunkte</h3>
 <ul>
-<li>Task: If the phone measures more often per second, the voice message becomes more exact, but also bigger.</li>
+<li>Task: If the phone measures twice as often per second, the voice message needs twice as many bits.</li>
 <li>Answer format: choose “true” or “false”</li>
 <li>Solution: The statement is true.</li>
-<li>Explanation: Each measuring point needs bits. More points means more bits, so a bigger file.</li>
+<li>Explanation: Each sample needs the same number of bits. So twice as many samples need twice as many bits.</li>
 <li>Link: <a href="../?via=tutor#mehr-messpunkte">../?via=tutor#mehr-messpunkte</a></li>
 </ul>
 </main>

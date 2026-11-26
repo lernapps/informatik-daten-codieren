@@ -61,20 +61,21 @@ daraus Zahlen werden, die das Handy als Bits speichert.</p>
 </li>
 <li><p><strong>digital</strong>: Digital heißt, ein Wert wird nur zu einzelnen Zeitpunkten und in Stufen als Zahl festgehalten, im Computer als Binärzahl.</p>
 </li>
-<li><p>Aufgabe <code>analog-oder-digital</code> (unten)</p>
-</li>
 </ul>
 <p>Das Mikrofon im Handy macht aus dem Schall eine elektrische Spannung. Sie ändert sich stufenlos mit der
 Stimme, ist also noch analog. Beim <strong>Digitalisieren</strong> macht das Handy dann zwei Schritte:</p>
 <ol>
-<li><strong>Abtasten:</strong> Es misst die Schallwelle in gleichen Abständen, zum Beispiel 8000-mal in jeder Sekunde.</li>
+<li><strong>Abtasten:</strong> Es misst die Spannung in gleichen Abständen, zum Beispiel 8000-mal in jeder Sekunde.</li>
 <li><strong>Runden:</strong> Jeden Messwert rundet es auf die nächste erlaubte Stufe und speichert deren Nummer als
 Binärzahl. Mit 2 Bit gibt es 4 Stufen (00, 01, 10, 11), mit 3 Bit schon 8.</li>
 </ol>
 <p><strong>Merke: Merke</strong></p>
 <p>Zwischen zwei Messpunkten und zwischen zwei Stufen geht etwas verloren. Mehr Messpunkte und mehr Bit machen die digitale Stimme genauer, aber auch größer.</p>
+<ul>
+<li>Aufgabe <code>analog-oder-digital</code> (unten)</li>
+</ul>
 <h3>Ausprobieren</h3>
-<p>Die blaue Linie ist ein Stück einer Schallwelle. Die rote gestrichelte Treppe mit den Punkten zeigt, was gespeichert wird. Die grauen Linien sind die erlaubten Stufen. Schiebe die Regler, auch mit den Pfeiltasten, und beobachte, wie nah die Treppe der Welle kommt.</p>
+<p>Die blaue Linie ist die Spannung im Mikrofon während eines kurzen Augenblicks, von links nach rechts. Jeder rote Punkt ist ein Messpunkt, die rote gestrichelte Treppe zeigt, was gespeichert wird. Die grauen Linien sind die erlaubten Stufen. Der Regler „Messpunkte“ gehört zum Abtasten, der Regler „Bit pro Messpunkt“ zum Runden. Schiebe sie, auch mit den Pfeiltasten, und beobachte, wie nah die Treppe der Welle kommt.</p>
 <p>Interaktiv: Eine Schallwelle und darüber die gespeicherten Werte als Treppe. Zwei Regler stellen ein, wie oft gemessen wird (2 bis 32 Messpunkte) und wie viele Bit jeder Messwert hat (1 bis 4). - 4 Messpunkte, 1 Bit: 2 Stufen, 4 Bit zusammen. Die Treppe hat mit der Welle wenig zu tun. - 8 Messpunkte, 2 Bit: 4 Stufen, 16 Bit zusammen. Die Form der Welle ist grob zu erkennen. - 32 Messpunkte, 4 Bit: 16 Stufen, 128 Bit zusammen. Die Treppe liegt dicht an der Welle.</p>
 <h3>Übung</h3>
 <ul>
@@ -105,10 +106,17 @@ zu Zahlen. Ob Zettel, Bild, Geheimschrift oder Sprachnachricht: Am Ende speicher
 </ul>
 <h3>Aufgabe analog-oder-digital</h3>
 <ul>
-<li>Aufgabe: Wie zeigt oder speichert jedes Ding seinen Wert? Ordne zu.</li>
-<li>Antwortformat: jedem Eintrag links den passenden rechts zuordnen</li>
-<li>Lösung: Uhr mit Zeigern – Der Zeiger steht auch zwischen zwei Strichen.; Spannung im Mikrofon – Sie ändert sich stufenlos mit dem Schall.; Mias Sprachnachricht auf dem Handy – Sie besteht aus Messwerten in Bits.; Uhr mit Ziffern – Sie springt von Minute zu Minute.</li>
-<li>Erklärung: Zeigeruhr und Mikrofon sind analog, sie ändern sich stufenlos. Sprachnachricht und Ziffernuhr sind digital, in Stufen als Zahlen. Auch ein modernes Handy hat mit dem Mikrofon ein analoges Teil.</li>
+<li>Aufgabe: Was davon ist digital? Kreuze alle an.</li>
+<li>Antwortformat: alle richtigen Antworten wählen</li>
+<li>Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):<ul>
+<li>✓ Mias Sprachnachricht auf dem Handy – Sie besteht aus Messwerten, die als Bits gespeichert sind.</li>
+<li>✓ Eine Uhr mit Ziffern – Sie springt von Minute zu Minute und zeigt Zahlen.</li>
+<li>✗ Die Spannung im Mikrofon – Sie ändert sich stufenlos mit dem Schall. Sie ist analog, auch in einem modernen Handy.</li>
+<li>✗ Eine Uhr mit Zeigern – Der Minutenzeiger steht auch zwischen zwei Strichen. Sie ist analog.</li>
+</ul>
+</li>
+<li>Lösung: Mias Sprachnachricht auf dem Handy; Eine Uhr mit Ziffern</li>
+<li>Erklärung: Digital ist, was nur einzelne Werte in Stufen als Zahlen festhält. Analog ändert sich stufenlos.</li>
 <li>Link: <a href="../?via=tutor#analog-oder-digital">../?via=tutor#analog-oder-digital</a></li>
 </ul>
 <h3>Aufgabe stufen-aus-bits</h3>
@@ -175,17 +183,17 @@ zu Zahlen. Ob Zettel, Bild, Geheimschrift oder Sprachnachricht: Am Ende speicher
 <li>Erklärung: 16 Mbit : 8 = 2 MB. Internet wird in Mbit/s angegeben, Speicher in MB.</li>
 <li>Typische Fehler und was die App sagt:<ul>
 <li>16: Mbit und MB sind nicht dasselbe: 1 Byte sind 8 Bit, also auch 1 MB = 8 Mbit.</li>
-<li>128: Von Bit zu Byte teilst du durch 8, du malst nicht mal 8.</li>
+<li>128: Von Bit zu Byte teilst du durch 8, du rechnest nicht mal 8.</li>
 </ul>
 </li>
 <li>Link: <a href="../?via=tutor#mbit-und-mb">../?via=tutor#mbit-und-mb</a></li>
 </ul>
 <h3>Aufgabe mehr-messpunkte</h3>
 <ul>
-<li>Aufgabe: Misst das Handy öfter pro Sekunde, wird die Sprachnachricht genauer, aber auch größer.</li>
+<li>Aufgabe: Misst das Handy doppelt so oft pro Sekunde, braucht die Sprachnachricht doppelt so viele Bit.</li>
 <li>Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen</li>
 <li>Lösung: Die Aussage stimmt.</li>
-<li>Erklärung: Jeder Messpunkt braucht Bits. Mehr Messpunkte heißt mehr Bits, also eine größere Datei.</li>
+<li>Erklärung: Jeder Messpunkt braucht gleich viele Bit. Doppelt so viele Messpunkte brauchen also doppelt so viele Bit.</li>
 <li>Link: <a href="../?via=tutor#mehr-messpunkte">../?via=tutor#mehr-messpunkte</a></li>
 </ul>
 </main>

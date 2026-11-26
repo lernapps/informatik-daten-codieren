@@ -87,9 +87,9 @@ time, and with huge keys. You protect yourself by making your password long and 
 
 - Exercise `verfahren-schluessel` (below)
 
-Looking back on the whole app: you have seen the school trip as a note, a table, a chart and a tree, as a
+Looking back on chapters 1 to 4: you have seen the school trip as a note, a table, a chart and a tree, as a
 number made of bits, as a pixel picture and as secret writing. It was always the same information, just
-shown in a different way. And in the end, a computer stores every one of these forms with 0 and 1.
+shown in a different way. In the next chapter, for ages 12 to 14, text and voice become 0 and 1 too.
 
 ### Exercise caesar-knacken
 
