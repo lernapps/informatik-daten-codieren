@@ -57,7 +57,7 @@ Bild: Zwei rote Kreise, gleich groß. Kreis A hat einen Rand aus Stufen. Kreis B
 
 - **Vektorgrafik**: Eine Vektorgrafik speichert ein Bild als Formen wie Kreis, Linie und Rechteck, jede mit ihren Zahlen, zum Beispiel Mittelpunkt, Radius und Farbe.
 
-Sonne B ist eine Vektorgrafik. Gespeichert ist nur: ein Kreis, Mittelpunkt (50 | 50), Radius 40, Farbe rot. Beim Vergrößern rechnet der Computer den Kreis neu aus. Darum bleibt der Rand glatt.
+Sonne B ist eine Vektorgrafik. Gespeichert ist nur: ein Kreis, Mittelpunkt (50 | 50), Radius 40, Farbe rot. (50 | 50) heißt: 50 nach rechts und 50 nach oben. Der Radius ist der Abstand vom Mittelpunkt zum Rand. Beim Vergrößern rechnet der Computer den Kreis neu aus. Darum bleibt der Rand glatt.
 
 Pixelgrafik und Vektorgrafik im Vergleich:
 - Vergleich | Pixelgrafik | Vektorgrafik

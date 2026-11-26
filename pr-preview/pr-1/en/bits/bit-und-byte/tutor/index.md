@@ -56,7 +56,7 @@ Picture: Eight face-down bit cards in a row. Above them are the values 128, 64, 
 
 - **byte**: One byte is 8 bits, like a row of eight bit cards. In one byte you can store, for example, a number from 0 to 255.
 
-There are bigger units for large amounts of data. Each one is **1000 times** as big as the one before. The sizes for the message, photo and film are only rough, they depend on the device.
+There are bigger units for large amounts of data. Each one is **1000 times** as big as the one before. The sizes for the text, photo and film are only rough, they depend on the device.
 
 Units for amounts of data, with examples:
 - Unit | size | example, roughly

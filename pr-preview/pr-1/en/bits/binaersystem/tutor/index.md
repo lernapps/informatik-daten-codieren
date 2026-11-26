@@ -43,21 +43,21 @@ The binary system with bit cards: read numbers made of 0 and 1 and turn them int
 
 ### A room without a number
 
-Class 6b has arrived at the youth hostel “Am Seeberg”. Jona and Selin are looking for their room. But there
+Class 6b has arrived at the youth hostel “Am Seeberg”. Jona is looking for his room. But there
 is no room number on the doors. On every door there are five cards. A card that is face up shows dots. A
 card that is face down shows its back, and the back has no dots. Above each card it says how many dots it
 has when it is face up. This number is the **value** of the card.
 
 Here you will learn to write any number with only 0 and 1: a code with only two symbols.
 
-Picture: Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down. Caption: The cards on Jona and Selin's door. Count the dots on the cards that are face up.
+Picture: Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down. Caption: The cards on Jona's door. Count the dots on the cards that are face up.
 
 - Exercise `karten-lesen` (below)
 
 ### One card is one bit
 
-Each card is either face up or face down. For face up you write **1**, for face down **0**. Then Jona and
-Selin's door shows: face down, face up, face up, face down, face up. In short: **01101**. These digits in a
+Each card is either face up or face down. For face up you write **1**, for face down **0**. Then Jona's
+door shows: face down, face up, face up, face down, face up. In short: **01101**. These digits in a
 row are called a **bit string**.
 
 - **bit**: A bit is a symbol with only two possible values, 0 or 1.
@@ -97,7 +97,7 @@ Picture: Five cards with the values 16, 8, 4, 2 and 1. The cards 16, 4 and 2 are
 2. Take only the values that have a 1 below them: 16, 4 and 2.
 3. Add them up: 16 + 4 + 2 = 22.
 
-The binary number 10110 is the decimal number 22. Mia sleeps in room 22.
+The binary number 10110 is the decimal number 22. Mia sleeps in room 22 with Selin.
 
 ### Practice
 
@@ -114,7 +114,7 @@ Now you can read any binary number with five digits. On the next page you go the
 - Task: How many dots do the face-up cards show altogether? That is the room number.
 - Answer format: type a number
 - Solution: 13
-- Explanation: 8 + 4 + 1 = 13. Jona and Selin sleep in room 13.
+- Explanation: 8 + 4 + 1 = 13. Jona sleeps in room 13.
 - The app's hint: Card 8 has 8 dots, card 4 has 4 dots.
 - Typical mistakes and what the app says:
   - 3: You counted the face-up cards. Add up their dots.

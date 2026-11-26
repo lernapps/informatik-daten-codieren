@@ -43,21 +43,21 @@ Das Binärsystem mit Bit-Karten: Zahlen aus 0 und 1 lesen und in Dezimalzahlen u
 
 ### Ein Zimmer ohne Nummer
 
-Die 6b ist in der Jugendherberge „Am Seeberg“ angekommen. Jona und Selin suchen ihr Zimmer. Aber an den
+Die 6b ist in der Jugendherberge „Am Seeberg“ angekommen. Jona sucht sein Zimmer. Aber an den
 Türen steht keine Zimmernummer. An jeder Tür hängen fünf Karten. Eine offene Karte zeigt Punkte. Eine
 verdeckte Karte zeigt ihre Rückseite, und die hat keine Punkte. Über jeder Karte steht, wie viele Punkte
 sie offen hat. Diese Zahl ist der **Wert** der Karte.
 
 Hier lernst du, jede Zahl nur mit 0 und 1 zu schreiben: ein Code mit nur zwei Zeichen.
 
-Bild: Fünf Karten nebeneinander mit den Werten 16, 8, 4, 2 und 1. Die Karten 8, 4 und 1 liegen offen und zeigen 8, 4 und 1 Punkte. Die Karten 16 und 2 sind verdeckt. Bildunterschrift: Die Karten an der Tür von Jona und Selin. Zähle die Punkte auf den offenen Karten.
+Bild: Fünf Karten nebeneinander mit den Werten 16, 8, 4, 2 und 1. Die Karten 8, 4 und 1 liegen offen und zeigen 8, 4 und 1 Punkte. Die Karten 16 und 2 sind verdeckt. Bildunterschrift: Die Karten an Jonas Tür. Zähle die Punkte auf den offenen Karten.
 
 - Aufgabe `karten-lesen` (unten)
 
 ### Eine Karte ist ein Bit
 
-Jede Karte liegt entweder offen oder verdeckt. Für offen schreibst du **1**, für verdeckt **0**. Die Tür
-von Jona und Selin zeigt dann: verdeckt, offen, offen, verdeckt, offen. Kurz: **01101**. Diese Ziffern
+Jede Karte liegt entweder offen oder verdeckt. Für offen schreibst du **1**, für verdeckt **0**. Jonas Tür
+zeigt dann: verdeckt, offen, offen, verdeckt, offen. Kurz: **01101**. Diese Ziffern
 hintereinander nennt man eine **Bitfolge**.
 
 - **Bit**: Ein Bit ist ein Zeichen mit nur zwei möglichen Werten, 0 oder 1.
@@ -97,7 +97,7 @@ Bild: Fünf Karten mit den Werten 16, 8, 4, 2 und 1. Die Karten 16, 4 und 2 lieg
 2. Nimm nur die Werte, unter denen eine 1 steht: 16, 4 und 2.
 3. Zähle sie zusammen: 16 + 4 + 2 = 22.
 
-Die Binärzahl 10110 ist die Dezimalzahl 22. Mia schläft in Zimmer 22.
+Die Binärzahl 10110 ist die Dezimalzahl 22. Mia schläft mit Selin in Zimmer 22.
 
 ### Übung
 
@@ -114,7 +114,7 @@ Jetzt kannst du jede Binärzahl mit fünf Stellen lesen. Auf der nächsten Seite
 - Aufgabe: Wie viele Punkte zeigen die offenen Karten zusammen? Das ist die Nummer des Zimmers.
 - Antwortformat: eine Zahl eintippen
 - Lösung: 13
-- Erklärung: 8 + 4 + 1 = 13. Jona und Selin schlafen in Zimmer 13.
+- Erklärung: 8 + 4 + 1 = 13. Jona schläft in Zimmer 13.
 - Tipp der App: Die Karte 8 hat 8 Punkte, die Karte 4 hat 4 Punkte.
 - Typische Fehler und was die App sagt:
   - 3: Du hast die offenen Karten gezählt. Zähle ihre Punkte zusammen.

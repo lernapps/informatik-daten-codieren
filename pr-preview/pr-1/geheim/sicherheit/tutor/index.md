@@ -192,7 +192,7 @@ Nr. | wort (verdeckt) | geheim | k (verdeckt) | Lösung | F1 | F2
 - Aufgabe: Ordne die Verfahren nach ihrer Sicherheit, das unsicherste zuerst.
 - Antwortformat: die Einträge in die richtige Reihenfolge bringen (die App zeigt sie gemischt)
 - Lösung: 1. Morsecode (keine Verschlüsselung), 2. Caesar mit Schlüssel, 3. gemischtes Alphabet
-- Erklärung: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann. Ganz sicher ist aber auch es nicht.
+- Erklärung: Den Morsecode kann jeder lesen. Caesar hat 25 Schlüssel. Das gemischte Alphabet hat so viele, dass niemand alle ausprobieren kann. Ganz sicher ist aber auch das nicht.
 - Link: [../?via=tutor#verfahren-ordnen](../?via=tutor#verfahren-ordnen)
 
 ### Aufgabe geheimes-verfahren

@@ -56,7 +56,7 @@ Bild: Acht verdeckte Bit-Karten nebeneinander. Über ihnen stehen die Werte 128,
 
 - **Byte**: Ein Byte sind 8 Bit, wie eine Reihe aus acht Bit-Karten. In einem Byte kann man zum Beispiel eine Zahl von 0 bis 255 speichern.
 
-Für große Datenmengen gibt es größere Einheiten. Jede ist **1000-mal** so groß wie die davor. Die Werte für Nachricht, Foto und Film sind ungefähr, es kommt auf das Gerät an.
+Für große Datenmengen gibt es größere Einheiten. Jede ist **1000-mal** so groß wie die davor. Die Werte für Text, Foto und Film sind ungefähr, es kommt auf das Gerät an.
 
 Einheiten für Datenmengen mit Beispielen:
 - Einheit | so groß | Beispiel, ungefähr

@@ -54,7 +54,8 @@ out what data means yourself.
 ### The context is often written next to it
 
 In a table, the context is often in the **heading** of a column, or in a **unit** such as o'clock,
-degrees or euros. Ms Berg has sent the plan for the first day at Seeberg.
+degrees or euros. Ms Berg has sent the plan for the first day at Seeberg. The times use the 24-hour clock, as
+in Germany: 14 means 2 pm.
 
 Plan for Monday at Seeberg:
 - What | Time | How many children

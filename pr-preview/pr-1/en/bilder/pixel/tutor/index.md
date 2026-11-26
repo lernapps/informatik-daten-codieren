@@ -54,7 +54,7 @@ Picture: A grid of 6 by 6 squares with a black tent. Next to the rows, from top 
 
 - Exercise `pixel-zaehlen` (below)
 
-### A pixel is a dot of the picture
+### A pixel is one dot of a picture
 
 - **pixel**: A pixel is the smallest dot of a picture. Each pixel has exactly one colour.
 
@@ -89,7 +89,7 @@ Now you draw. On the left is the code of a picture, row by row. Tap a pixel to m
 
 - Exercise `bild-kennt-form` (below)
 
-Now you can encode and decode a picture made of pixels. Selin's tent is going on a big poster. What happens when you make a bitmap image bigger? You will see on the next page.
+Now you can encode and decode a picture made of pixels. Jona and Selin are making a big poster for the school trip. What happens when you make a bitmap image bigger? You will see on the next page.
 
 ### Exercise pixel-zaehlen
 

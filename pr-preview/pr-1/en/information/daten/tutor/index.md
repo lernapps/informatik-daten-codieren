@@ -56,9 +56,9 @@ Picture: A yellow note. It says: 6b · 11.5. · 8:00. Below that, a train is dra
 
 ### Data needs a context
 
-Selin sees the note and laughs: “That's from Ms Berg, our class teacher! On Monday, 11 May, we are going on our school
-trip. We meet at 8 o'clock at the station, where the train leaves.” Selin knows the **context**: Ms Berg
-is planning class 6b's school trip. In Germany, 11.5. is how you write 11 May. That is why she understands
+Selin sees the note and laughs: “That's from Ms Berg, our class teacher! On Monday, 11 May, we are going to the youth
+hostel at Seeberg. We meet at 8 o'clock at the station, where the train leaves.” Selin knows the **context**: Ms Berg
+is planning class 6b's school trip. In Germany, 11.5. means 11 May, and Seeberg is a place by a lake (See is German for lake). That is why she understands
 the note.
 
 - **data**: Data is symbols written down by fixed rules, for example numbers, words or a date. That way you can store it and pass it on.

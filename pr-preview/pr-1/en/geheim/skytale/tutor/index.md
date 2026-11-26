@@ -43,7 +43,7 @@ The basic idea of encryption with the scytale: plaintext, ciphertext, method and
 
 ### Class 6c must not read this!
 
-Class 6b is planning a surprise for the other class, 6c. Jona wants to write to Selin where they will meet.
+Class 6b is planning a surprise for the other class, 6c, who are staying at the youth hostel too. Jona wants to write to Selin where they will meet.
 But class 6c must not be able to read the message, even if they find the note. Selin has an idea from her
 history book: a **scytale**, a wooden stick with a strip.
 
@@ -52,7 +52,7 @@ In the chapter “Everything is 0 and 1”, codes could be read by everyone. On 
 
 Picture: Jona and Selin. Between them lies a wooden stick with a light strip wound around it. Caption: Jona and Selin with the scytale
 
-Picture: A wooden stick. A light strip is wound around it at a slant. On the strip there are signs next to each other, row by row. One end of the strip hangs loose. Caption: A scytale. Wound around the stick, the letters are in rows. Unwound, they are jumbled.
+Picture: A wooden stick. A light strip is wound around it at a slant. On the strip there are signs next to each other, row by row. One end of the strip hangs loose. Caption: A scytale. Wound around the stick, the letters (drawn here as boxes) are in rows. Unwound, they are jumbled.
 
 - Exercise `streifen-lesen` (below)
 
@@ -69,6 +69,8 @@ Jona's boxes. Read column by column: MTS EAI ETX, which gives MTSEAIETX.:
 - S | I | X
 
 - **encryption**: When you encrypt, you turn the readable **plaintext** into a **ciphertext** with a method and a secret key. Only someone who knows the key is meant to be able to read it again.
+
+- **key**: The key is the secret you need to encrypt and decrypt, for example a number. Everyone may know the method, but not the key.
 
 **Remember: Remember**
 

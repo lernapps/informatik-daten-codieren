@@ -43,8 +43,9 @@ Eine Dezimalzahl in eine Binärzahl umrechnen: mit den Bit-Karten und durch fort
 
 ### Der Bus Nummer 27
 
-Am letzten Tag fährt die 6b mit dem Bus Nummer 27 zurück. Jona will die Nummer mit den Bit-Karten an die
-Zimmertür hängen, damit alle es wissen.
+Am Dienstag macht die 6b einen Ausflug mit dem Bus Nummer 27. Jona will die Nummer mit den Bit-Karten an
+die Zimmertür hängen, damit alle es wissen. Zuerst übt er mit anderen Zahlen: Lege die Zahl, die die
+Aufgabe nennt. Die 27 kommt danach.
 
 Auf der Seite davor hast du Bit-Karten gelesen und daraus eine Zahl gemacht. Jetzt gehst du den Weg
 zurück: Aus einer Zahl werden Bits.
@@ -89,7 +90,7 @@ Beim Teilen kommt der Rest für die Karte 1 zuerst heraus. Darum liest du die Re
 
 - Aufgabe `zwoelf-binaer` (unten)
 
-Jetzt kannst du jede Zahl in Bits umrechnen. Für 40 brauchst du sechs Stellen. Auf der nächsten Seite erfährst du, wie viele Bits ein Computer zusammenfasst und wie viele Bits ein Foto braucht.
+Jetzt kannst du jede Zahl in Bits umrechnen. Auf der nächsten Seite erfährst du, wie viele Bits ein Computer zusammenfasst und wie viele Bits ein Foto braucht.
 
 ### Aufgabe karten-legen
 

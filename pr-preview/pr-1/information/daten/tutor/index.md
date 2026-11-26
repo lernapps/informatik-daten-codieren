@@ -57,8 +57,8 @@ Bild: Ein gelber Zettel. Darauf steht: 6b · 11.5. · 8:00. Darunter ist ein Zug
 
 ### Daten brauchen einen Zusammenhang
 
-Selin sieht den Zettel und lacht: „Das ist von Frau Berg, unserer Klassenlehrerin! Am Montag, 11. Mai, fahren wir auf
-Klassenfahrt. Wir treffen uns um 8 Uhr am Bahnhof, da, wo der Zug fährt.“ Selin kennt den
+Selin sieht den Zettel und lacht: „Das ist von Frau Berg, unserer Klassenlehrerin! Am Montag, 11. Mai, fahren wir zur
+Jugendherberge am Seeberg. Wir treffen uns um 8 Uhr am Bahnhof, da, wo der Zug fährt.“ Selin kennt den
 **Zusammenhang**: Frau Berg plant die Klassenfahrt der 6b. Darum versteht sie den Zettel.
 
 - **Daten**: Daten sind Zeichen, die nach festen Regeln aufgeschrieben sind, zum Beispiel Zahlen, Wörter oder ein Datum. So kann man sie speichern und weitergeben.

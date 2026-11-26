@@ -41,9 +41,9 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 Dieselbe Information als Strichliste, Tabelle, Säulendiagramm und Text darstellen und die passende Form wählen.
 
-### Wohin fährt die 6b?
+### Wie hat die 6b gewählt?
 
-Vor der Fahrt hat die 6b abgestimmt. Alle 26 Kinder hatten eine Stimme. Selin hat an der Tafel für jede
+Wie kam die 6b auf den Seeberg? Vorher hat sie abgestimmt. Alle 26 Kinder hatten eine Stimme. Selin hat an der Tafel für jede
 Stimme einen Strich gemacht, immer fünf zusammen.
 
 Auf der Seite davor hast du Daten in einer Tabelle gedeutet. Auf dieser Seite zeigst du dieselben Daten

@@ -41,10 +41,10 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 Showing the same information as a tally, a table, a bar chart and a text, and choosing the form that fits.
 
-### Where is class 6b going?
+### How did class 6b choose?
 
-Before the trip, class 6b had a vote. All 26 children had one vote each. Selin made a line on the board for
-every vote, always five together.
+How did class 6b pick Seeberg? They had a vote first. All 26 children had one vote each. Selin made a tally mark on the board for
+every vote, in groups of five.
 
 On the page before you worked out what data in a table means. On this page you show the same data in
 different ways and choose the form that answers a question fastest.

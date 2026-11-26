@@ -43,7 +43,7 @@ Die Grundidee der Verschlüsselung an der Skytale: Klartext, Geheimtext, Verfahr
 
 ### Die 6c darf das nicht lesen!
 
-Die 6b plant eine Überraschung für die Parallelklasse 6c. Jona will Selin schreiben, wo sie sich treffen.
+Die 6b plant eine Überraschung für die Parallelklasse 6c, die auch in der Jugendherberge wohnt. Jona will Selin schreiben, wo sie sich treffen.
 Aber die 6c soll die Nachricht nicht lesen können, auch wenn sie den Zettel findet. Selin hat eine Idee
 aus dem Geschichtsbuch: eine **Skytale**, einen Holzstab mit einem Streifen.
 
@@ -52,7 +52,7 @@ Nachricht **verschlüsselt**, damit nur Eingeweihte sie lesen.
 
 Bild: Jona und Selin. Zwischen ihnen liegt ein Holzstab, um den ein heller Streifen gewickelt ist. Bildunterschrift: Jona und Selin mit der Skytale
 
-Bild: Ein Holzstab. Ein heller Streifen ist schräg um ihn gewickelt. Auf dem Streifen stehen Zeichen nebeneinander, Reihe für Reihe. Ein Ende des Streifens hängt lose herunter. Bildunterschrift: Eine Skytale. Um den Stab gewickelt, stehen die Buchstaben in Reihen. Abgewickelt sind sie durcheinander.
+Bild: Ein Holzstab. Ein heller Streifen ist schräg um ihn gewickelt. Auf dem Streifen stehen Zeichen nebeneinander, Reihe für Reihe. Ein Ende des Streifens hängt lose herunter. Bildunterschrift: Eine Skytale. Um den Stab gewickelt, stehen die Buchstaben (hier als Kästchen gezeichnet) in Reihen. Abgewickelt sind sie durcheinander.
 
 - Aufgabe `streifen-lesen` (unten)
 
@@ -69,6 +69,8 @@ Jonas Kästchen. Spalte für Spalte gelesen: ZTS EAE LME, also ZTSEAELME.:
 - S | E | E
 
 - **Verschlüsselung**: Beim Verschlüsseln macht man aus dem lesbaren **Klartext** mit einem Verfahren und einem geheimen Schlüssel einen **Geheimtext**. Nur wer den Schlüssel kennt, soll ihn wieder lesen können.
+
+- **Schlüssel**: Der Schlüssel ist das Geheimnis, das man zum Ver- und Entschlüsseln braucht, zum Beispiel eine Zahl. Das Verfahren dürfen alle kennen, den Schlüssel nicht.
 
 **Merke: Merke**
 

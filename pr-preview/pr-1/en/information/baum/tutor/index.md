@@ -43,13 +43,13 @@ The tree as a way of showing data: root, nodes, edges and leaves in the room pla
 
 ### Who sleeps where?
 
-At Seeberg, Ms Berg shares out the rooms. She draws a plan so that everyone can find their room quickly.
+Even before the trip, Ms Berg shares out the rooms at Seeberg. She draws a plan so that everyone can find their room quickly.
 Here you can see part of it: three rooms, 13, 22 and 9, with two children each.
 
 On the page before you learnt about tables, charts and text. On this page you will learn a form for data
 that fits inside other data: the class has rooms, and the rooms have children.
 
-Picture: A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below room 13 are Jona and Selin, below 22 Mia and Lea, below 9 Tom and Ali. The boxes at the very bottom have a dashed border. Caption: Ms Berg's room plan as a tree. The numbers 1 to 4 show the parts of the tree. Labels: 1 root: the top node, 2 edge: a line between two nodes, 3 node: a box in the tree, 4 leaf: a node with no nodes below it
+Picture: A tree. At the top it says 6b. Three lines lead down to the rooms 13, 22 and 9. Below room 13 are Jona and Tom, below 22 Selin and Mia, below 9 Ben and Ali. The boxes at the very bottom have a dashed border. Caption: Ms Berg's room plan as a tree. The numbers 1 to 4 show the parts of the tree. Labels: 1 root: the top node, 2 edge: a line between two nodes, 3 node: a box in the tree, 4 leaf: a node with no nodes below it
 
 - Exercise `ali-zimmer` (below)
 
@@ -92,8 +92,8 @@ how a computer stores data like this: only with 0 and 1.
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
   - ✓ 9 – An edge leads up from Ali to the node 9.
-  - ✗ 22 – Below room 22 are Mia and Lea.
-  - ✗ 13 – Below room 13 are Jona and Selin.
+  - ✗ 22 – Below room 22 are Selin and Mia.
+  - ✗ 13 – Below room 13 are Jona and Tom.
 - Solution: 9
 - Explanation: Follow the edge from Ali upwards. It leads to exactly one room, 9.
 - Link: [../?via=tutor#ali-zimmer](../?via=tutor#ali-zimmer)
@@ -102,7 +102,7 @@ how a computer stores data like this: only with 0 and 1.
 
 - Task: Match each part of the room tree to its example.
 - Answer format: match each item on the left with one on the right
-- Solution: root – the node 6b; leaf – the node Lea; edge – the line from 22 to Mia
+- Solution: root – the node 6b; leaf – the node Ben; edge – the line from 22 to Mia
 - Explanation: The root is the top node, a leaf has no node below it, and an edge connects two nodes.
 - Link: [../?via=tutor#teile-des-baums](../?via=tutor#teile-des-baums)
 

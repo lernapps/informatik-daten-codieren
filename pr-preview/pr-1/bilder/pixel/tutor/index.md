@@ -90,7 +90,7 @@ Jetzt malst du selbst. Links steht der Code eines Bildes, Zeile für Zeile. Tipp
 
 - Aufgabe `bild-kennt-form` (unten)
 
-Jetzt kannst du ein Bild aus Pixeln codieren und decodieren. Selins Zelt soll auf ein großes Plakat. Was passiert, wenn man ein Pixelbild vergrößert? Das siehst du auf der nächsten Seite.
+Jetzt kannst du ein Bild aus Pixeln codieren und decodieren. Jona und Selin machen für die Klassenfahrt ein großes Plakat. Was passiert, wenn man ein Pixelbild vergrößert? Das siehst du auf der nächsten Seite.
 
 ### Aufgabe pixel-zaehlen
 

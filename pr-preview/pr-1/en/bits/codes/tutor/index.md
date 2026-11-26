@@ -43,20 +43,21 @@ Recognising codes in everyday life, and encoding and decoding a message with Mor
 
 ### Messages without words
 
-Class 6b is on the bus to Seeberg. Selin points out of the window: there are messages without words
-everywhere, at the traffic lights, on the milk carton in Mia's bag, on the signs by the road.
+Class 6b has arrived at Seeberg by train and is walking from the station to the youth hostel. Selin points at
+the street: there are messages without words everywhere, at the traffic lights, on the milk carton in Mia's
+bag, on the signs.
 
 In the first chapter you saw how information becomes data. On this page you will learn about **codes**:
 fixed rules for turning data into other symbols.
 
-Picture: Jona, Selin and Mia, who has black curls, glasses and a purple jacket, are sitting on the bus and looking out of the window. Outside, a traffic light is red. Caption: Jona, Selin and Mia on the bus to Seeberg
+Picture: Jona, Selin and Mia, who has black curls, glasses and a purple jacket, are standing on the pavement. Next to them, a traffic light is red. Caption: Jona, Selin and Mia on the way to the youth hostel
 
 - Exercise `zeichen-bedeutung` (below)
 
 ### Morse code
 
-In the evening at Seeberg, Jona and Selin sleep in different rooms. They want to send each other messages
-with a torch. For this they use **Morse code**: each letter is a series of short flashes (·) and long ones
+At Seeberg, Jona and Selin sleep in different rooms. In the evening they want to send each other messages
+with a torch. They practise on the way. For this they use **Morse code**: each letter is a series of short flashes (·) and long ones
 (–). Between two letters they pause, shown here as a gap.
 
 Part of the Morse code table:
@@ -92,7 +93,7 @@ Now you can encode and decode with a code table. Morse code needs short, long an
 
 - Task: What does the sign mean? Match them.
 - Answer format: match each item on the left with one on the right
-- Solution: The red figure at the crossing lights up. – Stop and wait.; The green figure at the crossing lights up. – You may cross.; The till beeps at the barcode on the milk. – The till has read the number of the product.
+- Solution: The red man at the crossing lights up. – Stop and wait.; The green man at the crossing lights up. – You may cross.; The till beeps at the barcode on the milk. – The till has read the number of the product.
 - Explanation: Each sign stands for a meaning by a fixed rule. If you know the rule, you understand the sign without words.
 - Link: [../?via=tutor#zeichen-bedeutung](../?via=tutor#zeichen-bedeutung)
 
@@ -101,7 +102,7 @@ Now you can encode and decode with a code table. Morse code needs short, long an
 - Task: Selin flashes: · · · | · | · . The lines | are pauses. Which word is it?
 - Answer format: choose one answer
 - Choices (✓ right, ✗ wrong, with the app's message):
-  - ✓ SEE – · · · is S, then · twice for E: SEE, as in Seeberg.
+  - ✓ SEE – · · · is S, then · twice for E: SEE, as in Seeberg (and the English word see).
   - ✗ EEEEE – That is how you read it if you ignore the pauses. The first three dots belong to one letter.
   - ✗ OEE – O is three long flashes, – – –. But Selin flashes three short ones.
 - Solution: SEE

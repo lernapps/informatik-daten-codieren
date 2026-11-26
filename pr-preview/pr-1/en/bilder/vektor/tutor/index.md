@@ -57,7 +57,7 @@ Picture: Two red circles of the same size. Circle A has an edge made of steps. C
 
 - **vector image**: A vector image stores a picture as shapes such as circles, lines and rectangles, each with its numbers, for example the centre, the radius and the colour.
 
-Sun B is a vector image. All that is stored is: a circle, centre (50 | 50), radius 40, colour red. When you make it bigger, the computer works out the circle again. That is why the edge stays smooth.
+Sun B is a vector image. All that is stored is: a circle, centre (50 | 50), radius 40, colour red. (50 | 50) means 50 across and 50 up. The radius is the distance from the centre to the edge. When you make it bigger, the computer works out the circle again. That is why the edge stays smooth.
 
 Bitmap and vector images compared:
 - Comparison | bitmap image | vector image

@@ -43,8 +43,9 @@ Turning a decimal number into a binary number: with the bit cards and by dividin
 
 ### Bus number 27
 
-On the last day, class 6b goes home on bus number 27. Jona wants to put the number on the room door with
-bit cards, so that everyone knows.
+On Tuesday, class 6b goes on an outing on bus number 27. Jona wants to put the number on the room door with
+bit cards, so that everyone knows. First he practises with other numbers: make the number the task gives.
+The 27 comes after that.
 
 On the page before you read bit cards and turned them into a number. Now you go the other way: a number
 becomes bits.
@@ -89,7 +90,7 @@ When you divide, the remainder for card 1 comes out first. That is why you read 
 
 - Exercise `zwoelf-binaer` (below)
 
-Now you can turn any number into bits. For 40 you need six digits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.
+Now you can turn any number into bits. On the next page you will find out how many bits a computer groups together and how many bits a photo needs.
 
 ### Exercise karten-legen
 

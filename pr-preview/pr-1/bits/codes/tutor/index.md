@@ -43,20 +43,21 @@ Codes aus dem Alltag erkennen und eine Nachricht mit dem Morsecode codieren und 
 
 ### Nachrichten ohne Worte
 
-Die 6b sitzt im Bus zum Seeberg. Selin zeigt aus dem Fenster: Überall sind Nachrichten ohne Worte, an
-der Ampel, auf der Milchtüte in Mias Tasche, auf den Schildern an der Straße.
+Die 6b ist mit dem Zug am Seeberg angekommen und läuft vom Bahnhof zur Jugendherberge. Selin zeigt auf
+die Straße: Überall sind Nachrichten ohne Worte, an der Ampel, auf der Milchtüte in Mias Tasche, auf den
+Schildern.
 
 Im ersten Kapitel hast du gesehen, wie aus Information Daten werden. Auf dieser Seite lernst du
 **Codes** kennen: feste Regeln, mit denen man Daten in andere Zeichen übersetzt.
 
-Bild: Jona, Selin und Mia mit schwarzen Locken, Brille und lila Jacke sitzen im Bus und schauen aus dem Fenster. Draußen leuchtet eine Ampel rot. Bildunterschrift: Jona, Selin und Mia im Bus zum Seeberg
+Bild: Jona, Selin und Mia mit schwarzen Locken, Brille und lila Jacke stehen auf dem Gehweg. Neben ihnen leuchtet eine Ampel rot. Bildunterschrift: Jona, Selin und Mia auf dem Weg zur Jugendherberge
 
 - Aufgabe `zeichen-bedeutung` (unten)
 
 ### Der Morsecode
 
-Am Abend am Seeberg schlafen Jona und Selin in verschiedenen Zimmern. Sie wollen sich mit der
-Taschenlampe Nachrichten schicken. Dafür nehmen sie den **Morsecode**: Jeder Buchstabe ist eine Folge aus
+Am Seeberg schlafen Jona und Selin in verschiedenen Zimmern. Am Abend wollen sie sich mit der
+Taschenlampe Nachrichten schicken. Unterwegs üben sie schon. Dafür nehmen sie den **Morsecode**: Jeder Buchstabe ist eine Folge aus
 kurzen Blinkzeichen (·) und langen (–). Zwischen zwei Buchstaben machen sie eine Pause, hier eine Lücke.
 
 Ein Teil der Morsetabelle:
