@@ -175,15 +175,16 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
       as it says. Commit.
 - [x] Load skill `lernapps-github`. Push the branch, open the preview pull request and see its checks to green, as it
       says.
-- [ ] **Checkpoint:** publish. Show what the increment adds and the preview link. Ask whether it may go online. Stop
+- [x] **Checkpoint:** publish. Show what the increment adds and the preview link. Ask whether it may go online. Stop
       and wait for the yes.
-- [ ] Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: the pull request squash-merged into
+      Creator: Der Mensch hat PR #2 gemergt (Freigabe über den Orchestrator).
+- [x] (skipped: Der Mensch hat PR 2 per Squash gemergt; Pages-Lauf 45893165604 grün) Load skill `lernapps-commit`. Publish as skill `lernapps-github` says: the pull request squash-merged into
       `main`, the run of `Pages` watched to its end.
-- [ ] Open the address the job `deploy` printed and confirm the new content. Never use a derived address.
-- [ ] The app is listed and its entry changes (school years, summary): load skill `lernapps-listing` and write the
+- [x] Open the address the job `deploy` printed and confirm the new content. Never use a derived address.
+- [x] (skipped: Geänderter Eintrag (Klassen 5-8, Zusammenfassung) an den Orchestrator geschickt; den Eintrag pflegt er) The app is listed and its entry changes (school years, summary): load skill `lernapps-listing` and write the
       changed entry. Else skip this task.
-- [ ] Fill the retrospective.
-- [ ] Commit this plan on `main` and push it. A push of only `.vibe/` publishes nothing.
+- [x] Fill the retrospective.
+- [x] (skipped: Push auf main ist in diesem Epic nicht erlaubt; Plan liegt auf increment/7-8) Commit this plan on `main` and push it. A push of only `.vibe/` publishes nothing.
 - [ ] The entry changed: open the pull request to the catalog as skill `lernapps-listing` says, without asking first,
       and see it to "bestanden". Else skip this task: `npx --no -- lernapps plan skip "entry unchanged"`.
 - [ ] **Checkpoint:** list. Tell the creator the result: the pull request and its result, or, when the entry did not
@@ -196,12 +197,17 @@ Kapitel 5 „Texte und Signale codieren“ (Stufe 7-8) als Inkrement: Lernende c
 
 ### Phases reached
 
-<!-- Last phase completed, checkpoints passed. E.g. "commit; confirmed, published". -->
+commit; Checkpoints Recherche, Plan, Musterseite und Veröffentlichen bestanden (Orchestrator, Veröffentlichen durch
+den Menschen). Inkrement als Squash-Commit über PR #2 auf `main`, Pages-Lauf 45893165604 grün, neue Seiten online.
 
 ### Creator turns after the plan
 
-<!-- Number of creator messages after the confirmation, topic of each. Target: at most 3. -->
+4 Nachrichten des Orchestrators nach dem Ja: (1) Ja zur Musterseite mit Hinweisen zu Abtasten, (2) tooling 0.20.2
+mit app-templates 0.24.0, (3) Entscheidung Mbit/s bleibt auf `texte/analog`, (4) Freigabe beim Menschen angefragt.
 
 ### Where I had to guess
 
-<!-- Each gap in plan, skills, content guide, messages or answers, and your choice. "None" if none. -->
+- Geschichte 7-8 als Chat ohne Bilder; Selin schickt die Nachricht „wie letztes Jahr“.
+- Unicode als Ausblick (mehr als 170 000 Zeichen, UTF-8 mit 1-4 Byte), Primärquellen verlinkt.
+- Kurve der Komponente Abtasten selbst gewählt (zwei Sinusanteile, bis ±0,95).
+- Interview-Aufgaben im Explore übersprungen: Die Antworten standen im Auftrag des Orchestrators.
