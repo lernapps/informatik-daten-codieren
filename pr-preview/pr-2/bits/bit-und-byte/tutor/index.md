@@ -219,29 +219,30 @@ Nr. | B | Lösung | F1 | F2
 
 ### Aufgabe bit-in-byte
 
-- Aufgabe: „Ein Code hat {n} Bit. Wie viele Byte sind das?“
+- Aufgabe: „Eine Nachricht hat {n} Bit. Wie viele Byte sind das?“
 - Antwortformat: eine Zahl eintippen (Byte)
 - Tipp der App: „8 Bit sind 1 Byte.“
 - Lösungsweg:
   - 8 Bit = 1 Byte, also {n} Bit = {n} : 8 Byte = {answer} Byte.
 - Typische Fehler und was die App sagt:
   - F1: „Von Bit zu Byte wird die Zahl kleiner: Teile durch 8, statt mal 8 zu rechnen.“
+  - F2: „Das ist die Zahl der Bit. Gefragt sind Byte.“
 - Link zu Nummer n: `../?bit-in-byte=n&via=tutor#bit-in-byte`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
-Nr. | n | Lösung | F1
-1 | 56 | 7 Byte | 448
-2 | 80 | 10 Byte | 640
-3 | 24 | 3 Byte | 192
-4 | 40 | 5 Byte | 320
-5 | 32 | 4 Byte | 256
-6 | 88 | 11 Byte | 704
-7 | 16 | 2 Byte | 128
-8 | 96 | 12 Byte | 768
-9 | 72 | 9 Byte | 576
-10 | 64 | 8 Byte | 512
-11 | 48 | 6 Byte | 384
+Nr. | n | Lösung | F1 | F2
+1 | 56 | 7 Byte | 448 | 56
+2 | 80 | 10 Byte | 640 | 80
+3 | 24 | 3 Byte | 192 | 24
+4 | 40 | 5 Byte | 320 | 40
+5 | 32 | 4 Byte | 256 | 32
+6 | 88 | 11 Byte | 704 | 88
+7 | 16 | 2 Byte | 128 | 16
+8 | 96 | 12 Byte | 768 | 96
+9 | 72 | 9 Byte | 576 | 72
+10 | 64 | 8 Byte | 512 | 64
+11 | 48 | 6 Byte | 384 | 48
 ```
 
 ### Aufgabe kb-in-byte

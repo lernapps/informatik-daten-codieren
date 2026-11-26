@@ -219,29 +219,30 @@ No. | B | Solution | F1 | F2
 
 ### Exercise bit-in-byte
 
-- Task: „A code has {n} bits. How many bytes is that?“
+- Task: „A message has {n} bits. How many bytes is that?“
 - Answer format: type a number (bytes)
 - The app's hint: „8 bits are 1 byte.“
 - Steps of the solution:
   - 8 bits = 1 byte, so {n} bits = {n} ÷ 8 bytes = {answer} bytes.
 - Typical mistakes and what the app says:
   - F1: „From bits to bytes the number gets smaller: divide by 8 instead of multiplying by 8.“
+  - F2: „That is the number of bits. The question is about bytes.“
 - Link to number n: `../?bit-in-byte=n&via=tutor#bit-in-byte`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
 
 ```
-No. | n | Solution | F1
-1 | 56 | 7 bytes | 448
-2 | 80 | 10 bytes | 640
-3 | 24 | 3 bytes | 192
-4 | 40 | 5 bytes | 320
-5 | 32 | 4 bytes | 256
-6 | 88 | 11 bytes | 704
-7 | 16 | 2 bytes | 128
-8 | 96 | 12 bytes | 768
-9 | 72 | 9 bytes | 576
-10 | 64 | 8 bytes | 512
-11 | 48 | 6 bytes | 384
+No. | n | Solution | F1 | F2
+1 | 56 | 7 bytes | 448 | 56
+2 | 80 | 10 bytes | 640 | 80
+3 | 24 | 3 bytes | 192 | 24
+4 | 40 | 5 bytes | 320 | 40
+5 | 32 | 4 bytes | 256 | 32
+6 | 88 | 11 bytes | 704 | 88
+7 | 16 | 2 bytes | 128 | 16
+8 | 96 | 12 bytes | 768 | 96
+9 | 72 | 9 bytes | 576 | 72
+10 | 64 | 8 bytes | 512 | 64
+11 | 48 | 6 bytes | 384 | 48
 ```
 
 ### Exercise kb-in-byte

@@ -59,15 +59,17 @@ numbers that the phone stores as bits.</p>
 <ul>
 <li><p><strong>analog</strong>: Analog means a value changes smoothly and can have any value in between, like a sound wave or the hands of a clock.</p>
 </li>
-<li><p><strong>digital</strong>: Digital means a value is shown in steps as a number, in a computer as a binary number.</p>
+<li><p><strong>digital</strong>: Digital means a value is only recorded at single moments in time and in steps as a number, in a computer as a binary number.</p>
 </li>
 <li><p>Exercise <code>analog-oder-digital</code> (below)</p>
 </li>
 </ul>
-<p>When <strong>digitising</strong>, the phone takes two steps:</p>
+<p>The microphone in the phone turns the sound into an electrical voltage. It changes smoothly with the voice,
+so it is still analog. When <strong>digitising</strong>, the phone then takes two steps:</p>
 <ol>
-<li><strong>Sampling:</strong> it measures the sound wave at equal intervals, for example 8000 times every second.</li>
-<li><strong>Rounding:</strong> it rounds each measured value to the nearest allowed level and stores that level&#39;s number
+<li><strong>Sampling:</strong> it measures the sound wave at equal intervals, for example 8000 times every second (the
+sample rate).</li>
+<li><strong>Quantising (rounding):</strong> it rounds each measured value to the nearest allowed level and stores that level&#39;s number
 as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8.</li>
 </ol>
 <p><strong>Remember: Remember</strong></p>
@@ -94,7 +96,7 @@ everything with 0 and 1.</p>
 <li>Task: Which clock shows the time smoothly, so every moment between two minutes as well?</li>
 <li>Answer format: choose one answer</li>
 <li>Choices (✓ right, ✗ wrong, with the app&#39;s message):<ul>
-<li>✓ A clock with hands – The hands move on without jumps. That is called analog.</li>
+<li>✓ A clock with hands – The position of the hands shows the time as an angle. The minute hand also stands between two minute marks. That is called analog.</li>
 <li>✗ A clock with digits – The digits jump from one minute to the next. In between, it shows nothing. That is called digital.</li>
 </ul>
 </li>
@@ -104,10 +106,10 @@ everything with 0 and 1.</p>
 </ul>
 <h3>Exercise analog-oder-digital</h3>
 <ul>
-<li>Task: Match each thing to how it shows or stores its value.</li>
+<li>Task: How does each thing show or store its value? Match them.</li>
 <li>Answer format: match each item on the left with one on the right</li>
-<li>Solution: clock with hands – smoothly, analog; Mia&#39;s voice message on the phone – as measured values in bits, digital; clock with digits – in steps of one minute as digits, digital</li>
-<li>Explanation: Analog is smooth. Digital is in steps, as numbers.</li>
+<li>Solution: clock with hands – The hand also stands between two marks.; voltage in the microphone – It changes smoothly with the sound.; Mia&#39;s voice message on the phone – It is made of measured values in bits.; clock with digits – It jumps from minute to minute.</li>
+<li>Explanation: The clock with hands and the microphone are analog, they change smoothly. The voice message and the clock with digits are digital, in steps as numbers. Even a modern phone has an analog part, its microphone.</li>
 <li>Link: <a href="../?via=tutor#analog-oder-digital">../?via=tutor#analog-oder-digital</a></li>
 </ul>
 <h3>Exercise stufen-aus-bits</h3>
@@ -122,18 +124,19 @@ everything with 0 and 1.</p>
 <li>Typical mistakes and what the app says:<ul>
 <li>F1: „You worked out {n} × 2. Each extra bit doubles the number of levels: 2 × 2 × … × 2, {n} times.“</li>
 <li>F2: „That is the number of bits. The question is how many levels you can tell apart with them.“</li>
+<li>F3: „That is the number of the highest level. But level 0 counts too.“</li>
 </ul>
 </li>
 <li>Link to number n: <code>../?stufen-aus-bits=n&amp;via=tutor#stufen-aus-bits</code></li>
 <li>Tasks by number: the values for <code>{…}</code>, the solution and what the mistakes give. A mistake without a column has no fixed value; the app&#39;s message says whether it is there. <code>{answer}</code> is the solution.</li>
 </ul>
-<pre><code>No. | n | Solution | F1 | F2
-1 | 3 | 8 | 6 | 3
-2 | 5 | 32 | 10 | 5
-3 | 6 | 64 | 12 | 6
-4 | 7 | 128 | 14 | 7
-5 | 8 | 256 | 16 | 8
-6 | 4 | 16 | 8 | 4
+<pre><code>No. | n | Solution | F1 | F2 | F3
+1 | 3 | 8 | 6 | 3 | 7
+2 | 5 | 32 | 10 | 5 | 31
+3 | 6 | 64 | 12 | 6 | 63
+4 | 7 | 128 | 14 | 7 | 127
+5 | 8 | 256 | 16 | 8 | 255
+6 | 4 | 16 | 8 | 4 | 15
 </code></pre>
 <h3>Exercise bits-pro-sekunde</h3>
 <ul>
@@ -167,7 +170,7 @@ everything with 0 and 1.</p>
 </code></pre>
 <h3>Exercise mbit-und-mb</h3>
 <ul>
-<li>Task: Mia&#39;s internet manages 16 Mbit/s, that is 16 megabits per second. How many megabytes can she download in one second?</li>
+<li>Task: Mia sends her voice message over the internet. It manages 16 Mbit/s, that is 16 megabits per second. How many megabytes is that in one second?</li>
 <li>Answer format: type a number (MB)</li>
 <li>Solution: 2 MB</li>
 <li>Explanation: 16 Mbit ÷ 8 = 2 MB. Internet speed is given in Mbit/s, storage in MB.</li>

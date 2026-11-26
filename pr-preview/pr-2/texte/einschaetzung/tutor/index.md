@@ -80,4 +80,4 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 - A3: Aufgabe bits-eines-worts der Seite „Zeichen werden Zahlen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A4: Aufgabe stufen-aus-bits der Seite „Analog und digital“
 - A5: Aufgabe bits-pro-sekunde der Seite „Analog und digital“
-- A6: Aufgabe mbit-und-mb der Seite „Analog und digital“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A6: Aufgabe mehr-messpunkte der Seite „Analog und digital“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)

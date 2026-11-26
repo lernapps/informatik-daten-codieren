@@ -106,4 +106,4 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 - A29: exercise bits-eines-worts of the page “Characters become numbers” (always the same task, on its page too: right may be remembered)
 - A30: exercise stufen-aus-bits of the page “Analog and digital”
 - A31: exercise bits-pro-sekunde of the page “Analog and digital”
-- A32: exercise mbit-und-mb of the page “Analog and digital” (always the same task, on its page too: right may be remembered)
+- A32: exercise mehr-messpunkte of the page “Analog and digital” (always the same task, on its page too: right may be remembered)

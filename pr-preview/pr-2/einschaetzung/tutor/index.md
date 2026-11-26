@@ -106,4 +106,4 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 - A29: Aufgabe bits-eines-worts der Seite „Zeichen werden Zahlen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A30: Aufgabe stufen-aus-bits der Seite „Analog und digital“
 - A31: Aufgabe bits-pro-sekunde der Seite „Analog und digital“
-- A32: Aufgabe mbit-und-mb der Seite „Analog und digital“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A32: Aufgabe mehr-messpunkte der Seite „Analog und digital“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)

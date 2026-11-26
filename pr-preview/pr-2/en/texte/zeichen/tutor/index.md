@@ -39,7 +39,7 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 ## Context: the page “Characters become numbers”
 
-How letters are stored as binary numbers with a code table such as ASCII or Unicode.
+How letters are stored as binary numbers with a character set such as ASCII or Unicode.
 
 ### A message in the class chat
 
@@ -54,12 +54,12 @@ On this page you will find out, with the bit cards from chapter 2.
 
 - Exercise `wie-gespeichert` (below)
 
-### A code table for characters
+### A character set
 
-So that all devices use the same numbers, there is a fixed **code table**. The best known one is called
+So that all devices use the same numbers, there is a fixed **character set**, a code table. The best known one is called
 **ASCII**. It has 128 characters with the codes 0 to 127: capital letters, small letters, digits,
 punctuation marks and control characters, but no letters with accents such as Ä. A has the number 65, B 66,
-C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin's message, A to Z are enough.
+C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin's message, A to Z and the space are enough.
 
 Part of the ASCII table with the byte for each code:
 - Character | Code | Byte
@@ -69,7 +69,7 @@ Part of the ASCII table with the byte for each code:
 - C | 67 | 01000011
 - Z | 90 | 01011010
 
-- **code table**: A code table fixes which number belongs to which character. The computer stores the number as a binary number.
+- **character set**: A character set (code table) fixes which number belongs to which character. The computer stores the number as a binary number.
 
 **Remember: Remember**
 
@@ -103,7 +103,7 @@ First work out the code of the letter, as in the example. Then turn over the car
 
 ### And Ä, € or 😀?
 
-For all the writing systems in the world there is the code table **Unicode**. Today it has more than
+For almost all the writing systems in the world there is the character set **Unicode**. Today it has more than
 170,000 characters. The first 128 are exactly the ASCII characters. But one byte only gives 256 different
 numbers. So for the other characters, the phone needs more bits. Following a rule called **UTF-8**, it
 stores a character in 1 to 4 bytes: A in 1 byte, Ä in 2, € in 3 and 😀 in 4 bytes.
@@ -169,41 +169,42 @@ No. | n (hidden) | c | Solution | F1 | F2
 - Answer format: type a number
 - The app's hint: „Which letter of the alphabet is it? The 1st has 65.“
 - Steps of the solution:
-  - A = 65, and {e.z} comes after A. So {e.z} has the code {answer}.
+  - {e.z} is letter number {e.stelle}. A = 65, so {e.z} has the code 65 + {e.stelle} − 1 = {answer}.
   - As a byte: {e.bin}.
 - Typical mistakes and what the app says:
   - F1: „That is the place in the alphabet. But in the table, A starts at 65.“
   - F2: „You started at 0 for A. A has the code 65.“
+  - F3: „A is already the 1st letter. Work out 65 + place − 1.“
 - Link to number n: `../?code-ueben=n&via=tutor#code-ueben`
 - Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
 
 ```
-No. | e.z | e.bin | Solution | F1 | F2
-1 | F | 01000110 | 70 | 6 | 5
-2 | V | 01010110 | 86 | 22 | 21
-3 | X | 01011000 | 88 | 24 | 23
-4 | T | 01010100 | 84 | 20 | 19
-5 | Q | 01010001 | 81 | 17 | 16
-6 | U | 01010101 | 85 | 21 | 20
-7 | Z | 01011010 | 90 | 26 | 25
-8 | G | 01000111 | 71 | 7 | 6
-9 | D | 01000100 | 68 | 4 | 3
-10 | M | 01001101 | 77 | 13 | 12
-11 | N | 01001110 | 78 | 14 | 13
-12 | L | 01001100 | 76 | 12 | 11
-13 | K | 01001011 | 75 | 11 | 10
-14 | E | 01000101 | 69 | 5 | 4
-15 | J | 01001010 | 74 | 10 | 9
-16 | O | 01001111 | 79 | 15 | 14
-17 | I | 01001001 | 73 | 9 | 8
-18 | B | 01000010 | 66 | 2 | 1
-19 | S | 01010011 | 83 | 19 | 18
-20 | W | 01010111 | 87 | 23 | 22
-21 | Y | 01011001 | 89 | 25 | 24
-22 | H | 01001000 | 72 | 8 | 7
-23 | R | 01010010 | 82 | 18 | 17
-24 | C | 01000011 | 67 | 3 | 2
-25 | P | 01010000 | 80 | 16 | 15
+No. | e.z | e.stelle | e.bin | Solution | F1 | F2 | F3
+1 | F | 6 | 01000110 | 70 | 6 | 5 | 71
+2 | V | 22 | 01010110 | 86 | 22 | 21 | 87
+3 | X | 24 | 01011000 | 88 | 24 | 23 | 89
+4 | T | 20 | 01010100 | 84 | 20 | 19 | 85
+5 | Q | 17 | 01010001 | 81 | 17 | 16 | 82
+6 | U | 21 | 01010101 | 85 | 21 | 20 | 86
+7 | Z | 26 | 01011010 | 90 | 26 | 25 | 91
+8 | G | 7 | 01000111 | 71 | 7 | 6 | 72
+9 | D | 4 | 01000100 | 68 | 4 | 3 | 69
+10 | M | 13 | 01001101 | 77 | 13 | 12 | 78
+11 | N | 14 | 01001110 | 78 | 14 | 13 | 79
+12 | L | 12 | 01001100 | 76 | 12 | 11 | 77
+13 | K | 11 | 01001011 | 75 | 11 | 10 | 76
+14 | E | 5 | 01000101 | 69 | 5 | 4 | 70
+15 | J | 10 | 01001010 | 74 | 10 | 9 | 75
+16 | O | 15 | 01001111 | 79 | 15 | 14 | 80
+17 | I | 9 | 01001001 | 73 | 9 | 8 | 74
+18 | B | 2 | 01000010 | 66 | 2 | 1 | 67
+19 | S | 19 | 01010011 | 83 | 19 | 18 | 84
+20 | W | 23 | 01010111 | 87 | 23 | 22 | 88
+21 | Y | 25 | 01011001 | 89 | 25 | 24 | 90
+22 | H | 8 | 01001000 | 72 | 8 | 7 | 73
+23 | R | 18 | 01010010 | 82 | 18 | 17 | 83
+24 | C | 3 | 01000011 | 67 | 3 | 2 | 68
+25 | P | 16 | 01010000 | 80 | 16 | 15 | 81
 ```
 
 ### Exercise bytes-decodieren
@@ -216,13 +217,15 @@ No. | e.z | e.bin | Solution | F1 | F2
 
 ### Exercise bits-eines-worts
 
-- Task: How many bits does the word SEEBERG need in ASCII?
+- Task: How many bits does the word SEEBERG need if each character is stored as one byte?
 - Answer format: type a number (bits)
 - Solution: 56 bits
 - Explanation: 7 letters are 7 bytes. 7 × 8 = 56 bits.
 - Typical mistakes and what the app says:
   - 7: 7 is the number of letters, so of bytes. Each byte has 8 bits.
   - 70: A byte has 8 bits, not 10.
+  - 49: ASCII codes do fit into 7 bits, but a whole byte with 8 bits is always stored.
+  - 8: That is one byte, so only one letter. SEEBERG has 7.
 - Link: [../?via=tutor#bits-eines-worts](../?via=tutor#bits-eines-worts)
 
 ### Exercise umlaut-ascii

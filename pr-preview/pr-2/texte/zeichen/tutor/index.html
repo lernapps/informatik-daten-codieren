@@ -60,7 +60,7 @@ Im Klassenchat schreibt Selin:</p>
 <p>Damit alle Geräte dieselben Zahlen benutzen, gibt es eine feste <strong>Codetabelle</strong>. Die bekannteste heißt
 <strong>ASCII</strong>. Sie hat 128 Zeichen mit den Codes 0 bis 127: Großbuchstaben, Kleinbuchstaben, Ziffern,
 Satzzeichen und Steuerzeichen, aber keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
-bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Für Selins Nachricht reichen A bis Z.</p>
+bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Für Selins Nachricht reichen A bis Z und das Leerzeichen.</p>
 <p>Ein Teil der ASCII-Tabelle mit dem Byte zu jedem Code:</p>
 <ul>
 <li><p>Zeichen | Code | Byte</p>
@@ -105,7 +105,7 @@ bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Für Selins Nachr
 </li>
 </ul>
 <h3>Und Ä, € oder 😀?</h3>
-<p>Für alle Schriften der Welt gibt es die Codetabelle <strong>Unicode</strong>. Sie hat heute mehr als 170 000 Zeichen.
+<p>Für fast alle Schriften der Welt gibt es die Codetabelle <strong>Unicode</strong>. Sie hat heute mehr als 170 000 Zeichen.
 Die ersten 128 sind genau die ASCII-Zeichen. Mit einem Byte gibt es aber nur 256 verschiedene Zahlen. Für
 die anderen Zeichen braucht das Handy darum mehr Bits. Nach einer Regel namens <strong>UTF-8</strong> speichert es ein
 Zeichen in 1 bis 4 Byte: A in 1 Byte, Ä in 2, € in 3 und 😀 in 4 Byte.</p>
@@ -171,44 +171,45 @@ aus ihrer Stimme etwas, das man in Bits speichern kann?</p>
 <li>Antwortformat: eine Zahl eintippen</li>
 <li>Tipp der App: „Welcher Buchstabe im Alphabet ist es? Der 1. hat 65.“</li>
 <li>Lösungsweg:<ul>
-<li>A = 65, und {e.z} kommt nach A. Also hat {e.z} den Code {answer}.</li>
+<li>{e.z} ist der {e.stelle}. Buchstabe. A = 65, also hat {e.z} den Code 65 + {e.stelle} − 1 = {answer}.</li>
 <li>Als Byte: {e.bin}.</li>
 </ul>
 </li>
 <li>Typische Fehler und was die App sagt:<ul>
 <li>F1: „Das ist die Stelle im Alphabet. In der Tabelle beginnt A aber mit 65.“</li>
 <li>F2: „Du hast bei A mit 0 angefangen. A hat den Code 65.“</li>
+<li>F3: „A ist schon der 1. Buchstabe. Rechne 65 + Stelle − 1.“</li>
 </ul>
 </li>
 <li>Link zu Nummer n: <code>../?code-ueben=n&amp;via=tutor#code-ueben</code></li>
 <li>Aufgaben nach Nummer: die Werte für <code>{…}</code>, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. <code>{answer}</code> ist die Lösung.</li>
 </ul>
-<pre><code>Nr. | e.z | e.bin | Lösung | F1 | F2
-1 | F | 01000110 | 70 | 6 | 5
-2 | V | 01010110 | 86 | 22 | 21
-3 | X | 01011000 | 88 | 24 | 23
-4 | T | 01010100 | 84 | 20 | 19
-5 | Q | 01010001 | 81 | 17 | 16
-6 | U | 01010101 | 85 | 21 | 20
-7 | Z | 01011010 | 90 | 26 | 25
-8 | G | 01000111 | 71 | 7 | 6
-9 | D | 01000100 | 68 | 4 | 3
-10 | M | 01001101 | 77 | 13 | 12
-11 | N | 01001110 | 78 | 14 | 13
-12 | L | 01001100 | 76 | 12 | 11
-13 | K | 01001011 | 75 | 11 | 10
-14 | E | 01000101 | 69 | 5 | 4
-15 | J | 01001010 | 74 | 10 | 9
-16 | O | 01001111 | 79 | 15 | 14
-17 | I | 01001001 | 73 | 9 | 8
-18 | B | 01000010 | 66 | 2 | 1
-19 | S | 01010011 | 83 | 19 | 18
-20 | W | 01010111 | 87 | 23 | 22
-21 | Y | 01011001 | 89 | 25 | 24
-22 | H | 01001000 | 72 | 8 | 7
-23 | R | 01010010 | 82 | 18 | 17
-24 | C | 01000011 | 67 | 3 | 2
-25 | P | 01010000 | 80 | 16 | 15
+<pre><code>Nr. | e.z | e.stelle | e.bin | Lösung | F1 | F2 | F3
+1 | F | 6 | 01000110 | 70 | 6 | 5 | 71
+2 | V | 22 | 01010110 | 86 | 22 | 21 | 87
+3 | X | 24 | 01011000 | 88 | 24 | 23 | 89
+4 | T | 20 | 01010100 | 84 | 20 | 19 | 85
+5 | Q | 17 | 01010001 | 81 | 17 | 16 | 82
+6 | U | 21 | 01010101 | 85 | 21 | 20 | 86
+7 | Z | 26 | 01011010 | 90 | 26 | 25 | 91
+8 | G | 7 | 01000111 | 71 | 7 | 6 | 72
+9 | D | 4 | 01000100 | 68 | 4 | 3 | 69
+10 | M | 13 | 01001101 | 77 | 13 | 12 | 78
+11 | N | 14 | 01001110 | 78 | 14 | 13 | 79
+12 | L | 12 | 01001100 | 76 | 12 | 11 | 77
+13 | K | 11 | 01001011 | 75 | 11 | 10 | 76
+14 | E | 5 | 01000101 | 69 | 5 | 4 | 70
+15 | J | 10 | 01001010 | 74 | 10 | 9 | 75
+16 | O | 15 | 01001111 | 79 | 15 | 14 | 80
+17 | I | 9 | 01001001 | 73 | 9 | 8 | 74
+18 | B | 2 | 01000010 | 66 | 2 | 1 | 67
+19 | S | 19 | 01010011 | 83 | 19 | 18 | 84
+20 | W | 23 | 01010111 | 87 | 23 | 22 | 88
+21 | Y | 25 | 01011001 | 89 | 25 | 24 | 90
+22 | H | 8 | 01001000 | 72 | 8 | 7 | 73
+23 | R | 18 | 01010010 | 82 | 18 | 17 | 83
+24 | C | 3 | 01000011 | 67 | 3 | 2 | 68
+25 | P | 16 | 01010000 | 80 | 16 | 15 | 81
 </code></pre>
 <h3>Aufgabe bytes-decodieren</h3>
 <ul>
@@ -220,13 +221,15 @@ aus ihrer Stimme etwas, das man in Bits speichern kann?</p>
 </ul>
 <h3>Aufgabe bits-eines-worts</h3>
 <ul>
-<li>Aufgabe: Wie viele Bit braucht das Wort SEEBERG in ASCII?</li>
+<li>Aufgabe: Wie viele Bit braucht das Wort SEEBERG, wenn jedes Zeichen als ein Byte gespeichert wird?</li>
 <li>Antwortformat: eine Zahl eintippen (Bit)</li>
 <li>Lösung: 56 Bit</li>
 <li>Erklärung: 7 Buchstaben sind 7 Byte. 7 · 8 = 56 Bit.</li>
 <li>Typische Fehler und was die App sagt:<ul>
 <li>7: 7 ist die Zahl der Buchstaben, also der Byte. Jedes Byte hat 8 Bit.</li>
 <li>70: Ein Byte hat 8 Bit, nicht 10.</li>
+<li>49: ASCII-Codes passen zwar in 7 Bit, gespeichert wird aber immer ein ganzes Byte mit 8 Bit.</li>
+<li>8: Das ist ein Byte, also nur ein Buchstabe. SEEBERG hat 7.</li>
 </ul>
 </li>
 <li>Link: <a href="../?via=tutor#bits-eines-worts">../?via=tutor#bits-eines-worts</a></li>

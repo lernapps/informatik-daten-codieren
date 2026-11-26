@@ -56,11 +56,12 @@ daraus Zahlen werden, die das Handy als Bits speichert.
 
 - **analog**: Analog heißt, ein Wert ändert sich stufenlos und kann jeden Zwischenwert haben, wie eine Schallwelle oder die Zeiger einer Uhr.
 
-- **digital**: Digital heißt, ein Wert wird in Stufen als Zahl dargestellt, im Computer als Binärzahl.
+- **digital**: Digital heißt, ein Wert wird nur zu einzelnen Zeitpunkten und in Stufen als Zahl festgehalten, im Computer als Binärzahl.
 
 - Aufgabe `analog-oder-digital` (unten)
 
-Beim **Digitalisieren** macht das Handy zwei Schritte:
+Das Mikrofon im Handy macht aus dem Schall eine elektrische Spannung. Sie ändert sich stufenlos mit der
+Stimme, ist also noch analog. Beim **Digitalisieren** macht das Handy dann zwei Schritte:
 
 1. **Abtasten:** Es misst die Schallwelle in gleichen Abständen, zum Beispiel 8000-mal in jeder Sekunde.
 2. **Runden:** Jeden Messwert rundet es auf die nächste erlaubte Stufe und speichert deren Nummer als
@@ -95,7 +96,7 @@ zu Zahlen. Ob Zettel, Bild, Geheimschrift oder Sprachnachricht: Am Ende speicher
 - Aufgabe: Welche Uhr zeigt die Zeit stufenlos, also auch jeden Augenblick zwischen zwei Minuten?
 - Antwortformat: eine Antwort wählen
 - Antworten zur Wahl (✓ richtig, ✗ falsch, mit der Meldung der App):
-  - ✓ Eine Uhr mit Zeigern – Die Zeiger wandern ohne Sprünge weiter. Das nennt man analog.
+  - ✓ Eine Uhr mit Zeigern – Die Stellung der Zeiger zeigt die Zeit als Winkel. Der Minutenzeiger steht auch zwischen zwei Minutenstrichen. Das nennt man analog.
   - ✗ Eine Uhr mit Ziffern – Die Ziffern springen von einer Minute zur nächsten. Dazwischen zeigt sie nichts an. Das nennt man digital.
 - Lösung: Eine Uhr mit Zeigern
 - Erklärung: Analoge Anzeigen ändern sich stufenlos, digitale in Schritten, als Zahlen.
@@ -103,10 +104,10 @@ zu Zahlen. Ob Zettel, Bild, Geheimschrift oder Sprachnachricht: Am Ende speicher
 
 ### Aufgabe analog-oder-digital
 
-- Aufgabe: Ordne jedem Ding zu, wie es den Wert zeigt oder speichert.
+- Aufgabe: Wie zeigt oder speichert jedes Ding seinen Wert? Ordne zu.
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: Uhr mit Zeigern – stufenlos, analog; Mias Sprachnachricht auf dem Handy – als Messwerte in Bits, digital; Uhr mit Ziffern – in Minutenschritten als Ziffern, digital
-- Erklärung: Analog ist stufenlos. Digital ist in Stufen, als Zahlen.
+- Lösung: Uhr mit Zeigern – Der Zeiger steht auch zwischen zwei Strichen.; Spannung im Mikrofon – Sie ändert sich stufenlos mit dem Schall.; Mias Sprachnachricht auf dem Handy – Sie besteht aus Messwerten in Bits.; Uhr mit Ziffern – Sie springt von Minute zu Minute.
+- Erklärung: Zeigeruhr und Mikrofon sind analog, sie ändern sich stufenlos. Sprachnachricht und Ziffernuhr sind digital, in Stufen als Zahlen. Auch ein modernes Handy hat mit dem Mikrofon ein analoges Teil.
 - Link: [../?via=tutor#analog-oder-digital](../?via=tutor#analog-oder-digital)
 
 ### Aufgabe stufen-aus-bits
@@ -119,17 +120,18 @@ zu Zahlen. Ob Zettel, Bild, Geheimschrift oder Sprachnachricht: Am Ende speicher
 - Typische Fehler und was die App sagt:
   - F1: „Du hast {n} · 2 gerechnet. Jedes Bit mehr verdoppelt die Zahl der Stufen: 2 · 2 · … · 2, {n}-mal.“
   - F2: „Das ist die Zahl der Bit. Gefragt ist, wie viele Stufen man damit unterscheiden kann.“
+  - F3: „Das ist die Nummer der höchsten Stufe. Die Stufe 0 zählt aber mit.“
 - Link zu Nummer n: `../?stufen-aus-bits=n&via=tutor#stufen-aus-bits`
 - Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
 
 ```
-Nr. | n | Lösung | F1 | F2
-1 | 3 | 8 | 6 | 3
-2 | 5 | 32 | 10 | 5
-3 | 6 | 64 | 12 | 6
-4 | 7 | 128 | 14 | 7
-5 | 8 | 256 | 16 | 8
-6 | 4 | 16 | 8 | 4
+Nr. | n | Lösung | F1 | F2 | F3
+1 | 3 | 8 | 6 | 3 | 7
+2 | 5 | 32 | 10 | 5 | 31
+3 | 6 | 64 | 12 | 6 | 63
+4 | 7 | 128 | 14 | 7 | 127
+5 | 8 | 256 | 16 | 8 | 255
+6 | 4 | 16 | 8 | 4 | 15
 ```
 
 ### Aufgabe bits-pro-sekunde
@@ -162,7 +164,7 @@ Nr. | m | b | Lösung | F1 | F2
 
 ### Aufgabe mbit-und-mb
 
-- Aufgabe: Mias Internet schafft 16 Mbit/s, also 16 Megabit pro Sekunde. Wie viele Megabyte kann sie in einer Sekunde laden?
+- Aufgabe: Mia schickt ihre Sprachnachricht übers Internet. Es schafft 16 Mbit/s, also 16 Megabit pro Sekunde. Wie viele Megabyte sind das in einer Sekunde?
 - Antwortformat: eine Zahl eintippen (MB)
 - Lösung: 2 MB
 - Erklärung: 16 Mbit : 8 = 2 MB. Internet wird in Mbit/s angegeben, Speicher in MB.
