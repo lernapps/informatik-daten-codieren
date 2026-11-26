@@ -69,8 +69,9 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 ### Chapter “Encoding text and signals”
 
-- no self-assessment
+- self-assessment of the chapter
 - “Characters become numbers”
+- “Analog and digital”
 
 ## The tasks of this self-assessment
 

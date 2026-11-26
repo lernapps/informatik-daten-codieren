@@ -141,6 +141,16 @@
       "competencies": [
         "zeichencodierung"
       ]
+    },
+    {
+      "path": "texte/analog/",
+      "title": {
+        "de": "Analog und digital",
+        "en": "Analog and digital"
+      },
+      "competencies": [
+        "analog-und-digital"
+      ]
     }
   ]
 }

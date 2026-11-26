@@ -79,6 +79,8 @@ Hier sind acht Karten, also ein Byte. Tippe auf eine Karte, um sie umzudrehen. U
 
 - Aufgabe `byte-in-bit` (unten)
 
+- Aufgabe `bit-in-byte` (unten)
+
 - Aufgabe `kb-in-byte` (unten)
 
 - Aufgabe `einheiten-ordnen` (unten)
@@ -213,6 +215,33 @@ Nr. | B | Lösung | F1 | F2
 9 | 11 | 88 Bit | 110 | 11
 10 | 3 | 24 Bit | 30 | 3
 11 | 2 | 16 Bit | 20 | 2
+```
+
+### Aufgabe bit-in-byte
+
+- Aufgabe: „Ein Code hat {n} Bit. Wie viele Byte sind das?“
+- Antwortformat: eine Zahl eintippen (Byte)
+- Tipp der App: „8 Bit sind 1 Byte.“
+- Lösungsweg:
+  - 8 Bit = 1 Byte, also {n} Bit = {n} : 8 Byte = {answer} Byte.
+- Typische Fehler und was die App sagt:
+  - F1: „Von Bit zu Byte wird die Zahl kleiner: Teile durch 8, statt mal 8 zu rechnen.“
+- Link zu Nummer n: `../?bit-in-byte=n&via=tutor#bit-in-byte`
+- Aufgaben nach Nummer: die Werte für `{…}`, die Lösung und was bei den Fehlern herauskommt. Ein Fehler ohne Spalte hat keinen festen Wert; die Meldung der App sagt, ob er vorliegt. `{answer}` ist die Lösung.
+
+```
+Nr. | n | Lösung | F1
+1 | 56 | 7 Byte | 448
+2 | 80 | 10 Byte | 640
+3 | 24 | 3 Byte | 192
+4 | 40 | 5 Byte | 320
+5 | 32 | 4 Byte | 256
+6 | 88 | 11 Byte | 704
+7 | 16 | 2 Byte | 128
+8 | 96 | 12 Byte | 768
+9 | 72 | 9 Byte | 576
+10 | 64 | 8 Byte | 512
+11 | 48 | 6 Byte | 384
 ```
 
 ### Aufgabe kb-in-byte

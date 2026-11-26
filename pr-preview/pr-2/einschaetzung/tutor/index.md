@@ -69,8 +69,9 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ### Kapitel „Texte und Signale codieren“
 
-- keine Selbsteinschätzung
-- „Zeichen werden Zahlen“ · nicht abgefragt
+- Selbsteinschätzung des Kapitels
+- „Zeichen werden Zahlen“ · Aufgaben A27, A28, A29
+- „Analog und digital“ · Aufgaben A30, A31, A32
 
 ## Die Aufgaben dieser Selbsteinschätzung
 
@@ -100,3 +101,9 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 - A24: Aufgabe caesar-verschluesseln der Seite „Die Caesar-Scheibe“
 - A25: Aufgabe caesar-schluessel-zahl der Seite „Wie sicher ist das?“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
 - A26: Aufgabe geheimes-verfahren der Seite „Wie sicher ist das?“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A27: Aufgabe code-ueben der Seite „Zeichen werden Zahlen“
+- A28: Aufgabe code-ueben der Seite „Zeichen werden Zahlen“
+- A29: Aufgabe bits-eines-worts der Seite „Zeichen werden Zahlen“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)
+- A30: Aufgabe stufen-aus-bits der Seite „Analog und digital“
+- A31: Aufgabe bits-pro-sekunde der Seite „Analog und digital“
+- A32: Aufgabe mbit-und-mb der Seite „Analog und digital“ (immer dieselbe Aufgabe, auch auf der Seite: richtig kann gemerkt sein)

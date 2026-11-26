@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script type="module" crossorigin src="../../../assets/index-B8ecXKUy.js"></script>
+    <link rel="modulepreload" crossorigin href="../../../assets/tasks-DADUYy52-D5IfZDbd.js">
+    <link rel="stylesheet" crossorigin href="../../../assets/index-DYVfKw6-.css">
+    <title>Analog and digital – Representing and encoding data</title>
+    <meta name="description" content="Explaining the difference between analog and digital and seeing how a voice is digitised." />
+    <meta name="lernapps-archetype" content="explainer" />
+    <link rel="alternate" hreflang="de" href="../../../texte/analog/" />
+    <link rel="alternate" hreflang="en" href="../../../en/texte/analog/" />
+    <script type="module" crossorigin src="../../../assets/islands-Di2r6vfp.js"></script>
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <p class="explainer-diff-banner" role="status"><strong>Changes view: preview of this version against the base</strong> (base 0eff306) <button type="button" class="explainer-diff-toggle" data-off="View without marks" data-on="View with marks" hidden>View without marks</button></p>
+<aside class="explainer-diff-bar" aria-labelledby="diff-bar-title">
+<h2 id="diff-bar-title">Changes</h2>
+<div class="explainer-diff-counts" aria-label="Changes on this page"></div>
+<div class="explainer-diff-step" hidden>
+<button type="button" class="explainer-diff-menu" aria-expanded="false" aria-controls="diff-nav"><span aria-hidden="true">☰</span><span class="explainer-diff-btn-text"> Contents</span></button>
+<button type="button" class="explainer-diff-prev"><span aria-hidden="true">‹</span><span class="explainer-diff-btn-text"> Previous</span></button>
+<button type="button" class="explainer-diff-next"><span class="explainer-diff-btn-text">Next </span><span aria-hidden="true">›</span></button>
+</div>
+<details class="explainer-diff-more">
+<summary>List and filters</summary>
+<div class="explainer-diff-filters" hidden>
+<label><input type="checkbox" class="explainer-diff-only"> Hide unchanged blocks</label>
+<label><input type="checkbox" class="explainer-diff-open-all"> Open all earlier versions</label>
+</div>
+<p class="explainer-diff-none">Nothing changes on this page.</p>
+<p class="explainer-diff-all"><a href="../../../en/aenderungen/">All changes of the app</a></p>
+</details>
+</aside>
+<nav class="explainer-diff-nav" id="diff-nav" aria-label="Pages of the app"><h2>Pages of the app</h2><ul><li data-chapter=""><span class="explainer-diff-chapter">Information becomes data</span></li><li><a href="../../../en/information/daten/">Information and data</a></li><li><a href="../../../en/information/deuten/">Interpreting data</a></li><li><a href="../../../en/information/darstellen/">Table, chart, text</a></li><li><a href="../../../en/information/baum/">The tree</a></li><li data-chapter=""><span class="explainer-diff-chapter">Everything is 0 and 1</span> <span class="explainer-diff-chip" data-diff="changed">Changed</span></li><li><a href="../../../en/bits/codes/">Codes in everyday life</a></li><li><a href="../../../en/bits/binaersystem/">The bit cards</a></li><li><a href="../../../en/bits/umrechnen/">Numbers in bits</a></li><li><a href="../../../en/bits/bit-und-byte/">Bits and bytes</a> <span class="explainer-diff-chip" data-diff="changed">Changed</span> <span class="explainer-diff-n">2</span></li><li data-chapter=""><span class="explainer-diff-chapter">Pictures made of dots and shapes</span></li><li><a href="../../../en/bilder/pixel/">Pictures made of pixels</a></li><li><a href="../../../en/bilder/vektor/">Pixels or vectors?</a></li><li data-chapter=""><span class="explainer-diff-chapter">Secret messages</span></li><li><a href="../../../en/geheim/skytale/">Secret writing</a></li><li><a href="../../../en/geheim/caesar/">The Caesar disc</a></li><li><a href="../../../en/geheim/sicherheit/">How secure is it?</a></li><li data-chapter=""><span class="explainer-diff-chapter">Encoding text and signals</span> <span class="explainer-diff-chip" data-diff="added">New chapter</span></li><li><a href="../../../en/texte/zeichen/">Characters become numbers</a> <span class="explainer-diff-chip" data-diff="added">New page</span></li><li><a href="../../../en/texte/analog/" aria-current="page">Analog and digital</a> <span class="explainer-diff-chip" data-diff="added">New page</span></li><li><a href="../../../en/aenderungen/">Changes of the app</a></li></ul></nav>
+<header class="page-header"><nav class="page-languages" aria-label="Language"><ul><li><a href="../../../texte/analog/" hreflang="de" lang="de">Deutsch</a></li><li><a href="../../../en/texte/analog/" hreflang="en" lang="en" aria-current="page">English</a></li></ul></nav></header>
+<nav class="explainer-breadcrumbs" aria-label="You are here"><ol><li><a href="../../../en/">Start</a></li><li><a href="../../../en/texte/">Encoding text and signals</a></li><li aria-current="page">Analog and digital</li></ol></nav>
+<main class="explainer" id="inhalt-der-seite">
+<div class="explainer-title-row">
+<h1>Analog and digital</h1>
+<div class="explainer-tutor explainer-tutor-page">
+<details class="explainer-tutor-off">
+<summary>Learn with an AI tutor</summary>
+<p>An AI tutor explains this page to you and helps you with the exercises. Choose your assistant:</p>
+<p class="explainer-tutor-actions"><span class="explainer-tutor-way" hidden><select class="explainer-tutor-select" aria-label="Assistant"><option value="Claude">Claude</option><option value="ChatGPT">ChatGPT</option><option value="Mistral Vibe" data-hint="Mistral Vibe does not load web pages when the link comes from a button. So we copy the sentence with the link for you. A click on “Learn with Mistral Vibe” opens Mistral Vibe with a short message. Then paste the copied sentence (Ctrl+V, ⌘+V on a Mac) and send it.">Mistral Vibe</option><option value="copy">Another one: copy the text</option></select> <button type="button" class="explainer-tutor-on">Switch on</button></span> <span class="explainer-tutor-plain"><a class="explainer-tutor-provider" href="https://claude.ai/new" rel="noopener" target="_blank">Open with Claude</a> <a class="explainer-tutor-provider" href="https://chatgpt.com/" rel="noopener" target="_blank">Open with ChatGPT</a> <a class="explainer-tutor-provider" href="https://chat.mistral.ai/chat" rel="noopener" target="_blank">Open with Mistral Vibe</a></span></p>
+<p class="explainer-tutor-hint" role="status" aria-live="polite" hidden></p>
+<p class="explainer-tutor-note">You use your own account with the provider. The assistant is not offered by lernapps.net: lernapps only provides the content and the exercises. The choice holds for all pages, on this device only.</p>
+<p><a class="explainer-tutor-guide" href="../../../en/texte/analog/tutor/">See what your tutor gets for this page</a></p>
+</details>
+<p class="explainer-tutor-bar" hidden><button type="button" class="explainer-tutor-go"></button></p>
+<p class="explainer-tutor-status" role="status" aria-live="polite"></p>
+<script type="application/json" class="explainer-tutor-prompt">{"start":"Load ⟦base⟧texte/analog/tutor/⟦query⟧ and be my tutor.","base":"⟦base⟧","query":"⟦query⟧","root":"../../../en/","storage":"informatik-daten-codieren","page":{"id":"analog","title":"Analog and digital","exercises":[{"id":"welche-uhr","section":"einstieg","numbered":false},{"id":"analog-oder-digital","section":"idee","numbered":false},{"id":"stufen-aus-bits","section":"uebung","numbered":true},{"id":"bits-pro-sekunde","section":"uebung","numbered":true},{"id":"mbit-und-mb","section":"uebung","numbered":false},{"id":"mehr-messpunkte","section":"uebung","numbered":false}],"sections":["einstieg","idee","ausprobieren","uebung"]},"tutor":"texte/analog/tutor/","markdown":"texte/analog/tutor/index.md","ways":[{"name":"Claude","url":"https://claude.ai/new?q={prompt}"},{"name":"ChatGPT","url":"https://chatgpt.com/?q={prompt}"},{"name":"Mistral Vibe","url":"https://chat.mistral.ai/chat?q={prompt}","paste":true}],"placeholder":"I need help with a learning unit. I will tell you in a moment what it is about.","go":"Learn with {name}","done":"✓ Copied – now paste it into {name}","copy":"Copy the text","copied":"The prompt is copied. Paste it into the chat of your AI assistant.","failed":"Copying did not work. Try again."}</script>
+</div>
+</div>
+<div class="explainer-diff-page-note" data-diff="added"><span class="explainer-diff-chip" data-diff="added">New page</span></div>
+<nav class="explainer-toc" aria-label="On this page"><p class="explainer-toc-title">On this page</p><ol><li><a href="#einstieg">A voice message</a></li><li><a href="#idee">Measuring and rounding</a></li><li><a href="#ausprobieren">Try it out</a></li><li><a href="#uebung">Practice</a></li></ol></nav>
+<section class="explainer-section">
+<h2 id="einstieg">A voice message</h2>
+<div class="explainer-block" data-block="einstieg/1" data-block-id="b7dc8861" data-block-type="text" data-block-order="1">
+<div class="block-text"><p>In class 7b&#39;s chat, Mia sends a voice message: “I&#39;ll bring the ball!”</p>
+<p><strong>Jona:</strong> Text is bytes, I know that now. But how does Mia&#39;s voice get into 0 and 1?</p>
+<p>A voice is a sound wave. It changes smoothly, without jumps. On this page you will see how it turns into
+numbers that the phone stores as bits.</p></div>
+</div>
+<div class="explainer-block" data-block="einstieg/2" data-block-id="1995c214" data-block-type="single-choice" data-block-order="2">
+<div class="explainer-exercise explainer-question" id="welche-uhr">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-welche-uhr" data-id="welche-uhr" data-type="single-choice">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Which clock shows the time smoothly, so every moment between two minutes as well?</legend>
+<label class="question-option"><input type="radio" name="frage-welche-uhr" value="0"> <span>A clock with hands</span></label>
+<label class="question-option"><input type="radio" name="frage-welche-uhr" value="1"> <span>A clock with digits</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>A clock with hands</strong> <span class="question-badge question-badge-right">right answer</span></p><p>The hands move on without jumps. That is called analog.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>A clock with digits</strong></p><p>The digits jump from one minute to the next. In between, it shows nothing. That is called digital.</p></li>
+</ul>
+<p class="question-explanation">Analog displays change smoothly, digital ones in steps, as numbers.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<ul class="question-infos">
+<li class="question-info question-info-right" data-option="0"><p class="question-info-head"><strong>A clock with hands</strong> <span class="question-badge question-badge-right">right answer</span></p><p>The hands move on without jumps. That is called analog.</p></li>
+<li class="question-info" data-option="1"><p class="question-info-head"><strong>A clock with digits</strong></p><p>The digits jump from one minute to the next. In between, it shows nothing. That is called digital.</p></li>
+</ul>
+<p class="question-explanation">Analog displays change smoothly, digital ones in steps, as numbers.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"welche-uhr","text":"Which clock shows the time smoothly, so every moment between two minutes as well?","explanation":"Analog displays change smoothly, digital ones in steps, as numbers.","links":[],"type":"single-choice","options":[{"text":"A clock with hands","correct":true,"info":"The hands move on without jumps. That is called analog."},{"text":"A clock with digits","correct":false,"info":"The digits jump from one minute to the next. In between, it shows nothing. That is called digital."}]},"rendered":{}}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="idee">Measuring and rounding</h2>
+<div class="explainer-block" data-block="idee/1" data-block-id="75e54550" data-block-type="definition" data-block-order="3">
+<dl class="explainer-definition"><dt><dfn id="begriff-analog"><a href="../../../en/glossar/#analog">analog</a></dfn></dt><dd><p>Analog means a value changes smoothly and can have any value in between, like a sound wave or the hands of a clock.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/2" data-block-id="23ecdd01" data-block-type="definition" data-block-order="4">
+<dl class="explainer-definition"><dt><dfn id="begriff-digital"><a href="../../../en/glossar/#digital">digital</a></dfn></dt><dd><p>Digital means a value is shown in steps as a number, in a computer as a binary number.</p></dd></dl>
+</div>
+<div class="explainer-block" data-block="idee/3" data-block-id="caae4b53" data-block-type="matching" data-block-order="5">
+<div class="explainer-exercise explainer-question" id="analog-oder-digital">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-analog-oder-digital" data-id="analog-oder-digital" data-type="matching">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Match each thing to how it shows or stores its value.</legend>
+<p class="question-hint">Choose the match for each entry.</p>
+<ul class="question-pairs">
+<li><label><span>clock with hands</span> <select name="frage-analog-oder-digital-0" data-left="0"><option value="">please choose</option><option value="2">in steps of one minute as digits, digital</option><option value="0">smoothly, analog</option><option value="1">as measured values in bits, digital</option></select></label></li>
+<li><label><span>Mia's voice message on the phone</span> <select name="frage-analog-oder-digital-1" data-left="1"><option value="">please choose</option><option value="2">in steps of one minute as digits, digital</option><option value="0">smoothly, analog</option><option value="1">as measured values in bits, digital</option></select></label></li>
+<li><label><span>clock with digits</span> <select name="frage-analog-oder-digital-2" data-left="2"><option value="">please choose</option><option value="2">in steps of one minute as digits, digital</option><option value="0">smoothly, analog</option><option value="1">as measured values in bits, digital</option></select></label></li>
+</ul>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> clock with hands – smoothly, analog; Mia's voice message on the phone – as measured values in bits, digital; clock with digits – in steps of one minute as digits, digital</p>
+<p class="question-explanation">Analog is smooth. Digital is in steps, as numbers.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> clock with hands – smoothly, analog; Mia's voice message on the phone – as measured values in bits, digital; clock with digits – in steps of one minute as digits, digital</p>
+<p class="question-explanation">Analog is smooth. Digital is in steps, as numbers.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"analog-oder-digital","text":"Match each thing to how it shows or stores its value.","explanation":"Analog is smooth. Digital is in steps, as numbers.","links":[],"type":"matching","pairs":[{"left":"clock with hands","right":"smoothly, analog"},{"left":"Mia's voice message on the phone","right":"as measured values in bits, digital"},{"left":"clock with digits","right":"in steps of one minute as digits, digital"}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="idee/4" data-block-id="a8fae490" data-block-type="text" data-block-order="6">
+<div class="block-text"><p>When <strong>digitising</strong>, the phone takes two steps:</p>
+<ol>
+<li><strong>Sampling:</strong> it measures the sound wave at equal intervals, for example 8000 times every second.</li>
+<li><strong>Rounding:</strong> it rounds each measured value to the nearest allowed level and stores that level&#39;s number
+as a binary number. With 2 bits there are 4 levels (00, 01, 10, 11), with 3 bits already 8.</li>
+</ol></div>
+</div>
+<div class="explainer-block" data-block="idee/5" data-block-id="8c8b2cc9" data-block-type="note" data-block-order="7">
+<div class="explainer-box explainer-note">
+<h3 class="explainer-box-title">Remember</h3>
+<div class="explainer-block" data-block="idee/5/1" data-block-id="984b3120" data-block-type="text" data-block-order="8">
+<div class="block-text"><p>Something gets lost between two measuring points and between two levels. More points and more bits make the digital voice more exact, but also bigger.</p></div>
+</div>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="ausprobieren">Try it out</h2>
+<div class="explainer-block" data-block="ausprobieren/1" data-block-id="b0f25c91" data-block-type="text" data-block-order="9">
+<div class="block-text"><p>The blue line is a piece of a sound wave. The red dashed staircase with the dots shows what is stored. The grey lines are the allowed levels. Move the sliders, also with the arrow keys, and watch how close the staircase gets to the wave.</p></div>
+</div>
+<div class="explainer-block" data-block="ausprobieren/2" data-block-id="ca9ce0e6" data-block-type="vue-component" data-block-order="10">
+<div class="explainer-component" data-component="Abtasten">
+<div class="explainer-island" hidden><div class="abtasten" data-v-6ee29d71><svg viewBox="0 0 320 160" class="abtasten-figure" aria-hidden="true" data-v-6ee29d71><rect x="0" y="0" width="320" height="160" fill="#fff" data-v-6ee29d71></rect><!--[--><line x1="10" x2="310" y1="150" y2="150" class="abtasten-level" data-v-6ee29d71></line><line x1="10" x2="310" y1="103.33333333333334" y2="103.33333333333334" class="abtasten-level" data-v-6ee29d71></line><line x1="10" x2="310" y1="56.66666666666667" y2="56.66666666666667" class="abtasten-level" data-v-6ee29d71></line><line x1="10" x2="310" y1="10" y2="10" class="abtasten-level" data-v-6ee29d71></line><!--]--><path d="M10.0 68.3 L12.5 62.8 L15.0 57.8 L17.5 53.2 L20.0 49.1 L22.5 45.6 L25.0 42.7 L27.5 40.5 L30.0 38.8 L32.5 37.9 L35.0 37.5 L37.5 37.7 L40.0 38.5 L42.5 39.7 L45.0 41.4 L47.5 43.4 L50.0 45.7 L52.5 48.1 L55.0 50.5 L57.5 53.0 L60.0 55.4 L62.5 57.5 L65.0 59.4 L67.5 61.0 L70.0 62.2 L72.5 62.9 L75.0 63.2 L77.5 63.0 L80.0 62.3 L82.5 61.1 L85.0 59.5 L87.5 57.5 L90.0 55.0 L92.5 52.3 L95.0 49.4 L97.5 46.3 L100.0 43.2 L102.5 40.1 L105.0 37.1 L107.5 34.3 L110.0 31.9 L112.5 29.8 L115.0 28.2 L117.5 27.1 L120.0 26.6 L122.5 26.8 L125.0 27.6 L127.5 29.1 L130.0 31.2 L132.5 34.1 L135.0 37.5 L137.5 41.5 L140.0 46.1 L142.5 51.1 L145.0 56.5 L147.5 62.2 L150.0 68.1 L152.5 74.1 L155.0 80.1 L157.5 86.0 L160.0 91.7 L162.5 97.2 L165.0 102.2 L167.5 106.8 L170.0 110.9 L172.5 114.4 L175.0 117.3 L177.5 119.5 L180.0 121.2 L182.5 122.1 L185.0 122.5 L187.5 122.3 L190.0 121.5 L192.5 120.3 L195.0 118.6 L197.5 116.6 L200.0 114.3 L202.5 111.9 L205.0 109.5 L207.5 107.0 L210.0 104.6 L212.5 102.5 L215.0 100.6 L217.5 99.0 L220.0 97.8 L222.5 97.1 L225.0 96.8 L227.5 97.0 L230.0 97.7 L232.5 98.9 L235.0 100.5 L237.5 102.5 L240.0 105.0 L242.5 107.7 L245.0 110.6 L247.5 113.7 L250.0 116.8 L252.5 119.9 L255.0 122.9 L257.5 125.7 L260.0 128.1 L262.5 130.2 L265.0 131.8 L267.5 132.9 L270.0 133.4 L272.5 133.2 L275.0 132.4 L277.5 130.9 L280.0 128.8 L282.5 125.9 L285.0 122.5 L287.5 118.5 L290.0 113.9 L292.5 108.9 L295.0 103.5 L297.5 97.8 L300.0 91.9 L302.5 85.9 L305.0 79.9 L307.5 74.0 L310.0 68.3" class="abtasten-curve" data-v-6ee29d71></path><path d="M10.0 56.7 L47.5 56.7 L47.5 56.7 L85.0 56.7 L85.0 56.7 L122.5 56.7 L122.5 56.7 L160.0 56.7 L160.0 103.3 L197.5 103.3 L197.5 103.3 L235.0 103.3 L235.0 103.3 L272.5 103.3 L272.5 103.3 L310.0 103.3" class="abtasten-stairs" data-v-6ee29d71></path><!--[--><circle cx="28.75" cy="56.66666666666667" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><circle cx="66.25" cy="56.66666666666667" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><circle cx="103.75" cy="56.66666666666667" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><circle cx="141.25" cy="56.66666666666667" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><circle cx="178.75" cy="103.33333333333334" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><circle cx="216.25" cy="103.33333333333334" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><circle cx="253.75" cy="103.33333333333334" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><circle cx="291.25" cy="103.33333333333334" r="3.5" class="abtasten-dot" data-v-6ee29d71></circle><!--]--></svg><p class="abtasten-legend" data-v-6ee29d71><span class="abtasten-item" data-v-6ee29d71><span class="abtasten-key abtasten-key-curve" data-v-6ee29d71></span>sound wave</span><span class="abtasten-item" data-v-6ee29d71><span class="abtasten-key abtasten-key-stored" data-v-6ee29d71></span>stored values</span></p><div class="abtasten-controls" data-v-6ee29d71><label class="abtasten-control" data-v-6ee29d71><span data-v-6ee29d71>Measuring points: 8</span><input value="8" type="range" min="2" max="32" step="1" data-v-6ee29d71></label><label class="abtasten-control" data-v-6ee29d71><span data-v-6ee29d71>Bits per point: 2</span><input value="2" type="range" min="1" max="4" step="1" data-v-6ee29d71></label></div><p class="abtasten-line" aria-live="polite" data-v-6ee29d71>8 measuring points · 4 levels · 16 bits altogether</p></div></div>
+<div class="explainer-nojs"><p>A sound wave with the stored values above it as a staircase. Two sliders set how often it is measured (2 to
+32 measuring points) and how many bits each measured value has (1 to 4).</p>
+<ul>
+<li>4 points, 1 bit: 2 levels, 4 bits altogether. The staircase has little to do with the wave.</li>
+<li>8 points, 2 bits: 4 levels, 16 bits altogether. The shape of the wave can roughly be seen.</li>
+<li>32 points, 4 bits: 16 levels, 128 bits altogether. The staircase lies close to the wave.</li>
+</ul></div>
+<script type="application/json" class="explainer-component-props">{"pointsLabel":"Measuring points","bitsLabel":"Bits per point","line":"{n} measuring points · {s} levels · {b} bits altogether","curveLabel":"sound wave","storedLabel":"stored values"}</script>
+</div>
+</div>
+</section>
+<section class="explainer-section">
+<h2 id="uebung">Practice</h2>
+<div class="explainer-block" data-block="uebung/1" data-block-id="25742412" data-block-type="generated" data-block-order="11">
+<div class="explainer-exercise explainer-generated" id="stufen-aus-bits">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Three worked tasks, each with its solution:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Task no. 1</p><p class="explainer-task">Each measured value is stored with 3 bits. How many different levels are there?</p><details class="explainer-hint"><summary>Hint</summary><p>1 bit: 2 levels, 2 bits: 4 levels, 3 bits: …</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Each bit doubles the number of levels. With 3 bits there are 8 levels.</li></ol><p><strong>Right answer:</strong> 8</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 2</p><p class="explainer-task">Each measured value is stored with 5 bits. How many different levels are there?</p><details class="explainer-hint"><summary>Hint</summary><p>1 bit: 2 levels, 2 bits: 4 levels, 3 bits: …</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Each bit doubles the number of levels. With 5 bits there are 32 levels.</li></ol><p><strong>Right answer:</strong> 32</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 3</p><p class="explainer-task">Each measured value is stored with 6 bits. How many different levels are there?</p><details class="explainer-hint"><summary>Hint</summary><p>1 bit: 2 levels, 2 bits: 4 levels, 3 bits: …</p></details><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>Each bit doubles the number of levels. With 6 bits there are 64 levels.</li></ol><p><strong>Right answer:</strong> 64</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"en","spec":{"type":"generated","id":"stufen-aus-bits","given":{"n":{"int":[3,8]}},"task":{"text":{"de":"Jeder Messwert wird mit {{n}} Bit gespeichert. Wie viele verschiedene Stufen gibt es?","en":"Each measured value is stored with {{n}} bits. How many different levels are there?"}},"answer":{"value":"pow(2, n)","compare":{"number":{"format":"integer"}}},"mistakes":[{"value":"2 * n","message":{"de":"Du hast {{n}} · 2 gerechnet. Jedes Bit mehr verdoppelt die Zahl der Stufen: 2 · 2 · … · 2, {{n}}-mal.","en":"You worked out {{n}} × 2. Each extra bit doubles the number of levels: 2 × 2 × … × 2, {{n}} times."}},{"value":"n","message":{"de":"Das ist die Zahl der Bit. Gefragt ist, wie viele Stufen man damit unterscheiden kann.","en":"That is the number of bits. The question is how many levels you can tell apart with them."}}],"hint":{"de":"1 Bit: 2 Stufen, 2 Bit: 4 Stufen, 3 Bit: …","en":"1 bit: 2 levels, 2 bits: 4 levels, 3 bits: …"},"steps":[{"de":"Jedes Bit verdoppelt die Zahl der Stufen. Mit {{n}} Bit sind es {{answer}} Stufen.","en":"Each bit doubles the number of levels. With {{n}} bits there are {{answer}} levels."}]},"templates":{"en":{"task":"Each measured value is stored with ⟦n⟧ bits. How many different levels are there?","steps":["Each bit doubles the number of levels. With ⟦n⟧ bits there are ⟦answer⟧ levels."],"hint":"1 bit: 2 levels, 2 bits: 4 levels, 3 bits: …","messages":["You worked out ⟦n⟧ × 2. Each extra bit doubles the number of levels: 2 × 2 × … × 2, ⟦n⟧ times.","That is the number of bits. The question is how many levels you can tell apart with them."]}},"data":{},"seeds":[1,2,4,5,6,17],"texts":{"newTask":"New task","practice":"Practise yourself, with new tasks each time:","hint":"Hint","solution":"Solution","taskNumber":"Task no. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/2" data-block-id="ab8784ef" data-block-type="generated" data-block-order="12">
+<div class="explainer-exercise explainer-generated" id="bits-pro-sekunde">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="explainer-live" hidden></div>
+<p class="explainer-worked-intro">Three worked tasks, each with its solution:</p>
+<ol class="explainer-worked"><li class="explainer-worked-task"><p class="explainer-task-number">Task no. 1</p><p class="explainer-task">A device measures 8,000 times per second and stores each measured value with 16 bits. How many bits is that in one second?</p><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>8,000 measured values × 16 bits = 128,000 bits per second.</li></ol><p><strong>Right answer:</strong> 128,000 bits</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 2</p><p class="explainer-task">A device measures 1,000 times per second and stores each measured value with 8 bits. How many bits is that in one second?</p><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>1,000 measured values × 8 bits = 8,000 bits per second.</li></ol><p><strong>Right answer:</strong> 8,000 bits</p></details></li>
+<li class="explainer-worked-task"><p class="explainer-task-number">Task no. 3</p><p class="explainer-task">A device measures 1,000 times per second and stores each measured value with 16 bits. How many bits is that in one second?</p><details class="explainer-solution"><summary>Solution</summary><ol class="explainer-steps"><li>1,000 measured values × 16 bits = 16,000 bits per second.</li></ol><p><strong>Right answer:</strong> 16,000 bits</p></details></li></ol>
+<script type="application/json" class="explainer-exercise-data">{"kind":"generated","lang":"en","spec":{"type":"generated","id":"bits-pro-sekunde","given":{"m":{"oneOf":[100,500,1000,8000]},"b":{"oneOf":[4,8,16]}},"task":{"text":{"de":"Ein Gerät misst {{m}}-mal pro Sekunde und speichert jeden Messwert mit {{b}} Bit. Wie viele Bit sind das in einer Sekunde?","en":"A device measures {{m}} times per second and stores each measured value with {{b}} bits. How many bits is that in one second?"}},"answer":{"value":"m * b","compare":{"number":{"format":"integer","unit":{"de":"Bit","en":"bits"}}}},"mistakes":[{"value":"m + b","message":{"de":"Jeder der {{m}} Messwerte braucht {{b}} Bit. Rechne mal, nicht plus.","en":"Each of the {{m}} measured values needs {{b}} bits. Multiply, don't add."}},{"value":"m * b / 8","message":{"de":"Das sind Byte. Gefragt sind Bit.","en":"Those are bytes. The question is about bits."}}],"steps":[{"de":"{{m}} Messwerte · {{b}} Bit = {{answer}} Bit pro Sekunde.","en":"{{m}} measured values × {{b}} bits = {{answer}} bits per second."}]},"templates":{"en":{"task":"A device measures ⟦m⟧ times per second and stores each measured value with ⟦b⟧ bits. How many bits is that in one second?","steps":["⟦m⟧ measured values × ⟦b⟧ bits = ⟦answer⟧ bits per second."],"messages":["Each of the ⟦m⟧ measured values needs ⟦b⟧ bits. Multiply, don't add.","Those are bytes. The question is about bits."]}},"data":{},"seeds":[1,2,3,4,6,8,9,12,13,17,29,34],"texts":{"newTask":"New task","practice":"Practise yourself, with new tasks each time:","hint":"Hint","solution":"Solution","taskNumber":"Task no. {n}"}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/3" data-block-id="be936000" data-block-type="number" data-block-order="13">
+<div class="explainer-exercise explainer-question" id="mbit-und-mb">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-mbit-und-mb" data-id="mbit-und-mb" data-type="number">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">Mia's internet manages 16 Mbit/s, that is 16 megabits per second. How many megabytes can she download in one second?</legend>
+<label class="question-number">Your answer <input type="text" inputmode="decimal" autocomplete="off" name="frage-mbit-und-mb" aria-describedby="frage-mbit-und-mb-unit"> <span id="frage-mbit-und-mb-unit">MB</span> </label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> 2 MB</p>
+<p class="question-explanation">16 Mbit ÷ 8 = 2 MB. Internet speed is given in Mbit/s, storage in MB.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> 2 MB</p>
+<p class="question-explanation">16 Mbit ÷ 8 = 2 MB. Internet speed is given in Mbit/s, storage in MB.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"mbit-und-mb","text":"Mia's internet manages 16 Mbit/s, that is 16 megabits per second. How many megabytes can she download in one second?","explanation":"16 Mbit ÷ 8 = 2 MB. Internet speed is given in Mbit/s, storage in MB.","links":[],"type":"number","answer":2,"tolerance":0,"unit":"MB","mistakes":[{"answer":16,"message":"Mbit and MB are not the same: 1 byte is 8 bits, so 1 MB = 8 Mbit too."},{"answer":128,"message":"From bits to bytes you divide by 8, you don't multiply by 8."}]},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/4" data-block-id="844dcad0" data-block-type="true-false" data-block-order="14">
+<div class="explainer-exercise explainer-question" id="mehr-messpunkte">
+<p class="explainer-exercise-label">Exercise</p>
+<div class="question" id="frage-mehr-messpunkte" data-id="mehr-messpunkte" data-type="true-false">
+<form class="question-form" novalidate>
+<fieldset>
+<legend class="question-text">If the phone measures more often per second, the voice message becomes more exact, but also bigger.</legend>
+<label class="question-option"><input type="radio" name="frage-mehr-messpunkte" value="true"> <span>True</span></label>
+<label class="question-option"><input type="radio" name="frage-mehr-messpunkte" value="false"> <span>False</span></label>
+</fieldset>
+<div class="question-feedback-row"><div class="question-feedback" role="status"></div></div>
+<div class="question-reveal" hidden>
+<p><strong>Right answer:</strong> The statement is true.</p>
+<p class="question-explanation">Each measuring point needs bits. More points means more bits, so a bigger file.</p>
+</div>
+<p class="question-actions" hidden><button type="submit" class="question-check">Check</button></p>
+</form>
+</div>
+<details class="explainer-solution"><summary>Solution</summary>
+<p><strong>Right answer:</strong> The statement is true.</p>
+<p class="question-explanation">Each measuring point needs bits. More points means more bits, so a bigger file.</p>
+</details>
+<script type="application/json" class="explainer-exercise-data">{"kind":"question","lang":"en","question":{"id":"mehr-messpunkte","text":"If the phone measures more often per second, the voice message becomes more exact, but also bigger.","explanation":"Each measuring point needs bits. More points means more bits, so a bigger file.","links":[],"type":"true-false","answer":true},"rendered":{}}</script>
+</div>
+</div>
+<div class="explainer-block" data-block="uebung/5" data-block-id="7fddcf00" data-block-type="text" data-block-order="15">
+<div class="block-text"><p>Looking back on the chapter: text becomes bytes with a code table, a voice becomes numbers by measuring and
+rounding. Whether it is a note, a picture, secret writing or a voice message: in the end the computer stores
+everything with 0 and 1.</p></div>
+</div>
+</section>
+<p class="explainer-feedback-invite" hidden><span>Found a mistake or have an idea for this app?</span> <button type="button" class="explainer-feedback-switch">Give feedback on “Representing and encoding data”</button></p>
+</main>
+<template class="explainer-feedback-template">
+<aside class="explainer-feedback" aria-labelledby="feedback-titel" hidden>
+<div class="explainer-feedback-head">
+<h2 id="feedback-titel">Feedback</h2>
+<button type="button" class="explainer-feedback-help-open" aria-expanded="false" aria-controls="feedback-hilfe">Help</button>
+<button type="button" class="explainer-feedback-collapse" aria-expanded="true" aria-controls="feedback-inhalt" aria-label="Collapse the bar" title="Collapse the bar"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+</div>
+<button type="button" class="explainer-feedback-expand" hidden><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><span>Expand the feedback bar</span></button>
+<div class="explainer-feedback-body" id="feedback-inhalt">
+<section class="explainer-feedback-help" id="feedback-hilfe" aria-labelledby="feedback-hilfe-titel" hidden>
+<h3 id="feedback-hilfe-titel">How to give feedback</h3>
+<ol><li>Go through the pages. Every paragraph, figure and exercise shows “Note”.</li><li>If you mark text in the block first, the note quotes it.</li><li>When you are done, choose “Open an issue on GitHub”. The app copies your notes, and you paste them into the issue. You need a GitHub account for this.</li></ol>
+<p class="explainer-feedback-privacy">Your notes stay in this browser on this device only. The app sends nothing. If you clear the browser's data, the notes are gone.</p>
+<p><button type="button" class="explainer-feedback-help-done">Got it</button></p>
+</section>
+<form class="explainer-feedback-form" hidden>
+<p class="explainer-feedback-new">New note on</p>
+<p class="explainer-feedback-where"></p>
+<blockquote class="explainer-feedback-quote" hidden></blockquote>
+<label for="feedback-text">Your note</label>
+<textarea id="feedback-text" class="explainer-feedback-text" rows="5" required></textarea>
+<p class="explainer-feedback-buttons"><button type="submit" class="explainer-feedback-save">Save</button> <button type="button" class="explainer-feedback-cancel">Cancel</button></p>
+</form>
+<p class="explainer-feedback-status" role="status" aria-live="polite"></p>
+<section class="explainer-feedback-notes" aria-labelledby="feedback-notizen">
+<h3 id="feedback-notizen" class="explainer-feedback-count"></h3>
+<p class="explainer-feedback-actions"><button type="button" class="explainer-feedback-copy">Copy</button> <a class="explainer-feedback-issue" href="#" target="_blank" rel="noopener">Open an issue on GitHub</a></p>
+<textarea class="explainer-feedback-export" readonly rows="6" aria-label="Text to copy" hidden></textarea>
+<div class="explainer-feedback-list"></div>
+</section>
+</div>
+<div class="explainer-feedback-foot">
+<button type="button" class="explainer-feedback-delete-all">Delete all …</button>
+<span class="explainer-feedback-local">Kept in this browser only</span>
+<button type="button" class="explainer-feedback-off">End</button>
+</div>
+<script type="application/json" class="explainer-feedback-data">{"storage":"informatik-daten-codieren","app":"Representing and encoding data","root":"../../../en/","repository":"lernapps/informatik-daten-codieren","revision":"0eff306","page":{"title":"Analog and digital","order":14}}</script>
+</aside>
+</template>
+<nav class="explainer-pager" aria-label="Page through"><a rel="prev" href="../../../en/texte/zeichen/">Back: Characters become numbers</a></nav>
+<footer class="page-footer"><p>An explainer on lernapps.net · <a href="https://lernapps.net/imprint/">Imprint</a> · <a href="https://lernapps.net/privacy/">Privacy</a></p></footer>
+  </body>
+</html>

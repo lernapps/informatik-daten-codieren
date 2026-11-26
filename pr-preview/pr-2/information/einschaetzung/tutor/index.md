@@ -69,8 +69,9 @@ Nennt die Adresse dieser Seite `bedarf=`, gilt jeder Abschnitt, den sie nennt, m
 
 ### Kapitel „Texte und Signale codieren“
 
-- keine Selbsteinschätzung
+- Selbsteinschätzung des Kapitels
 - „Zeichen werden Zahlen“
+- „Analog und digital“
 
 ## Die Aufgaben dieser Selbsteinschätzung
 

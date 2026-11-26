@@ -79,6 +79,8 @@ that, you need to know how amounts of data are measured.</p>
 <ul>
 <li><p>Exercise <code>byte-in-bit</code> (below)</p>
 </li>
+<li><p>Exercise <code>bit-in-byte</code> (below)</p>
+</li>
 <li><p>Exercise <code>kb-in-byte</code> (below)</p>
 </li>
 <li><p>Exercise <code>einheiten-ordnen</code> (below)</p>
@@ -218,6 +220,35 @@ a picture is made of bits.</p>
 9 | 11 | 88 bits | 110 | 11
 10 | 3 | 24 bits | 30 | 3
 11 | 2 | 16 bits | 20 | 2
+</code></pre>
+<h3>Exercise bit-in-byte</h3>
+<ul>
+<li>Task: „A code has {n} bits. How many bytes is that?“</li>
+<li>Answer format: type a number (bytes)</li>
+<li>The app&#39;s hint: „8 bits are 1 byte.“</li>
+<li>Steps of the solution:<ul>
+<li>8 bits = 1 byte, so {n} bits = {n} ÷ 8 bytes = {answer} bytes.</li>
+</ul>
+</li>
+<li>Typical mistakes and what the app says:<ul>
+<li>F1: „From bits to bytes the number gets smaller: divide by 8 instead of multiplying by 8.“</li>
+</ul>
+</li>
+<li>Link to number n: <code>../?bit-in-byte=n&amp;via=tutor#bit-in-byte</code></li>
+<li>Tasks by number: the values for <code>{…}</code>, the solution and what the mistakes give. A mistake without a column has no fixed value; the app&#39;s message says whether it is there. <code>{answer}</code> is the solution.</li>
+</ul>
+<pre><code>No. | n | Solution | F1
+1 | 56 | 7 bytes | 448
+2 | 80 | 10 bytes | 640
+3 | 24 | 3 bytes | 192
+4 | 40 | 5 bytes | 320
+5 | 32 | 4 bytes | 256
+6 | 88 | 11 bytes | 704
+7 | 16 | 2 bytes | 128
+8 | 96 | 12 bytes | 768
+9 | 72 | 9 bytes | 576
+10 | 64 | 8 bytes | 512
+11 | 48 | 6 bytes | 384
 </code></pre>
 <h3>Exercise kb-in-byte</h3>
 <ul>

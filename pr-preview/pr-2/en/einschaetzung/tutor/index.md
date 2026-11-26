@@ -69,8 +69,9 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 
 ### Chapter “Encoding text and signals”
 
-- no self-assessment
-- “Characters become numbers” · not asked
+- self-assessment of the chapter
+- “Characters become numbers” · Tasks A27, A28, A29
+- “Analog and digital” · Tasks A30, A31, A32
 
 ## The tasks of this self-assessment
 
@@ -100,3 +101,9 @@ If the address of this page names `bedarf=`, each section it names holds, severa
 - A24: exercise caesar-verschluesseln of the page “The Caesar disc”
 - A25: exercise caesar-schluessel-zahl of the page “How secure is it?” (always the same task, on its page too: right may be remembered)
 - A26: exercise geheimes-verfahren of the page “How secure is it?” (always the same task, on its page too: right may be remembered)
+- A27: exercise code-ueben of the page “Characters become numbers”
+- A28: exercise code-ueben of the page “Characters become numbers”
+- A29: exercise bits-eines-worts of the page “Characters become numbers” (always the same task, on its page too: right may be remembered)
+- A30: exercise stufen-aus-bits of the page “Analog and digital”
+- A31: exercise bits-pro-sekunde of the page “Analog and digital”
+- A32: exercise mbit-und-mb of the page “Analog and digital” (always the same task, on its page too: right may be remembered)

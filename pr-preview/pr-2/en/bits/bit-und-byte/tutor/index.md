@@ -79,6 +79,8 @@ Here are eight cards, which is one byte. Tap a card to turn it over. Below the c
 
 - Exercise `byte-in-bit` (below)
 
+- Exercise `bit-in-byte` (below)
+
 - Exercise `kb-in-byte` (below)
 
 - Exercise `einheiten-ordnen` (below)
@@ -213,6 +215,33 @@ No. | B | Solution | F1 | F2
 9 | 11 | 88 bits | 110 | 11
 10 | 3 | 24 bits | 30 | 3
 11 | 2 | 16 bits | 20 | 2
+```
+
+### Exercise bit-in-byte
+
+- Task: „A code has {n} bits. How many bytes is that?“
+- Answer format: type a number (bytes)
+- The app's hint: „8 bits are 1 byte.“
+- Steps of the solution:
+  - 8 bits = 1 byte, so {n} bits = {n} ÷ 8 bytes = {answer} bytes.
+- Typical mistakes and what the app says:
+  - F1: „From bits to bytes the number gets smaller: divide by 8 instead of multiplying by 8.“
+- Link to number n: `../?bit-in-byte=n&via=tutor#bit-in-byte`
+- Tasks by number: the values for `{…}`, the solution and what the mistakes give. A mistake without a column has no fixed value; the app's message says whether it is there. `{answer}` is the solution.
+
+```
+No. | n | Solution | F1
+1 | 56 | 7 bytes | 448
+2 | 80 | 10 bytes | 640
+3 | 24 | 3 bytes | 192
+4 | 40 | 5 bytes | 320
+5 | 32 | 4 bytes | 256
+6 | 88 | 11 bytes | 704
+7 | 16 | 2 bytes | 128
+8 | 96 | 12 bytes | 768
+9 | 72 | 9 bytes | 576
+10 | 64 | 8 bytes | 512
+11 | 48 | 6 bytes | 384
 ```
 
 ### Exercise kb-in-byte
