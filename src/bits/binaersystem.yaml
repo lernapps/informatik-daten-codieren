@@ -4,36 +4,36 @@ title:
   en: The bit cards
 description:
   de: "Das Binärsystem mit Bit-Karten: Zahlen aus 0 und 1 lesen und in Dezimalzahlen umrechnen."
-  en: "The binary system with bit cards: read numbers made of 0 and 1 and convert them to decimal numbers."
+  en: "The binary system with bit cards: read numbers made of 0 and 1 and turn them into decimal numbers."
 competencies: [binaersystem]
 blocks:
   - type: section
     id: einstieg
     title:
-      de: Ein Zimmer ohne Ziffern
-      en: A room without digits
+      de: Ein Zimmer ohne Nummer
+      en: A room without a number
     blocks:
       - type: text
         text:
           de: |
             Die 6b ist in der Jugendherberge „Am Seeberg“ angekommen. Jona und Selin suchen ihr Zimmer. Aber an den
-            Türen stehen keine Ziffern. An jeder Tür hängen fünf Karten. Manche Karten liegen offen, manche verdeckt.
-            Über jeder Karte steht ihr Wert.
+            Türen steht keine Zimmernummer. An jeder Tür hängen fünf Karten. Eine offene Karte zeigt Punkte. Eine
+            verdeckte Karte zeigt ihre Rückseite, und die hat keine Punkte. Über jeder Karte steht, wie viele Punkte
+            sie offen hat. Diese Zahl ist der **Wert** der Karte.
 
-            Auf dieser Seite lernst du, wie man jede Zahl nur mit 0 und 1 schreibt. Das ist ein Code mit nur zwei
-            Zeichen, wie bei den Codes auf der Seite davor.
+            Hier lernst du, jede Zahl nur mit 0 und 1 zu schreiben: ein Code mit nur zwei Zeichen.
           en: |
             Class 6b has arrived at the youth hostel “Am Seeberg”. Jona and Selin are looking for their room. But there
-            are no digits on the doors. On every door there are five cards. Some cards are face up, some face down.
-            The value of each card is written above it.
+            is no room number on the doors. On every door there are five cards. A card that is face up shows dots. A
+            card that is face down shows its back, and the back has no dots. Above each card it says how many dots it
+            has when it is face up. This number is the **value** of the card.
 
-            On this page you will learn how to write any number with only 0 and 1. This is a code with only two
-            symbols, like the codes on the page before.
+            Here you will learn to write any number with only 0 and 1: a code with only two symbols.
       - type: figure
         image: images/bit-karten-13.svg
         alt:
-          de: "Fünf Karten nebeneinander mit den Werten 16, 8, 4, 2 und 1. Die Karten 8, 4 und 1 liegen offen und zeigen 8, 4 und 1 Punkte. Die Karten 16 und 2 sind verdeckt. Unter den Karten steht 0 1 1 0 1."
-          en: "Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down. Below the cards it says 0 1 1 0 1."
+          de: "Fünf Karten nebeneinander mit den Werten 16, 8, 4, 2 und 1. Die Karten 8, 4 und 1 liegen offen und zeigen 8, 4 und 1 Punkte. Die Karten 16 und 2 sind verdeckt."
+          en: "Five cards in a row with the values 16, 8, 4, 2 and 1. The cards 8, 4 and 1 are face up and show 8, 4 and 1 dots. The cards 16 and 2 are face down."
         caption:
           de: Die Karten an der Tür von Jona und Selin. Zähle die Punkte auf den offenen Karten.
           en: The cards on Jona and Selin's door. Count the dots on the cards that are face up.
@@ -51,8 +51,8 @@ blocks:
         mistakes:
           - answer: 3
             message:
-              de: Du hast die offenen Karten gezählt. Zähle die Punkte auf jeder offenen Karte und zähle sie zusammen.
-              en: You counted the face-up cards. Count the dots on each face-up card and add them up.
+              de: Du hast die offenen Karten gezählt. Zähle ihre Punkte zusammen.
+              en: You counted the face-up cards. Add up their dots.
           - answer: 31
             message:
               de: Du hast auch die verdeckten Karten mitgezählt. Eine verdeckte Karte zählt nicht.
@@ -72,59 +72,27 @@ blocks:
       - type: text
         text:
           de: |
-            Jede Karte kann nur zwei Zustände haben: offen oder verdeckt. Für offen schreibst du **1**, für verdeckt
-            **0**. Die Tür von Zimmer 13 zeigt also die Ziffern 0 1 1 0 1.
-
-            Schau dir die Werte über den Karten an: Jede Karte ist doppelt so viel wert wie die Karte rechts neben ihr.
-            Die kleinste Karte liegt rechts.
+            Jede Karte liegt entweder offen oder verdeckt. Für offen schreibst du **1**, für verdeckt **0**. Die Tür
+            von Jona und Selin zeigt dann: verdeckt, offen, offen, verdeckt, offen. Kurz: **01101**. Diese Ziffern
+            hintereinander nennt man eine **Bitfolge**.
           en: |
-            Each card can only be in one of two states: face up or face down. For face up you write **1**, for face
-            down **0**. So the door of room 13 shows the digits 0 1 1 0 1.
-
-            Look at the values above the cards: each card is worth twice as much as the card to its right. The
-            smallest card is on the right.
+            Each card is either face up or face down. For face up you write **1**, for face down **0**. Then Jona and
+            Selin's door shows: face down, face up, face up, face down, face up. In short: **01101**. These digits in a
+            row are called a **bit string**.
       - type: definition
         term:
           de: Bit
           en: bit
         explanation:
-          de: Ein Bit ist die kleinste Einheit für Daten. Es hat genau zwei Werte, 0 oder 1, wie eine Karte, die verdeckt oder offen liegt.
-          en: A bit is the smallest unit of data. It has exactly two values, 0 or 1, like a card that is face down or face up.
+          de: Ein Bit ist ein Zeichen mit nur zwei möglichen Werten, 0 oder 1.
+          en: A bit is a symbol with only two possible values, 0 or 1.
       - type: definition
         term:
           de: Binärzahl
           en: binary number
         explanation:
-          de: Eine Binärzahl ist eine Zahl, die nur aus den Ziffern 0 und 1 besteht. Jede Stelle hat einen Wert, der doppelt so groß ist wie der Wert der Stelle rechts daneben.
-          en: A binary number is a number made only of the digits 0 and 1. Each place has a value that is twice as big as the value of the place to its right.
-      - type: table
-        caption:
-          de: Die Binärzahl 01101. Jede 1 zählt so viel wie der Wert über ihr.
-          en: The binary number 01101. Each 1 counts as much as the value above it.
-        header:
-          - de: Wert der Karte
-            en: Value of the card
-          - { de: "16", en: "16" }
-          - { de: "8", en: "8" }
-          - { de: "4", en: "4" }
-          - { de: "2", en: "2" }
-          - { de: "1", en: "1" }
-        rows:
-          - - de: Ziffer
-              en: Digit
-            - { de: "0", en: "0" }
-            - { de: "1", en: "1" }
-            - { de: "1", en: "1" }
-            - { de: "0", en: "0" }
-            - { de: "1", en: "1" }
-          - - de: zählt
-              en: counts
-            - { de: "0", en: "0" }
-            - { de: "8", en: "8" }
-            - { de: "4", en: "4" }
-            - { de: "0", en: "0" }
-            - { de: "1", en: "1" }
-        rowHeaders: true
+          de: Eine Binärzahl schreibt man nur mit den Ziffern 0 und 1. Jede 1 zählt so viel wie der Wert ihrer Karte.
+          en: A binary number is written only with the digits 0 and 1. Each 1 counts as much as the value of its card.
       - type: note
         title:
           de: Merke
@@ -133,13 +101,46 @@ blocks:
           - type: text
             text:
               de: |
-                Du liest eine Binärzahl so, wie du die Karten hinlegst: Die Karte mit dem größten Wert liegt links.
-                Das Zahlensystem mit den Werten 1, 2, 4, 8, 16 … heißt **Binärsystem**. Wir schreiben Zahlen sonst im
-                **Dezimalsystem** mit den Ziffern 0 bis 9 und den Werten 1, 10, 100 …
+                Jede Karte ist doppelt so viel wert wie die Karte rechts neben ihr. Die größte Karte liegt links.
+                Darum zählt es, **wo** eine 1 steht, nicht nur, wie viele Einsen es sind.
+
+                Das kennst du von Einern, Zehnern und Hundertern: Dort ist jede Stelle zehnmal so viel wert
+                (**Dezimalsystem**). Bei den Karten ist jede Stelle doppelt so viel wert (**Binärsystem**).
               en: |
-                You read a binary number the way you lay out the cards: the card with the biggest value is on the
-                left. The number system with the values 1, 2, 4, 8, 16 … is called the **binary system**. We usually
-                write numbers in the **decimal system** with the digits 0 to 9 and the values 1, 10, 100 …
+                Each card is worth twice as much as the card to its right. The biggest card is on the left. That is why
+                it matters **where** a 1 is, not just how many ones there are.
+
+                You know this from ones, tens and hundreds: there, each place is worth ten times as much (**decimal
+                system**). With the cards, each place is worth twice as much (**binary system**).
+      - type: single-choice
+        id: naechste-karte
+        text:
+          de: Jona will eine sechste Karte links neben die 16 legen. Welchen Wert muss sie haben?
+          en: Jona wants to put a sixth card to the left of the 16. What value must it have?
+        options:
+          - text: { de: "32", en: "32" }
+            correct: true
+            info:
+              de: 32 ist doppelt so viel wie 16. So geht die Reihe weiter.
+              en: 32 is twice as much as 16. This is how the row goes on.
+          - text: { de: "17", en: "17" }
+            correct: false
+            info:
+              de: 17 ist nur 1 mehr als 16. Die Werte verdoppeln sich aber.
+              en: 17 is only 1 more than 16. But the values double.
+          - text: { de: "20", en: "20" }
+            correct: false
+            info:
+              de: Bei 20 wäre der Abstand 4. Die Werte verdoppeln sich aber.
+              en: With 20 the step would be 4. But the values double.
+          - text: { de: "64", en: "64" }
+            correct: false
+            info:
+              de: 64 wäre erst die siebte Karte, links neben der 32.
+              en: 64 would be the seventh card, to the left of the 32.
+        explanation:
+          de: "1, 2, 4, 8, 16, 32: Jede Karte ist doppelt so viel wert."
+          en: "1, 2, 4, 8, 16, 32: each card is worth twice as much."
   - type: section
     id: ausprobieren
     title:
@@ -148,8 +149,18 @@ blocks:
     blocks:
       - type: text
         text:
-          de: Tippe auf eine Karte, um sie umzudrehen. Unter den Karten siehst du die Bitfolge und die Zahl, die sie zeigt. „Alle verdecken“ dreht alle Karten wieder um. Finde heraus, welche Zahlen du legen kannst.
-          en: Tap a card to turn it over. Below the cards you can see the bits and the number they show. “Turn all face down” turns all the cards over again. Find out which numbers you can lay out.
+          de: |
+            Tippe auf eine Karte, um sie umzudrehen. Unter den Karten siehst du die Bitfolge und die Zahl, die sie
+            zeigt. „Alle verdecken“ dreht alle Karten wieder um.
+
+            Finde heraus: Welche ist die kleinste Zahl, welche die größte? Gibt es dazwischen eine Zahl, die du nicht
+            legen kannst?
+          en: |
+            Tap a card to turn it over. Below the cards you can see the bit string and the number it shows. “Turn all
+            face down” turns all the cards over again.
+
+            Find out: What is the smallest number, and what is the biggest? Is there a number in between that you
+            cannot make?
       - type: vue-component
         component: BitReihe
         props:
@@ -165,7 +176,7 @@ blocks:
             en: face down
           line:
             de: "Bitfolge: {b} · Zahl: {n}"
-            en: "Bits: {b} · number: {n}"
+            en: "Bit string: {b} · Number: {n}"
           reset:
             de: Alle verdecken
             en: Turn all face down
@@ -173,59 +184,34 @@ blocks:
           de: |
             Fünf Bit-Karten mit den Werten 16, 8, 4, 2 und 1, alle verdeckt. Tippt man auf eine Karte, dreht sie sich
             um. Darunter steht, welche Zahl die offenen Karten zeigen, zum Beispiel „Bitfolge: 00101 · Zahl: 5“ für
-            die Karten 4 und 1. Sind alle Karten offen, ist es die Bitfolge 11111 und die Zahl 31.
+            die Karten 4 und 1. Sind alle Karten verdeckt, ist es 00000, also 0. Sind alle offen, ist es 11111, also 31.
           en: |
             Five bit cards with the values 16, 8, 4, 2 and 1, all face down. When you tap a card, it turns over. Below
-            the cards you can read which number the face-up cards show, for example “Bits: 00101 · number: 5” for the
-            cards 4 and 1. When all the cards are face up, the bits are 11111 and the number is 31.
+            the cards you can read which number the face-up cards show, for example “Bit string: 00101 · Number: 5”
+            for the cards 4 and 1. With all the cards face down it is 00000, which is 0. With all face up it is 11111,
+            which is 31.
       - type: number
-        id: groesste-zahl
+        id: wie-viele-zahlen
         text:
-          de: Welche Zahl ist die größte, die du mit diesen fünf Karten legen kannst?
-          en: What is the biggest number you can lay out with these five cards?
-        answer: 31
+          de: Wie viele verschiedene Zahlen kannst du mit den fünf Karten legen? Zähle die 0 mit.
+          en: How many different numbers can you make with the five cards? Count 0 as well.
+        answer: 32
         tolerance: 0
         mistakes:
-          - answer: 16
+          - answer: 31
             message:
-              de: "16 ist die größte Karte. Du darfst aber mehrere Karten offen hinlegen."
-              en: "16 is the biggest card. But you can lay out several cards face up."
-          - answer: 32
+              de: "31 ist die größte Zahl. Aber auch die 0 zählt mit: Von 0 bis 31 sind es eine Zahl mehr."
+              en: "31 is the biggest number. But 0 counts too: from 0 to 31 there is one number more."
+          - answer: 5
             message:
-              de: "Für 32 brauchst du eine sechste Karte. Lege alle fünf Karten offen und zähle zusammen."
-              en: "For 32 you need a sixth card. Lay out all five cards face up and add them up."
+              de: "5 ist die Zahl der Karten, nicht der Zahlen."
+              en: "5 is the number of cards, not of numbers."
+        hint:
+          de: Lege die kleinste und die größte Zahl. Kannst du jede Zahl dazwischen legen?
+          en: Make the smallest and the biggest number. Can you make every number in between?
         explanation:
-          de: "Liegen alle Karten offen, sind es 16 + 8 + 4 + 2 + 1 = 31. Mit fünf Karten legst du also jede Zahl von 0 bis 31."
-          en: "With all the cards face up, it is 16 + 8 + 4 + 2 + 1 = 31. So with five cards you can lay out every number from 0 to 31."
-      - type: single-choice
-        id: naechste-karte
-        text:
-          de: Jona will eine sechste Karte links neben die 16 legen. Welchen Wert muss sie haben?
-          en: Jona wants to put a sixth card to the left of the 16. What value must it have?
-        options:
-          - text: { de: "32", en: "32" }
-            correct: true
-            info:
-              de: 32 ist doppelt so viel wie 16. So geht die Reihe weiter.
-              en: 32 is twice as much as 16. This is how the row goes on.
-          - text: { de: "17", en: "17" }
-            correct: false
-            info:
-              de: 17 ist nur 1 mehr als 16. Jede Karte ist aber doppelt so viel wert wie ihre rechte Nachbarin.
-              en: 17 is only 1 more than 16. But each card is worth twice as much as the card to its right.
-          - text: { de: "20", en: "20" }
-            correct: false
-            info:
-              de: Bei 20 wäre der Abstand 4. In der Reihe 1, 2, 4, 8, 16 verdoppelt sich der Wert aber jedes Mal.
-              en: With 20 the step would be 4. But in the row 1, 2, 4, 8, 16 the value doubles every time.
-          - text: { de: "64", en: "64" }
-            correct: false
-            info:
-              de: 64 kommt erst nach der sechsten Karte.
-              en: 64 comes after the sixth card.
-        explanation:
-          de: "Die Werte verdoppeln sich von rechts nach links: 1, 2, 4, 8, 16, 32."
-          en: "The values double from right to left: 1, 2, 4, 8, 16, 32."
+          de: "Du kannst jede Zahl von 0 bis 31 legen, ohne Lücke. Das sind 32 Zahlen."
+          en: "You can make every number from 0 to 31, with no gaps. That is 32 numbers."
   - type: section
     id: beispiel
     title:
@@ -252,13 +238,13 @@ blocks:
           - type: text
             text:
               de: |
-                1. Schreibe über jede Ziffer den Wert ihrer Karte: 16, 8, 4, 2, 1.
+                1. Schau, welcher Wert über jeder Ziffer steht: 16, 8, 4, 2, 1.
                 2. Nimm nur die Werte, unter denen eine 1 steht: 16, 4 und 2.
                 3. Zähle sie zusammen: 16 + 4 + 2 = 22.
 
                 Die Binärzahl 10110 ist die Dezimalzahl 22. Mia schläft in Zimmer 22.
               en: |
-                1. Write the value of its card above each digit: 16, 8, 4, 2, 1.
+                1. Look at the value above each digit: 16, 8, 4, 2, 1.
                 2. Take only the values that have a 1 below them: 16, 4 and 2.
                 3. Add them up: 16 + 4 + 2 = 22.
 
@@ -287,8 +273,11 @@ blocks:
           b1: { int: [0, 1] }
           b0: { int: [0, 1] }
         where:
+          - "b4 + b3 + b2 + b1 + b0 >= 2"
           - "16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 16*b0 + 8*b1 + 4*b2 + 2*b3 + b4"
-          - "16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != b4 + b3 + b2 + b1 + b0"
+          - "16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 13 and 16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 22"
+          - "16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 7 and 16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 28"
+          - "16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 9 and 16*b4 + 8*b3 + 4*b2 + 2*b1 + b0 != 19"
         task:
           text:
             de: "Welche Dezimalzahl ist die Binärzahl {{b4}}{{b3}}{{b2}}{{b1}}{{b0}}?"
@@ -303,11 +292,15 @@ blocks:
               en: "You read from the wrong end. Card 16 is on the left, card 1 is on the right."
           - value: "b4 + b3 + b2 + b1 + b0"
             message:
-              de: "Du hast die Einsen gezählt. Jede 1 zählt so viel wie die Karte, über der sie steht."
+              de: "Du hast die Einsen gezählt. Jede 1 zählt so viel wie die Karte, zu der sie gehört."
               en: "You counted the ones. Each 1 counts as much as the card it belongs to."
+          - value: "10000*b4 + 1000*b3 + 100*b2 + 10*b1 + b0"
+            message:
+              de: "Du hast die Binärzahl abgeschrieben. Gesucht ist die Dezimalzahl."
+              en: "You copied the binary number. You are looking for the decimal number."
         hint:
-          de: "Schreibe die Werte 16, 8, 4, 2, 1 über die Ziffern."
-          en: "Write the values 16, 8, 4, 2, 1 above the digits."
+          de: "Male dir fünf Karten auf und schreibe 16, 8, 4, 2, 1 darüber."
+          en: "Draw five cards and write 16, 8, 4, 2, 1 above them."
         steps:
           - de: "Werte über die Ziffern: 16 · {{b4}}, 8 · {{b3}}, 4 · {{b2}}, 2 · {{b1}}, 1 · {{b0}}."
             en: "Values above the digits: 16 · {{b4}}, 8 · {{b3}}, 4 · {{b2}}, 2 · {{b1}}, 1 · {{b0}}."
@@ -328,5 +321,5 @@ blocks:
           en: "00111 is 7, 01001 is 9, 10000 is 16 and 10011 is 19."
       - type: text
         text:
-          de: Jetzt kannst du jede Binärzahl mit fünf Stellen lesen. Auf der nächsten Seite gehst du den Weg zurück. Die Busnummer ist 27. Wie legst du sie mit den Karten?
-          en: Now you can read any binary number with five digits. On the next page you go the other way. The bus number is 27. How do you lay it out with the cards?
+          de: Jetzt kannst du jede Binärzahl mit fünf Stellen lesen. Auf der nächsten Seite gehst du den Weg zurück und legst die Nummer des Busses, 27, selbst mit den Karten.
+          en: Now you can read any binary number with five digits. On the next page you go the other way and make the number of the bus, 27, with the cards yourself.

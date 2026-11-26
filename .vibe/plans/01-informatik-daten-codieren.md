@@ -38,6 +38,7 @@ dass ein Computer am Ende alles mit 0 und 1 codiert (Issue lernapps/apps#491, We
   und kommt als Inkrement auf `increment/7-8`.
 - Zwei Sprachen `[de, en]` (Nachtrag 1 zu #509): Deutsch Ausgangssprache in einfacher Sprache mit „du“, Englisch
   vollständige Übersetzung in Plain English mit „you“, Fachbegriffe wie im Computing curriculum (England).
+- Kein `scope`: kein `open-task`, kein Material des Creators; der Tutor arbeitet mit dem Seiteninhalt.
 - Keine Sammel-Wiederholung in Kapitel 1-4 nötig: Alle Voraussetzungen der 13 Bausteine liegen im Explainer selbst
   (`information-und-daten` hat keine Voraussetzung).
 
@@ -361,14 +362,14 @@ Content-Guide.
       `npx --no -- lernapps create --archetype explainer`.
 - [x] Fill the content guide `.agents/skills/app-content/SKILL.md` from "Notes" and "Content method": every heading,
       no "FILL IN" left. Commit it before any content.
-- [ ] Load skill `lernapps-explainer`.
-- [ ] Load skill `lernapps-content-questions`. Read whole, with your file tool:
+- [x] Load skill `lernapps-explainer`.
+- [x] Load skill `lernapps-content-questions`. Read whole, with your file tool:
       `.agents/skills/lernapps-explainer/references/blocks.md` and
       `.agents/skills/lernapps-explainer/references/exercises.md`. A foreign language: also
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
-- [ ] Decide whether the app needs `scope`, as "`scope`" in
+- [x] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite bits/binaersystem 'Die Bit-Karten': Komponenten BitReihe und BitKarten mit Logik und Test, Bild Bit-Karten, Kinder-Bild (Jona, Selin), generated 5 Bits → Dezimal; zeigt die Bit-Kartenreihe
+- [x] Musterseite bits/binaersystem 'Die Bit-Karten': Komponenten BitReihe und BitKarten mit Logik und Test, Bild Bit-Karten, Kinder-Bild (Jona, Selin), generated 5 Bits → Dezimal; zeigt die Bit-Kartenreihe
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
