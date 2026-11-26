@@ -75,7 +75,7 @@ blocks:
             Damit alle Geräte dieselben Zahlen benutzen, gibt es eine feste **Codetabelle**. Die bekannteste heißt
             **ASCII**. Sie hat 128 Zeichen mit den Codes 0 bis 127: Großbuchstaben, Kleinbuchstaben, Ziffern,
             Satzzeichen und Steuerzeichen, aber keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
-            bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Für Selins Nachricht reichen A bis Z und das Leerzeichen.
+            bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Selin braucht nur A bis Z und das Leerzeichen.
           en: |
             So that all devices use the same numbers, there is a fixed **character set**, a code table. The best known one is called
             **ASCII**. It has 128 characters with the codes 0 to 127: capital letters, small letters, digits,
