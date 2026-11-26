@@ -4,7 +4,7 @@
 # Archetype, null until chosen in Explore. Allowed values: explainer, interactive, quiz.
 archetype: explainer
 # Current phase. Allowed values: explore, plan, code, commit.
-phase: explore
+phase: plan
 # prePushFailures: failed pre-push runs, written by the hook.
 prePushFailures: 0
 # failedChecks: failed rules and runs, written by lernapps check and the hooks.
@@ -163,9 +163,10 @@ Strang `informatik/daten` („Information und Daten“). Alle 13 Bausteine haben
       off), and which misconception the feedback catches.
 - [x] Write under "Notes" the scope: what is in, what is out and why, the data range (for example "all main-group
       elements", never a silent "1–20"), the languages.
-- [ ] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
+- [x] **Checkpoint:** research. Show in plain words: the strand or why none, the competencies by chapter, the didactic
       approach, the scope, every "(guess)", the sources and what is unchecked, the archetype and its reason. Stop and
       wait. Changes: change them, then ask again.
+      Creator: Einverstanden mit allen Entscheidungen. Weiter mit dem Plan. Skytale für die Grundidee: ja. Klassenfahrt: passt. curricula: [] ist gewollt. Typische Fehler vom fachlichen Prüfer bestätigen lassen.
 
 ### Answers
 
@@ -199,28 +200,146 @@ Orchestrator.
 
 ### Tasks
 
-- [ ] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
+- [x] Map the content as "Map the content" of skill `lernapps-explainer-design` says, and write the result under
       "Content method".
-- [ ] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
-- [ ] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
+- [x] Choose a pattern per competency as skill `lernapps-exercise-patterns` says, and add it to "Content method".
+- [x] Add to "Content method" one line per page, as "Engagement" of skill `lernapps-explainer-design` says: the
       opening task, the change of activity, the reward, the story.
-- [ ] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
+- [x] Add the tasks of Code, each one a piece of work that ends in a commit. First the pattern: one complete page or
       screen, `npx --no -- lernapps plan add --at pattern "<task>"`. Then the others, one call each:
       `npx --no -- lernapps plan add --at pages "<task>"`. Each task says what it builds and what it shows.
-- [ ] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
+- [x] Draw a sketch of each screen, component or interactive exercise: a static SVG or image, or the steps with what
       learners see after each. Keep the files in `.vibe/sketches/`.
-- [ ] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
+- [x] Show the creator, short: goal, competencies by chapter, the Code tasks, the sketches, and the content method in
       plain words (what learners see and do, what the app cannot do). At most 2 questions.
 - [ ] **Checkpoint:** confirm the plan and the content method. Stop and wait for an explicit yes. Changes: change
       them, then ask again.
 
 ### Content method
 
-<!-- One line each: the patterns and where; the figures and how they are made; the data files; each component, what it
-checks and what it cannot; how a later agent adds a chapter. It becomes the content guide in Code. -->
-<!-- An explainer: per figure, model and component its learning action in two to four sentences
-(`explainer-representation-explained`); per page its prerequisites the app does not practise, and which get a recap
-page, which a link. -->
+#### Aufbau
+
+- `src/app.yaml`: `format: 2`, `strand: informatik/daten`, `languages: [de]`, vier Kapitel. Kein `scope` (kein
+  `open-task`, kein Material des Creators).
+- Kapitel `information` (4 Seiten), `bits` (4), `bilder` (2), `geheim` (3). Später `texte` (Kapitel 5, 7-8).
+- Je Seite ein Baustein (`competencies: [<id>]`). Keine Seite braucht eine Wiederholung: Jede Voraussetzung wird auf
+  einer früheren Seite geübt. Kapitel 5 braucht `bit-und-byte` und `binaersystem`, beide in Kapitel 2.
+- Abschnitte mit festen ids: `einstieg` (Szene + erste Aufgabe), `idee` (das Neue, mit Bild), `beispiel`
+  (`example`-Kasten), `ausprobieren` (nur wo eine Komponente bedient wird), `uebung`, `weiter` (Rückblick, nächster
+  Schritt; ein kurzer Text am Ende von `uebung`, kein eigener Abschnitt, wenn er nur ein Satz ist).
+
+#### Geschichte (fest, für alle Seiten und für #492, #493, #505)
+
+- Klasse 6b (erfunden) fährt am Montag, 11. Mai, um 8 Uhr ab Bahnhof zur Jugendherberge „Am Seeberg“ (erfunden), drei
+  Tage. Zwei gezeichnete Kinder planen mit: **Ida** (11, kurze rote Haare, gelbe Jacke) und **Malik** (12, schwarze
+  Locken, Brille, blauer Pullover). Stil: Vorlage `story-characters.svg` (Kopf, runder Körper, Umrisse).
+- Klassenfahrt-Nachricht, Klartext: **TREFFEN MONTAG ACHT UHR AM BAHNHOF**. Auf dem Zettel (Kapitel 1):
+  „6b · 11.5. · 8:00 · Bahnhof“. Caesar mit Schlüssel 3: **WUHIIHQ PRQWDJ DFKW XKU DP EDKQKRI**.
+- Jede Seite: eine Szene (Bild der Kinder nur auf der ersten Seite eines Kapitels, sonst Text), die Aufgabe der Seite
+  ist ein Schritt der Planung, der Schluss sagt den nächsten Schritt.
+
+#### Bilder (eigene SVG, `source: eigene Zeichnung`, `licence: CC-BY-4.0`)
+
+- **Bit-Karten:** Karten nebeneinander, die größte links; über jeder Karte ihr Wert (16, 8, 4, 2, 1). Offen: weiße
+  Karte mit so vielen schwarzen Punkten, darunter „1“. Verdeckt: graue Rückseite mit Streifen, darunter „0“.
+- **Baum:** Wurzel oben, Kanten als Linien nach unten, Knoten als abgerundete Rechtecke, Blätter mit gestricheltem
+  Rand; Beschriftung „Wurzel“, „Knoten“, „Kante“, „Blatt“ am Rand. Beispiel: 6b → Zimmer 1-3 → Kinder.
+- Säulendiagramm (Wahl des Ziels), Morse-Tabelle, Pixelbild/Vektorbild in 1×, 4×, Skytale, Caesar-Scheibe (statisch
+  als Bild für ohne JavaScript).
+- Jede Abbildung: `caption` sagt, wohin schauen; `alt` sagt, was sie zeigt, nie die Lösung einer Aufgabe.
+
+#### Komponenten (Vue, `src/components/`, zusammen unter 20 kB gzip)
+
+Kein Block kann Karten umdrehen, ein Raster malen oder eine Scheibe drehen und das Ergebnis prüfen; Texteingaben
+prüft `generated` nicht (nur Zahlen, Auswahl, Reihenfolge, Paare). Darum drei Komponenten:
+
+- **BitKarten** (Übung): Zeigt k Karten (5 oder 8), alle verdeckt. Aufgabe: „Lege die Zahl {n}.“ Tippen dreht eine
+  Karte. Antwort: die Folge der Bits. Richtig, wenn die Summe der offenen Werte n ist. Fehler mit eigener Meldung:
+  Folge gespiegelt (von der falschen Seite gelesen), eine Karte zu viel/zu wenig (Summe ± ein Wert). Zeigt keine
+  Summe vor „Prüfen“. Kann nicht: erklären, warum; zeigt nur die Karten.
+- **BitReihe** (zum Ausprobieren, keine Übung): dieselben Karten, mit Summe darunter; zum freien Entdecken auf
+  „Die Bit-Karten“ und in Kapitel 3 als Pixelzeile (Prop `pixel: true`: offen = schwarzes Feld). `nojs`: Tabelle der
+  Karten.
+- **PixelEditor** (Übung): 6×6-Raster, alle weiß. Aufgabe: ein Bild aus einer Bildliste (Datei `src/data/bilder.yaml`)
+  als Zeilencode „011110“ oder als Zahlen (Prop `code: bits|zahl`). Tippen färbt ein Pixel (schwarz, Ziffer 1 im Feld
+  als zweites Merkmal). Richtig, wenn jedes Feld stimmt. Fehler: Bild gespiegelt (Zeile von rechts gelesen),
+  Farben vertauscht (0 und 1), Zeilen und Spalten vertauscht. Kann nicht: Farben (die kommen als Tabelle mit
+  Farbnummern auf der Seite).
+- **CaesarScheibe** (Übung): zwei Buchstabenringe, der innere dreht mit „−1“ / „+1“; darunter ein Eingabefeld.
+  Modus `verschluesseln`/`entschluesseln`: Wort und Schlüssel gegeben, Lernende tippen das Ergebnis (nur A-Z).
+  Modus `knacken` (Seite „Wie sicher?“): ein Geheimwort ohne Schlüssel, Lernende drehen, bis ein Wort entsteht, und
+  geben den Schlüssel ein. Fehler: falsche Richtung (−k statt +k), Schlüssel um 1 daneben. Kann nicht: ganze Sätze
+  prüfen; Leerzeichen bleiben stehen.
+- Herkunft: eigene Komponenten, Muster `ProzentFeld` der Vorlage. Jede mit `.ts` (Logik), `.test.ts`, Tutor-Tabelle.
+
+#### Datendateien
+
+- `src/data/zahlen.yaml`: 1-31, Felder `dez`, `bin` (5 Stellen als Text), `binZahl` (die Ziffern als Zahl, z. B.
+  1101), `gespiegelt` (falsche Seite), `teilen` (Kette „13 : 2 = 6 Rest 1 …“). Erzeugt mit einem Skript, geprüft im
+  Test.
+- `src/data/bilder.yaml`: 6×6-Bilder (Zelt, Haus, Herz, Boot, Baum, Sonne …) als Zeilen aus 0 und 1.
+- `src/data/woerter.yaml`: Wörter der Klassenfahrt für Caesar (ZELT, SEE, BUS, ZUG, BURG …).
+
+#### Muster je Baustein (exercise-patterns)
+
+| Baustein | Muster | Übungen (mind. 4, höchstens die Hälfte Auswahl) |
+|---|---|---|
+| information-und-daten | erklären, zuordnen | single-choice (Daten oder Information?), matching (Daten + Zusammenhang → Information), number (wie viele Angaben auf dem Zettel), true-false |
+| daten-interpretieren | ablesen/deuten | matching (21 °C / 21 Jahre / 21 Uhr), number aus Tabelle der Zimmerliste, single-choice, ordering (Zeiten im Tagesplan) |
+| darstellungsformen | ablesen, Form wählen | number aus Säulendiagramm, ordering (Ziele nach Stimmen), matching (Frage → schnellste Form), single-choice |
+| baum | zuordnen, zählen | matching (Wurzel, Knoten, Kante, Blatt), number (Blätter, Kanten), ordering (Weg Wurzel → Blatt), true-false (Wurzel unten?) |
+| codierung-im-alltag | codieren/decodieren mit Tabelle | single-choice (Morsewort decodieren), matching (Ampel, Pfeife, Barcode → Bedeutung), ordering (Morsezeichen eines Wortes), true-false (Code = geheim?) |
+| binaersystem | umrechnen | BitKarten, generated (5 Bits → Dezimal; Fehler: falsche Seite, Einsen gezählt), number, single-choice |
+| dezimal-in-binaer | umrechnen | BitKarten, generated aus `zahlen` (Dezimal → binär; Fehler gespiegelt), ordering (Teil-Schritte), number |
+| bit-und-byte | umrechnen, vergleichen | generated (Byte → Bit, Fehler ·10), number (KB → Byte, Fehler 1024), ordering (Bit … GB), matching (Nachricht, Foto, Film → Größe) |
+| pixelgrafik | codieren/decodieren | PixelEditor, single-choice (welche Zeile gehört zum Code?, mit Bild), number (Pixel/Bit eines Bildes), matching (Farbnummer → Farbe), true-false |
+| pixel-und-vektorgrafik | unterscheiden, begründen | matching (Zweck → Grafikart), single-choice (Vektorangabe → Bild), true-false (Foto als Vektor?), number (wie viele Angaben braucht der Kreis) |
+| verschluesselung-grundidee | ver-/entschlüsseln | ordering (Buchstaben der Skytale lesen), number (Schlüssel = Zeilen), single-choice (Klartext), matching (Klartext, Geheimtext, Schlüssel, Verfahren) |
+| caesar-verschluesselung | ver-/entschlüsseln | CaesarScheibe (ver), CaesarScheibe (ent), number (Schlüssel aus Paar A→D), single-choice (Wort entschlüsseln), true-false |
+| verschluesselung-bewerten | beurteilen | CaesarScheibe (knacken), number (Zahl der Schlüssel: 25, Skytale bei 20 Buchstaben), ordering (Verfahren nach Sicherheit), true-false (geheimes Verfahren = sicher?), single-choice (Schutz) |
+
+Jede falsche Option hat ein `info` mit Grund; jede Zahlaufgabe 2-3 `mistakes` mit Meldung.
+
+#### Engagement je Seite (Einstieg · Wechsel · Belohnung · Geschichte)
+
+1. Information und Daten: Einstieg „Was sagt dir dieser Zettel?“ (Zettel ohne Zusammenhang) · Bild, Lesen, Zuordnen ·
+   Die Kinder schreiben die Nachricht als Information aus · Ida findet den Zettel, Malik weiß, was er bedeutet; weiter:
+   was die Zahlen darauf bedeuten.
+2. Daten deuten: Einstieg „Was ist 21?“ · Tabelle lesen, zuordnen, ordnen · Tagesplan der Fahrt ist gedeutet ·
+   Zimmerliste und Wetter am Seeberg; weiter: abstimmen, wohin.
+3. Tabelle, Diagramm, Bild: Einstieg „Welches Ziel hat gewonnen?“ (zuerst nur Strichliste) · Diagramm, Tabelle,
+   Frage → Form · Die Kinder wählen für jede Frage die schnellste Form · Abstimmung der 6b; weiter: Zimmer einteilen.
+4. Der Baum: Einstieg „Wer schläft mit wem?“ (Liste) · Baum ansehen, Teile benennen, Turnierbaum lesen · eigener
+   Zimmerbaum · Zimmer und Tischtennis-Turnier; Kapitelrückblick „eine Information, vier Formen“; weiter: Nachrichten
+   im Bus ohne Worte.
+5. Codes im Alltag: Einstieg „Was sagt die Ampel?“ · Morse-Tabelle, decodieren, ordnen · Ida und Malik morsen mit der
+   Taschenlampe · weiter: ein Code mit nur zwei Zeichen.
+6. Die Bit-Karten (Muster): Einstieg „Wie viele Punkte siehst du?“ (Karten 16, 8, 4, 2, 1, zwei offen) · Ausprobieren
+   mit BitReihe, Regel, generated · Lernende lesen jede Bitfolge als Zahl · Zimmernummern auf Bit-Karten; weiter:
+   umgekehrt, Zahl → Karten.
+7. Zahlen in Bits: Einstieg „Lege 13 mit den Karten“ · BitKarten, Teilen durch 2, generated · Lernende legen jede Zahl
+   bis 31 · Die Bus-Nummer 27 in Bits; weiter: wie viele Karten?
+8. Bit und Byte: Einstieg „Wie viele Karten für 255?“ · Rechnen, ordnen, schätzen · Vergleich Nachricht – Foto – Film
+   · Fotos der Fahrt auf dem Tablet; Kapitelrückblick; weiter: Bilder aus Bits.
+9. Bilder aus Pixeln: Einstieg „Welches Bild ergibt 001100?“ (BitReihe als Pixelzeile) · Raster malen, decodieren,
+   zählen · eigenes Zeltbild im PixelEditor · Ida malt das Logo der Fahrt; weiter: Vergrößern.
+10. Pixel oder Vektor?: Einstieg „Was passiert beim Vergrößern?“ (zwei Bilder 1× und 4×) · Bilder vergleichen,
+    begründen · Lernende wählen für Plakat, Foto, Logo die Grafikart · Plakat für die Fahrt; Kapitelrückblick;
+    weiter: Nachricht soll geheim bleiben.
+11. Die Geheimschrift: Einstieg „Die 6c darf die Nachricht nicht lesen!“ · Skytale ansehen, Buchstaben ordnen ·
+    eigene Nachricht entschlüsselt · weiter: ein Verfahren mit einer Scheibe.
+12. Die Caesar-Scheibe: Einstieg „A wird D. Was wird B?“ · Scheibe drehen, verschlüsseln, entschlüsseln ·
+    Klassenfahrt-Nachricht verschlüsselt · weiter: Kann die 6c sie knacken?
+13. Wie sicher ist das?: Einstieg „Knacke dieses Wort“ (CaesarScheibe knacken) · zählen, vergleichen, beurteilen ·
+    Lernende wissen, warum Caesar unsicher ist und wie man sich heute schützt · Rückblick auf die ganze App: eine
+    Information in sechs Formen.
+
+#### Kapitel 5 (Inkrement `increment/7-8`, nicht in Welle 1)
+
+Kapitel `texte`: „Zeichen werden Zahlen“ (`zeichencodierung`, BitKarten mit 8 Karten, ASCII-Tabelle A-Z, die
+Nachricht als Bytes) und „Analog und digital“ (`analog-und-digital`, Komponente Abtasten: Tonkurve mit wählbarer
+Zahl der Messpunkte und Bit). Ein späterer Agent legt `src/texte/` an, trägt es in `chapters` ein und folgt dem
+Content-Guide.
 
 ## Code
 
@@ -245,11 +364,18 @@ page, which a link. -->
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-<!-- tasks: pattern: the one page or screen that is the pattern for the others -->
+- [ ] Musterseite bits/binaersystem 'Die Bit-Karten': Komponenten BitReihe und BitKarten mit Logik und Test, Bild Bit-Karten, Kinder-Bild (Ida, Malik), generated 5 Bits → Dezimal; zeigt die Bit-Kartenreihe
+<!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
       change: change the pattern first.
-<!-- tasks: pages: the other pages or screens, after the pattern -->
+- [ ] Kapitel information: Seiten Information und Daten, Daten deuten (Zettel- und Tabellenbilder)
+- [ ] Kapitel information: Seiten Tabelle-Diagramm-Bild und Der Baum (Säulendiagramm, Baum-Bild, Turnierbaum)
+- [ ] Kapitel bits: Seiten Codes im Alltag, Zahlen in Bits (Datei zahlen.yaml), Bit und Byte
+- [ ] Kapitel bilder: Komponente PixelEditor mit Logik und Test, Datei bilder.yaml, Seiten Bilder aus Pixeln und Pixel oder Vektor
+- [ ] Kapitel geheim: Komponente CaesarScheibe mit Logik und Test, Skytale-Bild, Seiten Geheimschrift, Caesar-Scheibe, Wie sicher ist das?
+- [ ] Zwei Prüfer als Subagenten (Lernende 5-6, fachlich Informatik), Funde beheben
+<!-- tasks: pages (6 added): the other pages or screens, after the pattern -->
 - [ ] Update the content guide so that it describes the app as built (`app-content-matches`).
 - [ ] Run `npx --no -- lernapps check` until it passes.
 - [ ] Look at every screen and state, at 360 px and on a desktop, as "Look at the app" of skill `lernapps-cli` says.

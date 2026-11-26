@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 150" role="img"><title>Skizze Bit-Karten: 16 8 4 2 1, Karten 8, 4 und 1 offen: 01101 = 13</title>
+<g font-family="sans-serif" font-size="14" text-anchor="middle">
+<g transform="translate(10,10)"><text x="28" y="14">16</text><rect x="4" y="22" width="48" height="70" rx="6" fill="#999" stroke="#333"/><text x="28" y="112">0</text></g>
+<g transform="translate(74,10)"><text x="28" y="14">8</text><rect x="4" y="22" width="48" height="70" rx="6" fill="#fff" stroke="#333"/><g fill="#222"><circle cx="18" cy="38" r="4"/><circle cx="38" cy="38" r="4"/><circle cx="18" cy="52" r="4"/><circle cx="38" cy="52" r="4"/><circle cx="18" cy="66" r="4"/><circle cx="38" cy="66" r="4"/><circle cx="18" cy="80" r="4"/><circle cx="38" cy="80" r="4"/></g><text x="28" y="112">1</text></g>
+<g transform="translate(138,10)"><text x="28" y="14">4</text><rect x="4" y="22" width="48" height="70" rx="6" fill="#fff" stroke="#333"/><g fill="#222"><circle cx="18" cy="45" r="4"/><circle cx="38" cy="45" r="4"/><circle cx="18" cy="70" r="4"/><circle cx="38" cy="70" r="4"/></g><text x="28" y="112">1</text></g>
+<g transform="translate(202,10)"><text x="28" y="14">2</text><rect x="4" y="22" width="48" height="70" rx="6" fill="#999" stroke="#333"/><text x="28" y="112">0</text></g>
+<g transform="translate(266,10)"><text x="28" y="14">1</text><rect x="4" y="22" width="48" height="70" rx="6" fill="#fff" stroke="#333"/><circle cx="28" cy="57" r="4" fill="#222"/><text x="28" y="112">1</text></g>
+<text x="170" y="143">Bitfolge 01101 · Zahl 13 (nur in BitReihe)</text></g></svg>
