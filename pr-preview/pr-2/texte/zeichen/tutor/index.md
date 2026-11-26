@@ -58,7 +58,7 @@ Auf dieser Seite findest du es heraus, mit den Bit-Karten aus Kapitel 2.
 
 Dafür gibt es **Codetabellen**. Die bekannteste heißt
 **ASCII**. Sie hat 128 Zeichen mit den Codes 0 bis 127: Großbuchstaben, Kleinbuchstaben, Ziffern,
-Satzzeichen und Steuerzeichen wie „neue Zeile“, aber keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
+Satzzeichen und Steuerzeichen wie „neue Zeile“, keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
 bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Selin braucht A bis Z und das Leerzeichen.
 
 Ein Teil der ASCII-Tabelle mit dem Byte zu jedem Code:
