@@ -47,18 +47,19 @@ One year later: Jona, Selin and Mia are 12 now and in class 7b. They are going t
 class chat, Selin writes:
 
 **Selin:** MEET ON MONDAY AT EIGHT AT THE STATION
+
 **Jona:** How does my phone actually store letters? It only knows 0 and 1.
 
-On this page you will find out. You need the bit cards and the byte from the chapter “Everything is 0
-and 1”.
+On this page you will find out, with the bit cards from chapter 2.
 
 - Exercise `wie-gespeichert` (below)
 
 ### A code table for characters
 
-So that all devices use the same numbers, there is a fixed **code table**. The best known one for the
-letters of the English alphabet is called **ASCII**. In it, A has the number 65, B 66, C 67 and so on up
-to Z with 90. The space has 32.
+So that all devices use the same numbers, there is a fixed **code table**. The best known one is called
+**ASCII**. It has 128 characters with the codes 0 to 127: capital letters, small letters, digits,
+punctuation marks and control characters, but no letters with accents such as Ä. A has the number 65, B 66,
+C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin's message, A to Z are enough.
 
 Part of the ASCII table with the byte for each code:
 - Character | Code | Byte
@@ -72,13 +73,7 @@ Part of the ASCII table with the byte for each code:
 
 **Remember: Remember**
 
-With ASCII, each character fits into **one byte**, that is, on eight bit cards. A word with 7 letters needs 7 bytes, which is 56 bits.
-
-### Try it out
-
-First work out the code of the letter. A is 65, each letter after it is one more. Then turn over the cards until they show the code, and press “Check”.
-
-- Exercise `buchstabe-legen` (below)
+With ASCII, each character fits into **one byte**, that is, on eight bit cards. The codes only go up to 127, so card 128 always stays face down. A word with 5 letters needs 5 bytes, which is 40 bits.
 
 ### Example
 
@@ -89,6 +84,12 @@ First work out the code of the letter. A is 65, each letter after it is one more
 3. Code of I: 65 + 8 = 73 = 64 + 8 + 1, as a byte 01001001.
 
 HI is stored as 01001000 01001001, two bytes or 16 bits.
+
+### Try it out
+
+First work out the code of the letter, as in the example. Then turn over the cards until they show the code, and press “Check”.
+
+- Exercise `buchstabe-legen` (below)
 
 ### Practice
 
@@ -102,9 +103,10 @@ HI is stored as 01001000 01001001, two bytes or 16 bits.
 
 ### And Ä, € or 😀?
 
-For all the writing systems in the world there is the code table **Unicode**. In version 18.0 it has more
-than 170,000 characters. The first 128 are exactly the ASCII characters. So that every character fits, the
-phone stores a character in 1 to 4 bytes (UTF-8): A in 1 byte, Ä in 2, € in 3 and 😀 in 4 bytes.
+For all the writing systems in the world there is the code table **Unicode**. Today it has more than
+170,000 characters. The first 128 are exactly the ASCII characters. But one byte only gives 256 different
+numbers. So for the other characters, the phone needs more bits. Following a rule called **UTF-8**, it
+stores a character in 1 to 4 bytes: A in 1 byte, Ä in 2, € in 3 and 😀 in 4 bytes.
 
 Now you can turn text into bytes. On the next page Mia sends a voice message. How does her voice become
 something that can be stored in bits?
@@ -118,13 +120,13 @@ something that can be stored in bits?
   - ✗ As a small picture of the letter – The screen only draws the picture when it shows the letter, using the font. Only the number is stored.
   - ✗ As a single bit – A bit has only two values. That is not enough to tell 26 letters apart.
 - Solution: As a number that stands for A in a table
-- Explanation: Computers store characters as numbers. A code table says which number belongs to which character.
+- Explanation: Computers store characters as numbers. The next section shows exactly how.
 - Link: [../?via=tutor#wie-gespeichert](../?via=tutor#wie-gespeichert)
 
 ### Exercise buchstabe-legen
 
 - What to do: A row of bit cards, the largest on the left (16, 8, 4, 2, 1 or 128 … 1), all face down. The child taps cards to turn them over until the face-up cards add up to the number n, then presses “Check”. The sum is not shown before checking, only the bits.
-- Task: „Make the letter {c} as a byte.“
+- Task: „Lay out the letter {c} as a byte.“
 - Answer format: The bits of the cards, 1 for face up, 0 for face down, the largest card first.
 - What counts as right: Right if the values of the face-up cards add up to n.
 - Typical mistakes (the app's message fits one of them):
@@ -165,7 +167,7 @@ No. | n (hidden) | c | Solution | F1 | F2
 
 - Task: „What is the code of the letter {e.z} in the ASCII table?“
 - Answer format: type a number
-- The app's hint: „A = 65. Add one for each letter after it.“
+- The app's hint: „Which letter of the alphabet is it? The 1st has 65.“
 - Steps of the solution:
   - A = 65, and {e.z} comes after A. So {e.z} has the code {answer}.
   - As a byte: {e.bin}.
@@ -206,9 +208,9 @@ No. | e.z | e.bin | Solution | F1 | F2
 
 ### Exercise bytes-decodieren
 
-- Task: Mia sends a name as bytes. Which letter is which byte?
+- Task: Mia sends a name as bytes. Turn each byte into a number. Which letter is it?
 - Answer format: match each item on the left with one on the right
-- Solution: 01001010 (74) – J; 01001111 (79) – O; 01001110 (78) – N; 01000001 (65) – A
+- Solution: 01001010 – J; 01001111 – O; 01001110 – N; 01000001 – A
 - Explanation: 74 is J, 79 is O, 78 is N and 65 is A. Mia sent JONA. Ä has no code in ASCII.
 - Link: [../?via=tutor#bytes-decodieren](../?via=tutor#bytes-decodieren)
 
@@ -228,5 +230,5 @@ No. | e.z | e.bin | Solution | F1 | F2
 - Task: The letter Ä has a code in the ASCII table.
 - Answer format: choose “true” or “false”
 - Solution: The statement is false.
-- Explanation: ASCII only knows the letters of the English alphabet. For Ä, € and emojis there is Unicode, with more than 170,000 characters.
+- Explanation: ASCII only knows letters without accents. For Ä, € and emojis there is Unicode, with more than 170,000 characters.
 - Link: [../?via=tutor#umlaut-ascii](../?via=tutor#umlaut-ascii)

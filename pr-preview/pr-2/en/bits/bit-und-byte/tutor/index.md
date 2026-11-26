@@ -106,7 +106,7 @@ a picture is made of bits.
 ### Exercise byte-legen
 
 - What to do: A row of bit cards, the largest on the left (16, 8, 4, 2, 1 or 128 … 1), all face down. The child taps cards to turn them over until the face-up cards add up to the number n, then presses “Check”. The sum is not shown before checking, only the bits.
-- Task: „Make the number {n} with eight cards.“
+- Task: „Lay out the number {n} with eight cards.“
 - Answer format: The bits of the cards, 1 for face up, 0 for face down, the largest card first.
 - What counts as right: Right if the values of the face-up cards add up to n.
 - Typical mistakes (the app's message fits one of them):

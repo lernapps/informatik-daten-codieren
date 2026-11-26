@@ -47,18 +47,19 @@ Ein Jahr später: Jona, Selin und Mia sind jetzt 12 und gehen in die 7b. Wieder 
 Im Klassenchat schreibt Selin:
 
 **Selin:** TREFFEN MONTAG ACHT UHR AM BAHNHOF
+
 **Jona:** Wie speichert mein Handy eigentlich Buchstaben? Es kennt doch nur 0 und 1.
 
-Auf dieser Seite findest du es heraus. Du brauchst dafür die Bit-Karten und das Byte aus dem Kapitel
-„Alles ist 0 und 1“.
+Auf dieser Seite findest du es heraus, mit den Bit-Karten aus Kapitel 2.
 
 - Aufgabe `wie-gespeichert` (unten)
 
 ### Eine Codetabelle für Zeichen
 
-Damit alle Geräte dieselben Zahlen benutzen, gibt es eine feste **Codetabelle**. Die bekannteste für die
-Buchstaben ohne Umlaute heißt **ASCII**. Darin hat A die Nummer 65, B die 66, C die 67 und so weiter bis
-Z mit 90. Das Leerzeichen hat die 32.
+Damit alle Geräte dieselben Zahlen benutzen, gibt es eine feste **Codetabelle**. Die bekannteste heißt
+**ASCII**. Sie hat 128 Zeichen mit den Codes 0 bis 127: Großbuchstaben, Kleinbuchstaben, Ziffern,
+Satzzeichen und Steuerzeichen, aber keine Umlaute. A hat die Nummer 65, B die 66, C die 67 und so weiter
+bis Z mit 90. Das Leerzeichen hat die 32, das kleine a die 97. Für Selins Nachricht reichen A bis Z.
 
 Ein Teil der ASCII-Tabelle mit dem Byte zu jedem Code:
 - Zeichen | Code | Byte
@@ -72,13 +73,7 @@ Ein Teil der ASCII-Tabelle mit dem Byte zu jedem Code:
 
 **Merke: Merke**
 
-Bei ASCII passt jedes Zeichen in **ein Byte**, also auf acht Bit-Karten. Ein Wort mit 7 Buchstaben braucht 7 Byte, das sind 56 Bit.
-
-### Ausprobieren
-
-Rechne zuerst den Code des Buchstabens aus. A ist 65, jeder Buchstabe danach eins mehr. Dann drehe die Karten um, bis sie den Code zeigen, und drücke „Prüfen“.
-
-- Aufgabe `buchstabe-legen` (unten)
+Bei ASCII passt jedes Zeichen in **ein Byte**, also auf acht Bit-Karten. Die Codes gehen nur bis 127, die Karte 128 bleibt darum immer verdeckt. Ein Wort mit 5 Buchstaben braucht 5 Byte, das sind 40 Bit.
 
 ### Beispiel
 
@@ -89,6 +84,12 @@ Rechne zuerst den Code des Buchstabens aus. A ist 65, jeder Buchstabe danach ein
 3. Code von A: 65 = 64 + 1, als Byte 01000001.
 
 JA wird gespeichert als 01001010 01000001, zwei Byte oder 16 Bit.
+
+### Ausprobieren
+
+Rechne zuerst den Code des Buchstabens aus, wie im Beispiel. Dann drehe die Karten um, bis sie den Code zeigen, und drücke „Prüfen“.
+
+- Aufgabe `buchstabe-legen` (unten)
 
 ### Übung
 
@@ -102,9 +103,10 @@ JA wird gespeichert als 01001010 01000001, zwei Byte oder 16 Bit.
 
 ### Und Ä, € oder 😀?
 
-Für alle Schriften der Welt gibt es die Codetabelle **Unicode**. In Version 18.0 hat sie mehr als
-170 000 Zeichen. Die ersten 128 sind genau die ASCII-Zeichen. Damit alle Zeichen passen, speichert das Handy
-ein Zeichen in 1 bis 4 Byte (UTF-8): A in 1 Byte, Ä in 2, € in 3 und 😀 in 4 Byte.
+Für alle Schriften der Welt gibt es die Codetabelle **Unicode**. Sie hat heute mehr als 170 000 Zeichen.
+Die ersten 128 sind genau die ASCII-Zeichen. Mit einem Byte gibt es aber nur 256 verschiedene Zahlen. Für
+die anderen Zeichen braucht das Handy darum mehr Bits. Nach einer Regel namens **UTF-8** speichert es ein
+Zeichen in 1 bis 4 Byte: A in 1 Byte, Ä in 2, € in 3 und 😀 in 4 Byte.
 
 Jetzt kannst du Text in Bytes umrechnen. Auf der nächsten Seite schickt Mia eine Sprachnachricht. Wie wird
 aus ihrer Stimme etwas, das man in Bits speichern kann?
@@ -118,7 +120,7 @@ aus ihrer Stimme etwas, das man in Bits speichern kann?
   - ✗ Als kleines Bild des Buchstabens – Das Bild malt der Bildschirm erst beim Anzeigen, mit der Schrift. Gespeichert ist nur die Nummer.
   - ✗ Als ein einzelnes Bit – Ein Bit hat nur zwei Werte. Damit kann man nicht 26 Buchstaben unterscheiden.
 - Lösung: Als Zahl, die in einer Tabelle für A steht
-- Erklärung: Computer speichern Zeichen als Zahlen. Eine Codetabelle sagt, welche Zahl zu welchem Zeichen gehört.
+- Erklärung: Computer speichern Zeichen als Zahlen. Wie das genau geht, zeigt der nächste Abschnitt.
 - Link: [../?via=tutor#wie-gespeichert](../?via=tutor#wie-gespeichert)
 
 ### Aufgabe buchstabe-legen
@@ -165,7 +167,7 @@ Nr. | n (verdeckt) | c | Lösung | F1 | F2
 
 - Aufgabe: „Welchen Code hat der Buchstabe {e.z} in der ASCII-Tabelle?“
 - Antwortformat: eine Zahl eintippen
-- Tipp der App: „A = 65. Zähle für jeden Buchstaben danach eins dazu.“
+- Tipp der App: „Welcher Buchstabe im Alphabet ist es? Der 1. hat 65.“
 - Lösungsweg:
   - A = 65, und {e.z} kommt nach A. Also hat {e.z} den Code {answer}.
   - Als Byte: {e.bin}.
@@ -206,9 +208,9 @@ Nr. | e.z | e.bin | Lösung | F1 | F2
 
 ### Aufgabe bytes-decodieren
 
-- Aufgabe: Mia schickt einen Namen als Bytes. Welcher Buchstabe ist welches Byte?
+- Aufgabe: Mia schickt einen Namen als Bytes. Rechne jedes Byte in eine Zahl um. Welcher Buchstabe ist es?
 - Antwortformat: jedem Eintrag links den passenden rechts zuordnen
-- Lösung: 01001010 (74) – J; 01001111 (79) – O; 01001110 (78) – N; 01000001 (65) – A
+- Lösung: 01001010 – J; 01001111 – O; 01001110 – N; 01000001 – A
 - Erklärung: 74 ist J, 79 ist O, 78 ist N und 65 ist A. Mia hat JONA geschickt. Ä hat keinen Code in ASCII.
 - Link: [../?via=tutor#bytes-decodieren](../?via=tutor#bytes-decodieren)
 
@@ -228,5 +230,5 @@ Nr. | e.z | e.bin | Lösung | F1 | F2
 - Aufgabe: Der Buchstabe Ä hat einen Code in der ASCII-Tabelle.
 - Antwortformat: „Stimmt“ oder „Stimmt nicht“ wählen
 - Lösung: Die Aussage stimmt nicht.
-- Erklärung: ASCII kennt nur die Buchstaben des englischen Alphabets. Für Ä, € und Emojis gibt es Unicode, mit mehr als 170 000 Zeichen.
+- Erklärung: ASCII kennt nur die Buchstaben ohne Umlaute. Für Ä, € und Emojis gibt es Unicode, mit mehr als 170 000 Zeichen.
 - Link: [../?via=tutor#umlaut-ascii](../?via=tutor#umlaut-ascii)

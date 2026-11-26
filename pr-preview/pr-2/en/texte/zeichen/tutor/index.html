@@ -50,17 +50,17 @@
 <h3>A message in the class chat</h3>
 <p>One year later: Jona, Selin and Mia are 12 now and in class 7b. They are going to Seeberg again. In the
 class chat, Selin writes:</p>
-<p><strong>Selin:</strong> MEET ON MONDAY AT EIGHT AT THE STATION
-<strong>Jona:</strong> How does my phone actually store letters? It only knows 0 and 1.</p>
-<p>On this page you will find out. You need the bit cards and the byte from the chapter “Everything is 0
-and 1”.</p>
+<p><strong>Selin:</strong> MEET ON MONDAY AT EIGHT AT THE STATION</p>
+<p><strong>Jona:</strong> How does my phone actually store letters? It only knows 0 and 1.</p>
+<p>On this page you will find out, with the bit cards from chapter 2.</p>
 <ul>
 <li>Exercise <code>wie-gespeichert</code> (below)</li>
 </ul>
 <h3>A code table for characters</h3>
-<p>So that all devices use the same numbers, there is a fixed <strong>code table</strong>. The best known one for the
-letters of the English alphabet is called <strong>ASCII</strong>. In it, A has the number 65, B 66, C 67 and so on up
-to Z with 90. The space has 32.</p>
+<p>So that all devices use the same numbers, there is a fixed <strong>code table</strong>. The best known one is called
+<strong>ASCII</strong>. It has 128 characters with the codes 0 to 127: capital letters, small letters, digits,
+punctuation marks and control characters, but no letters with accents such as Ä. A has the number 65, B 66,
+C 67 and so on up to Z with 90. The space has 32, small a 97. For Selin&#39;s message, A to Z are enough.</p>
 <p>Part of the ASCII table with the byte for each code:</p>
 <ul>
 <li><p>Character | Code | Byte</p>
@@ -79,12 +79,7 @@ to Z with 90. The space has 32.</p>
 </li>
 </ul>
 <p><strong>Remember: Remember</strong></p>
-<p>With ASCII, each character fits into <strong>one byte</strong>, that is, on eight bit cards. A word with 7 letters needs 7 bytes, which is 56 bits.</p>
-<h3>Try it out</h3>
-<p>First work out the code of the letter. A is 65, each letter after it is one more. Then turn over the cards until they show the code, and press “Check”.</p>
-<ul>
-<li>Exercise <code>buchstabe-legen</code> (below)</li>
-</ul>
+<p>With ASCII, each character fits into <strong>one byte</strong>, that is, on eight bit cards. The codes only go up to 127, so card 128 always stays face down. A word with 5 letters needs 5 bytes, which is 40 bits.</p>
 <h3>Example</h3>
 <p><strong>Example: The word HI as bytes</strong></p>
 <ol>
@@ -93,6 +88,11 @@ to Z with 90. The space has 32.</p>
 <li>Code of I: 65 + 8 = 73 = 64 + 8 + 1, as a byte 01001001.</li>
 </ol>
 <p>HI is stored as 01001000 01001001, two bytes or 16 bits.</p>
+<h3>Try it out</h3>
+<p>First work out the code of the letter, as in the example. Then turn over the cards until they show the code, and press “Check”.</p>
+<ul>
+<li>Exercise <code>buchstabe-legen</code> (below)</li>
+</ul>
 <h3>Practice</h3>
 <ul>
 <li><p>Exercise <code>code-ueben</code> (below)</p>
@@ -105,9 +105,10 @@ to Z with 90. The space has 32.</p>
 </li>
 </ul>
 <h3>And Ä, € or 😀?</h3>
-<p>For all the writing systems in the world there is the code table <strong>Unicode</strong>. In version 18.0 it has more
-than 170,000 characters. The first 128 are exactly the ASCII characters. So that every character fits, the
-phone stores a character in 1 to 4 bytes (UTF-8): A in 1 byte, Ä in 2, € in 3 and 😀 in 4 bytes.</p>
+<p>For all the writing systems in the world there is the code table <strong>Unicode</strong>. Today it has more than
+170,000 characters. The first 128 are exactly the ASCII characters. But one byte only gives 256 different
+numbers. So for the other characters, the phone needs more bits. Following a rule called <strong>UTF-8</strong>, it
+stores a character in 1 to 4 bytes: A in 1 byte, Ä in 2, € in 3 and 😀 in 4 bytes.</p>
 <p>Now you can turn text into bytes. On the next page Mia sends a voice message. How does her voice become
 something that can be stored in bits?</p>
 <h3>Exercise wie-gespeichert</h3>
@@ -121,13 +122,13 @@ something that can be stored in bits?</p>
 </ul>
 </li>
 <li>Solution: As a number that stands for A in a table</li>
-<li>Explanation: Computers store characters as numbers. A code table says which number belongs to which character.</li>
+<li>Explanation: Computers store characters as numbers. The next section shows exactly how.</li>
 <li>Link: <a href="../?via=tutor#wie-gespeichert">../?via=tutor#wie-gespeichert</a></li>
 </ul>
 <h3>Exercise buchstabe-legen</h3>
 <ul>
 <li>What to do: A row of bit cards, the largest on the left (16, 8, 4, 2, 1 or 128 … 1), all face down. The child taps cards to turn them over until the face-up cards add up to the number n, then presses “Check”. The sum is not shown before checking, only the bits.</li>
-<li>Task: „Make the letter {c} as a byte.“</li>
+<li>Task: „Lay out the letter {c} as a byte.“</li>
 <li>Answer format: The bits of the cards, 1 for face up, 0 for face down, the largest card first.</li>
 <li>What counts as right: Right if the values of the face-up cards add up to n.</li>
 <li>Typical mistakes (the app&#39;s message fits one of them):<ul>
@@ -168,7 +169,7 @@ something that can be stored in bits?</p>
 <ul>
 <li>Task: „What is the code of the letter {e.z} in the ASCII table?“</li>
 <li>Answer format: type a number</li>
-<li>The app&#39;s hint: „A = 65. Add one for each letter after it.“</li>
+<li>The app&#39;s hint: „Which letter of the alphabet is it? The 1st has 65.“</li>
 <li>Steps of the solution:<ul>
 <li>A = 65, and {e.z} comes after A. So {e.z} has the code {answer}.</li>
 <li>As a byte: {e.bin}.</li>
@@ -211,9 +212,9 @@ something that can be stored in bits?</p>
 </code></pre>
 <h3>Exercise bytes-decodieren</h3>
 <ul>
-<li>Task: Mia sends a name as bytes. Which letter is which byte?</li>
+<li>Task: Mia sends a name as bytes. Turn each byte into a number. Which letter is it?</li>
 <li>Answer format: match each item on the left with one on the right</li>
-<li>Solution: 01001010 (74) – J; 01001111 (79) – O; 01001110 (78) – N; 01000001 (65) – A</li>
+<li>Solution: 01001010 – J; 01001111 – O; 01001110 – N; 01000001 – A</li>
 <li>Explanation: 74 is J, 79 is O, 78 is N and 65 is A. Mia sent JONA. Ä has no code in ASCII.</li>
 <li>Link: <a href="../?via=tutor#bytes-decodieren">../?via=tutor#bytes-decodieren</a></li>
 </ul>
@@ -235,7 +236,7 @@ something that can be stored in bits?</p>
 <li>Task: The letter Ä has a code in the ASCII table.</li>
 <li>Answer format: choose “true” or “false”</li>
 <li>Solution: The statement is false.</li>
-<li>Explanation: ASCII only knows the letters of the English alphabet. For Ä, € and emojis there is Unicode, with more than 170,000 characters.</li>
+<li>Explanation: ASCII only knows letters without accents. For Ä, € and emojis there is Unicode, with more than 170,000 characters.</li>
 <li>Link: <a href="../?via=tutor#umlaut-ascii">../?via=tutor#umlaut-ascii</a></li>
 </ul>
 </main>
