@@ -36,7 +36,8 @@ dass ein Computer am Ende alles mit 0 und 1 codiert (Issue lernapps/apps#491, We
 - Strang `informatik/daten`, eine Strang-App (Karte: `explainerFocus: strand`).
 - Welle 1 baut nur die Kapitel 1-4 (5-6); Kapitel 5 (7-8: `zeichencodierung`, `analog-und-digital`) wird mitgeplant
   und kommt als Inkrement auf `increment/7-8`.
-- Sprache nur Deutsch, einfache Sprache, „du“ (Gemeinsame Regeln #509, Abschnitt 2).
+- Zwei Sprachen `[de, en]` (Nachtrag 1 zu #509): Deutsch Ausgangssprache in einfacher Sprache mit „du“, Englisch
+  vollständige Übersetzung in Plain English mit „you“, Fachbegriffe wie im Computing curriculum (England).
 - Keine Sammel-Wiederholung in Kapitel 1-4 nötig: Alle Voraussetzungen der 13 Bausteine liegen im Explainer selbst
   (`information-und-daten` hat keine Voraussetzung).
 
@@ -114,7 +115,7 @@ Strang `informatik/daten` („Information und Daten“). Alle 13 Bausteine haben
 - Nicht drin: Graph, Hypertext, Feld (#496); Tabellen zum Rechnen (#494) und Speichern (#498); KI (#493); Dateien
   und Ordner (#492); ASCII/Unicode und Analog-digital (Kapitel 5, später); Kibibyte; moderne Kryptografie (7-10 laut
   GI ID-12), außer als Ausblick „so schützt du dich“.
-- Sprache: nur Deutsch.
+- Sprachen: Deutsch und Englisch, je ein Seitenbaum; jeder Text als Karte `{ de, en }`.
 
 ### Quellen
 
@@ -219,7 +220,7 @@ Orchestrator.
 
 #### Aufbau
 
-- `src/app.yaml`: `format: 2`, `strand: informatik/daten`, `languages: [de]`, vier Kapitel. Kein `scope` (kein
+- `src/app.yaml`: `format: 2`, `strand: informatik/daten`, `languages: [de, en]`, vier Kapitel. Kein `scope` (kein
   `open-task`, kein Material des Creators).
 - Kapitel `information` (4 Seiten), `bits` (4), `bilder` (2), `geheim` (3). Später `texte` (Kapitel 5, 7-8).
 - Je Seite ein Baustein (`competencies: [<id>]`). Keine Seite braucht eine Wiederholung: Jede Voraussetzung wird auf
@@ -230,11 +231,13 @@ Orchestrator.
 
 #### Geschichte (fest, für alle Seiten und für #492, #493, #505)
 
-- Klasse 6b (erfunden) fährt am Montag, 11. Mai, um 8 Uhr ab Bahnhof zur Jugendherberge „Am Seeberg“ (erfunden), drei
-  Tage. Zwei gezeichnete Kinder planen mit: **Ida** (11, kurze rote Haare, gelbe Jacke) und **Malik** (12, schwarze
-  Locken, Brille, blauer Pullover). Stil: Vorlage `story-characters.svg` (Kopf, runder Körper, Umrisse).
-- Klassenfahrt-Nachricht, Klartext: **TREFFEN MONTAG ACHT UHR AM BAHNHOF**. Auf dem Zettel (Kapitel 1):
-  „6b · 11.5. · 8:00 · Bahnhof“. Caesar mit Schlüssel 3: **WUHIIHQ PRQWDJ DFKW XKU DP EDKQKRI**.
+- Klasse 6b (erfunden, gemeinsame Klasse des Epics) fährt am Montag, 11. Mai, um 8 Uhr ab Bahnhof zur
+  Jugendherberge „Am Seeberg“ (erfunden), drei Tage. **Jona** (11) und **Selin** (11) verschicken die Nachricht;
+  **Mia** (11) ist dabei. Aussehen legt #490 fest (kommt über den Orchestrator); bis dahin keine Figurenbilder.
+  Namen von Figuren und Orten bleiben im Englischen gleich.
+- Klassenfahrt-Nachricht, Klartext: **TREFFEN MONTAG ACHT UHR AM BAHNHOF** (en: **MEET ON MONDAY AT EIGHT AT THE
+  STATION**). Auf dem Zettel (Kapitel 1): „6b · 11.5. · 8:00 · Bahnhof“ (en: „6b · 11 May · 8:00 · station“).
+  Caesar mit Schlüssel 3: **WUHIIHQ PRQWDJ DFKW XKU DP EDKQKRI** (en: **PHHW RQ PRQGDB DW HLJKW DW WKH VWDWLRQ**).
 - Jede Seite: eine Szene (Bild der Kinder nur auf der ersten Seite eines Kapitels, sonst Text), die Aufgabe der Seite
   ist ein Schritt der Planung, der Schluss sagt den nächsten Schritt.
 
@@ -303,7 +306,7 @@ Jede falsche Option hat ein `info` mit Grund; jede Zahlaufgabe 2-3 `mistakes` mi
 #### Engagement je Seite (Einstieg · Wechsel · Belohnung · Geschichte)
 
 1. Information und Daten: Einstieg „Was sagt dir dieser Zettel?“ (Zettel ohne Zusammenhang) · Bild, Lesen, Zuordnen ·
-   Die Kinder schreiben die Nachricht als Information aus · Ida findet den Zettel, Malik weiß, was er bedeutet; weiter:
+   Die Kinder schreiben die Nachricht als Information aus · Jona findet den Zettel, Selin weiß, was er bedeutet; weiter:
    was die Zahlen darauf bedeuten.
 2. Daten deuten: Einstieg „Was ist 21?“ · Tabelle lesen, zuordnen, ordnen · Tagesplan der Fahrt ist gedeutet ·
    Zimmerliste und Wetter am Seeberg; weiter: abstimmen, wohin.
@@ -312,7 +315,7 @@ Jede falsche Option hat ein `info` mit Grund; jede Zahlaufgabe 2-3 `mistakes` mi
 4. Der Baum: Einstieg „Wer schläft mit wem?“ (Liste) · Baum ansehen, Teile benennen, Turnierbaum lesen · eigener
    Zimmerbaum · Zimmer und Tischtennis-Turnier; Kapitelrückblick „eine Information, vier Formen“; weiter: Nachrichten
    im Bus ohne Worte.
-5. Codes im Alltag: Einstieg „Was sagt die Ampel?“ · Morse-Tabelle, decodieren, ordnen · Ida und Malik morsen mit der
+5. Codes im Alltag: Einstieg „Was sagt die Ampel?“ · Morse-Tabelle, decodieren, ordnen · Jona und Selin morsen mit der
    Taschenlampe · weiter: ein Code mit nur zwei Zeichen.
 6. Die Bit-Karten (Muster): Einstieg „Wie viele Punkte siehst du?“ (Karten 16, 8, 4, 2, 1, zwei offen) · Ausprobieren
    mit BitReihe, Regel, generated · Lernende lesen jede Bitfolge als Zahl · Zimmernummern auf Bit-Karten; weiter:
@@ -322,7 +325,7 @@ Jede falsche Option hat ein `info` mit Grund; jede Zahlaufgabe 2-3 `mistakes` mi
 8. Bit und Byte: Einstieg „Wie viele Karten für 255?“ · Rechnen, ordnen, schätzen · Vergleich Nachricht – Foto – Film
    · Fotos der Fahrt auf dem Tablet; Kapitelrückblick; weiter: Bilder aus Bits.
 9. Bilder aus Pixeln: Einstieg „Welches Bild ergibt 001100?“ (BitReihe als Pixelzeile) · Raster malen, decodieren,
-   zählen · eigenes Zeltbild im PixelEditor · Ida malt das Logo der Fahrt; weiter: Vergrößern.
+   zählen · eigenes Zeltbild im PixelEditor · Jona malt das Logo der Fahrt; weiter: Vergrößern.
 10. Pixel oder Vektor?: Einstieg „Was passiert beim Vergrößern?“ (zwei Bilder 1× und 4×) · Bilder vergleichen,
     begründen · Lernende wählen für Plakat, Foto, Logo die Grafikart · Plakat für die Fahrt; Kapitelrückblick;
     weiter: Nachricht soll geheim bleiben.
@@ -364,7 +367,7 @@ Content-Guide.
       `references/language-tasks.md` in the same folder. A component in the plan: also `references/components.md`.
 - [ ] Decide whether the app needs `scope`, as "`scope`" in
       `.agents/skills/lernapps-explainer/references/structure.md` says. Write the choice under "Key decisions".
-- [ ] Musterseite bits/binaersystem 'Die Bit-Karten': Komponenten BitReihe und BitKarten mit Logik und Test, Bild Bit-Karten, Kinder-Bild (Ida, Malik), generated 5 Bits → Dezimal; zeigt die Bit-Kartenreihe
+- [ ] Musterseite bits/binaersystem 'Die Bit-Karten': Komponenten BitReihe und BitKarten mit Logik und Test, Bild Bit-Karten, Kinder-Bild (Jona, Selin), generated 5 Bits → Dezimal; zeigt die Bit-Kartenreihe
 <!-- tasks: pattern (1 added): the one page or screen that is the pattern for the others -->
 - [ ] **Checkpoint:** the pattern page. Load skill `lernapps-learner-check` and do its learner check on the page. Fix
       what it finds. Then show the creator the page and ask whether the others may follow it. Stop and wait. A
